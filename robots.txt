@@ -1,0 +1,20 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /about/
+Allow: /guestbook/
+Allow: /schedule/
+Allow: /Links/
+Allow: /tags/
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /lib/
+Disallow: /fancybox/
+
+Sitemap: https://yl520.cf/sitemap.xml
+Sitemap: https://yl520.cf/baidusitemap.xml
