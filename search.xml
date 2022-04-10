@@ -1,6 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo+github搭建个人博客</title>
+    <url>/p/68689ca1.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<span id="more"></span>
+
+<h2 id="使用hexo-github的优点"><a href="#使用hexo-github的优点" class="headerlink" title="使用hexo+github的优点"></a>使用hexo+github的优点</h2><ol>
+<li><p>不需要服务器，github提供免费的托管服务。</p>
+</li>
+<li><p>不需要域名，gitHub提供了免费的.io域名。</p>
+</li>
+<li><p>不用自己写xml，hexo提供了很多开源的博客模板。</p>
+</li>
+<li><p>便于维护和更新。</p>
+<div class="note info">
+            <p>下面进入正题</p>
+          </div></li>
+</ol>
+<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><h3 id="1-1-Github账号"><a href="#1-1-Github账号" class="headerlink" title="1.1 Github账号"></a>1.1 Github账号</h3><p>   &ensp;需要有一个<code>Github</code>账号，没有的话到<a href="https://github.com/">Github官网</a>注册一个，方法很简单，不懂的话可以参考<a href="https://blog.csdn.net/yaorongke/article/details/119086305">Github申请账号</a>。</p>
+<h3 id="1-2安装Git"><a href="#1-2安装Git" class="headerlink" title="1.2安装Git"></a>1.2<strong>安装Git</strong></h3><p>   &ensp;在自己电脑上安装好<code>Git</code>，hexo部署到<code>Github</code>时要用，可以在网上找个教程，或者参考<a href="https://blog.csdn.net/yaorongke/article/details/119085413">Git安装(Windows)。</a></p>
+<h3 id="1-3安装NodeJS"><a href="#1-3安装NodeJS" class="headerlink" title="1.3安装NodeJS"></a>1.3<strong>安装NodeJS</strong></h3><p>   &ensp;在自己电脑上安装好<code>NodeJS</code>，Hexo是基于NodeJS编写的，所以需要安装NodeJS和npm工具。网上找篇教程或者参考 <a hred="https://blog.csdn.net/yaorongke/article/details/119084295">NodeJS安装及配置(Windows)</a></p>
+<h2 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2 创建仓库"></a>2 创建仓库</h2><p>   &ensp;在<code>Github</code>上创建一个新的代码仓库用于保存我们的网页。</p>
+<p>   &ensp;点击右上角头像，然后点击<code>Your respositories</code>，进入仓库页面。</p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk1.jpg"></p>
+<p>   点击<code>New</code>按钮，进入仓库创建页面。</p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk2.jpg"></p>
+<p>   填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>,例如：<code>tqb-web.github.io</code>可以选择<code>Add a README file</code>，这是添加对你项目的描述的文档。</p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk3.jpg"></p>
+<p>   在Github Page中找到我们主页的地址为<code>https://tqb-web.github.io/</code>，以后就可以同个这个网址来访问我们的博客，由于博客还没有搭建完成，所以现在这个网址还不能正常使用。</p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk4.jpg"></p>
+<h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3 安装Hexo"></a>3 安装Hexo</h2><p>我们采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code> 是一个基于<code>NodeJS</code>的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。点击进入 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuLw==">官网<i class="fa fa-external-link-alt"></i></span></p>
+<p>安装<code>Hexo</code></p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
+
+<p>查看版本</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></div>
+
+<p>创建一个项目<code>hexo-blog</code>并初始化</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo init hexo-blog</span><br><span class="line">cd hexo-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
+
+<p>本地启动</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo server</span><br><span class="line">或者直接 hexo cl&amp;&amp;hexo g&amp;&amp;hexo s</span><br></pre></td></tr></table></figure></div>
+
+<p>浏览器访问<code> http://localhost:4000</code>，页面默认主图风格如下</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/blog.jpg"></p>
+<h2 id="4-发布到Github-Pages"><a href="#4-发布到Github-Pages" class="headerlink" title="4 发布到Github Pages"></a>4 发布到Github Pages</h2><h3 id="4-1-生成SSH添加到Github"><a href="#4-1-生成SSH添加到Github" class="headerlink" title="4.1 生成SSH添加到Github"></a>4.1 生成SSH添加到Github</h3><p>回到你的git bash中</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure></div>
+
+<p>这里的yourname输入你的<code>GitHub用户名</code>，youremail输入你<code>GitHub的邮箱</code>。这样GitHub才能知道你是不是对应它的账户。</p>
+<p>可以用以下两条，检查一下你有没有输对</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure></div>
+
+<p>然后创建SSH，一路回车</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure></div>
+
+<p>这个时候它会告诉你已经生成了<code>.ssh</code>的文件夹。在你的电脑中找到这个文件夹。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/ssh.jpg"></p>
+<p><code>ssh</code>，简单来讲，就是一个秘钥，其中，<code>id_rsa</code>是你这台电脑的私人秘钥，不能给别人看的，<code>id_rsa.pub</code>是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
+<p>而后在GitHub的setting中，找到SSH keys的设置选项，点击<code>New SSH key</code>把你的<code>id_rsa.pub</code>里面的信息复制进去。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/sshkey.jpg"></p>
+<p>在<code>Git Bash</code>中检查是否成功</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="4-2-将hexo部署到GitHub"><a href="#4-2-将hexo部署到GitHub" class="headerlink" title="4.2 将hexo部署到GitHub"></a>4.2 将hexo部署到GitHub</h3><p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为YourgithubName就是你的GitHub账户</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repository: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>提示</strong>：若上述方法不成功，可将</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">repository: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br></pre></td></tr></table></figure></div>
+
+<p>改为</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">repository: git@github.com:YourgithubName/YourgithubName.github.io.git</span><br></pre></td></tr></table></figure></div>
+
+<div class="note warning">
+            <p>其实上述地址就是你的博客仓库地址，可自行在自己的GitHub项目中查看！</p>
+          </div>
+
+<p>如下图，到时候直接复制到repository:&nbsp;后即可(注意冒号后面一定要有空格，否则不会成功)</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/lookhs.jpg"></p>
+<p>配置完成后，需要安装<code>deploy-git</code>,也就是部署的名的命令，这样才能够将博客部署到<code>Github</code>。</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></div>
+
+<p>最后</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line">或者hexo d</span><br></pre></td></tr></table></figure></div>
+
+<p>如果看到下图显示的东西，就说明成功啦！</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/deploy.jpg"></p>
+<p>然后我们就可以用之前提到的地址来访问我们的博客啦！！！</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《HelloGithub》第01期</title>
+    <url>/p/c1ba95b6.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yg==">Hello GitHub<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+      <categories>
+        <category>Github</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HelloGithub</title>
     <url>/p/a53d7246.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
@@ -30,6 +142,78 @@
       <tags>
         <tag>编程</tag>
         <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在Hexo博客中添加Github贡献日历</title>
+    <url>/p/214102e1.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer">
+
+<span id="more"></span>
+
+<p>&emsp;之前看到过<span class="exturl" data-url="aHR0cHM6Ly96ZmUuc3BhY2Uv">小冰<i class="fa fa-external-link-alt"></i></span>的博客，被他主页的Github贡献日历吸引了。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg"></p>
+<p>&emsp;于是我按照他给的方法进行尝试，最后虽然成功了，但是也出现了一些问题，导致页面不是太美观。如下图，上面一行日期无法显示完整，这令我很头疼我试图上网查找解决方法，可惜没有找到，并且许多用户都反应遇到了同样的问题。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/mygithub.jpg"></p>
+<p>&emsp;既然解决不了，那咱就换一种方法。于是我又在Github上寻找新的方法，终于，我在一位老外大神那里找到了一种方法。</p>
+<div class="note info">
+            <p>Github 地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzIwMTZyc2hhaC9naXRodWJjaGFydC1hcGk=">https://github.com/2016rshah/githubchart-api<i class="fa fa-external-link-alt"></i></span></p>
+          </div>
+
+<p><strong>&emsp;我觉得这个方法非常的牛，他将你自己的贡献日历变成了图片，只需要使用一行 HTML 语句，就可以在任何地方使用贡献日历。但他也有自己的<code>缺点</code>，就是不能像小冰的插件那样可以<code>显示上传日期和提交次数</code>等。</strong></p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/2016rshah&quot; alt=&quot;2016rshah&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>现在开始介绍怎么用这种方法实现！</code></p>
+<h2 id="1-最简单的一种方法"><a href="#1-最简单的一种方法" class="headerlink" title="1 最简单的一种方法"></a>1 最简单的一种方法</h2><p>如果你想简单的使用Github贡献日历，那么你只需要在Markdown文本中，使用</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/你的Github用户名&quot; alt=&quot;???&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>比如说，你想在<code>关于</code>页面使用贡献日历，那么只需要在<code>blog\source\about</code>目录下，打开<code>index.md</code>文件，在需要的位置插入上面的语句即可。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github1.jpg"></p>
+<div class="note warning">
+            <p>注意一定要是自己的Github用户名！</p>
+          </div>
+
+<p>效果如下</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github2.jpg"></p>
+<h2 id="2-自定义贡献日历的配色方案"><a href="#2-自定义贡献日历的配色方案" class="headerlink" title="2 自定义贡献日历的配色方案"></a>2 自定义贡献日历的配色方案</h2><p>&emsp;我们还可以<code>自定义</code>自己的贡献日历配色方案，原作者是不是很贴心！</p>
+<div class="note info">
+            <p>我们只需要将 <code>src</code> 属性改为 <code>https://ghchart.rshah.org/&lt;HEX-COLOR&gt;/你的Github用户名</code>，其中 <code>&lt;HEX_COLOR&gt;</code> 为任意的十六进制颜色代码。它将根据这个颜色，自动为日历修改配色。</p>
+          </div>
+
+<p>如下</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/E623D1/tqb-web&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>效果图</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github3.jpg"></p>
+<h2 id="3-放进首页和归档页（Next主题）"><a href="#3-放进首页和归档页（Next主题）" class="headerlink" title="3 放进首页和归档页（Next主题）"></a>3 放进首页和归档页（Next主题）</h2><ol>
+<li>打开<code>Dblog\themes\next\layout</code>目录下的<code>_layout.swig</code>文件。</li>
+<li>找到<code>       &#123;% include '_partials/header/sub-menu.swig' %&#125;</code>，在下面添加如下代码</li>
+</ol>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;%- if page.type !== &#x27;categories&#x27; and page.type !== &#x27;tags&#x27; and page.type !== &#x27;schedule&#x27; and page.type !== &#x27;works&#x27; and page.type !== &#x27;about&#x27; and page.type !== &#x27;post&#x27;%&#125;</span><br><span class="line">	&lt;div class=&quot;post-block animated fadeIn&quot;&gt;</span><br><span class="line">		&lt;h5 class=&quot;post-title&quot; itemprop=&quot;name headline&quot;&gt;</span><br><span class="line">			&lt;a href=&quot;https://github.com/你的Github用户名&quot; class=&quot;post-title-link&quot; itemprop=&quot;url&quot;&gt;Github Contribution Calendar&lt;/a&gt;</span><br><span class="line">		&lt;/h5&gt;</span><br><span class="line">		&lt;div class=&quot;post-body animated fadeInDown&quot; itemprop=&quot;articleBody&quot;&gt;</span><br><span class="line">			&lt;img style=&quot;width: 100%; margin-top: 30px;&quot; src=&quot;https://ghchart.rshah.org/e77c8e/你的Github用户名&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>如下图(用的别人的)</code></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github5.jpg"></p>
+<p>⚠<strong>注意</strong></p>
+<p>🍦<strong>首先，要把<code>黄色框框</code>里面的代码换成自己的信息！！！</strong></p>
+<p>🍦<strong>其次，<code>绿色框框</code>要根据你博客的情况写</strong></p>
+<div class="note info">
+            <p>其中，<code>page.type</code> 是在对应页面的 <code>index.md</code> 文件的首部设置的，语句为 <code>type: &quot;对应类型&quot;</code>。</p>
+          </div>
+
+<div class="note warning">
+            <p>需要注意的是，如果你不想在你的每篇文章顶部都显示贡献日历，那么你将不得不在每篇文章的 Markdown 文件首部都添加 <code>type: &quot;post&quot;</code>。</p>
+          </div>
+
+<p>我目前没有想到其他更好的方法，如果你们想到了，可以在下面留言告诉我。</p>
+<p>最后看一下效果</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg"></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -251,21 +435,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《HelloGithub》第01期</title>
-    <url>/p/c1ba95b6.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yg==">Hello GitHub<i class="fa fa-external-link-alt"></i></span></p>
-]]></content>
-      <categories>
-        <category>Github</category>
-      </categories>
-      <tags>
-        <tag>编程</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>动态规划算法</title>
     <url>/p/5dc644dc.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
@@ -318,172 +487,80 @@
       </tags>
   </entry>
   <entry>
-    <title>在Hexo博客中添加Github贡献日历</title>
-    <url>/p/214102e1.html</url>
+    <title>操作系统</title>
+    <url>/p/d04bd5bc.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer">
 
 <span id="more"></span>
 
-<p>&emsp;之前看到过<span class="exturl" data-url="aHR0cHM6Ly96ZmUuc3BhY2Uv">小冰<i class="fa fa-external-link-alt"></i></span>的博客，被他主页的Github贡献日历吸引了。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg"></p>
-<p>&emsp;于是我按照他给的方法进行尝试，最后虽然成功了，但是也出现了一些问题，导致页面不是太美观。如下图，上面一行日期无法显示完整，这令我很头疼我试图上网查找解决方法，可惜没有找到，并且许多用户都反应遇到了同样的问题。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/mygithub.jpg"></p>
-<p>&emsp;既然解决不了，那咱就换一种方法。于是我又在Github上寻找新的方法，终于，我在一位老外大神那里找到了一种方法。</p>
+<h2 id="第一章：概述"><a href="#第一章：概述" class="headerlink" title="第一章：概述"></a>第一章：概述</h2><h3 id="第一章命题重点"><a href="#第一章命题重点" class="headerlink" title="第一章命题重点"></a>第一章命题重点</h3><div class="note default">
+            <ol><li>操作系统的概念、基本特征和功能，<strong>并行性与并发性</strong>。</li><li><strong>操作系统提供的接口</strong>，命令接口和程序接口。</li><li>用户态与核心态，<strong>中断和异常</strong>，系统调用。</li></ol>
+          </div>
+
+<h4 id="并行性与并发性"><a href="#并行性与并发性" class="headerlink" title="并行性与并发性"></a>并行性与并发性</h4><div class="note default">
+            <p><code>并行性</code>和<code>并发性</code>是既相似又有区别的两个概念。并行性是指两个或多个事件在同一时刻发生。并发性是指两个或多个事件在同一时间间隔内发生。</p>
+          </div>
+
+<div class="note default">
+            <p>在多道程序环境下,一段时间内,宏观上有多道程序在同时执行,而在每一时刻,单处理机环境下实际仅能有一道程序执行,故微观上这些程序还是在分时地交替执行。操作系统的并发性是通过分时得以实现的。</p>
+          </div>
+
+<h4 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h4><ul>
+<li><input checked disabled type="checkbox"> 并发</li>
+<li><input checked disabled type="checkbox"> 共享</li>
+<li><input checked disabled type="checkbox"> 虚拟</li>
+<li><input checked disabled type="checkbox"> 异步</li>
+</ul>
 <div class="note info">
-            <p>Github 地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzIwMTZyc2hhaC9naXRodWJjaGFydC1hcGk=">https://github.com/2016rshah/githubchart-api<i class="fa fa-external-link-alt"></i></span></p>
+            <p>其中<strong>并发</strong>和<strong>共享</strong>是两个最基本的特征，二者互为存在条件。</p>
           </div>
 
-<p><strong>&emsp;我觉得这个方法非常的牛，他将你自己的贡献日历变成了图片，只需要使用一行 HTML 语句，就可以在任何地方使用贡献日历。但他也有自己的<code>缺点</code>，就是不能像小冰的插件那样可以<code>显示上传日期和提交次数</code>等。</strong></p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/2016rshah&quot; alt=&quot;2016rshah&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
-
-<p><code>现在开始介绍怎么用这种方法实现！</code></p>
-<h2 id="1-最简单的一种方法"><a href="#1-最简单的一种方法" class="headerlink" title="1 最简单的一种方法"></a>1 最简单的一种方法</h2><p>如果你想简单的使用Github贡献日历，那么你只需要在Markdown文本中，使用</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/你的Github用户名&quot; alt=&quot;???&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
-
-<p>比如说，你想在<code>关于</code>页面使用贡献日历，那么只需要在<code>blog\source\about</code>目录下，打开<code>index.md</code>文件，在需要的位置插入上面的语句即可。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github1.jpg"></p>
-<div class="note warning">
-            <p>注意一定要是自己的Github用户名！</p>
+<h4 id="操作系统的功能"><a href="#操作系统的功能" class="headerlink" title="操作系统的功能"></a>操作系统的功能</h4><div class="note default">
+            <p>负责进程控制、存储管理、设备管理和文件管理、进程通信，以及向上层用户和应用程序提供一些可调用的系统接口（命令接口、程序接口和GUI）。</p>
           </div>
 
-<p>效果如下</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github2.jpg"></p>
-<h2 id="2-自定义贡献日历的配色方案"><a href="#2-自定义贡献日历的配色方案" class="headerlink" title="2 自定义贡献日历的配色方案"></a>2 自定义贡献日历的配色方案</h2><p>&emsp;我们还可以<code>自定义</code>自己的贡献日历配色方案，原作者是不是很贴心！</p>
+<h4 id="操作系统的接口"><a href="#操作系统的接口" class="headerlink" title="操作系统的接口"></a>操作系统的接口</h4><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtjk.jpg"></p>
+<h4 id="用户态与核心态"><a href="#用户态与核心态" class="headerlink" title="用户态与核心态"></a>用户态与核心态</h4><div class="note default">
+            <p>在计算机系统中,通常运行着两类程序:<strong>系统内核程序和应用程序,为了保证内核程序不被应用程序破坏,为计算机设置了两种状态:核心态(也称为管态)和用户态(也称为目态)</strong>,内核程序在核心态运行,而应用程序只能在用户态运行。</p>
+          </div>
+
+<p>系统调用如图所示：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtyh.jpg"></p>
+<center><p>图  用户态向核心态转换</p></center>
+
+<h4 id="中断和异常"><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h4><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtzd.jpg"></p>
 <div class="note info">
-            <p>我们只需要将 <code>src</code> 属性改为 <code>https://ghchart.rshah.org/&lt;HEX-COLOR&gt;/你的Github用户名</code>，其中 <code>&lt;HEX_COLOR&gt;</code> 为任意的十六进制颜色代码。它将根据这个颜色，自动为日历修改配色。</p>
+            <p>中断的本质：将CPU的控制权交给操作系统,因此中断发生后CPU状态需要转为核心态。</p>
           </div>
 
-<p>如下</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/E623D1/tqb-web&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
+<h4 id="中断处理和子程序调用的区别"><a href="#中断处理和子程序调用的区别" class="headerlink" title="中断处理和子程序调用的区别"></a>中断处理和子程序调用的区别</h4><div class="note primary">
+            <p>子程序调用是<strong>程序设计者事先在主程序中安排一条调用指令CALL,子程序的调用时间是固定的</strong>。主程序调用子程序的过程<strong>完全属于软件处理过程,不需要专门的硬件电路</strong>。</p>
+          </div>
 
-<p>效果图</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github3.jpg"></p>
-<h2 id="3-放进首页和归档页（Next主题）"><a href="#3-放进首页和归档页（Next主题）" class="headerlink" title="3 放进首页和归档页（Next主题）"></a>3 放进首页和归档页（Next主题）</h2><ol>
-<li>打开<code>Dblog\themes\next\layout</code>目录下的<code>_layout.swig</code>文件。</li>
-<li>找到<code>       &#123;% include '_partials/header/sub-menu.swig' %&#125;</code>，在下面添加如下代码</li>
-</ol>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;%- if page.type !== &#x27;categories&#x27; and page.type !== &#x27;tags&#x27; and page.type !== &#x27;schedule&#x27; and page.type !== &#x27;works&#x27; and page.type !== &#x27;about&#x27; and page.type !== &#x27;post&#x27;%&#125;</span><br><span class="line">	&lt;div class=&quot;post-block animated fadeIn&quot;&gt;</span><br><span class="line">		&lt;h5 class=&quot;post-title&quot; itemprop=&quot;name headline&quot;&gt;</span><br><span class="line">			&lt;a href=&quot;https://github.com/你的Github用户名&quot; class=&quot;post-title-link&quot; itemprop=&quot;url&quot;&gt;Github Contribution Calendar&lt;/a&gt;</span><br><span class="line">		&lt;/h5&gt;</span><br><span class="line">		&lt;div class=&quot;post-body animated fadeInDown&quot; itemprop=&quot;articleBody&quot;&gt;</span><br><span class="line">			&lt;img style=&quot;width: 100%; margin-top: 30px;&quot; src=&quot;https://ghchart.rshah.org/e77c8e/你的Github用户名&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure></div>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtdd.jpg"></p>
+<p>有中断请求时,先由中断隐指令完成中断前程序的状态保存,主要工作有: </p>
+<div class="note default">
+            <ol><li><p>关中断</p></li><li><p>保存PC, PSW(<strong>由硬件完成</strong>。注：子程序调用是不需要保存程序状态字PSW的。)</p></li><li><p>根中据断向量引出对应的中断服务程序(即<strong>中断处理程序,属于操作系统内核</strong>) ,<strong>通用寄存器的保护由中断务程序完成</strong>。当中断服务程序运行结束后再<strong>开中断</strong>。</p></li></ol>
+          </div>
 
-<p><code>如下图(用的别人的)</code></p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github5.jpg"></p>
-<p>⚠<strong>注意</strong></p>
-<p>🍦<strong>首先，要把<code>黄色框框</code>里面的代码换成自己的信息！！！</strong></p>
-<p>🍦<strong>其次，<code>绿色框框</code>要根据你博客的情况写</strong></p>
+<h4 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h4><h5 id="重点掌握"><a href="#重点掌握" class="headerlink" title="重点掌握"></a>重点掌握</h5><ul>
+<li><input checked disabled type="checkbox"> 什么时候需要进行系统调用?</li>
+<li><input checked disabled type="checkbox"> 系统调用的过程?</li>
+</ul>
+<h5 id="什么时候进行系统调用？"><a href="#什么时候进行系统调用？" class="headerlink" title="什么时候进行系统调用？"></a>什么时候进行系统调用？</h5><p>系统中的各种共享资源都由操作系统统一掌管,因此<strong>在用户程序中,凡是与资源有关的操作”(如存储分配、进行I/0传输以及管理文件等),都必须通过系统调用方式向操作系统提出服务请求,并由操作系统代为完成</strong>。系统调用按功能大致可分为如下几类:</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">设备管理。完成设备的请求或释放,以及设备启动等功能。</span><br><span class="line">文件管理。完成文件的读、写、创建及删除等功能。进程控制。</span><br><span class="line">完成进程的创建、撤销、阻塞及唤醒等功能。进程通信。</span><br><span class="line">完成进程之间的消息传递或信号传递等功能。</span><br><span class="line">内存管理。完成内存的分配、回收以及获取作业占用内存区大小及始址等功能</span><br></pre></td></tr></table></figure></div>
+
 <div class="note info">
-            <p>其中，<code>page.type</code> 是在对应页面的 <code>index.md</code> 文件的首部设置的，语句为 <code>type: &quot;对应类型&quot;</code>。</p>
+            <p>理解：可能会影响到其他进程的操作,必然需要通过系统调用请求操作系统代为完成.</p>
           </div>
 
-<div class="note warning">
-            <p>需要注意的是，如果你不想在你的每篇文章顶部都显示贡献日历，那么你将不得不在每篇文章的 Markdown 文件首部都添加 <code>type: &quot;post&quot;</code>。</p>
-          </div>
-
-<p>我目前没有想到其他更好的方法，如果你们想到了，可以在下面留言告诉我。</p>
-<p>最后看一下效果</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg"></p>
+<h5 id="系统调用的过程"><a href="#系统调用的过程" class="headerlink" title="系统调用的过程"></a>系统调用的过程</h5><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtxtdy.jpg"></p>
 ]]></content>
       <categories>
-        <category>hexo</category>
+        <category>计算机考研</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo+github搭建个人博客</title>
-    <url>/p/68689ca1.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<span id="more"></span>
-
-<h2 id="使用hexo-github的优点"><a href="#使用hexo-github的优点" class="headerlink" title="使用hexo+github的优点"></a>使用hexo+github的优点</h2><ol>
-<li><p>不需要服务器，github提供免费的托管服务。</p>
-</li>
-<li><p>不需要域名，gitHub提供了免费的.io域名。</p>
-</li>
-<li><p>不用自己写xml，hexo提供了很多开源的博客模板。</p>
-</li>
-<li><p>便于维护和更新。</p>
-<div class="note info">
-            <p>下面进入正题</p>
-          </div></li>
-</ol>
-<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><h3 id="1-1-Github账号"><a href="#1-1-Github账号" class="headerlink" title="1.1 Github账号"></a>1.1 Github账号</h3><p>   &ensp;需要有一个<code>Github</code>账号，没有的话到<a href="https://github.com/">Github官网</a>注册一个，方法很简单，不懂的话可以参考<a href="https://blog.csdn.net/yaorongke/article/details/119086305">Github申请账号</a>。</p>
-<h3 id="1-2安装Git"><a href="#1-2安装Git" class="headerlink" title="1.2安装Git"></a>1.2<strong>安装Git</strong></h3><p>   &ensp;在自己电脑上安装好<code>Git</code>，hexo部署到<code>Github</code>时要用，可以在网上找个教程，或者参考<a href="https://blog.csdn.net/yaorongke/article/details/119085413">Git安装(Windows)。</a></p>
-<h3 id="1-3安装NodeJS"><a href="#1-3安装NodeJS" class="headerlink" title="1.3安装NodeJS"></a>1.3<strong>安装NodeJS</strong></h3><p>   &ensp;在自己电脑上安装好<code>NodeJS</code>，Hexo是基于NodeJS编写的，所以需要安装NodeJS和npm工具。网上找篇教程或者参考 <a hred="https://blog.csdn.net/yaorongke/article/details/119084295">NodeJS安装及配置(Windows)</a></p>
-<h2 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2 创建仓库"></a>2 创建仓库</h2><p>   &ensp;在<code>Github</code>上创建一个新的代码仓库用于保存我们的网页。</p>
-<p>   &ensp;点击右上角头像，然后点击<code>Your respositories</code>，进入仓库页面。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk1.jpg"></p>
-<p>   点击<code>New</code>按钮，进入仓库创建页面。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk2.jpg"></p>
-<p>   填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>,例如：<code>tqb-web.github.io</code>可以选择<code>Add a README file</code>，这是添加对你项目的描述的文档。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk3.jpg"></p>
-<p>   在Github Page中找到我们主页的地址为<code>https://tqb-web.github.io/</code>，以后就可以同个这个网址来访问我们的博客，由于博客还没有搭建完成，所以现在这个网址还不能正常使用。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk4.jpg"></p>
-<h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3 安装Hexo"></a>3 安装Hexo</h2><p>我们采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code> 是一个基于<code>NodeJS</code>的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。点击进入 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuLw==">官网<i class="fa fa-external-link-alt"></i></span></p>
-<p>安装<code>Hexo</code></p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
-
-<p>查看版本</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></div>
-
-<p>创建一个项目<code>hexo-blog</code>并初始化</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo init hexo-blog</span><br><span class="line">cd hexo-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
-
-<p>本地启动</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo server</span><br><span class="line">或者直接 hexo cl&amp;&amp;hexo g&amp;&amp;hexo s</span><br></pre></td></tr></table></figure></div>
-
-<p>浏览器访问<code> http://localhost:4000</code>，页面默认主图风格如下</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/blog.jpg"></p>
-<h2 id="4-发布到Github-Pages"><a href="#4-发布到Github-Pages" class="headerlink" title="4 发布到Github Pages"></a>4 发布到Github Pages</h2><h3 id="4-1-生成SSH添加到Github"><a href="#4-1-生成SSH添加到Github" class="headerlink" title="4.1 生成SSH添加到Github"></a>4.1 生成SSH添加到Github</h3><p>回到你的git bash中</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure></div>
-
-<p>这里的yourname输入你的<code>GitHub用户名</code>，youremail输入你<code>GitHub的邮箱</code>。这样GitHub才能知道你是不是对应它的账户。</p>
-<p>可以用以下两条，检查一下你有没有输对</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure></div>
-
-<p>然后创建SSH，一路回车</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure></div>
-
-<p>这个时候它会告诉你已经生成了<code>.ssh</code>的文件夹。在你的电脑中找到这个文件夹。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/ssh.jpg"></p>
-<p><code>ssh</code>，简单来讲，就是一个秘钥，其中，<code>id_rsa</code>是你这台电脑的私人秘钥，不能给别人看的，<code>id_rsa.pub</code>是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
-<p>而后在GitHub的setting中，找到SSH keys的设置选项，点击<code>New SSH key</code>把你的<code>id_rsa.pub</code>里面的信息复制进去。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/sshkey.jpg"></p>
-<p>在<code>Git Bash</code>中检查是否成功</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="4-2-将hexo部署到GitHub"><a href="#4-2-将hexo部署到GitHub" class="headerlink" title="4.2 将hexo部署到GitHub"></a>4.2 将hexo部署到GitHub</h3><p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为YourgithubName就是你的GitHub账户</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repository: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>提示</strong>：若上述方法不成功，可将</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">repository: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br></pre></td></tr></table></figure></div>
-
-<p>改为</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">repository: git@github.com:YourgithubName/YourgithubName.github.io.git</span><br></pre></td></tr></table></figure></div>
-
-<div class="note warning">
-            <p>其实上述地址就是你的博客仓库地址，可自行在自己的GitHub项目中查看！</p>
-          </div>
-
-<p>如下图，到时候直接复制到repository:&nbsp;后即可(注意冒号后面一定要有空格，否则不会成功)</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/lookhs.jpg"></p>
-<p>配置完成后，需要安装<code>deploy-git</code>,也就是部署的名的命令，这样才能够将博客部署到<code>Github</code>。</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></div>
-
-<p>最后</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line">或者hexo d</span><br></pre></td></tr></table></figure></div>
-
-<p>如果看到下图显示的东西，就说明成功啦！</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/deploy.jpg"></p>
-<p>然后我们就可以用之前提到的地址来访问我们的博客啦！！！</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>技术</tag>
+        <tag>考研</tag>
       </tags>
   </entry>
   <entry>
@@ -593,83 +670,6 @@
 <td>移码全为0真值最小，移码全为1真值最大</td>
 </tr>
 </tbody></table>
-]]></content>
-      <categories>
-        <category>计算机考研</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>操作系统</title>
-    <url>/p/d04bd5bc.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer">
-
-<span id="more"></span>
-
-<h2 id="第一章：概述"><a href="#第一章：概述" class="headerlink" title="第一章：概述"></a>第一章：概述</h2><h3 id="第一章命题重点"><a href="#第一章命题重点" class="headerlink" title="第一章命题重点"></a>第一章命题重点</h3><div class="note default">
-            <ol><li>操作系统的概念、基本特征和功能，<strong>并行性与并发性</strong>。</li><li><strong>操作系统提供的接口</strong>，命令接口和程序接口。</li><li>用户态与核心态，<strong>中断和异常</strong>，系统调用。</li></ol>
-          </div>
-
-<h4 id="并行性与并发性"><a href="#并行性与并发性" class="headerlink" title="并行性与并发性"></a>并行性与并发性</h4><div class="note default">
-            <p><code>并行性</code>和<code>并发性</code>是既相似又有区别的两个概念。并行性是指两个或多个事件在同一时刻发生。并发性是指两个或多个事件在同一时间间隔内发生。</p>
-          </div>
-
-<div class="note default">
-            <p>在多道程序环境下,一段时间内,宏观上有多道程序在同时执行,而在每一时刻,单处理机环境下实际仅能有一道程序执行,故微观上这些程序还是在分时地交替执行。操作系统的并发性是通过分时得以实现的。</p>
-          </div>
-
-<h4 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h4><ul>
-<li><input checked disabled type="checkbox"> 并发</li>
-<li><input checked disabled type="checkbox"> 共享</li>
-<li><input checked disabled type="checkbox"> 虚拟</li>
-<li><input checked disabled type="checkbox"> 异步</li>
-</ul>
-<div class="note info">
-            <p>其中<strong>并发</strong>和<strong>共享</strong>是两个最基本的特征，二者互为存在条件。</p>
-          </div>
-
-<h4 id="操作系统的功能"><a href="#操作系统的功能" class="headerlink" title="操作系统的功能"></a>操作系统的功能</h4><div class="note default">
-            <p>负责进程控制、存储管理、设备管理和文件管理、进程通信，以及向上层用户和应用程序提供一些可调用的系统接口（命令接口、程序接口和GUI）。</p>
-          </div>
-
-<h4 id="操作系统的接口"><a href="#操作系统的接口" class="headerlink" title="操作系统的接口"></a>操作系统的接口</h4><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtjk.jpg"></p>
-<h4 id="用户态与核心态"><a href="#用户态与核心态" class="headerlink" title="用户态与核心态"></a>用户态与核心态</h4><div class="note default">
-            <p>在计算机系统中,通常运行着两类程序:<strong>系统内核程序和应用程序,为了保证内核程序不被应用程序破坏,为计算机设置了两种状态:核心态(也称为管态)和用户态(也称为目态)</strong>,内核程序在核心态运行,而应用程序只能在用户态运行。</p>
-          </div>
-
-<p>系统调用如图所示：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtyh.jpg"></p>
-<center><p>图  用户态向核心态转换</p></center>
-
-<h4 id="中断和异常"><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h4><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtzd.jpg"></p>
-<div class="note info">
-            <p>中断的本质：将CPU的控制权交给操作系统,因此中断发生后CPU状态需要转为核心态。</p>
-          </div>
-
-<h4 id="中断处理和子程序调用的区别"><a href="#中断处理和子程序调用的区别" class="headerlink" title="中断处理和子程序调用的区别"></a>中断处理和子程序调用的区别</h4><div class="note primary">
-            <p>子程序调用是<strong>程序设计者事先在主程序中安排一条调用指令CALL,子程序的调用时间是固定的</strong>。主程序调用子程序的过程<strong>完全属于软件处理过程,不需要专门的硬件电路</strong>。</p>
-          </div>
-
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtdd.jpg"></p>
-<p>有中断请求时,先由中断隐指令完成中断前程序的状态保存,主要工作有: </p>
-<div class="note default">
-            <ol><li><p>关中断</p></li><li><p>保存PC, PSW(<strong>由硬件完成</strong>。注：子程序调用是不需要保存程序状态字PSW的。)</p></li><li><p>根中据断向量引出对应的中断服务程序(即<strong>中断处理程序,属于操作系统内核</strong>) ,<strong>通用寄存器的保护由中断务程序完成</strong>。当中断服务程序运行结束后再<strong>开中断</strong>。</p></li></ol>
-          </div>
-
-<h4 id="系统调用"><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h4><h5 id="重点掌握"><a href="#重点掌握" class="headerlink" title="重点掌握"></a>重点掌握</h5><ul>
-<li><input checked disabled type="checkbox"> 什么时候需要进行系统调用?</li>
-<li><input checked disabled type="checkbox"> 系统调用的过程?</li>
-</ul>
-<h5 id="什么时候进行系统调用？"><a href="#什么时候进行系统调用？" class="headerlink" title="什么时候进行系统调用？"></a>什么时候进行系统调用？</h5><p>系统中的各种共享资源都由操作系统统一掌管,因此<strong>在用户程序中,凡是与资源有关的操作”(如存储分配、进行I/0传输以及管理文件等),都必须通过系统调用方式向操作系统提出服务请求,并由操作系统代为完成</strong>。系统调用按功能大致可分为如下几类:</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">设备管理。完成设备的请求或释放,以及设备启动等功能。</span><br><span class="line">文件管理。完成文件的读、写、创建及删除等功能。进程控制。</span><br><span class="line">完成进程的创建、撤销、阻塞及唤醒等功能。进程通信。</span><br><span class="line">完成进程之间的消息传递或信号传递等功能。</span><br><span class="line">内存管理。完成内存的分配、回收以及获取作业占用内存区大小及始址等功能</span><br></pre></td></tr></table></figure></div>
-
-<div class="note info">
-            <p>理解：可能会影响到其他进程的操作,必然需要通过系统调用请求操作系统代为完成.</p>
-          </div>
-
-<h5 id="系统调用的过程"><a href="#系统调用的过程" class="headerlink" title="系统调用的过程"></a>系统调用的过程</h5><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtxtdy.jpg"></p>
 ]]></content>
       <categories>
         <category>计算机考研</category>
