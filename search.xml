@@ -1,118 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo+github搭建个人博客</title>
-    <url>/p/68689ca1.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
-
-<h2 id="使用hexo-github的优点"><a href="#使用hexo-github的优点" class="headerlink" title="使用hexo+github的优点"></a>使用hexo+github的优点</h2><ol>
-<li><p>不需要服务器，github提供免费的托管服务。</p>
-</li>
-<li><p>不需要域名，gitHub提供了免费的.io域名。</p>
-</li>
-<li><p>不用自己写xml，hexo提供了很多开源的博客模板。</p>
-</li>
-<li><p>便于维护和更新。</p>
-<div class="note info">
-            <p>下面进入正题</p>
-          </div></li>
-</ol>
-<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><h3 id="1-1-Github账号"><a href="#1-1-Github账号" class="headerlink" title="1.1 Github账号"></a>1.1 Github账号</h3><p>   &ensp;需要有一个<code>Github</code>账号，没有的话到<a href=https://github.com/>Github官网</a>注册一个，方法很简单，不懂的话可以参考<a href=https://blog.csdn.net/yaorongke/article/details/119086305>Github申请账号</a>。</p>
-<h3 id="1-2安装Git"><a href="#1-2安装Git" class="headerlink" title="1.2安装Git"></a>1.2<strong>安装Git</strong></h3><p>   &ensp;在自己电脑上安装好<code>Git</code>，hexo部署到<code>Github</code>时要用，可以在网上找个教程，或者参考<a href=https://blog.csdn.net/yaorongke/article/details/119085413>Git安装(Windows)。</a></p>
-<h3 id="1-3安装NodeJS"><a href="#1-3安装NodeJS" class="headerlink" title="1.3安装NodeJS"></a>1.3<strong>安装NodeJS</strong></h3><p>   &ensp;在自己电脑上安装好<code>NodeJS</code>，Hexo是基于NodeJS编写的，所以需要安装NodeJS和npm工具。网上找篇教程或者参考 <a hred=https://blog.csdn.net/yaorongke/article/details/119084295>NodeJS安装及配置(Windows)</a></p>
-<h2 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2 创建仓库"></a>2 创建仓库</h2><p>   &ensp;在<code>Github</code>上创建一个新的代码仓库用于保存我们的网页。</p>
-<p>   &ensp;点击右上角头像，然后点击<code>Your respositories</code>，进入仓库页面。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk1.jpg"></p>
-<p>   点击<code>New</code>按钮，进入仓库创建页面。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk2.jpg"></p>
-<p>   填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>,例如：<code>tqb-web.github.io</code>可以选择<code>Add a README file</code>，这是添加对你项目的描述的文档。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk3.jpg"></p>
-<p>   在Github Page中找到我们主页的地址为<code>https://tqb-web.github.io/</code>，以后就可以同个这个网址来访问我们的博客，由于博客还没有搭建完成，所以现在这个网址还不能正常使用。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk4.jpg"></p>
-<h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3 安装Hexo"></a>3 安装Hexo</h2><p>我们采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code> 是一个基于<code>NodeJS</code>的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。点击进入 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuLw==">官网<i class="fa fa-external-link-alt"></i></span></p>
-<p>安装<code>Hexo</code></p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
-
-<p>查看版本</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></div>
-
-<p>创建一个项目<code>hexo-blog</code>并初始化</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo init hexo-blog</span><br><span class="line">cd hexo-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
-
-<p>本地启动</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo server</span><br><span class="line">或者直接 hexo cl&amp;&amp;hexo g&amp;&amp;hexo s</span><br></pre></td></tr></table></figure></div>
-
-<p>浏览器访问<code> http://localhost:4000</code>，页面默认主图风格如下</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/blog.jpg"></p>
-<h2 id="4-发布到Github-Pages"><a href="#4-发布到Github-Pages" class="headerlink" title="4 发布到Github Pages"></a>4 发布到Github Pages</h2><h3 id="4-1-生成SSH添加到Github"><a href="#4-1-生成SSH添加到Github" class="headerlink" title="4.1 生成SSH添加到Github"></a>4.1 生成SSH添加到Github</h3><p>回到你的git bash中</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure></div>
-
-<p>这里的yourname输入你的<code>GitHub用户名</code>，youremail输入你<code>GitHub的邮箱</code>。这样GitHub才能知道你是不是对应它的账户。</p>
-<p>可以用以下两条，检查一下你有没有输对</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure></div>
-
-<p>然后创建SSH，一路回车</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure></div>
-
-<p>这个时候它会告诉你已经生成了<code>.ssh</code>的文件夹。在你的电脑中找到这个文件夹。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/ssh.jpg"></p>
-<p><code>ssh</code>，简单来讲，就是一个秘钥，其中，<code>id_rsa</code>是你这台电脑的私人秘钥，不能给别人看的，<code>id_rsa.pub</code>是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
-<p>而后在GitHub的setting中，找到SSH keys的设置选项，点击<code>New SSH key</code>把你的<code>id_rsa.pub</code>里面的信息复制进去。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/sshkey.jpg"></p>
-<p>在<code>Git Bash</code>中检查是否成功</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="4-2-将hexo部署到GitHub"><a href="#4-2-将hexo部署到GitHub" class="headerlink" title="4.2 将hexo部署到GitHub"></a>4.2 将hexo部署到GitHub</h3><p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为YourgithubName就是你的GitHub账户</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repository: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure></div>
-
-<p><strong>提示</strong>：若上述方法不成功，可将</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">repository: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br></pre></td></tr></table></figure></div>
-
-<p>改为</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">repository: git@github.com:YourgithubName/YourgithubName.github.io.git</span><br></pre></td></tr></table></figure></div>
-
-<div class="note warning">
-            <p>其实上述地址就是你的博客仓库地址，可自行在自己的GitHub项目中查看！</p>
-          </div>
-
-<p>如下图，到时候直接复制到repository:&nbsp;后即可(注意冒号后面一定要有空格，否则不会成功)</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/lookhs.jpg"></p>
-<p>配置完成后，需要安装<code>deploy-git</code>,也就是部署的名的命令，这样才能够将博客部署到<code>Github</code>。</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></div>
-
-<p>最后</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line">或者hexo d</span><br></pre></td></tr></table></figure></div>
-
-<p>如果看到下图显示的东西，就说明成功啦！</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/deploy.jpg"></p>
-<p>然后我们就可以用之前提到的地址来访问我们的博客啦！！！</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《HelloGithub》第01期</title>
-    <url>/p/c1ba95b6.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yg==">Hello GitHub<i class="fa fa-external-link-alt"></i></span></p>
-]]></content>
-      <categories>
-        <category>Github</category>
-      </categories>
-      <tags>
-        <tag>编程</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HelloGithub</title>
     <url>/p/a53d7246.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -142,134 +30,6 @@
       <tags>
         <tag>编程</tag>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在Hexo博客中添加Github贡献日历</title>
-    <url>/p/214102e1.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
-
-<p>&emsp;之前看到过<span class="exturl" data-url="aHR0cHM6Ly96ZmUuc3BhY2Uv">小冰<i class="fa fa-external-link-alt"></i></span>的博客，被他主页的Github贡献日历吸引了。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg"></p>
-<p>&emsp;于是我按照他给的方法进行尝试，最后虽然成功了，但是也出现了一些问题，导致页面不是太美观。如下图，上面一行日期无法显示完整，这令我很头疼我试图上网查找解决方法，可惜没有找到，并且许多用户都反应遇到了同样的问题。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/mygithub.jpg"></p>
-<p>&emsp;既然解决不了，那咱就换一种方法。于是我又在Github上寻找新的方法，终于，我在一位老外大神那里找到了一种方法。</p>
-<div class="note info">
-            <p>Github 地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzIwMTZyc2hhaC9naXRodWJjaGFydC1hcGk=">https://github.com/2016rshah/githubchart-api<i class="fa fa-external-link-alt"></i></span></p>
-          </div>
-
-<p><strong>&emsp;我觉得这个方法非常的牛，他将你自己的贡献日历变成了图片，只需要使用一行 HTML 语句，就可以在任何地方使用贡献日历。但他也有自己的<code>缺点</code>，就是不能像小冰的插件那样可以<code>显示上传日期和提交次数</code>等。</strong></p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/2016rshah&quot; alt=&quot;2016rshah&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
-
-<p><code>现在开始介绍怎么用这种方法实现！</code></p>
-<h2 id="1-最简单的一种方法"><a href="#1-最简单的一种方法" class="headerlink" title="1 最简单的一种方法"></a>1 最简单的一种方法</h2><p>如果你想简单的使用Github贡献日历，那么你只需要在Markdown文本中，使用</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/你的Github用户名&quot; alt=&quot;???&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
-
-<p>比如说，你想在<code>关于</code>页面使用贡献日历，那么只需要在<code>blog\source\about</code>目录下，打开<code>index.md</code>文件，在需要的位置插入上面的语句即可。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github1.jpg"></p>
-<div class="note warning">
-            <p>注意一定要是自己的Github用户名！</p>
-          </div>
-
-<p>效果如下</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github2.jpg"></p>
-<h2 id="2-自定义贡献日历的配色方案"><a href="#2-自定义贡献日历的配色方案" class="headerlink" title="2 自定义贡献日历的配色方案"></a>2 自定义贡献日历的配色方案</h2><p>&emsp;我们还可以<code>自定义</code>自己的贡献日历配色方案，原作者是不是很贴心！</p>
-<div class="note info">
-            <p>我们只需要将 <code>src</code> 属性改为 <code>https://ghchart.rshah.org/&lt;HEX-COLOR&gt;/你的Github用户名</code>，其中 <code>&lt;HEX_COLOR&gt;</code> 为任意的十六进制颜色代码。它将根据这个颜色，自动为日历修改配色。</p>
-          </div>
-
-<p>如下</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/E623D1/tqb-web&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
-
-<p>效果图</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github3.jpg"></p>
-<h2 id="3-放进首页和归档页（Next主题）"><a href="#3-放进首页和归档页（Next主题）" class="headerlink" title="3 放进首页和归档页（Next主题）"></a>3 放进首页和归档页（Next主题）</h2><ol>
-<li>打开<code>Dblog\themes\next\layout</code>目录下的<code>_layout.swig</code>文件。</li>
-<li>找到<code>       &#123;% include '_partials/header/sub-menu.swig' %&#125;</code>，在下面添加如下代码</li>
-</ol>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;%- if page.type !== &#x27;categories&#x27; and page.type !== &#x27;tags&#x27; and page.type !== &#x27;schedule&#x27; and page.type !== &#x27;works&#x27; and page.type !== &#x27;about&#x27; and page.type !== &#x27;post&#x27;%&#125;</span><br><span class="line">	&lt;div class=&quot;post-block animated fadeIn&quot;&gt;</span><br><span class="line">		&lt;h5 class=&quot;post-title&quot; itemprop=&quot;name headline&quot;&gt;</span><br><span class="line">			&lt;a href=&quot;https://github.com/你的Github用户名&quot; class=&quot;post-title-link&quot; itemprop=&quot;url&quot;&gt;Github Contribution Calendar&lt;/a&gt;</span><br><span class="line">		&lt;/h5&gt;</span><br><span class="line">		&lt;div class=&quot;post-body animated fadeInDown&quot; itemprop=&quot;articleBody&quot;&gt;</span><br><span class="line">			&lt;img style=&quot;width: 100%; margin-top: 30px;&quot; src=&quot;https://ghchart.rshah.org/e77c8e/你的Github用户名&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p><code>如下图(用的别人的)</code></p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github5.jpg"></p>
-<p>⚠<strong>注意</strong></p>
-<p>🍦<strong>首先，要把<code>黄色框框</code>里面的代码换成自己的信息！！！</strong></p>
-<p>🍦<strong>其次，<code>绿色框框</code>要根据你博客的情况写</strong></p>
-<div class="note info">
-            <p>其中，<code>page.type</code> 是在对应页面的 <code>index.md</code> 文件的首部设置的，语句为 <code>type: &quot;对应类型&quot;</code>。</p>
-          </div>
-
-<div class="note warning">
-            <p>需要注意的是，如果你不想在你的每篇文章顶部都显示贡献日历，那么你将不得不在每篇文章的 Markdown 文件首部都添加 <code>type: &quot;post&quot;</code>。</p>
-          </div>
-
-<p>我目前没有想到其他更好的方法，如果你们想到了，可以在下面留言告诉我。</p>
-<p>最后看一下效果</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg"></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo note提示块的使用</title>
-    <url>/p/78574fd6.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
-
-<p>在hexo中写博客的时候可以插入一些很酷的<code>提示块</code>，效果如下：</p>
-<div class="note default">
-            <p>default 提示块标签</p>
-          </div>
-
-<div class="note primary">
-            <p>primary 提示块标签</p>
-          </div>
-
-<div class="note success">
-            <p>success 提示块标签</p>
-          </div>
-
-<div class="note info">
-            <p>info 提示块标签</p>
-          </div>
-
-<div class="note warning">
-            <p>warning 提示块标签</p>
-          </div>
-
-<div class="note danger">
-            <p>danger 提示块标签</p>
-          </div>
-
-<p><code>使用方法</code>如下</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary %&#125;</span><br><span class="line">primary 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>在<code>主题配置文件</code>中可以修改风格</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line"># Note tag (bs-callout)</span><br><span class="line">note:</span><br><span class="line">  # Note tag style values:</span><br><span class="line">  #  - simple    bs-callout old alert style. Default.</span><br><span class="line">  #  - modern    bs-callout new (v2-v3) alert style.</span><br><span class="line">  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span><br><span class="line">  #  - disabled  disable all CSS styles import of note tag.</span><br><span class="line">  style: flat</span><br><span class="line">  icons: false</span><br><span class="line">  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span><br><span class="line">  # Offset also applied to label tag variables. This option can work with disabled note tag.</span><br><span class="line">  light_bg_offset: -10</span><br></pre></td></tr></table></figure></div>
-
-<p>此外还可以实现<code>选项卡</code>功能</p>
-<div class="tabs" id="tab"><ul class="nav-tabs"><li class="tab active"><a href="#tab-1">A</a></li><li class="tab"><a href="#tab-2">tab 2</a></li><li class="tab"><a href="#tab-3">C</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-1"><p><strong>选项卡 1</strong></p></div><div class="tab-pane" id="tab-2"><p><strong>选项卡 2</strong></p></div><div class="tab-pane" id="tab-3"><p><strong>选项卡 3</strong> 名字为C</p></div></div></div>
-
-<p>使用方法</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs tab %&#125;</span><br><span class="line">&lt;!--tab A--&gt;</span><br><span class="line">**选项卡 1**</span><br><span class="line">&lt;!--endtab--&gt;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**选项卡 2**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab C --&gt;</span><br><span class="line">**选项卡 3** 名字为C</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure></div>
-
-
-
-<p>原文</p>
-<p><a href=https://jinnsjj.github.io/uncategorized/hexo-next-note/>在hexo-NexT中插入note提示块</a></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -352,6 +112,77 @@
       <tags>
         <tag>hexo</tag>
         <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo note提示块的使用</title>
+    <url>/p/78574fd6.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<span id="more"></span>
+
+<p>在hexo中写博客的时候可以插入一些很酷的<code>提示块</code>，效果如下：</p>
+<div class="note default">
+            <p>default 提示块标签</p>
+          </div>
+
+<div class="note primary">
+            <p>primary 提示块标签</p>
+          </div>
+
+<div class="note success">
+            <p>success 提示块标签</p>
+          </div>
+
+<div class="note info">
+            <p>info 提示块标签</p>
+          </div>
+
+<div class="note warning">
+            <p>warning 提示块标签</p>
+          </div>
+
+<div class="note danger">
+            <p>danger 提示块标签</p>
+          </div>
+
+<p><code>使用方法</code>如下</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary %&#125;</span><br><span class="line">primary 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>在<code>主题配置文件</code>中可以修改风格</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line"># Note tag (bs-callout)</span><br><span class="line">note:</span><br><span class="line">  # Note tag style values:</span><br><span class="line">  #  - simple    bs-callout old alert style. Default.</span><br><span class="line">  #  - modern    bs-callout new (v2-v3) alert style.</span><br><span class="line">  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span><br><span class="line">  #  - disabled  disable all CSS styles import of note tag.</span><br><span class="line">  style: flat</span><br><span class="line">  icons: false</span><br><span class="line">  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span><br><span class="line">  # Offset also applied to label tag variables. This option can work with disabled note tag.</span><br><span class="line">  light_bg_offset: -10</span><br></pre></td></tr></table></figure></div>
+
+<p>此外还可以实现<code>选项卡</code>功能</p>
+<div class="tabs" id="tab"><ul class="nav-tabs"><li class="tab active"><a href="#tab-1">A</a></li><li class="tab"><a href="#tab-2">tab 2</a></li><li class="tab"><a href="#tab-3">C</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-1"><p><strong>选项卡 1</strong></p></div><div class="tab-pane" id="tab-2"><p><strong>选项卡 2</strong></p></div><div class="tab-pane" id="tab-3"><p><strong>选项卡 3</strong> 名字为C</p></div></div></div>
+
+<p>使用方法</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs tab %&#125;</span><br><span class="line">&lt;!--tab A--&gt;</span><br><span class="line">**选项卡 1**</span><br><span class="line">&lt;!--endtab--&gt;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**选项卡 2**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab C --&gt;</span><br><span class="line">**选项卡 3** 名字为C</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+
+<p>原文</p>
+<p><a href=https://jinnsjj.github.io/uncategorized/hexo-next-note/>在hexo-NexT中插入note提示块</a></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《HelloGithub》第01期</title>
+    <url>/p/c1ba95b6.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yg==">Hello GitHub<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+      <categories>
+        <category>Github</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -487,6 +318,175 @@
       </tags>
   </entry>
   <entry>
+    <title>在Hexo博客中添加Github贡献日历</title>
+    <url>/p/214102e1.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<span id="more"></span>
+
+<p>&emsp;之前看到过<span class="exturl" data-url="aHR0cHM6Ly96ZmUuc3BhY2Uv">小冰<i class="fa fa-external-link-alt"></i></span>的博客，被他主页的Github贡献日历吸引了。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg"></p>
+<p>&emsp;于是我按照他给的方法进行尝试，最后虽然成功了，但是也出现了一些问题，导致页面不是太美观。如下图，上面一行日期无法显示完整，这令我很头疼我试图上网查找解决方法，可惜没有找到，并且许多用户都反应遇到了同样的问题。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/mygithub.jpg"></p>
+<p>&emsp;既然解决不了，那咱就换一种方法。于是我又在Github上寻找新的方法，终于，我在一位老外大神那里找到了一种方法。</p>
+<div class="note info">
+            <p>Github 地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzIwMTZyc2hhaC9naXRodWJjaGFydC1hcGk=">https://github.com/2016rshah/githubchart-api<i class="fa fa-external-link-alt"></i></span></p>
+          </div>
+
+<p><strong>&emsp;我觉得这个方法非常的牛，他将你自己的贡献日历变成了图片，只需要使用一行 HTML 语句，就可以在任何地方使用贡献日历。但他也有自己的<code>缺点</code>，就是不能像小冰的插件那样可以<code>显示上传日期和提交次数</code>等。</strong></p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/2016rshah&quot; alt=&quot;2016rshah&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>现在开始介绍怎么用这种方法实现！</code></p>
+<h2 id="1-最简单的一种方法"><a href="#1-最简单的一种方法" class="headerlink" title="1 最简单的一种方法"></a>1 最简单的一种方法</h2><p>如果你想简单的使用Github贡献日历，那么你只需要在Markdown文本中，使用</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/你的Github用户名&quot; alt=&quot;???&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>比如说，你想在<code>关于</code>页面使用贡献日历，那么只需要在<code>blog\source\about</code>目录下，打开<code>index.md</code>文件，在需要的位置插入上面的语句即可。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github1.jpg"></p>
+<div class="note warning">
+            <p>注意一定要是自己的Github用户名！</p>
+          </div>
+
+<p>效果如下</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github2.jpg"></p>
+<h2 id="2-自定义贡献日历的配色方案"><a href="#2-自定义贡献日历的配色方案" class="headerlink" title="2 自定义贡献日历的配色方案"></a>2 自定义贡献日历的配色方案</h2><p>&emsp;我们还可以<code>自定义</code>自己的贡献日历配色方案，原作者是不是很贴心！</p>
+<div class="note info">
+            <p>我们只需要将 <code>src</code> 属性改为 <code>https://ghchart.rshah.org/&lt;HEX-COLOR&gt;/你的Github用户名</code>，其中 <code>&lt;HEX_COLOR&gt;</code> 为任意的十六进制颜色代码。它将根据这个颜色，自动为日历修改配色。</p>
+          </div>
+
+<p>如下</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/E623D1/tqb-web&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>效果图</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github3.jpg"></p>
+<h2 id="3-放进首页和归档页（Next主题）"><a href="#3-放进首页和归档页（Next主题）" class="headerlink" title="3 放进首页和归档页（Next主题）"></a>3 放进首页和归档页（Next主题）</h2><ol>
+<li>打开<code>Dblog\themes\next\layout</code>目录下的<code>_layout.swig</code>文件。</li>
+<li>找到<code>       &#123;% include '_partials/header/sub-menu.swig' %&#125;</code>，在下面添加如下代码</li>
+</ol>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;%- if page.type !== &#x27;categories&#x27; and page.type !== &#x27;tags&#x27; and page.type !== &#x27;schedule&#x27; and page.type !== &#x27;works&#x27; and page.type !== &#x27;about&#x27; and page.type !== &#x27;post&#x27;%&#125;</span><br><span class="line">	&lt;div class=&quot;post-block animated fadeIn&quot;&gt;</span><br><span class="line">		&lt;h5 class=&quot;post-title&quot; itemprop=&quot;name headline&quot;&gt;</span><br><span class="line">			&lt;a href=&quot;https://github.com/你的Github用户名&quot; class=&quot;post-title-link&quot; itemprop=&quot;url&quot;&gt;Github Contribution Calendar&lt;/a&gt;</span><br><span class="line">		&lt;/h5&gt;</span><br><span class="line">		&lt;div class=&quot;post-body animated fadeInDown&quot; itemprop=&quot;articleBody&quot;&gt;</span><br><span class="line">			&lt;img style=&quot;width: 100%; margin-top: 30px;&quot; src=&quot;https://ghchart.rshah.org/e77c8e/你的Github用户名&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>如下图(用的别人的)</code></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github5.jpg"></p>
+<p>⚠<strong>注意</strong></p>
+<p>🍦<strong>首先，要把<code>黄色框框</code>里面的代码换成自己的信息！！！</strong></p>
+<p>🍦<strong>其次，<code>绿色框框</code>要根据你博客的情况写</strong></p>
+<div class="note info">
+            <p>其中，<code>page.type</code> 是在对应页面的 <code>index.md</code> 文件的首部设置的，语句为 <code>type: &quot;对应类型&quot;</code>。</p>
+          </div>
+
+<div class="note warning">
+            <p>需要注意的是，如果你不想在你的每篇文章顶部都显示贡献日历，那么你将不得不在每篇文章的 Markdown 文件首部都添加 <code>type: &quot;post&quot;</code>。</p>
+          </div>
+
+<p>我目前没有想到其他更好的方法，如果你们想到了，可以在下面留言告诉我。</p>
+<p>最后看一下效果</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg"></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo+github搭建个人博客</title>
+    <url>/p/68689ca1.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<span id="more"></span>
+
+<h2 id="使用hexo-github的优点"><a href="#使用hexo-github的优点" class="headerlink" title="使用hexo+github的优点"></a>使用hexo+github的优点</h2><ol>
+<li><p>不需要服务器，github提供免费的托管服务。</p>
+</li>
+<li><p>不需要域名，gitHub提供了免费的.io域名。</p>
+</li>
+<li><p>不用自己写xml，hexo提供了很多开源的博客模板。</p>
+</li>
+<li><p>便于维护和更新。</p>
+<div class="note info">
+            <p>下面进入正题</p>
+          </div></li>
+</ol>
+<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><h3 id="1-1-Github账号"><a href="#1-1-Github账号" class="headerlink" title="1.1 Github账号"></a>1.1 Github账号</h3><p>   &ensp;需要有一个<code>Github</code>账号，没有的话到<a href=https://github.com/>Github官网</a>注册一个，方法很简单，不懂的话可以参考<a href=https://blog.csdn.net/yaorongke/article/details/119086305>Github申请账号</a>。</p>
+<h3 id="1-2安装Git"><a href="#1-2安装Git" class="headerlink" title="1.2安装Git"></a>1.2<strong>安装Git</strong></h3><p>   &ensp;在自己电脑上安装好<code>Git</code>，hexo部署到<code>Github</code>时要用，可以在网上找个教程，或者参考<a href=https://blog.csdn.net/yaorongke/article/details/119085413>Git安装(Windows)。</a></p>
+<h3 id="1-3安装NodeJS"><a href="#1-3安装NodeJS" class="headerlink" title="1.3安装NodeJS"></a>1.3<strong>安装NodeJS</strong></h3><p>   &ensp;在自己电脑上安装好<code>NodeJS</code>，Hexo是基于NodeJS编写的，所以需要安装NodeJS和npm工具。网上找篇教程或者参考 <a hred=https://blog.csdn.net/yaorongke/article/details/119084295>NodeJS安装及配置(Windows)</a></p>
+<h2 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2 创建仓库"></a>2 创建仓库</h2><p>   &ensp;在<code>Github</code>上创建一个新的代码仓库用于保存我们的网页。</p>
+<p>   &ensp;点击右上角头像，然后点击<code>Your respositories</code>，进入仓库页面。</p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk1.jpg"></p>
+<p>   点击<code>New</code>按钮，进入仓库创建页面。</p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk2.jpg"></p>
+<p>   填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>,例如：<code>tqb-web.github.io</code>可以选择<code>Add a README file</code>，这是添加对你项目的描述的文档。</p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk3.jpg"></p>
+<p>   在Github Page中找到我们主页的地址为<code>https://tqb-web.github.io/</code>，以后就可以同个这个网址来访问我们的博客，由于博客还没有搭建完成，所以现在这个网址还不能正常使用。</p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk4.jpg"></p>
+<h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3 安装Hexo"></a>3 安装Hexo</h2><p>我们采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code> 是一个基于<code>NodeJS</code>的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。点击进入 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuLw==">官网<i class="fa fa-external-link-alt"></i></span></p>
+<p>安装<code>Hexo</code></p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></div>
+
+<p>查看版本</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></div>
+
+<p>创建一个项目<code>hexo-blog</code>并初始化</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo init hexo-blog</span><br><span class="line">cd hexo-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></div>
+
+<p>本地启动</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo server</span><br><span class="line">或者直接 hexo cl&amp;&amp;hexo g&amp;&amp;hexo s</span><br></pre></td></tr></table></figure></div>
+
+<p>浏览器访问<code> http://localhost:4000</code>，页面默认主图风格如下</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/blog.jpg"></p>
+<h2 id="4-发布到Github-Pages"><a href="#4-发布到Github-Pages" class="headerlink" title="4 发布到Github Pages"></a>4 发布到Github Pages</h2><h3 id="4-1-生成SSH添加到Github"><a href="#4-1-生成SSH添加到Github" class="headerlink" title="4.1 生成SSH添加到Github"></a>4.1 生成SSH添加到Github</h3><p>回到你的git bash中</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure></div>
+
+<p>这里的yourname输入你的<code>GitHub用户名</code>，youremail输入你<code>GitHub的邮箱</code>。这样GitHub才能知道你是不是对应它的账户。</p>
+<p>可以用以下两条，检查一下你有没有输对</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure></div>
+
+<p>然后创建SSH，一路回车</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure></div>
+
+<p>这个时候它会告诉你已经生成了<code>.ssh</code>的文件夹。在你的电脑中找到这个文件夹。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/ssh.jpg"></p>
+<p><code>ssh</code>，简单来讲，就是一个秘钥，其中，<code>id_rsa</code>是你这台电脑的私人秘钥，不能给别人看的，<code>id_rsa.pub</code>是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
+<p>而后在GitHub的setting中，找到SSH keys的设置选项，点击<code>New SSH key</code>把你的<code>id_rsa.pub</code>里面的信息复制进去。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/sshkey.jpg"></p>
+<p>在<code>Git Bash</code>中检查是否成功</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="4-2-将hexo部署到GitHub"><a href="#4-2-将hexo部署到GitHub" class="headerlink" title="4.2 将hexo部署到GitHub"></a>4.2 将hexo部署到GitHub</h3><p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 <code>_config.yml</code>，翻到最后，修改为YourgithubName就是你的GitHub账户</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repository: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>提示</strong>：若上述方法不成功，可将</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">repository: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br></pre></td></tr></table></figure></div>
+
+<p>改为</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">repository: git@github.com:YourgithubName/YourgithubName.github.io.git</span><br></pre></td></tr></table></figure></div>
+
+<div class="note warning">
+            <p>其实上述地址就是你的博客仓库地址，可自行在自己的GitHub项目中查看！</p>
+          </div>
+
+<p>如下图，到时候直接复制到repository:&nbsp;后即可(注意冒号后面一定要有空格，否则不会成功)</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/lookhs.jpg"></p>
+<p>配置完成后，需要安装<code>deploy-git</code>,也就是部署的名的命令，这样才能够将博客部署到<code>Github</code>。</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></div>
+
+<p>最后</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line">或者hexo d</span><br></pre></td></tr></table></figure></div>
+
+<p>如果看到下图显示的东西，就说明成功啦！</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/deploy.jpg"></p>
+<p>然后我们就可以用之前提到的地址来访问我们的博客啦！！！</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>操作系统</title>
     <url>/p/d04bd5bc.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -564,59 +564,6 @@
       </tags>
   </entry>
   <entry>
-    <title>贪心算法</title>
-    <url>/p/a4ce31d2.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p>五大常用算法——贪心算法详解以及经典例子</p>
-<span id="more"></span>
-
-<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg"></p>
-<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><div class="note default">
-            <p>​    <strong>贪心算法</strong>（Greedy Alogorithm）又叫登山算法，它的根本思想是逐步到达山顶，即逐步获得最优解，是解决最优化问题时的一种简单但是适用范围有限的策略。<span style="color:black;background: yellow">贪心算法没有固定的框架</span>，算法设计的关键是贪婪策略的选择。贪心策略要无后向性，也就是说某状态以后的过程不会影响以前的状态，至于当前状态有关。<br>​    贪心算法是对某些求解最优解问题的最简单、最迅速的技术。某些问题的最优解可以通过一系列的最优的选择即贪心选择来达到。但局部最优并不总能获得整体最优解，但通常能获得近似最优解。<br>在每一部贪心选择中，只考虑当前对自己最有利的选择，而不去考虑在后面看来这种选择是否合理。</p>
-          </div>
-
-<h2 id="解题步骤"><a href="#解题步骤" class="headerlink" title="解题步骤"></a>解题步骤</h2><div class="note default">
-            <ol><li>从问题的某个初始解出发</li><li>采用循环语句，党可以向求解目标前进一步时，就根据局部最优策略，得到一个不分解，缩小问题的范围或规模。</li><li>将所有的部分解综合起来，得到问题的最终解。</li></ol>
-          </div>
-
-<h2 id="贪心策略的选择"><a href="#贪心策略的选择" class="headerlink" title="贪心策略的选择"></a>贪心策略的选择</h2><div class="note default">
-            <ul><li>贪心算法的原理是通过局部最优来达到全局最优，采用的是逐步构造最优解的方法。在每个阶段，都做出一个看上去最优的，决策一旦做出，就不再更改。</li><li>要选出最优解可不是一件容易的事，要证明局部最优为全局最优，要进行数学证明，否则就不能说明为全局最优。</li><li>很多问题表面上看来用贪心算法可以找到最优解，实际上却把最优解给漏掉了。这就像现实生活中的“贪小便宜吃大亏”。所以我们在解决问题的时候，一定要谨慎使用贪心算法，一定要注意这个问题适不适合采用贪心算法。</li></ul>
-          </div>
-
-<h2 id="贪心策略应考虑的问题"><a href="#贪心策略应考虑的问题" class="headerlink" title="贪心策略应考虑的问题"></a>贪心策略应考虑的问题</h2><div class="note default">
-            <ul><li><p><input checked="" disabled="" type="checkbox">  候选集合S</p><p>为了构造问题的解决方案，有一个候选集合C作为问题的可能解，问题的最终解均取自于候选集合C。</p></li><li><p><input checked="" disabled="" type="checkbox">  解集合S</p><p>随着贪心选择的进行，解集合不断扩展，直到构成一个满足问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  解决函数solution</p><p>检查解集合是否构成问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  选择函数select</p><p>即贪心策略，这是贪心算法的关键，它指出哪个候选对象有希望构成成问题的解。</p></li><li><p><input checked="" disabled="" type="checkbox">  可行函数feasible</p><p>检查解集合中加入一个候选对象是否可行，即解集合扩展后是否满足约束条件。</p></li></ul>
-          </div>
-
-<h2 id="例题-会场安排"><a href="#例题-会场安排" class="headerlink" title="例题 会场安排"></a>例题 会场安排</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><div class="note default">
-            <p>假设有一个会场，现要求此会场中安排尽可能多的活动，求会场中所能安排的活动的最多数，并给出安排方案。</p>
-          </div>
-
-
-<h3 id="输入要求"><a href="#输入要求" class="headerlink" title="输入要求"></a>输入要求</h3><div class="note default">
-            <p>第一行n为所有活动数，随后n行，每行两个数，分别为活动的开始和结束时间。</p>
-          </div>
-
-<h3 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h3><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">11</span><br><span class="line">1 4</span><br><span class="line">3 5</span><br><span class="line">0 6</span><br><span class="line">5 7</span><br><span class="line">3 8</span><br><span class="line">5 9</span><br><span class="line">6 10</span><br><span class="line">8 11</span><br><span class="line">8 12</span><br><span class="line">2 13</span><br><span class="line">12 14</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="算法思想"><a href="#算法思想" class="headerlink" title="算法思想"></a>算法思想</h3><div class="note default">
-            <p>将活动的结束时间从小到大进行排序，先选择结束时间最早的活动，然后看下一个活动的开始时间是否晚于上一个被选中活动的结束时间，若是，则选中该活动；否则不选中。直到所有的活动都遍历了一遍。</p>
-          </div>
-
-
-<h3 id="贪心选择性的证明"><a href="#贪心选择性的证明" class="headerlink" title="贪心选择性的证明"></a>贪心选择性的证明</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyzm.jpg"></p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> n, *begin, *finsh;			<span class="comment">//分别记录开始时间 结束时间</span></span><br><span class="line">    <span class="type">int</span> *a;			<span class="comment">//记录是否被选中</span></span><br><span class="line">    	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    begin = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    finsh = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    a = (<span class="type">int</span>*) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span>) *n);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;begin[i], &amp;finsh[i]);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    greedy(n, begin, finsh, a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span></span><br><span class="line">&#123;</span><br><span class="line">    finshpx(n, begin, finsh);			<span class="comment">//按结束时间进行排序</span></span><br><span class="line">    a[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> count = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> endtime = finsh[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(begin[i] &gt;= endtime) </span><br><span class="line">        &#123;</span><br><span class="line">            endtime = finsh[i];</span><br><span class="line">            count++;</span><br><span class="line">            a[i] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        a[i] = <span class="number">0</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;最多容纳个%d活动\n&quot;</span>, count);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;分别为：&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    	<span class="keyword">if</span>(a[i] == <span class="number">1</span>) </span><br><span class="line">    		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, i + <span class="number">1</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>			<span class="comment">//冒泡排序</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; n - i; j++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(finsh[j] &gt; finsh[j + <span class="number">1</span>]) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> t = finsh[j];</span><br><span class="line">            finsh[j] = finsh[j + <span class="number">1</span>];</span><br><span class="line">            finsh[j + <span class="number">1</span>] = t;</span><br><span class="line">            t = begin[j];</span><br><span class="line">            begin[j] = begin[j + <span class="number">1</span>];</span><br><span class="line">            begin[j + <span class="number">1</span>] = t;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-
-<h3 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyresult.jpg"></p>
-]]></content>
-      <categories>
-        <category>算法设计</category>
-      </categories>
-      <tags>
-        <tag>计算机算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>计算机组成原理</title>
     <url>/p/8d4b7ae1.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -676,6 +623,59 @@
       </categories>
       <tags>
         <tag>考研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>贪心算法</title>
+    <url>/p/a4ce31d2.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p>五大常用算法——贪心算法详解以及经典例子</p>
+<span id="more"></span>
+
+<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg"></p>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><div class="note default">
+            <p>​    <strong>贪心算法</strong>（Greedy Alogorithm）又叫登山算法，它的根本思想是逐步到达山顶，即逐步获得最优解，是解决最优化问题时的一种简单但是适用范围有限的策略。<span style="color:black;background: yellow">贪心算法没有固定的框架</span>，算法设计的关键是贪婪策略的选择。贪心策略要无后向性，也就是说某状态以后的过程不会影响以前的状态，至于当前状态有关。<br>​    贪心算法是对某些求解最优解问题的最简单、最迅速的技术。某些问题的最优解可以通过一系列的最优的选择即贪心选择来达到。但局部最优并不总能获得整体最优解，但通常能获得近似最优解。<br>在每一部贪心选择中，只考虑当前对自己最有利的选择，而不去考虑在后面看来这种选择是否合理。</p>
+          </div>
+
+<h2 id="解题步骤"><a href="#解题步骤" class="headerlink" title="解题步骤"></a>解题步骤</h2><div class="note default">
+            <ol><li>从问题的某个初始解出发</li><li>采用循环语句，党可以向求解目标前进一步时，就根据局部最优策略，得到一个不分解，缩小问题的范围或规模。</li><li>将所有的部分解综合起来，得到问题的最终解。</li></ol>
+          </div>
+
+<h2 id="贪心策略的选择"><a href="#贪心策略的选择" class="headerlink" title="贪心策略的选择"></a>贪心策略的选择</h2><div class="note default">
+            <ul><li>贪心算法的原理是通过局部最优来达到全局最优，采用的是逐步构造最优解的方法。在每个阶段，都做出一个看上去最优的，决策一旦做出，就不再更改。</li><li>要选出最优解可不是一件容易的事，要证明局部最优为全局最优，要进行数学证明，否则就不能说明为全局最优。</li><li>很多问题表面上看来用贪心算法可以找到最优解，实际上却把最优解给漏掉了。这就像现实生活中的“贪小便宜吃大亏”。所以我们在解决问题的时候，一定要谨慎使用贪心算法，一定要注意这个问题适不适合采用贪心算法。</li></ul>
+          </div>
+
+<h2 id="贪心策略应考虑的问题"><a href="#贪心策略应考虑的问题" class="headerlink" title="贪心策略应考虑的问题"></a>贪心策略应考虑的问题</h2><div class="note default">
+            <ul><li><p><input checked="" disabled="" type="checkbox">  候选集合S</p><p>为了构造问题的解决方案，有一个候选集合C作为问题的可能解，问题的最终解均取自于候选集合C。</p></li><li><p><input checked="" disabled="" type="checkbox">  解集合S</p><p>随着贪心选择的进行，解集合不断扩展，直到构成一个满足问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  解决函数solution</p><p>检查解集合是否构成问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  选择函数select</p><p>即贪心策略，这是贪心算法的关键，它指出哪个候选对象有希望构成成问题的解。</p></li><li><p><input checked="" disabled="" type="checkbox">  可行函数feasible</p><p>检查解集合中加入一个候选对象是否可行，即解集合扩展后是否满足约束条件。</p></li></ul>
+          </div>
+
+<h2 id="例题-会场安排"><a href="#例题-会场安排" class="headerlink" title="例题 会场安排"></a>例题 会场安排</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><div class="note default">
+            <p>假设有一个会场，现要求此会场中安排尽可能多的活动，求会场中所能安排的活动的最多数，并给出安排方案。</p>
+          </div>
+
+
+<h3 id="输入要求"><a href="#输入要求" class="headerlink" title="输入要求"></a>输入要求</h3><div class="note default">
+            <p>第一行n为所有活动数，随后n行，每行两个数，分别为活动的开始和结束时间。</p>
+          </div>
+
+<h3 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h3><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">11</span><br><span class="line">1 4</span><br><span class="line">3 5</span><br><span class="line">0 6</span><br><span class="line">5 7</span><br><span class="line">3 8</span><br><span class="line">5 9</span><br><span class="line">6 10</span><br><span class="line">8 11</span><br><span class="line">8 12</span><br><span class="line">2 13</span><br><span class="line">12 14</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="算法思想"><a href="#算法思想" class="headerlink" title="算法思想"></a>算法思想</h3><div class="note default">
+            <p>将活动的结束时间从小到大进行排序，先选择结束时间最早的活动，然后看下一个活动的开始时间是否晚于上一个被选中活动的结束时间，若是，则选中该活动；否则不选中。直到所有的活动都遍历了一遍。</p>
+          </div>
+
+
+<h3 id="贪心选择性的证明"><a href="#贪心选择性的证明" class="headerlink" title="贪心选择性的证明"></a>贪心选择性的证明</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyzm.jpg"></p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> n, *begin, *finsh;			<span class="comment">//分别记录开始时间 结束时间</span></span><br><span class="line">    <span class="type">int</span> *a;			<span class="comment">//记录是否被选中</span></span><br><span class="line">    	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    begin = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    finsh = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    a = (<span class="type">int</span>*) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span>) *n);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;begin[i], &amp;finsh[i]);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    greedy(n, begin, finsh, a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span></span><br><span class="line">&#123;</span><br><span class="line">    finshpx(n, begin, finsh);			<span class="comment">//按结束时间进行排序</span></span><br><span class="line">    a[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> count = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> endtime = finsh[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(begin[i] &gt;= endtime) </span><br><span class="line">        &#123;</span><br><span class="line">            endtime = finsh[i];</span><br><span class="line">            count++;</span><br><span class="line">            a[i] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        a[i] = <span class="number">0</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;最多容纳个%d活动\n&quot;</span>, count);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;分别为：&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    	<span class="keyword">if</span>(a[i] == <span class="number">1</span>) </span><br><span class="line">    		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, i + <span class="number">1</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>			<span class="comment">//冒泡排序</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; n - i; j++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(finsh[j] &gt; finsh[j + <span class="number">1</span>]) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> t = finsh[j];</span><br><span class="line">            finsh[j] = finsh[j + <span class="number">1</span>];</span><br><span class="line">            finsh[j + <span class="number">1</span>] = t;</span><br><span class="line">            t = begin[j];</span><br><span class="line">            begin[j] = begin[j + <span class="number">1</span>];</span><br><span class="line">            begin[j + <span class="number">1</span>] = t;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyresult.jpg"></p>
+]]></content>
+      <categories>
+        <category>算法设计</category>
+      </categories>
+      <tags>
+        <tag>计算机算法</tag>
       </tags>
   </entry>
 </search>
