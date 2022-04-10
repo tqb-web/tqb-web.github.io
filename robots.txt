@@ -16,5 +16,5 @@ Disallow: /vendors/
 Disallow: /lib/
 Disallow: /fancybox/
 
-Sitemap: https://yl520.cf/sitemap.xml
-Sitemap: https://yl520.cf/baidusitemap.xml
+Sitemap: https://tianqb.top/sitemap.xml
+Sitemap: https://tianqb.top/baidusitemap.xml
