@@ -33,6 +33,62 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo note提示块的使用</title>
+    <url>/p/78574fd6.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<span id="more"></span>
+
+<p>在hexo中写博客的时候可以插入一些很酷的<code>提示块</code>，效果如下：</p>
+<div class="note default">
+            <p>default 提示块标签</p>
+          </div>
+
+<div class="note primary">
+            <p>primary 提示块标签</p>
+          </div>
+
+<div class="note success">
+            <p>success 提示块标签</p>
+          </div>
+
+<div class="note info">
+            <p>info 提示块标签</p>
+          </div>
+
+<div class="note warning">
+            <p>warning 提示块标签</p>
+          </div>
+
+<div class="note danger">
+            <p>danger 提示块标签</p>
+          </div>
+
+<p><code>使用方法</code>如下</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary %&#125;</span><br><span class="line">primary 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>在<code>主题配置文件</code>中可以修改风格</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line"># Note tag (bs-callout)</span><br><span class="line">note:</span><br><span class="line">  # Note tag style values:</span><br><span class="line">  #  - simple    bs-callout old alert style. Default.</span><br><span class="line">  #  - modern    bs-callout new (v2-v3) alert style.</span><br><span class="line">  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span><br><span class="line">  #  - disabled  disable all CSS styles import of note tag.</span><br><span class="line">  style: flat</span><br><span class="line">  icons: false</span><br><span class="line">  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span><br><span class="line">  # Offset also applied to label tag variables. This option can work with disabled note tag.</span><br><span class="line">  light_bg_offset: -10</span><br></pre></td></tr></table></figure></div>
+
+<p>此外还可以实现<code>选项卡</code>功能</p>
+<div class="tabs" id="tab"><ul class="nav-tabs"><li class="tab active"><a href="#tab-1">A</a></li><li class="tab"><a href="#tab-2">tab 2</a></li><li class="tab"><a href="#tab-3">C</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-1"><p><strong>选项卡 1</strong></p></div><div class="tab-pane" id="tab-2"><p><strong>选项卡 2</strong></p></div><div class="tab-pane" id="tab-3"><p><strong>选项卡 3</strong> 名字为C</p></div></div></div>
+
+<p>使用方法</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs tab %&#125;</span><br><span class="line">&lt;!--tab A--&gt;</span><br><span class="line">**选项卡 1**</span><br><span class="line">&lt;!--endtab--&gt;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**选项卡 2**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab C --&gt;</span><br><span class="line">**选项卡 3** 名字为C</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure></div>
+
+
+
+<p>原文</p>
+<p><a href=https://jinnsjj.github.io/uncategorized/hexo-next-note/>在hexo-NexT中插入note提示块</a></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo Next主题添加Valine评论系统</title>
     <url>/p/2e257c1.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -112,62 +168,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo note提示块的使用</title>
-    <url>/p/78574fd6.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
-
-<p>在hexo中写博客的时候可以插入一些很酷的<code>提示块</code>，效果如下：</p>
-<div class="note default">
-            <p>default 提示块标签</p>
-          </div>
-
-<div class="note primary">
-            <p>primary 提示块标签</p>
-          </div>
-
-<div class="note success">
-            <p>success 提示块标签</p>
-          </div>
-
-<div class="note info">
-            <p>info 提示块标签</p>
-          </div>
-
-<div class="note warning">
-            <p>warning 提示块标签</p>
-          </div>
-
-<div class="note danger">
-            <p>danger 提示块标签</p>
-          </div>
-
-<p><code>使用方法</code>如下</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary %&#125;</span><br><span class="line">primary 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure></div>
-
-<p>在<code>主题配置文件</code>中可以修改风格</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line"># Note tag (bs-callout)</span><br><span class="line">note:</span><br><span class="line">  # Note tag style values:</span><br><span class="line">  #  - simple    bs-callout old alert style. Default.</span><br><span class="line">  #  - modern    bs-callout new (v2-v3) alert style.</span><br><span class="line">  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span><br><span class="line">  #  - disabled  disable all CSS styles import of note tag.</span><br><span class="line">  style: flat</span><br><span class="line">  icons: false</span><br><span class="line">  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span><br><span class="line">  # Offset also applied to label tag variables. This option can work with disabled note tag.</span><br><span class="line">  light_bg_offset: -10</span><br></pre></td></tr></table></figure></div>
-
-<p>此外还可以实现<code>选项卡</code>功能</p>
-<div class="tabs" id="tab"><ul class="nav-tabs"><li class="tab active"><a href="#tab-1">A</a></li><li class="tab"><a href="#tab-2">tab 2</a></li><li class="tab"><a href="#tab-3">C</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-1"><p><strong>选项卡 1</strong></p></div><div class="tab-pane" id="tab-2"><p><strong>选项卡 2</strong></p></div><div class="tab-pane" id="tab-3"><p><strong>选项卡 3</strong> 名字为C</p></div></div></div>
-
-<p>使用方法</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs tab %&#125;</span><br><span class="line">&lt;!--tab A--&gt;</span><br><span class="line">**选项卡 1**</span><br><span class="line">&lt;!--endtab--&gt;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**选项卡 2**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab C --&gt;</span><br><span class="line">**选项卡 3** 名字为C</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure></div>
-
-
-
-<p>原文</p>
-<p><a href=https://jinnsjj.github.io/uncategorized/hexo-next-note/>在hexo-NexT中插入note提示块</a></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -266,6 +266,58 @@
       </tags>
   </entry>
   <entry>
+    <title>动态规划算法</title>
+    <url>/p/5dc644dc.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p>动态规划是算法中非常重要的一个算法，希望看了我的博客可以对你有所帮助。</p>
+<span id="more"></span>
+
+<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/DynamicPlan.jpg"></p>
+<h2 id="例题-最长公共子序列"><a href="#例题-最长公共子序列" class="headerlink" title="例题 最长公共子序列"></a>例题 最长公共子序列</h2><ol>
+<li><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3></li>
+</ol>
+<div class="note default">
+            <p>&ensp;&ensp;最长公共子序列问题，给定序列X=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>m</sub>)，Y=(y<sub>1</sub>,y<sub>2</sub>,…,y<sub>j</sub>)，求X和Y的最长公共子序列（设X和Z是两个序列，其中X=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>m</sub>)，Z=(z<sub>1</sub>,z<sub>2</sub>,…,z<sub>k</sub>)，如果存在X的元素构成的按下标严格排序递增序列(x<sub>i1</sub>,x<sub>i2</sub>,…,x<sub>ik</sub>)，使得x<sub>ij</sub>=z<sub>j</sub>，j=1,2,…,k，那么Z是X的子序列，Z含有的元素个数，称为子序列的长度）</p>
+          </div>
+
+
+<p><em>定义：设X和Y是两个序列，如果Z既是X的子序列，也是Y的子序列，则称Z是X和Y的公共子序列。</em></p>
+<ol start="2">
+<li><h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3></li>
+</ol>
+<div class="note default">
+            <p>设X<sub>i</sub>=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>i</sub>)<br>&ensp;Y<sub>j</sub>=(y<sub>1</sub>,y<sub>2</sub>,…,y<sub>j</sub>)<br>&ensp;Z<sub>k</sub>=(z<sub>1</sub>,z<sub>2</sub>,…,z<sub>k</sub>)<br>如果Z<sub>k</sub>是X<sub>i</sub>和Y<sub>j</sub>的最长公共子序列<br>那么如果x<sub>i</sub> = y<sub>j</sub>，那么z<sub>k</sub> = x<sub>i</sub> = y<sub>j</sub>，Z<sub>k-1</sub>是X<sub>i-1</sub>和Y<sub>j-1</sub>的最长公共子序列<br>如果x<sub>i</sub> ≠ y<sub>j</sub>，那么z<sub>k</sub> ≠ xi，Z<sub>k-1</sub>是X<sub>i-1</sub>和Y<sub>j</sub>的最长公共子序列<br>如果x<sub>i</sub> ≠ y<sub>j</sub>，那么z<sub>k</sub> ≠ y<sub>i</sub>，Z<sub>k-1</sub>是X<sub>i</sub>和Y<sub>j-1</sub>的最长公共子序列</p>
+          </div>
+
+
+<ol start="3">
+<li><h3 id="最优子结构和重叠子问题"><a href="#最优子结构和重叠子问题" class="headerlink" title="最优子结构和重叠子问题"></a>最优子结构和重叠子问题</h3></li>
+</ol>
+<h4 id="最优子结构"><a href="#最优子结构" class="headerlink" title="最优子结构"></a><u>最优子结构</u></h4><p>&emsp;<strong>X=(x1,x2,…xn) 和 Y={y1,y2,…ym} 是两个序列，将 X 和 Y 的最长公共子序列记为c(X,Y)，找出c(X,Y)就是一个最优化问题。因为，我们需要找到X 和 Y中最长的那个公共子序列。而要找X 和 Y的c，首先考虑X的最后一个元素和Y的最后一个元素。<br>&emsp;1）如果 xn=ym，即X的最后一个元素与Y的最后一个元素相同，这说明该元素一定位于公共子序列中。因此，现在只需要找：c(Xn-1，Ym-1)。c(Xn-1，Ym-1)就是原问题的一个子问题。为什么叫子问题？因为它的规模比原问题小。为什么是最优的子问题？因为我们要找的是Xn-1 和 Ym-1 的最长公共子序列。<br>&emsp;2）如果xn != ym，这下要麻烦一点，因为它产生了两个子问题：c(Xn-1，Ym) 和 c(Xn，Ym-1)，因为序列X 和 序列Y 的最后一个元素不相等嘛，那说明最后一个元素不可能是最长公共子序列中的元素嘛。c(Xn-1，Ym)表示：最长公共序列可以在(x1,x2,…x(n-1)) 和 (y1,y2,…ym)中找。而c(Xn，Ym-1)表示：最长公共序列可以在(x1,x2,…xn) 和 (y1,y2,…y(m-1))中找。<br>&emsp;求解上面两个子问题，得到的公共子序列谁最长，那谁就是 c（X,Y）。用数学表示就是：<br>c=max{c(Xn-1，Ym)，c(Xn，Ym-1)}<br>&emsp;由于条件 1) 和 2) 考虑到了所有可能的情况。因此，我们成功地把原问题转化 成了 三个规模更小的子问题。</strong></p>
+<h4 id="重叠子问题"><a href="#重叠子问题" class="headerlink" title="重叠子问题"></a><u>重叠子问题</u></h4><div class="note info">
+            <p>重叠子问题就是说原问题转化成子问题后，子问题中有相同的问题.</p>
+          </div>
+
+<p>&emsp;<strong>在此题中原问题是：c(X,Y)。子问题有 ❶c(Xn-1，Ym-1) ❷c(Xn-1，Ym) ❸c(Xn，Ym-1)。</strong></p>
+<p>&emsp;<strong>初一看，这三个子问题是不重叠的。可本质上它们是重叠的，因为它们只重叠了一大部分。举例：第二个子问题：c(Xn-1，Ym) 就包含了：问题❶c(Xn-1，Ym-1)。因为，当Xn-1 和 Ym 的最后一个元素不相同时，我们又需要将c(Xn-1，Ym)进行分解：分解成：c(Xn-1，Ym-1) 和 c(Xn-2，Ym)。 也就是说：在子问题的继续分解中，有些问题是重叠的。</strong></p>
+<ol start="4">
+<li><h3 id="状态转移方程"><a href="#状态转移方程" class="headerlink" title="状态转移方程"></a>状态转移方程</h3></li>
+</ol>
+<p> <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/ztzyfc.jpg"></p>
+<ol start="5">
+<li><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3></li>
+</ol>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> c[<span class="number">100</span>][<span class="number">100</span>],s[<span class="number">100</span>][<span class="number">100</span>];</span><br><span class="line"><span class="type">void</span> <span class="title function_">game</span><span class="params">(<span class="type">char</span> *a,<span class="type">char</span> *b,<span class="type">int</span> m,<span class="type">int</span> n)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">lcs</span><span class="params">(<span class="type">char</span> *a,<span class="type">int</span> i,<span class="type">int</span> j)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	getchar();</span><br><span class="line">	<span class="keyword">while</span>(n--)&#123;</span><br><span class="line">		<span class="type">char</span> a[<span class="number">100</span>];</span><br><span class="line">		<span class="type">char</span> b[<span class="number">100</span>];</span><br><span class="line">				gets(a);</span><br><span class="line">                gets(b);</span><br><span class="line">					<span class="type">int</span> s1=<span class="built_in">strlen</span>(a);</span><br><span class="line">					<span class="type">int</span> s2=<span class="built_in">strlen</span>(b);</span><br><span class="line">		game(a,b,s1<span class="number">-1</span>,s2<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">game</span><span class="params">(<span class="type">char</span> *a,<span class="type">char</span> *b,<span class="type">int</span> m,<span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=m;i++)</span><br><span class="line">		c[i][<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=n;i++)</span><br><span class="line">		c[<span class="number">0</span>][i]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=m;i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;=n;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(a[i]==b[j])&#123;</span><br><span class="line">			c[i][j]=c[i<span class="number">-1</span>][j<span class="number">-1</span>]+<span class="number">1</span>;</span><br><span class="line">			s[i][j]=<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(c[i<span class="number">-1</span>][j]&gt;c[i][j<span class="number">-1</span>])&#123;</span><br><span class="line">				c[i][j]=c[i<span class="number">-1</span>][j];</span><br><span class="line">				s[i][j]=<span class="number">2</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">				c[i][j]=c[i][j<span class="number">-1</span>];</span><br><span class="line">				s[i][j]=<span class="number">3</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,c[m][n]);</span><br><span class="line">		lcs(a,m,n);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">lcs</span><span class="params">(<span class="type">char</span> *a,<span class="type">int</span> i,<span class="type">int</span> j)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(s[i][j]==<span class="number">1</span>)&#123;</span><br><span class="line">		lcs(a,i<span class="number">-1</span>,j<span class="number">-1</span>);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,a[i]);</span><br><span class="line"> 		&#125;</span><br><span class="line"> 		<span class="keyword">else</span> <span class="keyword">if</span>(s[i][j]==<span class="number">2</span>)</span><br><span class="line"> 			lcs(a,i<span class="number">-1</span>,j);</span><br><span class="line"> 		<span class="keyword">else</span> <span class="keyword">if</span>(s[i][j]==<span class="number">3</span>)</span><br><span class="line">			 lcs(a,i,j<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+]]></content>
+      <categories>
+        <category>算法设计</category>
+      </categories>
+      <tags>
+        <tag>计算机算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>在Hexo博客中添加Github贡献日历</title>
     <url>/p/214102e1.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -335,58 +387,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>技术</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动态规划算法</title>
-    <url>/p/5dc644dc.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p>动态规划是算法中非常重要的一个算法，希望看了我的博客可以对你有所帮助。</p>
-<span id="more"></span>
-
-<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/DynamicPlan.jpg"></p>
-<h2 id="例题-最长公共子序列"><a href="#例题-最长公共子序列" class="headerlink" title="例题 最长公共子序列"></a>例题 最长公共子序列</h2><ol>
-<li><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3></li>
-</ol>
-<div class="note default">
-            <p>&ensp;&ensp;最长公共子序列问题，给定序列X=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>m</sub>)，Y=(y<sub>1</sub>,y<sub>2</sub>,…,y<sub>j</sub>)，求X和Y的最长公共子序列（设X和Z是两个序列，其中X=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>m</sub>)，Z=(z<sub>1</sub>,z<sub>2</sub>,…,z<sub>k</sub>)，如果存在X的元素构成的按下标严格排序递增序列(x<sub>i1</sub>,x<sub>i2</sub>,…,x<sub>ik</sub>)，使得x<sub>ij</sub>=z<sub>j</sub>，j=1,2,…,k，那么Z是X的子序列，Z含有的元素个数，称为子序列的长度）</p>
-          </div>
-
-
-<p><em>定义：设X和Y是两个序列，如果Z既是X的子序列，也是Y的子序列，则称Z是X和Y的公共子序列。</em></p>
-<ol start="2">
-<li><h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3></li>
-</ol>
-<div class="note default">
-            <p>设X<sub>i</sub>=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>i</sub>)<br>&ensp;Y<sub>j</sub>=(y<sub>1</sub>,y<sub>2</sub>,…,y<sub>j</sub>)<br>&ensp;Z<sub>k</sub>=(z<sub>1</sub>,z<sub>2</sub>,…,z<sub>k</sub>)<br>如果Z<sub>k</sub>是X<sub>i</sub>和Y<sub>j</sub>的最长公共子序列<br>那么如果x<sub>i</sub> = y<sub>j</sub>，那么z<sub>k</sub> = x<sub>i</sub> = y<sub>j</sub>，Z<sub>k-1</sub>是X<sub>i-1</sub>和Y<sub>j-1</sub>的最长公共子序列<br>如果x<sub>i</sub> ≠ y<sub>j</sub>，那么z<sub>k</sub> ≠ xi，Z<sub>k-1</sub>是X<sub>i-1</sub>和Y<sub>j</sub>的最长公共子序列<br>如果x<sub>i</sub> ≠ y<sub>j</sub>，那么z<sub>k</sub> ≠ y<sub>i</sub>，Z<sub>k-1</sub>是X<sub>i</sub>和Y<sub>j-1</sub>的最长公共子序列</p>
-          </div>
-
-
-<ol start="3">
-<li><h3 id="最优子结构和重叠子问题"><a href="#最优子结构和重叠子问题" class="headerlink" title="最优子结构和重叠子问题"></a>最优子结构和重叠子问题</h3></li>
-</ol>
-<h4 id="最优子结构"><a href="#最优子结构" class="headerlink" title="最优子结构"></a><u>最优子结构</u></h4><p>&emsp;<strong>X=(x1,x2,…xn) 和 Y={y1,y2,…ym} 是两个序列，将 X 和 Y 的最长公共子序列记为c(X,Y)，找出c(X,Y)就是一个最优化问题。因为，我们需要找到X 和 Y中最长的那个公共子序列。而要找X 和 Y的c，首先考虑X的最后一个元素和Y的最后一个元素。<br>&emsp;1）如果 xn=ym，即X的最后一个元素与Y的最后一个元素相同，这说明该元素一定位于公共子序列中。因此，现在只需要找：c(Xn-1，Ym-1)。c(Xn-1，Ym-1)就是原问题的一个子问题。为什么叫子问题？因为它的规模比原问题小。为什么是最优的子问题？因为我们要找的是Xn-1 和 Ym-1 的最长公共子序列。<br>&emsp;2）如果xn != ym，这下要麻烦一点，因为它产生了两个子问题：c(Xn-1，Ym) 和 c(Xn，Ym-1)，因为序列X 和 序列Y 的最后一个元素不相等嘛，那说明最后一个元素不可能是最长公共子序列中的元素嘛。c(Xn-1，Ym)表示：最长公共序列可以在(x1,x2,…x(n-1)) 和 (y1,y2,…ym)中找。而c(Xn，Ym-1)表示：最长公共序列可以在(x1,x2,…xn) 和 (y1,y2,…y(m-1))中找。<br>&emsp;求解上面两个子问题，得到的公共子序列谁最长，那谁就是 c（X,Y）。用数学表示就是：<br>c=max{c(Xn-1，Ym)，c(Xn，Ym-1)}<br>&emsp;由于条件 1) 和 2) 考虑到了所有可能的情况。因此，我们成功地把原问题转化 成了 三个规模更小的子问题。</strong></p>
-<h4 id="重叠子问题"><a href="#重叠子问题" class="headerlink" title="重叠子问题"></a><u>重叠子问题</u></h4><div class="note info">
-            <p>重叠子问题就是说原问题转化成子问题后，子问题中有相同的问题.</p>
-          </div>
-
-<p>&emsp;<strong>在此题中原问题是：c(X,Y)。子问题有 ❶c(Xn-1，Ym-1) ❷c(Xn-1，Ym) ❸c(Xn，Ym-1)。</strong></p>
-<p>&emsp;<strong>初一看，这三个子问题是不重叠的。可本质上它们是重叠的，因为它们只重叠了一大部分。举例：第二个子问题：c(Xn-1，Ym) 就包含了：问题❶c(Xn-1，Ym-1)。因为，当Xn-1 和 Ym 的最后一个元素不相同时，我们又需要将c(Xn-1，Ym)进行分解：分解成：c(Xn-1，Ym-1) 和 c(Xn-2，Ym)。 也就是说：在子问题的继续分解中，有些问题是重叠的。</strong></p>
-<ol start="4">
-<li><h3 id="状态转移方程"><a href="#状态转移方程" class="headerlink" title="状态转移方程"></a>状态转移方程</h3></li>
-</ol>
-<p> <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/ztzyfc.jpg"></p>
-<ol start="5">
-<li><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3></li>
-</ol>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="C"><figure class="iseeu highlight /c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> c[<span class="number">100</span>][<span class="number">100</span>],s[<span class="number">100</span>][<span class="number">100</span>];</span><br><span class="line"><span class="type">void</span> <span class="title function_">game</span><span class="params">(<span class="type">char</span> *a,<span class="type">char</span> *b,<span class="type">int</span> m,<span class="type">int</span> n)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">lcs</span><span class="params">(<span class="type">char</span> *a,<span class="type">int</span> i,<span class="type">int</span> j)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	getchar();</span><br><span class="line">	<span class="keyword">while</span>(n--)&#123;</span><br><span class="line">		<span class="type">char</span> a[<span class="number">100</span>];</span><br><span class="line">		<span class="type">char</span> b[<span class="number">100</span>];</span><br><span class="line">				gets(a);</span><br><span class="line">                gets(b);</span><br><span class="line">					<span class="type">int</span> s1=<span class="built_in">strlen</span>(a);</span><br><span class="line">					<span class="type">int</span> s2=<span class="built_in">strlen</span>(b);</span><br><span class="line">		game(a,b,s1<span class="number">-1</span>,s2<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">game</span><span class="params">(<span class="type">char</span> *a,<span class="type">char</span> *b,<span class="type">int</span> m,<span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=m;i++)</span><br><span class="line">		c[i][<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=n;i++)</span><br><span class="line">		c[<span class="number">0</span>][i]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=m;i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;=n;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(a[i]==b[j])&#123;</span><br><span class="line">			c[i][j]=c[i<span class="number">-1</span>][j<span class="number">-1</span>]+<span class="number">1</span>;</span><br><span class="line">			s[i][j]=<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(c[i<span class="number">-1</span>][j]&gt;c[i][j<span class="number">-1</span>])&#123;</span><br><span class="line">				c[i][j]=c[i<span class="number">-1</span>][j];</span><br><span class="line">				s[i][j]=<span class="number">2</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">				c[i][j]=c[i][j<span class="number">-1</span>];</span><br><span class="line">				s[i][j]=<span class="number">3</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,c[m][n]);</span><br><span class="line">		lcs(a,m,n);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">lcs</span><span class="params">(<span class="type">char</span> *a,<span class="type">int</span> i,<span class="type">int</span> j)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(s[i][j]==<span class="number">1</span>)&#123;</span><br><span class="line">		lcs(a,i<span class="number">-1</span>,j<span class="number">-1</span>);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,a[i]);</span><br><span class="line"> 		&#125;</span><br><span class="line"> 		<span class="keyword">else</span> <span class="keyword">if</span>(s[i][j]==<span class="number">2</span>)</span><br><span class="line"> 			lcs(a,i<span class="number">-1</span>,j);</span><br><span class="line"> 		<span class="keyword">else</span> <span class="keyword">if</span>(s[i][j]==<span class="number">3</span>)</span><br><span class="line">			 lcs(a,i,j<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-]]></content>
-      <categories>
-        <category>算法设计</category>
-      </categories>
-      <tags>
-        <tag>计算机算法</tag>
       </tags>
   </entry>
   <entry>
