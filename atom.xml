@@ -6,7 +6,7 @@
   <link href="https://www.tianqb.top/atom.xml" rel="self"/>
   
   <link href="https://www.tianqb.top/"/>
-  <updated>2022-04-11T12:28:05.123Z</updated>
+  <updated>2022-04-12T02:24:14.205Z</updated>
   <id>https://www.tianqb.top/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://www.tianqb.top/p/c1ba95b6.html"/>
     <id>https://www.tianqb.top/p/c1ba95b6.html</id>
     <published>2022-04-08T11:02:15.000Z</published>
-    <updated>2022-04-11T12:28:05.123Z</updated>
+    <updated>2022-04-12T02:24:14.205Z</updated>
     
     
     <summary type="html">简单介绍《HelloGithub》第一期的项目。</summary>
     
     
     
-    <category term="Github" scheme="https://www.tianqb.top/categories/Github/"/>
+    <category term="github" scheme="https://www.tianqb.top/categories/github/"/>
     
     
     <category term="编程" scheme="https://www.tianqb.top/tags/%E7%BC%96%E7%A8%8B/"/>
@@ -42,7 +42,7 @@
     <link href="https://www.tianqb.top/p/a53d7246.html"/>
     <id>https://www.tianqb.top/p/a53d7246.html</id>
     <published>2022-04-07T12:14:21.000Z</published>
-    <updated>2022-04-12T02:19:05.593Z</updated>
+    <updated>2022-04-12T02:24:07.131Z</updated>
     
     
     <summary type="html">分享GitHub上的开源项目，读者可进行学习</summary>
@@ -51,7 +51,7 @@
     <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/xm6.jpg" type="image"/>
     
     
-    <category term="Github" scheme="https://www.tianqb.top/categories/Github/"/>
+    <category term="github" scheme="https://www.tianqb.top/categories/github/"/>
     
     
     <category term="编程" scheme="https://www.tianqb.top/tags/%E7%BC%96%E7%A8%8B/"/>
