@@ -374,14 +374,14 @@
 <h2 id="5-设置邮箱提醒"><a href="#5-设置邮箱提醒" class="headerlink" title="5 设置邮箱提醒"></a>5 设置邮箱提醒</h2><h3 id="5-1-部署邮件提醒项目-Valine-Admin"><a href="#5-1-部署邮件提醒项目-Valine-Admin" class="headerlink" title="5.1 部署邮件提醒项目 Valine-Admin"></a>5.1 部署邮件提醒项目 Valine-Admin</h3><p>依次点击左侧边栏上的<code>云引擎</code> ,<code>部署</code>, 然后下拉页面，点击<code>部署项目</code>:</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn8.jpg"></p>
 <p>然后选中<code>Git 部署</code>,点击<code>配置 Git</code>按钮，<code>填写</code>第三方邮件提醒源代码库地址，<code>保存</code>。</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//复制下方地址填入即可</span><br><span class="line">https://github.com/zhaojun1998/Valine-Admin</span><br></pre></td></tr></table></figure></div>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//复制下方地址填入即可</span><br><span class="line">https://github.com/zhaojun1998/Valine-Admin</span><br></pre></td></tr></table></figure>
 
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn9.jpg"></p>
 <p>继续下拉页面，使用<code>master</code>分支，然后点击<code>部署</code>:</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn10.jpg"></p>
 <h3 id="5-2-配置环境变量"><a href="#5-2-配置环境变量" class="headerlink" title="5.2 配置环境变量"></a>5.2 配置环境变量</h3><p>点击<code>云引擎</code> , <code>设置</code>, 然后点击<code>添加新变量</code>按钮添加以下环境变量:</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn11.jpg"></p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SITE_NAME:网站名称。</span><br><span class="line">SITE_URL:网站地址，最后不要加/ 。</span><br><span class="line">SMTP_USER:SMTP服务用户名，一般为邮箱地址。</span><br><span class="line">SMTP_PASS:SMTP密码，一般为授权码，而不是邮箱的登陆密码，请自行查询对应邮件服务商的获取方式。。</span><br><span class="line">SMTP_SERVICE:邮件服务提供商，支持 QQ、163、126、Gmail、”Yahoo”、…… ，全部支持请参考:Nodemailer Supported services。— 如这里没有你使用的邮件提供商，请查看自定义邮件服务器。</span><br><span class="line">SENDER_NAME:寄件人名称。</span><br></pre></td></tr></table></figure></div>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SITE_NAME:网站名称。</span><br><span class="line">SITE_URL:网站地址，最后不要加/ 。</span><br><span class="line">SMTP_USER:SMTP服务用户名，一般为邮箱地址。</span><br><span class="line">SMTP_PASS:SMTP密码，一般为授权码，而不是邮箱的登陆密码，请自行查询对应邮件服务商的获取方式。。</span><br><span class="line">SMTP_SERVICE:邮件服务提供商，支持 QQ、163、126、Gmail、”Yahoo”、…… ，全部支持请参考:Nodemailer Supported services。— 如这里没有你使用的邮件提供商，请查看自定义邮件服务器。</span><br><span class="line">SENDER_NAME:寄件人名称。</span><br></pre></td></tr></table></figure>
 
 <h3 id="5-3-保证绝大多数时间邮件服务正常"><a href="#5-3-保证绝大多数时间邮件服务正常" class="headerlink" title="5.3 保证绝大多数时间邮件服务正常"></a>5.3 保证绝大多数时间邮件服务正常</h3><div class="note warning">
             <p>免费版的 <code>LeanCloud</code> 容器，是有强制性休眠策略的，不能 24 小时运行：</p>
@@ -398,7 +398,7 @@
 <p>添加环境变量，<code>ADMIN_URL</code>, 值设置为 <code>https://下面提示你的对应的预备环境域名</code>, 如图所示:</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn13.jpg"></p>
 <h3 id="5-5-添加定时器"><a href="#5-5-添加定时器" class="headerlink" title="5.5 添加定时器"></a>5.5 添加定时器</h3><p><code>云引擎</code> , <code>定时任务</code> ,<code>创建定时任务</code>, 名称随便写，选<code>生产环境</code>, 选择<code>self_wake</code>函数，选择<code>Corn 表达式</code>, 输入:</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 */20 7-23 * * ?</span><br></pre></td></tr></table></figure></div>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 */20 7-23 * * ?</span><br></pre></td></tr></table></figure>
 
 <p>保存</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn14.jpg"></p>
