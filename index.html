@@ -524,8 +524,26 @@
     bottom: -10px;
   }
 }
-</style>
+@media all and (max-width: 700px){
+.carousel-indicators li {
+  display: inline-block;
+  width: 20px !important;
+  height: 3px;
+  margin: 2.1px !important;
+  text-indent: -999px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .24);
+}
+.carousel-indicators .active {
+  width: 20px !important;
+  height: 3px;
+  background-color: #fff;
+}
+}
 
+</style>
 
 
 
