@@ -98,12 +98,71 @@
       </tags>
   </entry>
   <entry>
+    <title>《HelloGithub》第02期</title>
+    <url>/p/d30f3a58.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p align="center">2️⃣😁</p>
+
+<span id="more"></span>
+
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
+<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong><!--more-->，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。 - 会编程的可以贡献代码 - 不会编程的可以反馈使用这些工具中的 Bug - 帮着宣传你觉得优秀的项目 - Star 项目⭐️</p>
+<p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
+<p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
+<div class="note default">
+            <p>兴趣是最好的老师，<strong>HelloGitHub</strong> 就是帮你找到兴趣！</p>
+          </div>
+
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg"></p>
+<p><code>Tips</code>：如果文中的图获取刷不出来，可以点击<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC92b2x1bWUvMDEv">这里<i class="fa fa-external-link-alt"></i></span>更好的阅读体验。</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><div class="note default">
+            <p><strong>以下为本期内容</strong></p>
+          </div>
+
+<h3 id="1-CSS项目"><a href="#1-CSS项目" class="headerlink" title="1 CSS项目"></a>1 CSS项目</h3><h4 id="1-1-github-markdown-css"><a href="#1-1-github-markdown-css" class="headerlink" title="1.1 github-markdown-css"></a>1.1 github-markdown-css</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3NpbmRyZXNvcmh1cy9naXRodWItbWFya2Rvd24tY3Nz">github-markdown-css<i class="fa fa-external-link-alt"></i></span>：<code>仿 GitHub 的 Markdown 的样式</code>，就是使用了这个 CSS 后，Markdown 展示效果和 GitHub 的大致一样。<span class="exturl" data-url="aHR0cHM6Ly9zaW5kcmVzb3JodXMuY29tL2dpdGh1Yi1tYXJrZG93bi1jc3Mv">示例<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="2-JavaScript项目"><a href="#2-JavaScript项目" class="headerlink" title="2 JavaScript项目"></a>2 JavaScript项目</h3><h4 id="2-1-listen1-desktop"><a href="#2-1-listen1-desktop" class="headerlink" title="2.1 listen1_desktop"></a>2.1 listen1_desktop</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2xpc3RlbjEvbGlzdGVuMV9kZXNrdG9w">listen1_desktop<i class="fa fa-external-link-alt"></i></span>：<code>Listen1</code>让你用一个网页就能听到多个网站的在线音乐，支持各种平台。如图：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github21.jpg"></p>
+<h4 id="2-2-jquery-weui"><a href="#2-2-jquery-weui" class="headerlink" title="2.2 jquery-weui"></a>2.2 jquery-weui</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2xpaG9uZ3h1bjk0NS9qcXVlcnktd2V1aQ==">jquery-weui<i class="fa fa-external-link-alt"></i></span>：可能是最好用<code> WeUI</code> 版本，展示效果如下：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github22.jpg"></p>
+<h4 id="2-3-ant-motion"><a href="#2-3-ant-motion" class="headerlink" title="2.3 ant-motion"></a>2.3 ant-motion</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FudC1kZXNpZ24vYW50LW1vdGlvbg==">ant-motion<i class="fa fa-external-link-alt"></i></span>：阿里开源的项目，<code>一套 React 框架动效解决方案</code>，可以帮助开发者，更容易的在项目中使用动效。同时可以方便快捷地制作一个公司的介绍页，<span class="exturl" data-url="aHR0cHM6Ly9tb3Rpb24uYW50LmRlc2lnbi8=">在线演示<i class="fa fa-external-link-alt"></i></span>。</p>
+<h4 id="2-4-wechat-h5-boilerplate"><a href="#2-4-wechat-h5-boilerplate" class="headerlink" title="2.4 wechat-h5-boilerplate"></a>2.4 wechat-h5-boilerplate</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BhbnRlbmcvd2VjaGF0LWg1LWJvaWxlcnBsYXRl">wechat-h5-boilerplate<i class="fa fa-external-link-alt"></i></span>：为腾讯微信优化的 <code>HTML5 动效模板</code>，帮助你快速构建全屏滚动型 HTML5 页面，<span class="exturl" data-url="aHR0cHM6Ly9wYW50ZW5nLmdpdGh1Yi5pby93ZWNoYXQtaDUtYm9pbGVycGxhdGUv">示例<i class="fa fa-external-link-alt"></i></span>。</p>
+<h4 id="2-5-waitForlmages"><a href="#2-5-waitForlmages" class="headerlink" title="2.5 waitForlmages"></a>2.5 waitForlmages</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FsZXhhbmRlcmRpY2tzb24vd2FpdEZvckltYWdlcw==">waitForImages<i class="fa fa-external-link-alt"></i></span>：背景加载完事件，示例代码：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;http://catmull.uk/downloads/bg-loaded/bg-loaded.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">   $(<span class="string">&#x27;body&#x27;</span>).<span class="title function_">bgLoaded</span>(&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      afterLoaded : <span class="keyword">function</span>(<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">         <span class="title function_">alert</span>(<span class="string">&#x27;Background image done loading&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">   &#125;);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-Python项目"><a href="#3-Python项目" class="headerlink" title="3 Python项目"></a>3 Python项目</h3><h4 id="3-1-luokr-com"><a href="#3-1-luokr-com" class="headerlink" title="3.1 luokr.com"></a>3.1 luokr.com</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FsdmFuL2x1b2tyLmNvbQ==">luokr.com<i class="fa fa-external-link-alt"></i></span>：Python Tornado 写的开源网站——螺壳网，<span class="exturl" data-url="aHR0cDovL2x1b2tyLmNvbS8=">访问<i class="fa fa-external-link-alt"></i></span>，如图：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github23.jpg"></p>
+<h4 id="3-2-ssbc"><a href="#3-2-ssbc" class="headerlink" title="3.2 ssbc"></a>3.2 ssbc</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tLzc4L3NzYmM=">ssbc<i class="fa fa-external-link-alt"></i></span>：Python Django 写的种子搜索网站——手撕包菜，如图：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github24.jpg"></p>
+<h4 id="3-3-python-gems"><a href="#3-3-python-gems" class="headerlink" title="3.3 python-gems"></a>3.3 python-gems</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL1JlYWxIYWNrZXIvcHl0aG9uLWdlbXM=">python-gems<i class="fa fa-external-link-alt"></i></span>：有趣的<code>Pyhton代码片段</code>集合。</p>
+<h4 id="3-4-algorithm"><a href="#3-4-algorithm" class="headerlink" title="3.4 algorithm"></a>3.4 algorithm</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3Fpd3Npci9hbGdvcml0aG0=">algorithm<i class="fa fa-external-link-alt"></i></span>：老齐的 Python 算法教程。</p>
+<h4 id="3-5-python-goose"><a href="#3-5-python-goose" class="headerlink" title="3.5 python-goose"></a>3.5 python-goose</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2dyYW5naWVyL3B5dGhvbi1nb29zZQ==">python-goose<i class="fa fa-external-link-alt"></i></span>：Goose 用于文章提取器，提取中文内容的示例代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; from goose import Goose</span><br><span class="line">&gt;&gt;&gt; from goose.text import StopWordsChinese</span><br><span class="line">&gt;&gt;&gt; url  = &#x27;http://www.bbc.co.uk/zhongwen/simp/chinese_news/2012/12/121210_hongkong_politics.shtml&#x27;</span><br><span class="line">&gt;&gt;&gt; g = Goose(&#123;&#x27;stopwords_class&#x27;: StopWordsChinese&#125;)</span><br><span class="line">&gt;&gt;&gt; article = g.extract(url=url)</span><br><span class="line">&gt;&gt;&gt; print article.cleaned_text[:150]</span><br><span class="line">香港行政长官梁振英在各方压力下就其大宅的违章建筑（僭建）问题到立法会接受质询，并向香港民众道歉。</span><br><span class="line"></span><br><span class="line">梁振英在星期二（12月10日）的答问大会开始之际在其演说中道歉，但强调他在违章建筑问题上没有隐瞒的意图和动机。</span><br><span class="line"></span><br><span class="line">一些亲北京阵营议员欢迎梁振英道歉，且认为应能获得香港民众接受，但这些议员也质问梁振英有</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-6-mincss"><a href="#3-6-mincss" class="headerlink" title="3.6 mincss"></a>3.6 mincss</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BldGVyYmUvbWluY3Nz">mincss<i class="fa fa-external-link-alt"></i></span>：Python 写的用来<code>找到 CSS 中没有用到的代码片段</code>，并删除。适用于：想要做一个页面，但是不会写 CSS 人。示例代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#coding:utf-8</span><br><span class="line">#!/usr/bin/env python</span><br><span class="line">from __future__ import print_function</span><br><span class="line">import sys, os</span><br><span class="line">sys.path.insert(0, os.path.abspath(&#x27;.&#x27;))</span><br><span class="line">from mincss.processor import Processor</span><br><span class="line"></span><br><span class="line"># 这里改成想要参考的页面</span><br><span class="line">URL = &#x27;http://localhost:9000/page.html&#x27;</span><br><span class="line"></span><br><span class="line">def run():</span><br><span class="line">    p = Processor()</span><br><span class="line">    p.process(URL)</span><br><span class="line"></span><br><span class="line">    # 输出INlink的css的简化前和简化后的css代码</span><br><span class="line">    print(&quot;INLINES &quot;.ljust(79, &#x27;-&#x27;))</span><br><span class="line">    for each in p.inlines:</span><br><span class="line">        print(&quot;On line %s&quot; % each.line)</span><br><span class="line">        print(&#x27;- &#x27; * 40)</span><br><span class="line">        print(&quot;BEFORE&quot;)</span><br><span class="line">        print(each.before)</span><br><span class="line">        print(&#x27;- &#x27; * 40)</span><br><span class="line">        print(&quot;AFTER:&quot;)</span><br><span class="line">        print(each.after)</span><br><span class="line"></span><br><span class="line">    # 输出link引用的css的简化前和简化后的css代码</span><br><span class="line">    print(&quot;LINKS &quot;.ljust(79, &#x27;-&#x27;))</span><br><span class="line">    for each in p.links:</span><br><span class="line">        print(&quot;On href %s&quot; % each.href)</span><br><span class="line">        print(&#x27;- &#x27; * 40)</span><br><span class="line">        print(&quot;BEFORE&quot;)</span><br><span class="line">        print(each.before)</span><br><span class="line">        print(&#x27;- &#x27; * 40)</span><br><span class="line">        print(&quot;AFTER:&quot;)</span><br><span class="line">        print(each.after)</span><br><span class="line"></span><br><span class="line">if __name__ == &#x27;__main__&#x27;:</span><br><span class="line">    run()</span><br></pre></td></tr></table></figure>
+
+<p>本文转自知乎，点击<span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC81MDcwMjY0NA==">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
+]]></content>
+      <categories>
+        <category>编程实战</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《HelloGithub》第01期</title>
     <url>/p/c1ba95b6.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 
+<p align="center">1️⃣😀</p>
+
+<span id="more"></span>
+
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
-<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong><span id="more"></span>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。 - 会编程的可以贡献代码 - 不会编程的可以反馈使用这些工具中的 Bug - 帮着宣传你觉得优秀的项目 - Star 项目⭐️</p>
+<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。 - 会编程的可以贡献代码 - 不会编程的可以反馈使用这些工具中的 Bug - 帮着宣传你觉得优秀的项目 - Star 项目⭐️</p>
 <p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
 <p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
 <div class="note default">
