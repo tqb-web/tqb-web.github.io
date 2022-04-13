@@ -6,7 +6,7 @@
   <link href="https://tianqb.top/atom.xml" rel="self"/>
   
   <link href="https://tianqb.top/"/>
-  <updated>2022-04-13T09:54:54.310Z</updated>
+  <updated>2022-04-13T12:45:09.513Z</updated>
   <id>https://tianqb.top/</id>
   
   <author>
@@ -21,11 +21,21 @@
     <link href="https://tianqb.top/p/6bb35d3d.html"/>
     <id>https://tianqb.top/p/6bb35d3d.html</id>
     <published>2022-04-13T09:54:54.000Z</published>
-    <updated>2022-04-13T09:54:54.310Z</updated>
+    <updated>2022-04-13T12:45:09.513Z</updated>
     
     
+    <summary type="html">简单介绍《HelloGithub》第三期的项目。</summary>
     
     
+    <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubfm3.jpg" type="image"/>
+    
+    
+    <category term="编程实战" scheme="https://tianqb.top/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/"/>
+    
+    
+    <category term="编程" scheme="https://tianqb.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Github" scheme="https://tianqb.top/tags/Github/"/>
     
   </entry>
   
@@ -34,10 +44,10 @@
     <link href="https://tianqb.top/p/d30f3a58.html"/>
     <id>https://tianqb.top/p/d30f3a58.html</id>
     <published>2022-04-12T11:18:40.000Z</published>
-    <updated>2022-04-12T12:07:55.504Z</updated>
+    <updated>2022-04-13T12:44:24.975Z</updated>
     
     
-    <summary type="html">简单介绍《HelloGithub》第一期的项目。</summary>
+    <summary type="html">简单介绍《HelloGithub》第二期的项目。</summary>
     
     
     <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubfm2.jpg" type="image"/>
@@ -57,7 +67,7 @@
     <link href="https://tianqb.top/p/c1ba95b6.html"/>
     <id>https://tianqb.top/p/c1ba95b6.html</id>
     <published>2022-04-08T11:02:15.000Z</published>
-    <updated>2022-04-12T12:00:23.136Z</updated>
+    <updated>2022-04-13T12:39:58.913Z</updated>
     
     
     <summary type="html">简单介绍《HelloGithub》第一期的项目。</summary>
