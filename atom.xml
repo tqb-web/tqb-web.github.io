@@ -6,7 +6,7 @@
   <link href="https://tianqb.top/atom.xml" rel="self"/>
   
   <link href="https://tianqb.top/"/>
-  <updated>2022-04-13T12:45:09.513Z</updated>
+  <updated>2022-04-14T08:19:00.155Z</updated>
   <id>https://tianqb.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《HelloGithub》第04期</title>
+    <link href="https://tianqb.top/p/f6646584.html"/>
+    <id>https://tianqb.top/p/f6646584.html</id>
+    <published>2022-04-14T07:56:04.000Z</published>
+    <updated>2022-04-14T08:19:00.155Z</updated>
+    
+    
+    <summary type="html">简单介绍《HelloGithub》第一期的项目。</summary>
+    
+    
+    <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubfm4.jpg" type="image"/>
+    
+    
+    <category term="编程实战" scheme="https://tianqb.top/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/"/>
+    
+    
+    <category term="编程" scheme="https://tianqb.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Github" scheme="https://tianqb.top/tags/Github/"/>
+    
+  </entry>
   
   <entry>
     <title>《HelloGithub》第03期</title>

@@ -98,6 +98,64 @@
       </tags>
   </entry>
   <entry>
+    <title>《HelloGithub》第04期</title>
+    <url>/p/f6646584.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p align="center">4️⃣😎</p>
+
+<span id="more"></span>
+
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
+<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。 - 会编程的可以贡献代码 - 不会编程的可以反馈使用这些工具中的 Bug - 帮着宣传你觉得优秀的项目 - Star 项目⭐️</p>
+<p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
+<p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
+<div class="note default">
+            <p>兴趣是最好的老师，<strong>HelloGitHub</strong> 就是帮你找到兴趣！</p>
+          </div>
+
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg"></p>
+<p><code>Tips</code>：如果文中的图获取刷不出来，可以点击<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC92b2x1bWUvMDEv">这里<i class="fa fa-external-link-alt"></i></span>更好的阅读体验。</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><div class="note default">
+            <p><strong>以下为本期内容</strong></p>
+          </div>
+
+<h3 id="1-Java项目"><a href="#1-Java项目" class="headerlink" title="1 Java项目"></a>1 Java项目</h3><h4 id="1-1-cachecloud"><a href="#1-1-cachecloud" class="headerlink" title="1.1 cachecloud"></a>1.1 cachecloud</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3NvaHV0di9jYWNoZWNsb3Vk">cachecloud<i class="fa fa-external-link-alt"></i></span>：搜狐视频开源的 CacheCloud 项目，提供了一个 Redis 云管理平台，功能强大，教程详细（有视频教程），文档齐全，<code>企业级开源项目</code>。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github41.jpg"></p>
+<h3 id="2-JavaScript项目"><a href="#2-JavaScript项目" class="headerlink" title="2 JavaScript项目"></a>2 JavaScript项目</h3><h4 id="2-1-zingtouch"><a href="#2-1-zingtouch" class="headerlink" title="2.1 zingtouch"></a>2.1 zingtouch</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3ppbmdjaGFydC96aW5ndG91Y2g=">ingtouch<i class="fa fa-external-link-alt"></i></span>：支持移动端各种触摸动作包含：转动、挥动、滑动等动作的库，<span class="exturl" data-url="aHR0cHM6Ly96aW5nY2hhcnQuZ2l0aHViLmlvL3ppbmd0b3VjaC8=">官方网站<i class="fa fa-external-link-alt"></i></span>，展示图如下：</p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/zingtouch-show.gif"></p>
+<h4 id="2-2-zhihudaily-vue"><a href="#2-2-zhihudaily-vue" class="headerlink" title="2.2 zhihudaily-vue"></a>2.2 zhihudaily-vue</h4><p>&emsp;、<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3lhdGVzc3NzL3poaWh1ZGFpbHktdnVl">zhihudaily-vue<i class="fa fa-external-link-alt"></i></span>：用 Vue.js 写的<code>知乎日报手机 Web 版</code>，需打开 chrome 浏览器的手机模拟功能，来获得比较好的浏览效果。访问展示图如下：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github42.jpg"></p>
+<h3 id="3-Python项目"><a href="#3-Python项目" class="headerlink" title="3 Python项目"></a>3 Python项目</h3><h4 id="3-1-python-guide"><a href="#3-1-python-guide" class="headerlink" title="3.1 python-guide"></a>3.1 python-guide</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3JlYWxweXRob24vcHl0aG9uLWd1aWRl">python-guide<i class="fa fa-external-link-alt"></i></span>：Requests 库的作者——kennethreitz，写的 Python 入门教程。不单单是语法层面的，涵盖项目结构、代码风格，进阶、工具等方方面面。虽然是<code>英文版</code>(<span class="exturl" data-url="aHR0cDovL3B5dGhvbmd1aWRlY24ucmVhZHRoZWRvY3MuaW8vemgvbGF0ZXN0Lw==">中文翻译版<i class="fa fa-external-link-alt"></i></span>)，但我这个英语渣都能看懂，你肯定也可以，快去看看吧，开卷有益。<span class="exturl" data-url="aHR0cDovL2RvY3MucHl0aG9uLWd1aWRlLm9yZy9lbi9sYXRlc3Qv">在线阅读<i class="fa fa-external-link-alt"></i></span></p>
+<h4 id="3-2-flask-admin"><a href="#3-2-flask-admin" class="headerlink" title="3.2 flask-admin"></a>3.2 flask-admin</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2ZsYXNrLWFkbWluL2ZsYXNrLWFkbWlu">flask-admin<i class="fa fa-external-link-alt"></i></span>：我工作中需要写一个<code>微型的管理系统</code>，用的就是这个框架。简直快餐型，页面都写好了，只要设置好相关配置就可以跑起来了。唯一缺点就是文档中的例子少，开发一些特定的需求需要自己看源码，才能知道如何改。<span class="exturl" data-url="aHR0cHM6Ly9mbGFzay1hZG1pbi5yZWFkdGhlZG9jcy5pby9lbi9sYXRlc3Qv">文档<i class="fa fa-external-link-alt"></i></span>，下面是我跑起来之后的样子：</p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/flask-admin-show.gif"></p>
+<h4 id="3-3-python-sdk"><a href="#3-3-python-sdk" class="headerlink" title="3.3 python-sdk"></a>3.3 python-sdk</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3Fpbml1L3B5dGhvbi1zZGs=">python-sdk<i class="fa fa-external-link-alt"></i></span>：七牛云存储 SDK。我自己在用他家的服务，上手简单、有免费额度，可以用来做‘图床’，同时，有了这个 SDK 可以写一些好用的小工具。<strong>注意</strong>：图床不能随便用，我曾经就用超了，账户的钱能扣成<code>负数</code>！</p>
+<h3 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3RhaXppbG9uZ3h1L2ludGVydmlld19weXRob24=">interview_python<i class="fa fa-external-link-alt"></i></span>：关于 Python 的面试题</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL01yS2l2ZW4vUHlaaA==">PyZh<i class="fa fa-external-link-alt"></i></span>：Python 经典的技术文章的翻译和收集，<span class="exturl" data-url="aHR0cDovL3B5emgucmVhZHRoZWRvY3MuaW8vZW4vbGF0ZXN0Lw==">在线阅读<i class="fa fa-external-link-alt"></i></span></li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL0hJVC1BbGliYWJhL2ludGVydmlldw==">interview<i class="fa fa-external-link-alt"></i></span>：笔试面试知识整理(涵盖：IOS、Android、计算机基础)，<span class="exturl" data-url="aHR0cHM6Ly9oaXQtYWxpYmFiYS5naXRodWIuaW8vaW50ZXJ2aWV3L2luZGV4Lmh0bWw=">在线阅读<i class="fa fa-external-link-alt"></i></span></li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BhZGRpbmdtZS9Gcm9udC1lbmQtV2ViLURldmVsb3BtZW50LUludGVydmlldy1RdWVzdGlvbg==">Front-end-Web-Development-Interview-Question<i class="fa fa-external-link-alt"></i></span>：前端开发面试题大收集</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL0phY2t5QW5kcm9pZC9BbmRyb2lkSW50ZXJ2aWV3LVEtQQ==">AndroidInterview-Q-A<i class="fa fa-external-link-alt"></i></span>：这个项目主要是国内一线互联网公司的 Java 和 Android 方面的内部面试题。</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FoYW5nY2hlbi9Ib3ctdG8tQmUtQS1Qcm9ncmFtbWVyLUNO">How-to-Be-A-Programmer-CN<i class="fa fa-external-link-alt"></i></span>：如何做好一枚程序员（中文翻译版）</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL21uaWVsc2VuL25ldXJhbC1uZXR3b3Jrcy1hbmQtZGVlcC1sZWFybmluZw==">neural-networks-and-deep-learning<i class="fa fa-external-link-alt"></i></span>：《神经网络与深度学习》相关代码 Python 实现，<span class="exturl" data-url="aHR0cHM6Ly90aWdlcm5laWwuZ2l0Ym9va3MuaW8vbmV1cmFsLW5ldHdvcmtzLWFuZC1kZWVwLWxlYXJuaW5nLXpoL2NvbnRlbnQvY2hhcHRlcjEuaHRtbA==">神经网络与深度学习－中文在线阅读<i class="fa fa-external-link-alt"></i></span>，该书中的相关理论的 Python 代码实现</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2pheXdjamxvdmUvYXdlc29tZS1tYWM=">awesome-mac<i class="fa fa-external-link-alt"></i></span>：排版相当好的一个 awesome 系列文章，文中介绍了很多 Mac 上好用的工具。</li>
+</ul>
+<div class="note info">
+            <p>如果你发现了好玩、有意义的开源项目 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vZ2l0aHViLmNvbS81MjF4dWV3ZWloYW4vSGVsbG9HaXRIdWIvaXNzdWVzL25ldw==">点击这里<i class="fa fa-external-link-alt"></i></span> 分享你觉得有意思的项目。</p>
+          </div>
+
+<p>❤❤❤</p>
+<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzA0L0hlbGxvR2l0SHViMDQubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
+]]></content>
+      <categories>
+        <category>编程实战</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《HelloGithub》第03期</title>
     <url>/p/6bb35d3d.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />

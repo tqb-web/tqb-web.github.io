@@ -26,24 +26,27 @@
     var CONFIG = {"hostname":"tianqb.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="五大常用算法——贪心算法详解以及经典例子">
+  <meta name="description" content="简单介绍《HelloGithub》第一期的项目。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="贪心算法">
-<meta property="og:url" content="https://tianqb.top/p/a4ce31d2.html">
+<meta property="og:title" content="《HelloGithub》第04期">
+<meta property="og:url" content="https://tianqb.top/p/f6646584.html">
 <meta property="og:site_name" content="北温带的猫">
-<meta property="og:description" content="五大常用算法——贪心算法详解以及经典例子">
+<meta property="og:description" content="简单介绍《HelloGithub》第一期的项目。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg">
-<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyzm.jpg">
-<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyresult.jpg">
-<meta property="article:published_time" content="2022-03-27T12:29:35.000Z">
-<meta property="article:modified_time" content="2022-04-10T05:50:21.591Z">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github41.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/zingtouch-show.gif">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github42.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/flask-admin-show.gif">
+<meta property="article:published_time" content="2022-04-14T07:56:04.000Z">
+<meta property="article:modified_time" content="2022-04-14T08:19:00.155Z">
 <meta property="article:author" content="T">
-<meta property="article:tag" content="计算机算法">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="Github">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg">
+<meta name="twitter:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg">
 
-<link rel="canonical" href="https://tianqb.top/p/a4ce31d2.html">
+<link rel="canonical" href="https://tianqb.top/p/f6646584.html">
 
 
 <script id="page-configurations">
@@ -56,7 +59,7 @@
   };
 </script>
 
-  <title>贪心算法 | 北温带的猫</title>
+  <title>《HelloGithub》第04期 | 北温带的猫</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGL3VM2MT3"></script>
     <script data-pjax>
@@ -240,7 +243,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tianqb.top/p/a4ce31d2.html">
+    <link itemprop="mainEntityOfPage" href="https://tianqb.top/p/f6646584.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -253,7 +256,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          贪心算法
+          《HelloGithub》第04期
         </h1>
 
         <div class="post-meta">
@@ -264,23 +267,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-03-27 20:29:35" itemprop="dateCreated datePublished" datetime="2022-03-27T20:29:35+08:00">2022-03-27</time>
+              <time title="创建时间：2022-04-14 15:56:04 / 修改时间：16:19:00" itemprop="dateCreated datePublished" datetime="2022-04-14T15:56:04+08:00">2022-04-14</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-10 13:50:21" itemprop="dateModified" datetime="2022-04-10T13:50:21+08:00">2022-04-10</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/" itemprop="url" rel="index"><span itemprop="name">算法设计</span></a>
+                  <a href="/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/" itemprop="url" rel="index"><span itemprop="name">编程实战</span></a>
                 </span>
             </span>
 
@@ -300,8 +297,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/p/a4ce31d2.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/p/a4ce31d2.html" itemprop="commentCount"></span>
+    <a title="valine" href="/p/f6646584.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/p/f6646584.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -311,11 +308,11 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
+              <span>1.5k</span>
             </span>
 
         <!--
-            <div class="post-description">五大常用算法——贪心算法详解以及经典例子</div> -->
+            <div class="post-description">简单介绍《HelloGithub》第一期的项目。</div> -->
 
         </div>
       </header>
@@ -328,46 +325,50 @@
       
         <meta name="referrer" content="no-referrer" />
 
-<p>五大常用算法——贪心算法详解以及经典例子</p>
+<p align="center">4️⃣😎</p>
+
 <span id="more"></span>
 
-<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg"></p>
-<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><div class="note default">
-            <p>​    <strong>贪心算法</strong>（Greedy Alogorithm）又叫登山算法，它的根本思想是逐步到达山顶，即逐步获得最优解，是解决最优化问题时的一种简单但是适用范围有限的策略。<span style="color:black;background: yellow">贪心算法没有固定的框架</span>，算法设计的关键是贪婪策略的选择。贪心策略要无后向性，也就是说某状态以后的过程不会影响以前的状态，至于当前状态有关。<br>​    贪心算法是对某些求解最优解问题的最简单、最迅速的技术。某些问题的最优解可以通过一系列的最优的选择即贪心选择来达到。但局部最优并不总能获得整体最优解，但通常能获得近似最优解。<br>在每一部贪心选择中，只考虑当前对自己最有利的选择，而不去考虑在后面看来这种选择是否合理。</p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
+<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。 - 会编程的可以贡献代码 - 不会编程的可以反馈使用这些工具中的 Bug - 帮着宣传你觉得优秀的项目 - Star 项目⭐️</p>
+<p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
+<p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
+<div class="note default">
+            <p>兴趣是最好的老师，<strong>HelloGitHub</strong> 就是帮你找到兴趣！</p>
           </div>
 
-<h2 id="解题步骤"><a href="#解题步骤" class="headerlink" title="解题步骤"></a>解题步骤</h2><div class="note default">
-            <ol><li>从问题的某个初始解出发</li><li>采用循环语句，党可以向求解目标前进一步时，就根据局部最优策略，得到一个不分解，缩小问题的范围或规模。</li><li>将所有的部分解综合起来，得到问题的最终解。</li></ol>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg"></p>
+<p><code>Tips</code>：如果文中的图获取刷不出来，可以点击<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC92b2x1bWUvMDEv">这里<i class="fa fa-external-link-alt"></i></span>更好的阅读体验。</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><div class="note default">
+            <p><strong>以下为本期内容</strong></p>
           </div>
 
-<h2 id="贪心策略的选择"><a href="#贪心策略的选择" class="headerlink" title="贪心策略的选择"></a>贪心策略的选择</h2><div class="note default">
-            <ul><li>贪心算法的原理是通过局部最优来达到全局最优，采用的是逐步构造最优解的方法。在每个阶段，都做出一个看上去最优的，决策一旦做出，就不再更改。</li><li>要选出最优解可不是一件容易的事，要证明局部最优为全局最优，要进行数学证明，否则就不能说明为全局最优。</li><li>很多问题表面上看来用贪心算法可以找到最优解，实际上却把最优解给漏掉了。这就像现实生活中的“贪小便宜吃大亏”。所以我们在解决问题的时候，一定要谨慎使用贪心算法，一定要注意这个问题适不适合采用贪心算法。</li></ul>
+<h3 id="1-Java项目"><a href="#1-Java项目" class="headerlink" title="1 Java项目"></a>1 Java项目</h3><h4 id="1-1-cachecloud"><a href="#1-1-cachecloud" class="headerlink" title="1.1 cachecloud"></a>1.1 cachecloud</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3NvaHV0di9jYWNoZWNsb3Vk">cachecloud<i class="fa fa-external-link-alt"></i></span>：搜狐视频开源的 CacheCloud 项目，提供了一个 Redis 云管理平台，功能强大，教程详细（有视频教程），文档齐全，<code>企业级开源项目</code>。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github41.jpg"></p>
+<h3 id="2-JavaScript项目"><a href="#2-JavaScript项目" class="headerlink" title="2 JavaScript项目"></a>2 JavaScript项目</h3><h4 id="2-1-zingtouch"><a href="#2-1-zingtouch" class="headerlink" title="2.1 zingtouch"></a>2.1 zingtouch</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3ppbmdjaGFydC96aW5ndG91Y2g=">ingtouch<i class="fa fa-external-link-alt"></i></span>：支持移动端各种触摸动作包含：转动、挥动、滑动等动作的库，<span class="exturl" data-url="aHR0cHM6Ly96aW5nY2hhcnQuZ2l0aHViLmlvL3ppbmd0b3VjaC8=">官方网站<i class="fa fa-external-link-alt"></i></span>，展示图如下：</p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/zingtouch-show.gif"></p>
+<h4 id="2-2-zhihudaily-vue"><a href="#2-2-zhihudaily-vue" class="headerlink" title="2.2 zhihudaily-vue"></a>2.2 zhihudaily-vue</h4><p>&emsp;、<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3lhdGVzc3NzL3poaWh1ZGFpbHktdnVl">zhihudaily-vue<i class="fa fa-external-link-alt"></i></span>：用 Vue.js 写的<code>知乎日报手机 Web 版</code>，需打开 chrome 浏览器的手机模拟功能，来获得比较好的浏览效果。访问展示图如下：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github42.jpg"></p>
+<h3 id="3-Python项目"><a href="#3-Python项目" class="headerlink" title="3 Python项目"></a>3 Python项目</h3><h4 id="3-1-python-guide"><a href="#3-1-python-guide" class="headerlink" title="3.1 python-guide"></a>3.1 python-guide</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3JlYWxweXRob24vcHl0aG9uLWd1aWRl">python-guide<i class="fa fa-external-link-alt"></i></span>：Requests 库的作者——kennethreitz，写的 Python 入门教程。不单单是语法层面的，涵盖项目结构、代码风格，进阶、工具等方方面面。虽然是<code>英文版</code>(<span class="exturl" data-url="aHR0cDovL3B5dGhvbmd1aWRlY24ucmVhZHRoZWRvY3MuaW8vemgvbGF0ZXN0Lw==">中文翻译版<i class="fa fa-external-link-alt"></i></span>)，但我这个英语渣都能看懂，你肯定也可以，快去看看吧，开卷有益。<span class="exturl" data-url="aHR0cDovL2RvY3MucHl0aG9uLWd1aWRlLm9yZy9lbi9sYXRlc3Qv">在线阅读<i class="fa fa-external-link-alt"></i></span></p>
+<h4 id="3-2-flask-admin"><a href="#3-2-flask-admin" class="headerlink" title="3.2 flask-admin"></a>3.2 flask-admin</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2ZsYXNrLWFkbWluL2ZsYXNrLWFkbWlu">flask-admin<i class="fa fa-external-link-alt"></i></span>：我工作中需要写一个<code>微型的管理系统</code>，用的就是这个框架。简直快餐型，页面都写好了，只要设置好相关配置就可以跑起来了。唯一缺点就是文档中的例子少，开发一些特定的需求需要自己看源码，才能知道如何改。<span class="exturl" data-url="aHR0cHM6Ly9mbGFzay1hZG1pbi5yZWFkdGhlZG9jcy5pby9lbi9sYXRlc3Qv">文档<i class="fa fa-external-link-alt"></i></span>，下面是我跑起来之后的样子：</p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/flask-admin-show.gif"></p>
+<h4 id="3-3-python-sdk"><a href="#3-3-python-sdk" class="headerlink" title="3.3 python-sdk"></a>3.3 python-sdk</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3Fpbml1L3B5dGhvbi1zZGs=">python-sdk<i class="fa fa-external-link-alt"></i></span>：七牛云存储 SDK。我自己在用他家的服务，上手简单、有免费额度，可以用来做‘图床’，同时，有了这个 SDK 可以写一些好用的小工具。<strong>注意</strong>：图床不能随便用，我曾经就用超了，账户的钱能扣成<code>负数</code>！</p>
+<h3 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3RhaXppbG9uZ3h1L2ludGVydmlld19weXRob24=">interview_python<i class="fa fa-external-link-alt"></i></span>：关于 Python 的面试题</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL01yS2l2ZW4vUHlaaA==">PyZh<i class="fa fa-external-link-alt"></i></span>：Python 经典的技术文章的翻译和收集，<span class="exturl" data-url="aHR0cDovL3B5emgucmVhZHRoZWRvY3MuaW8vZW4vbGF0ZXN0Lw==">在线阅读<i class="fa fa-external-link-alt"></i></span></li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL0hJVC1BbGliYWJhL2ludGVydmlldw==">interview<i class="fa fa-external-link-alt"></i></span>：笔试面试知识整理(涵盖：IOS、Android、计算机基础)，<span class="exturl" data-url="aHR0cHM6Ly9oaXQtYWxpYmFiYS5naXRodWIuaW8vaW50ZXJ2aWV3L2luZGV4Lmh0bWw=">在线阅读<i class="fa fa-external-link-alt"></i></span></li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BhZGRpbmdtZS9Gcm9udC1lbmQtV2ViLURldmVsb3BtZW50LUludGVydmlldy1RdWVzdGlvbg==">Front-end-Web-Development-Interview-Question<i class="fa fa-external-link-alt"></i></span>：前端开发面试题大收集</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL0phY2t5QW5kcm9pZC9BbmRyb2lkSW50ZXJ2aWV3LVEtQQ==">AndroidInterview-Q-A<i class="fa fa-external-link-alt"></i></span>：这个项目主要是国内一线互联网公司的 Java 和 Android 方面的内部面试题。</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FoYW5nY2hlbi9Ib3ctdG8tQmUtQS1Qcm9ncmFtbWVyLUNO">How-to-Be-A-Programmer-CN<i class="fa fa-external-link-alt"></i></span>：如何做好一枚程序员（中文翻译版）</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL21uaWVsc2VuL25ldXJhbC1uZXR3b3Jrcy1hbmQtZGVlcC1sZWFybmluZw==">neural-networks-and-deep-learning<i class="fa fa-external-link-alt"></i></span>：《神经网络与深度学习》相关代码 Python 实现，<span class="exturl" data-url="aHR0cHM6Ly90aWdlcm5laWwuZ2l0Ym9va3MuaW8vbmV1cmFsLW5ldHdvcmtzLWFuZC1kZWVwLWxlYXJuaW5nLXpoL2NvbnRlbnQvY2hhcHRlcjEuaHRtbA==">神经网络与深度学习－中文在线阅读<i class="fa fa-external-link-alt"></i></span>，该书中的相关理论的 Python 代码实现</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2pheXdjamxvdmUvYXdlc29tZS1tYWM=">awesome-mac<i class="fa fa-external-link-alt"></i></span>：排版相当好的一个 awesome 系列文章，文中介绍了很多 Mac 上好用的工具。</li>
+</ul>
+<div class="note info">
+            <p>如果你发现了好玩、有意义的开源项目 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vZ2l0aHViLmNvbS81MjF4dWV3ZWloYW4vSGVsbG9HaXRIdWIvaXNzdWVzL25ldw==">点击这里<i class="fa fa-external-link-alt"></i></span> 分享你觉得有意思的项目。</p>
           </div>
 
-<h2 id="贪心策略应考虑的问题"><a href="#贪心策略应考虑的问题" class="headerlink" title="贪心策略应考虑的问题"></a>贪心策略应考虑的问题</h2><div class="note default">
-            <ul><li><p><input checked="" disabled="" type="checkbox">  候选集合S</p><p>为了构造问题的解决方案，有一个候选集合C作为问题的可能解，问题的最终解均取自于候选集合C。</p></li><li><p><input checked="" disabled="" type="checkbox">  解集合S</p><p>随着贪心选择的进行，解集合不断扩展，直到构成一个满足问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  解决函数solution</p><p>检查解集合是否构成问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  选择函数select</p><p>即贪心策略，这是贪心算法的关键，它指出哪个候选对象有希望构成成问题的解。</p></li><li><p><input checked="" disabled="" type="checkbox">  可行函数feasible</p><p>检查解集合中加入一个候选对象是否可行，即解集合扩展后是否满足约束条件。</p></li></ul>
-          </div>
-
-<h2 id="例题-会场安排"><a href="#例题-会场安排" class="headerlink" title="例题 会场安排"></a>例题 会场安排</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><div class="note default">
-            <p>假设有一个会场，现要求此会场中安排尽可能多的活动，求会场中所能安排的活动的最多数，并给出安排方案。</p>
-          </div>
-
-
-<h3 id="输入要求"><a href="#输入要求" class="headerlink" title="输入要求"></a>输入要求</h3><div class="note default">
-            <p>第一行n为所有活动数，随后n行，每行两个数，分别为活动的开始和结束时间。</p>
-          </div>
-
-<h3 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">11</span><br><span class="line">1 4</span><br><span class="line">3 5</span><br><span class="line">0 6</span><br><span class="line">5 7</span><br><span class="line">3 8</span><br><span class="line">5 9</span><br><span class="line">6 10</span><br><span class="line">8 11</span><br><span class="line">8 12</span><br><span class="line">2 13</span><br><span class="line">12 14</span><br></pre></td></tr></table></figure>
-
-<h3 id="算法思想"><a href="#算法思想" class="headerlink" title="算法思想"></a>算法思想</h3><div class="note default">
-            <p>将活动的结束时间从小到大进行排序，先选择结束时间最早的活动，然后看下一个活动的开始时间是否晚于上一个被选中活动的结束时间，若是，则选中该活动；否则不选中。直到所有的活动都遍历了一遍。</p>
-          </div>
-
-
-<h3 id="贪心选择性的证明"><a href="#贪心选择性的证明" class="headerlink" title="贪心选择性的证明"></a>贪心选择性的证明</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyzm.jpg"></p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> n, *begin, *finsh;			<span class="comment">//分别记录开始时间 结束时间</span></span><br><span class="line">    <span class="type">int</span> *a;			<span class="comment">//记录是否被选中</span></span><br><span class="line">    	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    begin = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    finsh = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    a = (<span class="type">int</span>*) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span>) *n);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;begin[i], &amp;finsh[i]);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    greedy(n, begin, finsh, a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span></span><br><span class="line">&#123;</span><br><span class="line">    finshpx(n, begin, finsh);			<span class="comment">//按结束时间进行排序</span></span><br><span class="line">    a[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> count = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> endtime = finsh[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(begin[i] &gt;= endtime) </span><br><span class="line">        &#123;</span><br><span class="line">            endtime = finsh[i];</span><br><span class="line">            count++;</span><br><span class="line">            a[i] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        a[i] = <span class="number">0</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;最多容纳个%d活动\n&quot;</span>, count);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;分别为：&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    	<span class="keyword">if</span>(a[i] == <span class="number">1</span>) </span><br><span class="line">    		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, i + <span class="number">1</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>			<span class="comment">//冒泡排序</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; n - i; j++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(finsh[j] &gt; finsh[j + <span class="number">1</span>]) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> t = finsh[j];</span><br><span class="line">            finsh[j] = finsh[j + <span class="number">1</span>];</span><br><span class="line">            finsh[j + <span class="number">1</span>] = t;</span><br><span class="line">            t = begin[j];</span><br><span class="line">            begin[j] = begin[j + <span class="number">1</span>];</span><br><span class="line">            begin[j + <span class="number">1</span>] = t;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyresult.jpg"></p>
+<p>❤❤❤</p>
+<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzA0L0hlbGxvR2l0SHViMDQubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
 
     </div>
 
@@ -432,7 +433,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%97%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 计算机算法</a>
+              <a href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 编程</a>
+              <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
           </div>
 
         
@@ -446,13 +448,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/p/8d4b7ae1.html" rel="prev" title="计算机组成原理">
-      <i class="fa fa-chevron-left"></i> 计算机组成原理
+    <a href="/p/6bb35d3d.html" rel="prev" title="《HelloGithub》第03期">
+      <i class="fa fa-chevron-left"></i> 《HelloGithub》第03期
     </a></div>
-      <div class="post-nav-item">
-    <a href="/p/d04bd5bc.html" rel="next" title="操作系统">
-      操作系统 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -512,7 +511,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE"><span class="nav-text">思维导图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%AD%A5%E9%AA%A4"><span class="nav-text">解题步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83%E7%AD%96%E7%95%A5%E7%9A%84%E9%80%89%E6%8B%A9"><span class="nav-text">贪心策略的选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83%E7%AD%96%E7%95%A5%E5%BA%94%E8%80%83%E8%99%91%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-text">贪心策略应考虑的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98-%E4%BC%9A%E5%9C%BA%E5%AE%89%E6%8E%92"><span class="nav-text">例题 会场安排</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E8%A6%81%E6%B1%82"><span class="nav-text">输入要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="nav-text">测试用例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3"><span class="nav-text">算法思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83%E9%80%89%E6%8B%A9%E6%80%A7%E7%9A%84%E8%AF%81%E6%98%8E"><span class="nav-text">贪心选择性的证明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="nav-text">实验结果</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E5%AE%B9"><span class="nav-text">内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Java%E9%A1%B9%E7%9B%AE"><span class="nav-text">1 Java项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-cachecloud"><span class="nav-text">1.1 cachecloud</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-JavaScript%E9%A1%B9%E7%9B%AE"><span class="nav-text">2 JavaScript项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-zingtouch"><span class="nav-text">2.1 zingtouch</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-zhihudaily-vue"><span class="nav-text">2.2 zhihudaily-vue</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Python%E9%A1%B9%E7%9B%AE"><span class="nav-text">3 Python项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-python-guide"><span class="nav-text">3.1 python-guide</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-flask-admin"><span class="nav-text">3.2 flask-admin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-python-sdk"><span class="nav-text">3.3 python-sdk</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%85%B6%E4%BB%96"><span class="nav-text">4 其他</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

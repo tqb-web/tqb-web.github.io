@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tianqb.top/p/f6646584.html</loc>
+    
+    <lastmod>2022-04-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://tianqb.top/guestbook/index.html</loc>
     
     <lastmod>2022-04-14</lastmod>
@@ -209,20 +218,6 @@
 
   
   <url>
-    <loc>https://tianqb.top/tags/hexo/</loc>
-    <lastmod>2022-04-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tianqb.top/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2022-04-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://tianqb.top/tags/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2022-04-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -231,6 +226,20 @@
   
   <url>
     <loc>https://tianqb.top/tags/Github/</loc>
+    <lastmod>2022-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tianqb.top/tags/hexo/</loc>
+    <lastmod>2022-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tianqb.top/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2022-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -253,14 +262,14 @@
 
   
   <url>
-    <loc>https://tianqb.top/categories/hexo/</loc>
+    <loc>https://tianqb.top/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</loc>
     <lastmod>2022-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://tianqb.top/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</loc>
+    <loc>https://tianqb.top/categories/hexo/</loc>
     <lastmod>2022-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
