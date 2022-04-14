@@ -245,12 +245,12 @@
 
 <style type="text/css">
 
-/*.glyphicon-chevron-left:before{
+.glyphicon-chevron-left:before{
 	 content: "《" 
 }
 .glyphicon-chevron-right:before{
 	 content: "》" 
-}*/
+}
 
 .right-siders{
    border-radius: 10px;
@@ -267,6 +267,7 @@
 }
 
 .carousel{
+                border-radius: 20px;
 	width: 100%;
 	height: 280px;
 	position: relative;
@@ -275,6 +276,7 @@
 
 @media all and (max-width: 768px){
 	.carousel{
+                                border-radius: 20px;
 		width: 100% !important;
 		height: 103px !important;
 		position: relative;
@@ -419,9 +421,17 @@
 
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left {
-  background: url('/images/icon-slides.png');
+  /*background: url('/images/icon-slides.png');*/
   background-position-y: -20px;
   left: 9px;
+}
+
+@media all and (max-width: 768px){
+.carousel-control .glyphicon-chevron-left {
+  /*background: url('/images/icon-slides.png');*/
+  background-position-y: -20px;
+  left: 0px;
+}
 }
 
 /*
@@ -434,7 +444,7 @@
 
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-right {
-  background: url('/images/icon-slides.png');
+  /*background: url('/images/icon-slides.png');*/
   background-position-x: -50px;
   background-position-y: -20px;
   right: 0px;
@@ -524,7 +534,7 @@
     bottom: -10px;
   }
 }
-@media all and (max-width: 700px){
+@media all and (max-width: 768px){
 .carousel-indicators li {
   display: inline-block;
   width: 20px !important;

@@ -1255,7 +1255,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff9cff;
+  background: #ffff7e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2797,9 +2797,9 @@ body {
   width: 100%;
   background-size: cover;
 }
-@media all and (max-width: 1200px) and (min-width: 768px) {
+@media all and (max-width: 1400px) and (min-width: 768px) {
   body {
-    background: url("/images/background.jpg") center center;
+    background: url("/images/pingban1.jpg") center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
@@ -2808,7 +2808,7 @@ body {
 }
 @media all and (max-width: 768px) {
   body {
-    background: url("/images/background3.jpg") center center;
+    background: url("/images/mobile3.jpg") center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
