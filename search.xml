@@ -98,6 +98,30 @@
       </tags>
   </entry>
   <entry>
+    <title>最详细的ENVI安装教程(内含安装程序)</title>
+    <url>/p/32d001ab.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<span id="more"></span>
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="ENVI简介"><a href="#ENVI简介" class="headerlink" title="ENVI简介"></a>ENVI简介</h3><p>&emsp;<strong>ENVI</strong>——完整的<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTklODElQTUlRTYlODQlOUYlRTUlOUIlQkUlRTUlODMlOEYlRTUlQTQlODQlRTclOTAlODY=">遥感图像处理<i class="fa fa-external-link-alt"></i></span>平台<strong>ENVI</strong>(The Environment for Visualizing Images)是美国Exelis Visual Information Solutions公司的旗舰产品。它是由遥感领域的科学家采用<code>交互式数据语言IDL(Interactive Data Language)</code>开发的一套功能强大的遥感<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOUIlQkUlRTUlODMlOEYlRTUlQTQlODQlRTclOTAlODYlRTglQkQlQUYlRTQlQkIlQjY=">图像处理软件<i class="fa fa-external-link-alt"></i></span>。它是快速、便捷、准确地从影像中提取信息的首屈一指的软件解决方案。今天，众多的影像分析师和科学家选择ENVI来从遥感影像中提取信息。ENVI已经广泛应用于科研、环境保护、气象、石油矿产勘探、农业、林业、医学、国防&amp;安全、地球科学、公用设施管理、遥感工程、水利、海洋、测绘勘察和城市与区域规划等领域。</p>
+<h3 id="ENVI优势"><a href="#ENVI优势" class="headerlink" title="ENVI优势"></a>ENVI优势</h3><ol>
+<li>先进、可靠的影像分析工具——<code>全套影像信息智能化提取工具</code>,全面提升影像的价值。</li>
+<li>专业的光谱分析——<code>高光谱分析</code>一直处于世界领先地位。</li>
+<li>随心所欲扩展新功能——底层的IDL语言可以帮助用户轻松地添加、扩展ENVI的功能，甚至<code>开发定制自己的专业遥感平台</code>。</li>
+<li>流程化图像处理工具——<strong>ENVI</strong>将众多主流的图像处理过程<code>集成到流程化（Workflow）图像处理工具中</code>，进一步提高了图像处理的效率。</li>
+<li>与ArcGIS的整合——从2007年开始，与ESRI公司的全面合作,为遥感和GIS的一体化集成提供了一个<code>最佳的解决方案</code>。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>ENVI</category>
+      </categories>
+      <tags>
+        <tag>ENVI</tag>
+        <tag>下载安装</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《HelloGithub》第04期</title>
     <url>/p/f6646584.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -294,7 +318,7 @@
 <h3 id="1-CSS项目"><a href="#1-CSS项目" class="headerlink" title="1 CSS项目"></a>1 CSS项目</h3><h4 id="1-1-typo-css"><a href="#1-1-typo-css" class="headerlink" title="1.1 typo.css"></a>1.1 typo.css</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3NvZmlzaC90eXBvLmNzcw==">typo.css<i class="fa fa-external-link-alt"></i></span>：中文网页重设与排版，为了一致化浏览器排版效果，制作最适合中文阅读的网页排版。包括桌面和移动<span class="exturl" data-url="aHR0cDovL3R5cG8uc29maS5zaC8=">平台<i class="fa fa-external-link-alt"></i></span>。</p>
 <h3 id="2-JavaScript项目"><a href="#2-JavaScript项目" class="headerlink" title="2 JavaScript项目"></a>2 JavaScript项目</h3><h4 id="2-1-ant-ant"><a href="#2-1-ant-ant" class="headerlink" title="2.1 ant-ant-"></a>2.1 ant-ant-</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FudC1kZXNpZ24vYW50LWRlc2lnbg==">ant-ant-<i class="fa fa-external-link-alt"></i></span> ：阿里开源的设置企业级的<code>UI语言</code>设计React。<span class="exturl" data-url="aHR0cHM6Ly9hbnQuZGVzaWduL2RvY3MvcmVhY3QvaW50cm9kdWNlLWNu">文档<i class="fa fa-external-link-alt"></i></span>，样式偏向实现设计和展示效果于中文。</p>
 <h4 id="2-2-VeryNginx"><a href="#2-2-VeryNginx" class="headerlink" title="2.2 VeryNginx"></a>2.2 VeryNginx</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FsZXhhemhvdS9WZXJ5Tmdpbng=">VeryNginx<i class="fa fa-external-link-alt"></i></span>：一个功能强大且对人类友好的Nginx扩展程序。<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FsZXhhemhvdS9WZXJ5TmdpbngvYmxvYi9tYXN0ZXIvcmVhZG1lX3poLm1k">VeryNginx文档<i class="fa fa-external-link-alt"></i></span>😉</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github12.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github12.jpg" alt="VeryNginx运行图"></p>
 <h4 id="2-3-activate-power-mode"><a href="#2-3-activate-power-mode" class="headerlink" title="2.3 activate-power-mode"></a>2.3 activate-power-mode</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2Rpc2p1a3IvYWN0aXZhdGUtcG93ZXItbW9kZQ==">activate-power-mode<i class="fa fa-external-link-alt"></i></span>：输入爆炸效果🎇</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/activate-power-mode.gif"></p>
 <h3 id="3-Python项目"><a href="#3-Python项目" class="headerlink" title="3 Python项目"></a>3 Python项目</h3><h4 id="3-1-awesome-python-webapp"><a href="#3-1-awesome-python-webapp" class="headerlink" title="3.1 awesome-python-webapp"></a>3.1 awesome-python-webapp</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL21pY2hhZWxsaWFvL2F3ZXNvbWUtcHl0aG9uLXdlYmFwcA==">awesome-python-webapp<i class="fa fa-external-link-alt"></i></span>：廖老师的Python入门教程中的实践项目的代码，<span class="exturl" data-url="aHR0cDovL3d3dy5saWFveHVlZmVuZy5jb20vd2lraS8wMDEzNzQ3MzgxMjUwOTVjOTU1YzFlNmQ4YmI0OTMxODIxMDNmYWM5MjcwNzYyYTAwMC8wMDEzOTc2MTYwMDM5MjVhM2QxNTcyODRjZDI0YmMwOTUyZDZjNGE3YzlkOGM1NTAwMA==">在线阅读教程<i class="fa fa-external-link-alt"></i></span>。</p>
