@@ -6,7 +6,7 @@
   <link href="https://tianqb.top/atom.xml" rel="self"/>
   
   <link href="https://tianqb.top/"/>
-  <updated>2022-04-16T09:00:15.718Z</updated>
+  <updated>2022-04-16T13:50:19.722Z</updated>
   <id>https://tianqb.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给Hexo Next主题添加首页轮播图</title>
+    <link href="https://tianqb.top/p/9081e2d8.html"/>
+    <id>https://tianqb.top/p/9081e2d8.html</id>
+    <published>2022-04-16T11:55:12.000Z</published>
+    <updated>2022-04-16T13:50:19.722Z</updated>
+    
+    
+    <summary type="html">本文介绍如何给自己的hexo博客加上首页轮播图，不仅使得博客更加美观，而且增加了可读性。</summary>
+    
+    
+    <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/tjlbt2.jpg" type="image"/>
+    
+    
+    <category term="hexo" scheme="https://tianqb.top/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://tianqb.top/tags/hexo/"/>
+    
+    <category term="next主题美化" scheme="https://tianqb.top/tags/next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="首页轮播图" scheme="https://tianqb.top/tags/%E9%A6%96%E9%A1%B5%E8%BD%AE%E6%92%AD%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>最详细的ENVI安装教程(内含安装程序)</title>
@@ -42,7 +67,7 @@
     <link href="https://tianqb.top/p/f6646584.html"/>
     <id>https://tianqb.top/p/f6646584.html</id>
     <published>2022-04-14T07:56:04.000Z</published>
-    <updated>2022-04-16T04:01:04.604Z</updated>
+    <updated>2022-04-16T11:58:57.304Z</updated>
     
     
     <summary type="html">简单介绍《HelloGithub》第四期的项目，主要包含了Java、JavaScript|、Python项目，每个项目下面还有多个小项目，非常的有意思。</summary>
