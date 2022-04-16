@@ -24,13 +24,13 @@
 <h3 id="1-3安装NodeJS"><a href="#1-3安装NodeJS" class="headerlink" title="1.3安装NodeJS"></a>1.3<strong>安装NodeJS</strong></h3><p>   &ensp;在自己电脑上安装好<code>NodeJS</code>，Hexo是基于NodeJS编写的，所以需要安装NodeJS和npm工具。网上找篇教程或者参考 <a hred=https://blog.csdn.net/yaorongke/article/details/119084295>NodeJS安装及配置(Windows)</a></p>
 <h2 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2 创建仓库"></a>2 创建仓库</h2><p>   &ensp;在<code>Github</code>上创建一个新的代码仓库用于保存我们的网页。</p>
 <p>   &ensp;点击右上角头像，然后点击<code>Your respositories</code>，进入仓库页面。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk1.jpg"></p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk1.jpg" alt="github主页面"></p>
 <p>   点击<code>New</code>按钮，进入仓库创建页面。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk2.jpg"></p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk2.jpg" alt="个人仓库"></p>
 <p>   填写仓库名，格式必须为<code>&lt;用户名&gt;.github.io</code>,例如：<code>tqb-web.github.io</code>可以选择<code>Add a README file</code>，这是添加对你项目的描述的文档。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk3.jpg"></p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk3.jpg" alt="创建项目"></p>
 <p>   在Github Page中找到我们主页的地址为<code>https://tqb-web.github.io/</code>，以后就可以同个这个网址来访问我们的博客，由于博客还没有搭建完成，所以现在这个网址还不能正常使用。</p>
-<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk4.jpg"></p>
+<p>   <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk4.jpg" alt="查看博客网址"></p>
 <h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3 安装Hexo"></a>3 安装Hexo</h2><p>我们采用<code>Hexo</code>来创建我们的博客网站，<code>Hexo</code> 是一个基于<code>NodeJS</code>的静态博客网站生成器，使用<code>Hexo</code>不需开发，只要进行一些必要的配置即可生成一个个性化的博客网站，非常方便。点击进入 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL3poLWNuLw==">官网<i class="fa fa-external-link-alt"></i></span></p>
 <p>安装<code>Hexo</code></p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
@@ -45,7 +45,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo server</span><br><span class="line">或者直接 hexo cl&amp;&amp;hexo g&amp;&amp;hexo s</span><br></pre></td></tr></table></figure>
 
 <p>浏览器访问<code> http://localhost:4000</code>，页面默认主图风格如下</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/blog.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/blog.jpg" alt="hexo默认主题"></p>
 <h2 id="4-发布到Github-Pages"><a href="#4-发布到Github-Pages" class="headerlink" title="4 发布到Github Pages"></a>4 发布到Github Pages</h2><h3 id="4-1-生成SSH添加到Github"><a href="#4-1-生成SSH添加到Github" class="headerlink" title="4.1 生成SSH添加到Github"></a>4.1 生成SSH添加到Github</h3><p>回到你的git bash中</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
@@ -57,10 +57,10 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
 
 <p>这个时候它会告诉你已经生成了<code>.ssh</code>的文件夹。在你的电脑中找到这个文件夹。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/ssh.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/ssh.jpg" alt="ssh密钥"></p>
 <p><code>ssh</code>，简单来讲，就是一个秘钥，其中，<code>id_rsa</code>是你这台电脑的私人秘钥，不能给别人看的，<code>id_rsa.pub</code>是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
 <p>而后在GitHub的setting中，找到SSH keys的设置选项，点击<code>New SSH key</code>把你的<code>id_rsa.pub</code>里面的信息复制进去。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/sshkey.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/sshkey.jpg" alt="添加密钥"></p>
 <p>在<code>Git Bash</code>中检查是否成功</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
@@ -78,7 +78,7 @@
           </div>
 
 <p>如下图，到时候直接复制到repository:&nbsp;后即可(注意冒号后面一定要有空格，否则不会成功)</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/lookhs.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/lookhs.jpg" alt="仓库地址"></p>
 <p>配置完成后，需要安装<code>deploy-git</code>,也就是部署的名的命令，这样才能够将博客部署到<code>Github</code>。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
@@ -86,7 +86,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br><span class="line">或者hexo d</span><br></pre></td></tr></table></figure>
 
 <p>如果看到下图显示的东西，就说明成功啦！</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/deploy.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/deploy.jpg" alt=" "></p>
 <p>然后我们就可以用之前提到的地址来访问我们的博客啦！！！</p>
 ]]></content>
       <categories>
@@ -131,28 +131,28 @@
 <span id="more"></span>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
-<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。 - 会编程的可以贡献代码 - 不会编程的可以反馈使用这些工具中的 Bug - 帮着宣传你觉得优秀的项目 - Star 项目⭐️</p>
+<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
 <p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
 <p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
 <div class="note default">
             <p>兴趣是最好的老师，<strong>HelloGitHub</strong> 就是帮你找到兴趣！</p>
           </div>
 
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg" alt=" "></p>
 <p><code>Tips</code>：如果文中的图获取刷不出来，可以点击<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC92b2x1bWUvMDEv">这里<i class="fa fa-external-link-alt"></i></span>更好的阅读体验。</p>
 <h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><div class="note default">
             <p><strong>以下为本期内容</strong></p>
           </div>
 
 <h3 id="1-Java项目"><a href="#1-Java项目" class="headerlink" title="1 Java项目"></a>1 Java项目</h3><h4 id="1-1-cachecloud"><a href="#1-1-cachecloud" class="headerlink" title="1.1 cachecloud"></a>1.1 cachecloud</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3NvaHV0di9jYWNoZWNsb3Vk">cachecloud<i class="fa fa-external-link-alt"></i></span>：搜狐视频开源的 CacheCloud 项目，提供了一个 Redis 云管理平台，功能强大，教程详细（有视频教程），文档齐全，<code>企业级开源项目</code>。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github41.jpg"></p>
-<h3 id="2-JavaScript项目"><a href="#2-JavaScript项目" class="headerlink" title="2 JavaScript项目"></a>2 JavaScript项目</h3><h4 id="2-1-zingtouch"><a href="#2-1-zingtouch" class="headerlink" title="2.1 zingtouch"></a>2.1 zingtouch</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3ppbmdjaGFydC96aW5ndG91Y2g=">ingtouch<i class="fa fa-external-link-alt"></i></span>：支持移动端各种触摸动作包含：转动、挥动、滑动等动作的库，<span class="exturl" data-url="aHR0cHM6Ly96aW5nY2hhcnQuZ2l0aHViLmlvL3ppbmd0b3VjaC8=">官方网站<i class="fa fa-external-link-alt"></i></span>，展示图如下：</p>
-<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/zingtouch-show.gif"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github41.jpg" alt="Redis云管理平台"></p>
+<h3 id="2-JavaScript项目"><a href="#2-JavaScript项目" class="headerlink" title="2 JavaScript项目"></a>2 JavaScript项目</h3><h4 id="2-1-zingtouch"><a href="#2-1-zingtouch" class="headerlink" title="2.1 zingtouch"></a>2.1 zingtouch</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3ppbmdjaGFydC96aW5ndG91Y2g=">zingtouch<i class="fa fa-external-link-alt"></i></span>：支持移动端各种触摸动作包含：转动、挥动、滑动等动作的库，<span class="exturl" data-url="aHR0cHM6Ly96aW5nY2hhcnQuZ2l0aHViLmlvL3ppbmd0b3VjaC8=">官方网站<i class="fa fa-external-link-alt"></i></span>，展示图如下：</p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/zingtouch-show.gif" alt="  "></p>
 <h4 id="2-2-zhihudaily-vue"><a href="#2-2-zhihudaily-vue" class="headerlink" title="2.2 zhihudaily-vue"></a>2.2 zhihudaily-vue</h4><p>&emsp;、<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3lhdGVzc3NzL3poaWh1ZGFpbHktdnVl">zhihudaily-vue<i class="fa fa-external-link-alt"></i></span>：用 Vue.js 写的<code>知乎日报手机 Web 版</code>，需打开 chrome 浏览器的手机模拟功能，来获得比较好的浏览效果。访问展示图如下：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github42.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github42.jpg" alt="知乎日报web版"></p>
 <h3 id="3-Python项目"><a href="#3-Python项目" class="headerlink" title="3 Python项目"></a>3 Python项目</h3><h4 id="3-1-python-guide"><a href="#3-1-python-guide" class="headerlink" title="3.1 python-guide"></a>3.1 python-guide</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3JlYWxweXRob24vcHl0aG9uLWd1aWRl">python-guide<i class="fa fa-external-link-alt"></i></span>：Requests 库的作者——kennethreitz，写的 Python 入门教程。不单单是语法层面的，涵盖项目结构、代码风格，进阶、工具等方方面面。虽然是<code>英文版</code>(<span class="exturl" data-url="aHR0cDovL3B5dGhvbmd1aWRlY24ucmVhZHRoZWRvY3MuaW8vemgvbGF0ZXN0Lw==">中文翻译版<i class="fa fa-external-link-alt"></i></span>)，但我这个英语渣都能看懂，你肯定也可以，快去看看吧，开卷有益。<span class="exturl" data-url="aHR0cDovL2RvY3MucHl0aG9uLWd1aWRlLm9yZy9lbi9sYXRlc3Qv">在线阅读<i class="fa fa-external-link-alt"></i></span></p>
 <h4 id="3-2-flask-admin"><a href="#3-2-flask-admin" class="headerlink" title="3.2 flask-admin"></a>3.2 flask-admin</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2ZsYXNrLWFkbWluL2ZsYXNrLWFkbWlu">flask-admin<i class="fa fa-external-link-alt"></i></span>：我工作中需要写一个<code>微型的管理系统</code>，用的就是这个框架。简直快餐型，页面都写好了，只要设置好相关配置就可以跑起来了。唯一缺点就是文档中的例子少，开发一些特定的需求需要自己看源码，才能知道如何改。<span class="exturl" data-url="aHR0cHM6Ly9mbGFzay1hZG1pbi5yZWFkdGhlZG9jcy5pby9lbi9sYXRlc3Qv">文档<i class="fa fa-external-link-alt"></i></span>，下面是我跑起来之后的样子：</p>
-<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/flask-admin-show.gif"></p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/flask-admin-show.gif" alt=" "></p>
 <h4 id="3-3-python-sdk"><a href="#3-3-python-sdk" class="headerlink" title="3.3 python-sdk"></a>3.3 python-sdk</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3Fpbml1L3B5dGhvbi1zZGs=">python-sdk<i class="fa fa-external-link-alt"></i></span>：七牛云存储 SDK。我自己在用他家的服务，上手简单、有免费额度，可以用来做‘图床’，同时，有了这个 SDK 可以写一些好用的小工具。<strong>注意</strong>：图床不能随便用，我曾经就用超了，账户的钱能扣成<code>负数</code>！</p>
 <h3 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h3><ul>
 <li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3RhaXppbG9uZ3h1L2ludGVydmlld19weXRob24=">interview_python<i class="fa fa-external-link-alt"></i></span>：关于 Python 的面试题</li>
@@ -189,7 +189,7 @@
 <span id="more"></span>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
-<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong><!--more-->，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。 - 会编程的可以贡献代码 - 不会编程的可以反馈使用这些工具中的 Bug - 帮着宣传你觉得优秀的项目 - Star 项目⭐️</p>
+<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
 <p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
 <p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
 <div class="note default">
@@ -204,17 +204,17 @@
 
 <h3 id="1-CSS项目"><a href="#1-CSS项目" class="headerlink" title="1 CSS项目"></a>1 CSS项目</h3><h4 id="1-1-animate-css"><a href="#1-1-animate-css" class="headerlink" title="1.1 animate.css"></a>1.1 animate.css</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FuaW1hdGUtY3NzL2FuaW1hdGUuY3Nz">animate.css<i class="fa fa-external-link-alt"></i></span>：提供炫酷<code>动画</code>效果，同时方便、易用、跨浏览器的 CSS 库。<span class="exturl" data-url="aHR0cHM6Ly9kYW5lZGVuLmdpdGh1Yi5pby9hbmltYXRlLmNzcy8=">在线演示<i class="fa fa-external-link-alt"></i></span></p>
 <h4 id="1-2-mui"><a href="#1-2-mui" class="headerlink" title="1.2 mui"></a>1.2 mui</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2RjbG91ZGlvL211aQ==">mui<i class="fa fa-external-link-alt"></i></span>：最接近<code>原生 APP</code> 体验的高性能框架。性能和体验的差距，一直是 mobile App 开发者放弃 HTML5 的首要原因。mui 框架有效的解决了这些问题，这是一个可以方便开发出高性能 App 的框架，也是目前最接近原生 App 效果的框架。<span class="exturl" data-url="aHR0cDovL2Rldi5kY2xvdWQubmV0LmNuL211aS8=">mui 官网<i class="fa fa-external-link-alt"></i></span></p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/pullrefresh.gif"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/pullrefresh.gif" alt="mui运行图"></p>
 <h3 id="2-Go项目"><a href="#2-Go项目" class="headerlink" title="2 Go项目"></a>2 Go项目</h3><h4 id="2-1-pholcus"><a href="#2-1-pholcus" class="headerlink" title="2.1 pholcus"></a>2.1 pholcus</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2hlbnJ5bGVlMmNuL3Bob2xjdXM=">pholcus<i class="fa fa-external-link-alt"></i></span>：Pholcus 是纯 Go 语言编写的高并发、分布式、重量级<code>爬虫软件</code>，支持单机、服务端、客户端三种运行模式，拥有 Web、GUI、命令行三种操作界面，功能齐全、强大。<span class="exturl" data-url="aHR0cHM6Ly9waG9sY3VzLmdpdGJvb2tzLmlvL2RvY3MvY29udGVudC8=">使用手册<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github31.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github31.jpg" alt="pholcus爬虫软件"></p>
 <h3 id="3-Java项目"><a href="#3-Java项目" class="headerlink" title="3 Java项目"></a>3 Java项目</h3><h4 id="3-1-greys-anatomy"><a href="#3-1-greys-anatomy" class="headerlink" title="3.1 greys-anatomy"></a>3.1 greys-anatomy</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL29sZG1hbnB1c2hjYXJ0L2dyZXlzLWFuYXRvbXk=">greys-anatomy<i class="fa fa-external-link-alt"></i></span>：Greys 是 Java 在线问题诊断工具。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github32.png"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github32.png" alt="在线问诊工具"></p>
 <h3 id="4-JavaScript项目"><a href="#4-JavaScript项目" class="headerlink" title="4 JavaScript项目"></a>4 JavaScript项目</h3><h4 id="4-1-OS-js"><a href="#4-1-OS-js" class="headerlink" title="4.1 OS.js"></a>4.1 OS.js</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL29zLWpzL09TLmpz">OS.js<i class="fa fa-external-link-alt"></i></span>：JavaScript 写的基于浏览器上的桌面操作系统。<span class="exturl" data-url="aHR0cHM6Ly9kZW1vLm9zLWpzLm9yZy8=">在线演示<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github33.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github33.jpg" alt="基于浏览器的操作系统"></p>
 <h4 id="4-2-editor-md"><a href="#4-2-editor-md" class="headerlink" title="4.2 editor.md"></a>4.2 editor.md</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BhbmRhby9lZGl0b3IubWQ=">editor.md<i class="fa fa-external-link-alt"></i></span>：是一款开源的、可嵌入的 <code>Markdown 在线编辑器（组件）</code>，基于 CodeMirror、jQuery 和 Marked 构建。<span class="exturl" data-url="aHR0cDovL2xhYi5sZXB0dXJlLmNvbS9lZGl0b3Iv">在线尝试<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github34.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github34.jpg" alt="MD在线编辑器"></p>
 <h3 id="5-PHP项目"><a href="#5-PHP项目" class="headerlink" title="5 PHP项目"></a>5 PHP项目</h3><h4 id="5-1-walle-web"><a href="#5-1-walle-web" class="headerlink" title="5.1 walle-web"></a>5.1 walle-web</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL21lb2x1L3dhbGxlLXdlYg==">walle-web<i class="fa fa-external-link-alt"></i></span>：Walle（瓦力） 一个 <code>Web 部署系统工具</code>，可能也是个持续发布工具，配置简单、功能完善、界面流畅、开箱即用！支持 git、svn 版本管理，支持各种 Web 代码发布，静态的 HTML，动态 PHP，需要编译的 Java 等。<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21lb2x1L3dhbGxlLXdlYi9ibG9iL21hc3Rlci9kb2NzL1JFQURNRS16aC5tZA==">中文介绍<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
-<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/03/img/wali-show.gif"></p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/03/img/wali-show.gif" alt="Walle"></p>
 <h3 id="6-Python项目"><a href="#6-Python项目" class="headerlink" title="6 Python项目"></a>6 Python项目</h3><h4 id="6-1-KindleEar"><a href="#6-1-KindleEar" class="headerlink" title="6.1 KindleEar"></a>6.1 KindleEar</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2NkaGlnaC9LaW5kbGVFYXI=">KindleEar<i class="fa fa-external-link-alt"></i></span>：这是一个运行在 Google App Engine(GAE) 上的 Kindle 个人推送服务应用，生成排版精美的杂志模式 <code>mobi/epub</code> 格式自动每天推送至您的 Kindle 或其他邮箱。</p>
 <h3 id="7-其他"><a href="#7-其他" class="headerlink" title="7 其他"></a>7 其他</h3><h4 id="7-1-css-creating"><a href="#7-1-css-creating" class="headerlink" title="7.1 css-creating"></a>7.1 css-creating</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2Nzc2RyZWFtL2Nzcy1jcmVhdGluZw==">css-creating<i class="fa fa-external-link-alt"></i></span>：CSS 创作指南。</p>
 <h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><div class="note info">
@@ -242,7 +242,7 @@
 <span id="more"></span>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
-<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong><!--more-->，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。 - 会编程的可以贡献代码 - 不会编程的可以反馈使用这些工具中的 Bug - 帮着宣传你觉得优秀的项目 - Star 项目⭐️</p>
+<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
 <p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
 <p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
 <div class="note default">
@@ -257,18 +257,18 @@
 
 <h3 id="1-CSS项目"><a href="#1-CSS项目" class="headerlink" title="1 CSS项目"></a>1 CSS项目</h3><h4 id="1-1-github-markdown-css"><a href="#1-1-github-markdown-css" class="headerlink" title="1.1 github-markdown-css"></a>1.1 github-markdown-css</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3NpbmRyZXNvcmh1cy9naXRodWItbWFya2Rvd24tY3Nz">github-markdown-css<i class="fa fa-external-link-alt"></i></span>：<code>仿 GitHub 的 Markdown 的样式</code>，就是使用了这个 CSS 后，Markdown 展示效果和 GitHub 的大致一样。<span class="exturl" data-url="aHR0cHM6Ly9zaW5kcmVzb3JodXMuY29tL2dpdGh1Yi1tYXJrZG93bi1jc3Mv">示例<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="2-JavaScript项目"><a href="#2-JavaScript项目" class="headerlink" title="2 JavaScript项目"></a>2 JavaScript项目</h3><h4 id="2-1-listen1-desktop"><a href="#2-1-listen1-desktop" class="headerlink" title="2.1 listen1_desktop"></a>2.1 listen1_desktop</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2xpc3RlbjEvbGlzdGVuMV9kZXNrdG9w">listen1_desktop<i class="fa fa-external-link-alt"></i></span>：<code>Listen1</code>让你用一个网页就能听到多个网站的在线音乐，支持各种平台。如图：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github21.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github21.jpg" alt="Listen1主界面"></p>
 <h4 id="2-2-jquery-weui"><a href="#2-2-jquery-weui" class="headerlink" title="2.2 jquery-weui"></a>2.2 jquery-weui</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2xpaG9uZ3h1bjk0NS9qcXVlcnktd2V1aQ==">jquery-weui<i class="fa fa-external-link-alt"></i></span>：可能是最好用<code> WeUI</code> 版本，展示效果如下：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github22.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github22.jpg" alt="jquery-weui主界面"></p>
 <h4 id="2-3-ant-motion"><a href="#2-3-ant-motion" class="headerlink" title="2.3 ant-motion"></a>2.3 ant-motion</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FudC1kZXNpZ24vYW50LW1vdGlvbg==">ant-motion<i class="fa fa-external-link-alt"></i></span>：阿里开源的项目，<code>一套 React 框架动效解决方案</code>，可以帮助开发者，更容易的在项目中使用动效。同时可以方便快捷地制作一个公司的介绍页，<span class="exturl" data-url="aHR0cHM6Ly9tb3Rpb24uYW50LmRlc2lnbi8=">在线演示<i class="fa fa-external-link-alt"></i></span>。</p>
 <h4 id="2-4-wechat-h5-boilerplate"><a href="#2-4-wechat-h5-boilerplate" class="headerlink" title="2.4 wechat-h5-boilerplate"></a>2.4 wechat-h5-boilerplate</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BhbnRlbmcvd2VjaGF0LWg1LWJvaWxlcnBsYXRl">wechat-h5-boilerplate<i class="fa fa-external-link-alt"></i></span>：为腾讯微信优化的 <code>HTML5 动效模板</code>，帮助你快速构建全屏滚动型 HTML5 页面，<span class="exturl" data-url="aHR0cHM6Ly9wYW50ZW5nLmdpdGh1Yi5pby93ZWNoYXQtaDUtYm9pbGVycGxhdGUv">示例<i class="fa fa-external-link-alt"></i></span>。</p>
 <h4 id="2-5-waitForlmages"><a href="#2-5-waitForlmages" class="headerlink" title="2.5 waitForlmages"></a>2.5 waitForlmages</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FsZXhhbmRlcmRpY2tzb24vd2FpdEZvckltYWdlcw==">waitForImages<i class="fa fa-external-link-alt"></i></span>：背景加载完事件，示例代码：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;http://catmull.uk/downloads/bg-loaded/bg-loaded.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">   $(<span class="string">&#x27;body&#x27;</span>).<span class="title function_">bgLoaded</span>(&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      afterLoaded : <span class="keyword">function</span>(<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">         <span class="title function_">alert</span>(<span class="string">&#x27;Background image done loading&#x27;</span>);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">   &#125;);</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
 <h3 id="3-Python项目"><a href="#3-Python项目" class="headerlink" title="3 Python项目"></a>3 Python项目</h3><h4 id="3-1-luokr-com"><a href="#3-1-luokr-com" class="headerlink" title="3.1 luokr.com"></a>3.1 luokr.com</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FsdmFuL2x1b2tyLmNvbQ==">luokr.com<i class="fa fa-external-link-alt"></i></span>：Python Tornado 写的开源网站——螺壳网，<span class="exturl" data-url="aHR0cDovL2x1b2tyLmNvbS8=">访问<i class="fa fa-external-link-alt"></i></span>，如图：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github23.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github23.jpg" alt="螺壳网"></p>
 <h4 id="3-2-ssbc"><a href="#3-2-ssbc" class="headerlink" title="3.2 ssbc"></a>3.2 ssbc</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tLzc4L3NzYmM=">ssbc<i class="fa fa-external-link-alt"></i></span>：Python Django 写的种子搜索网站——手撕包菜，如图：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github24.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github24.jpg" alt="手撕包菜"></p>
 <h4 id="3-3-python-gems"><a href="#3-3-python-gems" class="headerlink" title="3.3 python-gems"></a>3.3 python-gems</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL1JlYWxIYWNrZXIvcHl0aG9uLWdlbXM=">python-gems<i class="fa fa-external-link-alt"></i></span>：有趣的<code>Pyhton代码片段</code>集合。</p>
 <h4 id="3-4-algorithm"><a href="#3-4-algorithm" class="headerlink" title="3.4 algorithm"></a>3.4 algorithm</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3Fpd3Npci9hbGdvcml0aG0=">algorithm<i class="fa fa-external-link-alt"></i></span>：老齐的 Python 算法教程。</p>
 <h4 id="3-5-python-goose"><a href="#3-5-python-goose" class="headerlink" title="3.5 python-goose"></a>3.5 python-goose</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2dyYW5naWVyL3B5dGhvbi1nb29zZQ==">python-goose<i class="fa fa-external-link-alt"></i></span>：Goose 用于文章提取器，提取中文内容的示例代码：</p>
@@ -299,11 +299,10 @@
 
 <p align="center">1️⃣😀</p>
 
-
 <span id="more"></span>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
-<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。 - 会编程的可以贡献代码 - 不会编程的可以反馈使用这些工具中的 Bug - 帮着宣传你觉得优秀的项目 - Star 项目⭐️</p>
+<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
 <p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
 <p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
 <div class="note default">
@@ -321,16 +320,16 @@
 <h4 id="2-2-VeryNginx"><a href="#2-2-VeryNginx" class="headerlink" title="2.2 VeryNginx"></a>2.2 VeryNginx</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FsZXhhemhvdS9WZXJ5Tmdpbng=">VeryNginx<i class="fa fa-external-link-alt"></i></span>：一个功能强大且对人类友好的Nginx扩展程序。<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FsZXhhemhvdS9WZXJ5TmdpbngvYmxvYi9tYXN0ZXIvcmVhZG1lX3poLm1k">VeryNginx文档<i class="fa fa-external-link-alt"></i></span>😉</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github12.jpg" alt="VeryNginx运行图"></p>
 <h4 id="2-3-activate-power-mode"><a href="#2-3-activate-power-mode" class="headerlink" title="2.3 activate-power-mode"></a>2.3 activate-power-mode</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2Rpc2p1a3IvYWN0aXZhdGUtcG93ZXItbW9kZQ==">activate-power-mode<i class="fa fa-external-link-alt"></i></span>：输入爆炸效果🎇</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/activate-power-mode.gif"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/activate-power-mode.gif" alt="apm运行图"></p>
 <h3 id="3-Python项目"><a href="#3-Python项目" class="headerlink" title="3 Python项目"></a>3 Python项目</h3><h4 id="3-1-awesome-python-webapp"><a href="#3-1-awesome-python-webapp" class="headerlink" title="3.1 awesome-python-webapp"></a>3.1 awesome-python-webapp</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL21pY2hhZWxsaWFvL2F3ZXNvbWUtcHl0aG9uLXdlYmFwcA==">awesome-python-webapp<i class="fa fa-external-link-alt"></i></span>：廖老师的Python入门教程中的实践项目的代码，<span class="exturl" data-url="aHR0cDovL3d3dy5saWFveHVlZmVuZy5jb20vd2lraS8wMDEzNzQ3MzgxMjUwOTVjOTU1YzFlNmQ4YmI0OTMxODIxMDNmYWM5MjcwNzYyYTAwMC8wMDEzOTc2MTYwMDM5MjVhM2QxNTcyODRjZDI0YmMwOTUyZDZjNGE3YzlkOGM1NTAwMA==">在线阅读教程<i class="fa fa-external-link-alt"></i></span>。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github13.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github13.jpg" alt="apw示意图"></p>
 <h4 id="3-2-Minos"><a href="#3-2-Minos" class="headerlink" title="3.2 Minos"></a>3.2 Minos</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BoaXRoMG4vTWlub3M=">Minos<i class="fa fa-external-link-alt"></i></span>：一个基于Tornado/MongoDB/Redis 的社区系统。</p>
 <h4 id="3-3-Tushare"><a href="#3-3-Tushare" class="headerlink" title="3.3 Tushare"></a>3.3 Tushare</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3dhZGl0dS90dXNoYXJl">tushare<i class="fa fa-external-link-alt"></i></span>：TuShare 是一个免费、开源的 Python <code>财经数据接口包</code>，<span class="exturl" data-url="aHR0cDovL3R1c2hhcmUub3JnL2luZGV4Lmh0bWw=">TuShare 文档<i class="fa fa-external-link-alt"></i></span>。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github14.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github14.jpg" alt="Tushare运行图"></p>
 <h4 id="3-4-beijing-bus"><a href="#3-4-beijing-bus" class="headerlink" title="3.4 beijing_bus"></a>3.4 beijing_bus</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3dvbmcyL2JlaWppbmdfYnVz">beijing_bus<i class="fa fa-external-link-alt"></i></span>：北京实时公交，可以显示查询的公交到达某站还需多长时间。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/beijing_bus.gif"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/beijing_bus.gif" alt="beijing_bus运行图"></p>
 <h3 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h3><h4 id="4-1-archey-osx"><a href="#4-1-archey-osx" class="headerlink" title="4.1 archey-osx"></a>4.1 archey-osx</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL29iaWhhbm4vYXJjaGV5LW9zeA==">archey-osx<i class="fa fa-external-link-alt"></i></span>电脑：计算机中显示Mac OS X的基本信息。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github15.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github15.jpg" alt="archey-osx运行图"></p>
 <h4 id="4-2-Learning-SICP"><a href="#4-2-Learning-SICP" class="headerlink" title="4.2 Learning-SICP"></a>4.2 Learning-SICP</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL0RlYXRoS2luZy9MZWFybmluZy1TSUNQ">Learning-SICP<i class="fa fa-external-link-alt"></i></span>：《计算机程序的构造和解释》公开课。</p>
 <h4 id="4-3-awesome-python-cn"><a href="#4-3-awesome-python-cn" class="headerlink" title="4.3 awesome-python-cn"></a>4.3 awesome-python-cn</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2pvYmJvbGUvYXdlc29tZS1weXRob24tY24=">awesome-python-cn<i class="fa fa-external-link-alt"></i></span>：awesome-python 中文版。</p>
 <h4 id="4-4-github"><a href="#4-4-github" class="headerlink" title="4.4 github"></a>4.4 github</h4><p><span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3Bob2RhbC9naXRodWI=">github<i class="fa fa-external-link-alt"></i></span>：《GitHub漫游指南》该指南能够让新手学会使用网站，确定加入开源社区，更加熟练地使用这个网站。</p>
@@ -389,9 +388,9 @@
 <span id="more"></span>
 
 <p>&emsp;之前看到过<span class="exturl" data-url="aHR0cHM6Ly96ZmUuc3BhY2Uv">小冰<i class="fa fa-external-link-alt"></i></span>的博客，被他主页的Github贡献日历吸引了。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg" alt="github贡献日历"></p>
 <p>&emsp;于是我按照他给的方法进行尝试，最后虽然成功了，但是也出现了一些问题，导致页面不是太美观。如下图，上面一行日期无法显示完整，这令我很头疼我试图上网查找解决方法，可惜没有找到，并且许多用户都反应遇到了同样的问题。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/mygithub.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/mygithub.jpg" alt="我显示的githubcalendar"></p>
 <p>&emsp;既然解决不了，那咱就换一种方法。于是我又在Github上寻找新的方法，终于，我在一位老外大神那里找到了一种方法。</p>
 <div class="note info">
             <p>Github 地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzIwMTZyc2hhaC9naXRodWJjaGFydC1hcGk=">https://github.com/2016rshah/githubchart-api<i class="fa fa-external-link-alt"></i></span></p>
@@ -405,13 +404,13 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/你的Github用户名&quot; alt=&quot;???&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure>
 
 <p>比如说，你想在<code>关于</code>页面使用贡献日历，那么只需要在<code>blog\source\about</code>目录下，打开<code>index.md</code>文件，在需要的位置插入上面的语句即可。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github1.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github1.jpg" alt="插入代码"></p>
 <div class="note warning">
             <p>注意一定要是自己的Github用户名！</p>
           </div>
 
 <p>效果如下</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github2.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github2.jpg" alt="插入后的效果图"></p>
 <h2 id="2-自定义贡献日历的配色方案"><a href="#2-自定义贡献日历的配色方案" class="headerlink" title="2 自定义贡献日历的配色方案"></a>2 自定义贡献日历的配色方案</h2><p>&emsp;我们还可以<code>自定义</code>自己的贡献日历配色方案，原作者是不是很贴心！</p>
 <div class="note info">
             <p>我们只需要将 <code>src</code> 属性改为 <code>https://ghchart.rshah.org/&lt;HEX-COLOR&gt;/你的Github用户名</code>，其中 <code>&lt;HEX_COLOR&gt;</code> 为任意的十六进制颜色代码。它将根据这个颜色，自动为日历修改配色。</p>
@@ -421,7 +420,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/E623D1/tqb-web&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br></pre></td></tr></table></figure>
 
 <p>效果图</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github3.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github3.jpg" alt="改变颜色"></p>
 <h2 id="3-放进首页和归档页（Next主题）"><a href="#3-放进首页和归档页（Next主题）" class="headerlink" title="3 放进首页和归档页（Next主题）"></a>3 放进首页和归档页（Next主题）</h2><ol>
 <li>打开<code>Dblog\themes\next\layout</code>目录下的<code>_layout.swig</code>文件。</li>
 <li>找到<code>       &#123;% include '_partials/header/sub-menu.swig' %&#125;</code>，在下面添加如下代码</li>
@@ -443,7 +442,7 @@
 
 <p>我目前没有想到其他更好的方法，如果你们想到了，可以在下面留言告诉我。</p>
 <p>最后看一下效果</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg" alt="最终效果"></p>
 ]]></content>
       <categories>
         <category>hexo</category>
@@ -530,7 +529,7 @@
 <h4 id="3-2-1-设置Web安全域名-也可不填"><a href="#3-2-1-设置Web安全域名-也可不填" class="headerlink" title="3.2.1 设置Web安全域名(也可不填)"></a>3.2.1 设置Web安全域名(也可不填)</h4><p>依次点击左侧边栏上的<code>设置</code> ,<code> 安全中心</code> , 然后下拉页面 , 找到 <code>Web 安全域名</code>, 把你站点的域名填写进去:</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn6.jpg"></p>
 <h4 id="3-2-2-获取-APP-ID-和-APP-Key"><a href="#3-2-2-获取-APP-ID-和-APP-Key" class="headerlink" title="3.2.2 获取 APP ID 和 APP Key"></a>3.2.2 获取 APP ID 和 APP Key</h4><p>依次点击左侧边栏上的<code>设置</code> , <code>应用 Keys</code>, 然后复制下<code>AppID</code>和<code>AppKey</code>:</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn7.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn7.jpg" alt="APPID APPKey"></p>
 <h2 id="4-打开-Next-主题配置文件-启用-Valine-填写-appid-和-appkey"><a href="#4-打开-Next-主题配置文件-启用-Valine-填写-appid-和-appkey" class="headerlink" title="4 打开 Next 主题配置文件 启用 Valine 填写 appid 和 appkey"></a>4 打开 Next 主题配置文件 启用 Valine 填写 appid 和 appkey</h2><div class="note info">
             <p>打开博客目录的 <code>next</code> 主题配置文件<code>_config.yml</code> ，找到 <code>Valine</code>，将上图的 <code>APP ID</code> 和 <code>APP Key</code> 复制到对应位置。</p>
           </div>
@@ -548,7 +547,7 @@
 <p>继续下拉页面，使用<code>master</code>分支，然后点击<code>部署</code>:</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn10.jpg"></p>
 <h3 id="5-2-配置环境变量"><a href="#5-2-配置环境变量" class="headerlink" title="5.2 配置环境变量"></a>5.2 配置环境变量</h3><p>点击<code>云引擎</code> , <code>设置</code>, 然后点击<code>添加新变量</code>按钮添加以下环境变量:</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn11.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn11.jpg" alt="环境变量"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">SITE_NAME:网站名称。</span><br><span class="line">SITE_URL:网站地址，最后不要加/ 。</span><br><span class="line">SMTP_USER:SMTP服务用户名，一般为邮箱地址。</span><br><span class="line">SMTP_PASS:SMTP密码，一般为授权码，而不是邮箱的登陆密码，请自行查询对应邮件服务商的获取方式。。</span><br><span class="line">SMTP_SERVICE:邮件服务提供商，支持 QQ、163、126、Gmail、”Yahoo”、…… ，全部支持请参考:Nodemailer Supported services。— 如这里没有你使用的邮件提供商，请查看自定义邮件服务器。</span><br><span class="line">SENDER_NAME:寄件人名称。</span><br></pre></td></tr></table></figure>
 
 <h3 id="5-3-保证绝大多数时间邮件服务正常"><a href="#5-3-保证绝大多数时间邮件服务正常" class="headerlink" title="5.3 保证绝大多数时间邮件服务正常"></a>5.3 保证绝大多数时间邮件服务正常</h3><div class="note warning">
@@ -562,25 +561,25 @@
 <p>分析了一下上方的策略，如果不想付费的话，最佳使用方案就设置定时器，每天 7 - 23 点每 <code>20 分钟</code>访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</p>
 <h3 id="5-4-配置-Web-主机域名"><a href="#5-4-配置-Web-主机域名" class="headerlink" title="5.4 配置 Web 主机域名"></a>5.4 配置 Web 主机域名</h3><p>首先需要先配置下 Web 主机的域名，使用定时器时要用到。</p>
 <h4 id="5-4-1-添加新的环境变量"><a href="#5-4-1-添加新的环境变量" class="headerlink" title="5.4.1 添加新的环境变量"></a>5.4.1 添加新的环境变量</h4><p>随便写一个英文名字</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn12.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn12.jpg" alt="添加环境变量"></p>
 <p>添加环境变量，<code>ADMIN_URL</code>, 值设置为 <code>https://下面提示你的对应的预备环境域名</code>, 如图所示:</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn13.jpg"></p>
 <h3 id="5-5-添加定时器"><a href="#5-5-添加定时器" class="headerlink" title="5.5 添加定时器"></a>5.5 添加定时器</h3><p><code>云引擎</code> , <code>定时任务</code> ,<code>创建定时任务</code>, 名称随便写，选<code>生产环境</code>, 选择<code>self_wake</code>函数，选择<code>Corn 表达式</code>, 输入:</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0 */20 7-23 * * ?</span><br></pre></td></tr></table></figure>
 
 <p>保存</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn14.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn14.jpg" alt="添加定时器"></p>
 <h3 id="5-6-重启-Valine-Admin-项目"><a href="#5-6-重启-Valine-Admin-项目" class="headerlink" title="5.6 重启 Valine-Admin 项目"></a>5.6 重启 Valine-Admin 项目</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn15.jpg"></p>
 <p><strong>over!</strong></p>
 <h2 id="6-测试邮件提醒效果"><a href="#6-测试邮件提醒效果" class="headerlink" title="6 测试邮件提醒效果"></a>6 测试邮件提醒效果</h2><h3 id="6-1-填写评论"><a href="#6-1-填写评论" class="headerlink" title="6.1 填写评论"></a>6.1 填写评论</h3><p>填写昵称，邮箱，评论，然后提交</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn16.jpg"></p>
-<h3 id="6-2-查看邮件提醒"><a href="#6-2-查看邮件提醒" class="headerlink" title="6.2 查看邮件提醒"></a>6.2 查看邮件提醒</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn17.jpg"></p>
+<h3 id="6-2-查看邮件提醒"><a href="#6-2-查看邮件提醒" class="headerlink" title="6.2 查看邮件提醒"></a>6.2 查看邮件提醒</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn17.jpg" alt="邮件提醒"></p>
 <p>点击邮件中的<code>点击前往查看</code>超链接，即可到评论的地方查看。</p>
-<h2 id="7-删除评论"><a href="#7-删除评论" class="headerlink" title="7 删除评论"></a>7 删除评论</h2><h3 id="7-1-通过直接在表中的删除"><a href="#7-1-通过直接在表中的删除" class="headerlink" title="7.1 通过直接在表中的删除"></a>7.1 通过直接在表中的删除</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn18.jpg"></p>
-<h3 id="7-2-使用评论管理系统删除"><a href="#7-2-使用评论管理系统删除" class="headerlink" title="7.2 使用评论管理系统删除"></a>7.2 使用评论管理系统删除</h3><h4 id="7-2-1-添加用户"><a href="#7-2-1-添加用户" class="headerlink" title="7.2.1 添加用户"></a>7.2.1 添加用户</h4><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn19.jpg"></p>
+<h2 id="7-删除评论"><a href="#7-删除评论" class="headerlink" title="7 删除评论"></a>7 删除评论</h2><h3 id="7-1-通过直接在表中的删除"><a href="#7-1-通过直接在表中的删除" class="headerlink" title="7.1 通过直接在表中的删除"></a>7.1 通过直接在表中的删除</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn18.jpg" alt="删除评论"></p>
+<h3 id="7-2-使用评论管理系统删除"><a href="#7-2-使用评论管理系统删除" class="headerlink" title="7.2 使用评论管理系统删除"></a>7.2 使用评论管理系统删除</h3><h4 id="7-2-1-添加用户"><a href="#7-2-1-添加用户" class="headerlink" title="7.2.1 添加用户"></a>7.2.1 添加用户</h4><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn19.jpg" alt="用户添加"></p>
 <p>只需要填写 <code>password</code> 和 <code>username</code>。其中 <code>username</code> 必须设置为你的上面环境变量 <code>SMTP_USER</code> 的邮箱相同。不然无法登录！</p>
 <h4 id="7-2-2-登录评论系统"><a href="#7-2-2-登录评论系统" class="headerlink" title="7.2.2 登录评论系统"></a>7.2.2 登录评论系统</h4><p>地址就是上面设置的 web 主机名:<code>https:// 你刚才设置的域名.avosapps.us/</code></p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn20.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn20.jpg" alt="登陆界面"></p>
 <p>填上刚才设置的账号密码即可登录。</p>
 ]]></content>
       <categories>
@@ -661,7 +660,7 @@
 
 <p>如上表示给这篇文章添加<code>categories:  - web</code> 这个分类。然后我们就可以在博客到分类里看到该分类了。</p>
 <p>如下图所示</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/myfl.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/myfl.jpg" alt="效果图"></p>
 ]]></content>
       <categories>
         <category>hexo</category>
@@ -756,15 +755,13 @@
             <p>负责进程控制、存储管理、设备管理和文件管理、进程通信，以及向上层用户和应用程序提供一些可调用的系统接口（命令接口、程序接口和GUI）。</p>
           </div>
 
-<h4 id="操作系统的接口"><a href="#操作系统的接口" class="headerlink" title="操作系统的接口"></a>操作系统的接口</h4><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtjk.jpg"></p>
+<h4 id="操作系统的接口"><a href="#操作系统的接口" class="headerlink" title="操作系统的接口"></a>操作系统的接口</h4><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtjk.jpg" alt="操作系统接口图"></p>
 <h4 id="用户态与核心态"><a href="#用户态与核心态" class="headerlink" title="用户态与核心态"></a>用户态与核心态</h4><div class="note default">
             <p>在计算机系统中,通常运行着两类程序:<strong>系统内核程序和应用程序,为了保证内核程序不被应用程序破坏,为计算机设置了两种状态:核心态(也称为管态)和用户态(也称为目态)</strong>,内核程序在核心态运行,而应用程序只能在用户态运行。</p>
           </div>
 
 <p>系统调用如图所示：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtyh.jpg"></p>
-<center><p>图  用户态向核心态转换</p></center>
-
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtyh.jpg" alt="用户态向核心态转换"></p>
 <h4 id="中断和异常"><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h4><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtzd.jpg"></p>
 <div class="note info">
             <p>中断的本质：将CPU的控制权交给操作系统,因此中断发生后CPU状态需要转为核心态。</p>
@@ -861,7 +858,7 @@
 <p>​    相信对于许多计算机专业的人来说，《计算机组成原理》这门课程是躲不过去的一道难关，既然躲不过去，那就勇敢的面对吧！！！本篇文章将系统的介绍计算机组成原理的相关知识，希望能够对你们有所帮助…</p>
 <span id="more"></span>
 
-<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h3 id="知识网图"><a href="#知识网图" class="headerlink" title="知识网图"></a>知识网图</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/1.1.png"></p>
+<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h3 id="知识网图"><a href="#知识网图" class="headerlink" title="知识网图"></a>知识网图</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/1.1.png" alt="计组知识导图"></p>
 <h3 id="冯诺依曼机的特点"><a href="#冯诺依曼机的特点" class="headerlink" title="冯诺依曼机的特点"></a>冯诺依曼机的特点</h3><div class="note default">
             <ol><li>计算机硬件系统由运算器、存储器、控制器、输入设备、输出设备5大部件组成。</li><li>指令和数据已同等地位存储在存储器中，并可按地址寻址。</li><li>指令和数据均用二进制代码表述。</li><li>指令有操作码和地址码组成。操作码用来表示操作的性质，地址码用来表示操作数在存储器中的位置。</li><li>指令在存储器中按顺序存放。通常，指令时顺序执行的，在特定的条件下根据运算结果或根据设定的条件改变执行顺序。</li><li>早期的冯诺依曼机以运算器为中心，输入/输出设备通过运算器和存储器传送数据。</li></ol>
           </div>
