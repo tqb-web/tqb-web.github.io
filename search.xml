@@ -102,9 +102,7 @@
     <url>/p/32d001ab.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 
-<span id="more"></span>
-
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="ENVI简介"><a href="#ENVI简介" class="headerlink" title="ENVI简介"></a>ENVI简介</h3><p>&emsp;<strong>ENVI</strong>——完整的<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTklODElQTUlRTYlODQlOUYlRTUlOUIlQkUlRTUlODMlOEYlRTUlQTQlODQlRTclOTAlODY=">遥感图像处理<i class="fa fa-external-link-alt"></i></span>平台<strong>ENVI</strong>(The Environment for Visualizing Images)是美国Exelis Visual Information Solutions公司的旗舰产品。它是由遥感领域的科学家采用<code>交互式数据语言IDL(Interactive Data Language)</code>开发的一套功能强大的遥感<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOUIlQkUlRTUlODMlOEYlRTUlQTQlODQlRTclOTAlODYlRTglQkQlQUYlRTQlQkIlQjY=">图像处理软件<i class="fa fa-external-link-alt"></i></span>。它是快速、便捷、准确地从影像中提取信息的首屈一指的软件解决方案。今天，众多的影像分析师和科学家选择ENVI来从遥感影像中提取信息。ENVI已经广泛应用于科研、环境保护、气象、石油矿产勘探、农业、林业、医学、国防&amp;安全、地球科学、公用设施管理、遥感工程、水利、海洋、测绘勘察和城市与区域规划等领域。</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="ENVI简介"><a href="#ENVI简介" class="headerlink" title="ENVI简介"></a>ENVI简介</h3><p>&emsp;<strong>ENVI</strong>——完整的<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTklODElQTUlRTYlODQlOUYlRTUlOUIlQkUlRTUlODMlOEYlRTUlQTQlODQlRTclOTAlODY=">遥感图像处理<i class="fa fa-external-link-alt"></i></span>平台<strong>ENVI</strong>(The Environment for Visualizing Images)是美国<span id="more"></span>Exelis Visual Information Solutions公司的旗舰产品。它是由遥感领域的科学家采用<code>交互式数据语言IDL(Interactive Data Language)</code>开发的一套功能强大的遥感<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOUIlQkUlRTUlODMlOEYlRTUlQTQlODQlRTclOTAlODYlRTglQkQlQUYlRTQlQkIlQjY=">图像处理软件<i class="fa fa-external-link-alt"></i></span>。它是快速、便捷、准确地从影像中提取信息的首屈一指的软件解决方案。今天，众多的影像分析师和科学家选择ENVI来从遥感影像中提取信息。ENVI已经广泛应用于科研、环境保护、气象、石油矿产勘探、农业、林业、医学、国防&amp;安全、地球科学、公用设施管理、遥感工程、水利、海洋、测绘勘察和城市与区域规划等领域。</p>
 <h3 id="ENVI优势"><a href="#ENVI优势" class="headerlink" title="ENVI优势"></a>ENVI优势</h3><ol>
 <li>先进、可靠的影像分析工具——<code>全套影像信息智能化提取工具</code>,全面提升影像的价值。</li>
 <li>专业的光谱分析——<code>高光谱分析</code>一直处于世界领先地位。</li>
@@ -112,6 +110,41 @@
 <li>流程化图像处理工具——<strong>ENVI</strong>将众多主流的图像处理过程<code>集成到流程化（Workflow）图像处理工具中</code>，进一步提高了图像处理的效率。</li>
 <li>与ArcGIS的整合——从2007年开始，与ESRI公司的全面合作,为遥感和GIS的一体化集成提供了一个<code>最佳的解决方案</code>。</li>
 </ol>
+<h3 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h3><p>&emsp;链接：<span class="exturl" data-url="aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMXNxOWY4RjhqelRqbE56Mkd0SDN6QWc=">https://pan.baidu.com/s/1sq9f8F8jzTjlNz2GtH3zAg<i class="fa fa-external-link-alt"></i></span></p>
+<p>&emsp;<code>提取码: b9pcr</code></p>
+<div class="note warning">
+            <p>安装路径里<code>一定不要出现中文</code>！！！否则软件会打不开！！！我一开始就犯了这个错误，导致又重新安装了一遍，很麻烦！</p>
+          </div>
+
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>&emsp;打开解压完的文件，找到<code>IDL_ENVI53SP1win64.exe</code>,右键以<code>管理员</code>身份运行。</p>
+<img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi1.jpg" alt="解压完的文件" style="zoom:100%;" />
+
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi2.jpg"></p>
+<p>&emsp;点击<code>是(Y)</code>，进入解压缩阶段。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi3.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi4.jpg" alt="解压阶段"></p>
+<p>&emsp;然后一路<strong>next</strong></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi5.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi6.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi7.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi8.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi9.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi10.jpg"></p>
+<p>&emsp;安装完毕后，开始安装<code>license</code>。选择<strong>是</strong></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi11.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi12.jpg"><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi13.jpg"></p>
+<p>&emsp;选择<code>license.lic</code>文件</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi14.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi15.jpg"></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi16.jpg"></p>
+<div class="note info">
+            <p>到这里就安装完成了，接下来还要进行文件替换。</p>
+          </div>
+
+<h3 id="文件替换"><a href="#文件替换" class="headerlink" title="文件替换"></a>文件替换</h3><p>&emsp;找到安装包中<code>IDL85</code>文件夹下的两个<code>dll文件</code>，对应的<code>替换</code>到ENVI<code>安装目录</code>下的<code>对应文件</code>，比如这里IDL85/bin/bin.x86_64的idl.dll替换C:\Program Files\Exelis\IDL85\bin\bin.x86_64下的idl.dll，这里是针对64位的，32位的dll就是对应的bin.x86底下dll。</p>
+<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>&emsp;查看开始页面是否有图示文件，并且是否能正常打开。(点击<code>ENVI 5.3(64-bit)</code>或者<code>ENVI Classic 5.3(64-bit)</code>)</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi17.jpg"></p>
+<p>&emsp;至此ENVI就算是安装完成了，接下来就少好好学习如何使用它了。</p>
 ]]></content>
       <categories>
         <category>ENVI</category>
@@ -147,12 +180,12 @@
 <h3 id="1-Java项目"><a href="#1-Java项目" class="headerlink" title="1 Java项目"></a>1 Java项目</h3><h4 id="1-1-cachecloud"><a href="#1-1-cachecloud" class="headerlink" title="1.1 cachecloud"></a>1.1 cachecloud</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3NvaHV0di9jYWNoZWNsb3Vk">cachecloud<i class="fa fa-external-link-alt"></i></span>：搜狐视频开源的 CacheCloud 项目，提供了一个 Redis 云管理平台，功能强大，教程详细（有视频教程），文档齐全，<code>企业级开源项目</code>。</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github41.jpg" alt="Redis云管理平台"></p>
 <h3 id="2-JavaScript项目"><a href="#2-JavaScript项目" class="headerlink" title="2 JavaScript项目"></a>2 JavaScript项目</h3><h4 id="2-1-zingtouch"><a href="#2-1-zingtouch" class="headerlink" title="2.1 zingtouch"></a>2.1 zingtouch</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3ppbmdjaGFydC96aW5ndG91Y2g=">zingtouch<i class="fa fa-external-link-alt"></i></span>：支持移动端各种触摸动作包含：转动、挥动、滑动等动作的库，<span class="exturl" data-url="aHR0cHM6Ly96aW5nY2hhcnQuZ2l0aHViLmlvL3ppbmd0b3VjaC8=">官方网站<i class="fa fa-external-link-alt"></i></span>，展示图如下：</p>
-<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/zingtouch-show.gif" alt="  "></p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/zingtouch-show.gif" alt="zingtouch"></p>
 <h4 id="2-2-zhihudaily-vue"><a href="#2-2-zhihudaily-vue" class="headerlink" title="2.2 zhihudaily-vue"></a>2.2 zhihudaily-vue</h4><p>&emsp;、<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3lhdGVzc3NzL3poaWh1ZGFpbHktdnVl">zhihudaily-vue<i class="fa fa-external-link-alt"></i></span>：用 Vue.js 写的<code>知乎日报手机 Web 版</code>，需打开 chrome 浏览器的手机模拟功能，来获得比较好的浏览效果。访问展示图如下：</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github42.jpg" alt="知乎日报web版"></p>
 <h3 id="3-Python项目"><a href="#3-Python项目" class="headerlink" title="3 Python项目"></a>3 Python项目</h3><h4 id="3-1-python-guide"><a href="#3-1-python-guide" class="headerlink" title="3.1 python-guide"></a>3.1 python-guide</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3JlYWxweXRob24vcHl0aG9uLWd1aWRl">python-guide<i class="fa fa-external-link-alt"></i></span>：Requests 库的作者——kennethreitz，写的 Python 入门教程。不单单是语法层面的，涵盖项目结构、代码风格，进阶、工具等方方面面。虽然是<code>英文版</code>(<span class="exturl" data-url="aHR0cDovL3B5dGhvbmd1aWRlY24ucmVhZHRoZWRvY3MuaW8vemgvbGF0ZXN0Lw==">中文翻译版<i class="fa fa-external-link-alt"></i></span>)，但我这个英语渣都能看懂，你肯定也可以，快去看看吧，开卷有益。<span class="exturl" data-url="aHR0cDovL2RvY3MucHl0aG9uLWd1aWRlLm9yZy9lbi9sYXRlc3Qv">在线阅读<i class="fa fa-external-link-alt"></i></span></p>
 <h4 id="3-2-flask-admin"><a href="#3-2-flask-admin" class="headerlink" title="3.2 flask-admin"></a>3.2 flask-admin</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2ZsYXNrLWFkbWluL2ZsYXNrLWFkbWlu">flask-admin<i class="fa fa-external-link-alt"></i></span>：我工作中需要写一个<code>微型的管理系统</code>，用的就是这个框架。简直快餐型，页面都写好了，只要设置好相关配置就可以跑起来了。唯一缺点就是文档中的例子少，开发一些特定的需求需要自己看源码，才能知道如何改。<span class="exturl" data-url="aHR0cHM6Ly9mbGFzay1hZG1pbi5yZWFkdGhlZG9jcy5pby9lbi9sYXRlc3Qv">文档<i class="fa fa-external-link-alt"></i></span>，下面是我跑起来之后的样子：</p>
-<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/flask-admin-show.gif" alt=" "></p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/flask-admin-show.gif" alt="flask框架"></p>
 <h4 id="3-3-python-sdk"><a href="#3-3-python-sdk" class="headerlink" title="3.3 python-sdk"></a>3.3 python-sdk</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3Fpbml1L3B5dGhvbi1zZGs=">python-sdk<i class="fa fa-external-link-alt"></i></span>：七牛云存储 SDK。我自己在用他家的服务，上手简单、有免费额度，可以用来做‘图床’，同时，有了这个 SDK 可以写一些好用的小工具。<strong>注意</strong>：图床不能随便用，我曾经就用超了，账户的钱能扣成<code>负数</code>！</p>
 <h3 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h3><ul>
 <li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3RhaXppbG9uZ3h1L2ludGVydmlld19weXRob24=">interview_python<i class="fa fa-external-link-alt"></i></span>：关于 Python 的面试题</li>
