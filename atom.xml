@@ -6,7 +6,7 @@
   <link href="https://tianqb.top/atom.xml" rel="self"/>
   
   <link href="https://tianqb.top/"/>
-  <updated>2022-04-16T13:50:19.722Z</updated>
+  <updated>2022-04-17T05:18:55.745Z</updated>
   <id>https://tianqb.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git常用命令总结</title>
+    <link href="https://tianqb.top/p/3b0bf668.html"/>
+    <id>https://tianqb.top/p/3b0bf668.html</id>
+    <published>2022-04-17T02:31:21.000Z</published>
+    <updated>2022-04-17T05:18:55.745Z</updated>
+    
+    
+    <summary type="html">本文介绍有关Git的命令，系统地介绍了Git各种操作的命令，希望可以帮助到你。</summary>
+    
+    
+    <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/gitfm.jpg" type="image"/>
+    
+    
+    <category term="Git" scheme="https://tianqb.top/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://tianqb.top/tags/Git/"/>
+    
+    <category term="代码协同" scheme="https://tianqb.top/tags/%E4%BB%A3%E7%A0%81%E5%8D%8F%E5%90%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>给Hexo Next主题添加首页轮播图</title>
@@ -46,7 +69,7 @@
     <link href="https://tianqb.top/p/32d001ab.html"/>
     <id>https://tianqb.top/p/32d001ab.html</id>
     <published>2022-04-15T10:57:32.000Z</published>
-    <updated>2022-04-16T09:00:15.718Z</updated>
+    <updated>2022-04-17T05:14:32.472Z</updated>
     
     
     <summary type="html">ENVI是一款很强大的遥感图像处理平台，它能够使我们的工作变得更简单，本文介绍ENVI软件的安装流程。</summary>
