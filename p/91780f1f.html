@@ -25,24 +25,22 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"tianqb.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
-  <meta name="description" content="五大常用算法——贪心算法详解以及经典例子，用最简单的例子来讲解贪心算法，还有贪心选择性的证明。">
+  <meta name="description" content="本篇文章介绍了什么是Bing重定向、它的危害，以及如何解决Bing重定向问题。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="贪心算法">
-<meta property="og:url" content="https://tianqb.top/p/a4ce31d2.html">
+<meta property="og:title" content="摆脱讨厌的Bing重定向">
+<meta property="og:url" content="https://tianqb.top/p/91780f1f.html">
 <meta property="og:site_name" content="北温带的猫">
-<meta property="og:description" content="五大常用算法——贪心算法详解以及经典例子，用最简单的例子来讲解贪心算法，还有贪心选择性的证明。">
+<meta property="og:description" content="本篇文章介绍了什么是Bing重定向、它的危害，以及如何解决Bing重定向问题。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg">
-<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyzm.jpg">
-<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyresult.jpg">
-<meta property="article:published_time" content="2022-03-27T12:29:35.000Z">
-<meta property="article:modified_time" content="2022-04-16T03:49:01.583Z">
+<meta property="article:published_time" content="2022-04-18T02:09:17.000Z">
+<meta property="article:modified_time" content="2022-04-18T02:18:48.042Z">
 <meta property="article:author" content="T">
-<meta property="article:tag" content="计算机算法">
+<meta property="article:tag" content="Bing重定向">
+<meta property="article:tag" content="Bing">
+<meta property="article:tag" content="Google">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg">
 
-<link rel="canonical" href="https://tianqb.top/p/a4ce31d2.html">
+<link rel="canonical" href="https://tianqb.top/p/91780f1f.html">
 
 
 <script id="page-configurations">
@@ -55,7 +53,7 @@
   };
 </script>
 
-  <title>贪心算法 | 北温带的猫</title>
+  <title>摆脱讨厌的Bing重定向 | 北温带的猫</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGL3VM2MT3"></script>
     <script data-pjax>
@@ -232,6 +230,14 @@
         <div class="content-wrap">
           
 
+	<div class="post-block animated fadeIn">
+		<h5 class="post-title" itemprop="name headline">
+			<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/tqb-web" class="post-title-link" itemprop="url">Github 贡献日历</a>
+		</h5>
+		<div class="post-body animated fadeInDown" itemprop="articleBody">
+			<img style="width: 100%; margin-top: 20px;" src="https://ghchart.rshah.org/f043b3/tqb-web" alt=" " />
+		</div>
+	</div>
           <div class="content post posts-expand">
             
 
@@ -239,7 +245,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tianqb.top/p/a4ce31d2.html">
+    <link itemprop="mainEntityOfPage" href="https://tianqb.top/p/91780f1f.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -252,7 +258,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          贪心算法
+          摆脱讨厌的Bing重定向
         </h1>
 
         <div class="post-meta">
@@ -263,23 +269,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-03-27 20:29:35" itemprop="dateCreated datePublished" datetime="2022-03-27T20:29:35+08:00">2022-03-27</time>
+              <time title="创建时间：2022-04-18 10:09:17 / 修改时间：10:18:48" itemprop="dateCreated datePublished" datetime="2022-04-18T10:09:17+08:00">2022-04-18</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-16 11:49:01" itemprop="dateModified" datetime="2022-04-16T11:49:01+08:00">2022-04-16</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/" itemprop="url" rel="index"><span itemprop="name">算法设计</span></a>
+                  <a href="/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/" itemprop="url" rel="index"><span itemprop="name">浏览器</span></a>
                 </span>
             </span>
 
@@ -299,8 +299,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/p/a4ce31d2.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/p/a4ce31d2.html" itemprop="commentCount"></span>
+    <a title="valine" href="/p/91780f1f.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/p/91780f1f.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -310,11 +310,11 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
+              <span>548</span>
             </span>
 
         <!--
-            <div class="post-description">五大常用算法——贪心算法详解以及经典例子，用最简单的例子来讲解贪心算法，还有贪心选择性的证明。</div> -->
+            <div class="post-description">本篇文章介绍了什么是Bing重定向、它的危害，以及如何解决Bing重定向问题。</div> -->
 
         </div>
       </header>
@@ -327,46 +327,16 @@
       
         <meta name="referrer" content="no-referrer" />
 
-<p>五大常用算法——贪心算法详解以及经典例子</p>
 <span id="more"></span>
 
-<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg"></p>
-<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><div class="note default">
-            <p>​    <strong>贪心算法</strong>（Greedy Alogorithm）又叫登山算法，它的根本思想是逐步到达山顶，即逐步获得最优解，是解决最优化问题时的一种简单但是适用范围有限的策略。<span style="color:black;background: yellow">贪心算法没有固定的框架</span>，算法设计的关键是贪婪策略的选择。贪心策略要无后向性，也就是说某状态以后的过程不会影响以前的状态，至于当前状态有关。<br>​    贪心算法是对某些求解最优解问题的最简单、最迅速的技术。某些问题的最优解可以通过一系列的最优的选择即贪心选择来达到。但局部最优并不总能获得整体最优解，但通常能获得近似最优解。<br>在每一部贪心选择中，只考虑当前对自己最有利的选择，而不去考虑在后面看来这种选择是否合理。</p>
+<p>&emsp;今天使用谷歌搜东西的时候，突然发现google搜索引擎会自动跳转为bing搜索引擎，很奇怪，于是我上网查了一下，得知这可能是<code>Bing重定向病毒</code>搞的鬼，心里顿时一惊。</p>
+<p>&emsp;那么什么是Bing重定向病毒呢？他又有什么用呢？我在网上搜索了一下，得到以下解释：</p>
+<div class="note info">
+            <p>Bing重定向病毒是一个术语，用于描述浏览器劫持者，无论您使用的是Chrome，Firefox，Safari还是其他浏览器，它都会拦截您的浏览器设置，并引起持续的重定向，从而<code>将用户的流量吸引到赞助网站</code>。</p>
           </div>
 
-<h2 id="解题步骤"><a href="#解题步骤" class="headerlink" title="解题步骤"></a>解题步骤</h2><div class="note default">
-            <ol><li>从问题的某个初始解出发</li><li>采用循环语句，党可以向求解目标前进一步时，就根据局部最优策略，得到一个不分解，缩小问题的范围或规模。</li><li>将所有的部分解综合起来，得到问题的最终解。</li></ol>
-          </div>
-
-<h2 id="贪心策略的选择"><a href="#贪心策略的选择" class="headerlink" title="贪心策略的选择"></a>贪心策略的选择</h2><div class="note default">
-            <ul><li>贪心算法的原理是通过局部最优来达到全局最优，采用的是逐步构造最优解的方法。在每个阶段，都做出一个看上去最优的，决策一旦做出，就不再更改。</li><li>要选出最优解可不是一件容易的事，要证明局部最优为全局最优，要进行数学证明，否则就不能说明为全局最优。</li><li>很多问题表面上看来用贪心算法可以找到最优解，实际上却把最优解给漏掉了。这就像现实生活中的“贪小便宜吃大亏”。所以我们在解决问题的时候，一定要谨慎使用贪心算法，一定要注意这个问题适不适合采用贪心算法。</li></ul>
-          </div>
-
-<h2 id="贪心策略应考虑的问题"><a href="#贪心策略应考虑的问题" class="headerlink" title="贪心策略应考虑的问题"></a>贪心策略应考虑的问题</h2><div class="note default">
-            <ul><li><p><input checked="" disabled="" type="checkbox">  候选集合S</p><p>为了构造问题的解决方案，有一个候选集合C作为问题的可能解，问题的最终解均取自于候选集合C。</p></li><li><p><input checked="" disabled="" type="checkbox">  解集合S</p><p>随着贪心选择的进行，解集合不断扩展，直到构成一个满足问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  解决函数solution</p><p>检查解集合是否构成问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  选择函数select</p><p>即贪心策略，这是贪心算法的关键，它指出哪个候选对象有希望构成成问题的解。</p></li><li><p><input checked="" disabled="" type="checkbox">  可行函数feasible</p><p>检查解集合中加入一个候选对象是否可行，即解集合扩展后是否满足约束条件。</p></li></ul>
-          </div>
-
-<h2 id="例题-会场安排"><a href="#例题-会场安排" class="headerlink" title="例题 会场安排"></a>例题 会场安排</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><div class="note default">
-            <p>假设有一个会场，现要求此会场中安排尽可能多的活动，求会场中所能安排的活动的最多数，并给出安排方案。</p>
-          </div>
-
-
-<h3 id="输入要求"><a href="#输入要求" class="headerlink" title="输入要求"></a>输入要求</h3><div class="note default">
-            <p>第一行n为所有活动数，随后n行，每行两个数，分别为活动的开始和结束时间。</p>
-          </div>
-
-<h3 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">11</span><br><span class="line">1 4</span><br><span class="line">3 5</span><br><span class="line">0 6</span><br><span class="line">5 7</span><br><span class="line">3 8</span><br><span class="line">5 9</span><br><span class="line">6 10</span><br><span class="line">8 11</span><br><span class="line">8 12</span><br><span class="line">2 13</span><br><span class="line">12 14</span><br></pre></td></tr></table></figure>
-
-<h3 id="算法思想"><a href="#算法思想" class="headerlink" title="算法思想"></a>算法思想</h3><div class="note default">
-            <p>将活动的结束时间从小到大进行排序，先选择结束时间最早的活动，然后看下一个活动的开始时间是否晚于上一个被选中活动的结束时间，若是，则选中该活动；否则不选中。直到所有的活动都遍历了一遍。</p>
-          </div>
-
-
-<h3 id="贪心选择性的证明"><a href="#贪心选择性的证明" class="headerlink" title="贪心选择性的证明"></a>贪心选择性的证明</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyzm.jpg"></p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> n, *begin, *finsh;			<span class="comment">//分别记录开始时间 结束时间</span></span><br><span class="line">    <span class="type">int</span> *a;			<span class="comment">//记录是否被选中</span></span><br><span class="line">    	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    begin = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    finsh = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    a = (<span class="type">int</span>*) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span>) *n);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;begin[i], &amp;finsh[i]);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    greedy(n, begin, finsh, a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span></span><br><span class="line">&#123;</span><br><span class="line">    finshpx(n, begin, finsh);			<span class="comment">//按结束时间进行排序</span></span><br><span class="line">    a[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> count = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> endtime = finsh[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(begin[i] &gt;= endtime) </span><br><span class="line">        &#123;</span><br><span class="line">            endtime = finsh[i];</span><br><span class="line">            count++;</span><br><span class="line">            a[i] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        a[i] = <span class="number">0</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;最多容纳个%d活动\n&quot;</span>, count);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;分别为：&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    	<span class="keyword">if</span>(a[i] == <span class="number">1</span>) </span><br><span class="line">    		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, i + <span class="number">1</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>			<span class="comment">//冒泡排序</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; n - i; j++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(finsh[j] &gt; finsh[j + <span class="number">1</span>]) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> t = finsh[j];</span><br><span class="line">            finsh[j] = finsh[j + <span class="number">1</span>];</span><br><span class="line">            finsh[j + <span class="number">1</span>] = t;</span><br><span class="line">            t = begin[j];</span><br><span class="line">            begin[j] = begin[j + <span class="number">1</span>];</span><br><span class="line">            begin[j + <span class="number">1</span>] = t;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyresult.jpg"></p>
+<p>&emsp;真不是东西啊，还能这么玩。了解了原因之后，我赶紧在网上找解决方法，很多人反应时浏览器的<code>拓展程序</code>搞的鬼，然后我就把chrome的拓展程序全部关闭，然后启用搜索功能，果然，这次的搜索结果是正确的，google并没有重定向到bing。于是我就挨个打开chrome的拓展程序，然后再启用搜索功能，终于在我打开一个<code>实现视频倍速</code>（具体名字我也忘了）的扩展程序后，重定向的问题又出现了！就是它了！！！我三下五除二就把它从电脑里删除了，我又可以愉快的使用google搜索啦！为了防止相似的事情再发生，我给我的宝贝电脑做了一次全面的扫毒，不给病毒可乘之机。</p>
+<p>&emsp;这次事情后警告我：千万不能乱下东西，否则真的很容易中病毒的😁</p>
 
     </div>
 
@@ -431,7 +401,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%97%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 计算机算法</a>
+              <a href="/tags/Bing%E9%87%8D%E5%AE%9A%E5%90%91/" rel="tag"><i class="fa fa-tag"></i> Bing重定向</a>
+              <a href="/tags/Bing/" rel="tag"><i class="fa fa-tag"></i> Bing</a>
+              <a href="/tags/Google/" rel="tag"><i class="fa fa-tag"></i> Google</a>
           </div>
 
         
@@ -445,13 +417,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/p/8d4b7ae1.html" rel="prev" title="计算机组成原理">
-      <i class="fa fa-chevron-left"></i> 计算机组成原理
+    <a href="/p/3b0bf668.html" rel="prev" title="Git常用命令总结">
+      <i class="fa fa-chevron-left"></i> Git常用命令总结
     </a></div>
-      <div class="post-nav-item">
-    <a href="/p/d04bd5bc.html" rel="next" title="操作系统">
-      操作系统 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -511,7 +480,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE"><span class="nav-text">思维导图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%AD%A5%E9%AA%A4"><span class="nav-text">解题步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83%E7%AD%96%E7%95%A5%E7%9A%84%E9%80%89%E6%8B%A9"><span class="nav-text">贪心策略的选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83%E7%AD%96%E7%95%A5%E5%BA%94%E8%80%83%E8%99%91%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-text">贪心策略应考虑的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98-%E4%BC%9A%E5%9C%BA%E5%AE%89%E6%8E%92"><span class="nav-text">例题 会场安排</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E8%A6%81%E6%B1%82"><span class="nav-text">输入要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="nav-text">测试用例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3"><span class="nav-text">算法思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83%E9%80%89%E6%8B%A9%E6%80%A7%E7%9A%84%E8%AF%81%E6%98%8E"><span class="nav-text">贪心选择性的证明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="nav-text">实验结果</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

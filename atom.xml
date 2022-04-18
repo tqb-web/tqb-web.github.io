@@ -6,7 +6,7 @@
   <link href="https://tianqb.top/atom.xml" rel="self"/>
   
   <link href="https://tianqb.top/"/>
-  <updated>2022-04-17T05:18:55.745Z</updated>
+  <updated>2022-04-18T02:18:48.042Z</updated>
   <id>https://tianqb.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>摆脱讨厌的Bing重定向</title>
+    <link href="https://tianqb.top/p/91780f1f.html"/>
+    <id>https://tianqb.top/p/91780f1f.html</id>
+    <published>2022-04-18T02:09:17.000Z</published>
+    <updated>2022-04-18T02:18:48.042Z</updated>
+    
+    
+    <summary type="html">本篇文章介绍了什么是Bing重定向、它的危害，以及如何解决Bing重定向问题。</summary>
+    
+    
+    <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/bingfm.jpg" type="image"/>
+    
+    
+    <category term="浏览器" scheme="https://tianqb.top/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    
+    <category term="Bing重定向" scheme="https://tianqb.top/tags/Bing%E9%87%8D%E5%AE%9A%E5%90%91/"/>
+    
+    <category term="Bing" scheme="https://tianqb.top/tags/Bing/"/>
+    
+    <category term="Google" scheme="https://tianqb.top/tags/Google/"/>
+    
+  </entry>
   
   <entry>
     <title>Git常用命令总结</title>
