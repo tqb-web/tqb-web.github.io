@@ -268,20 +268,6 @@
   </url>
   
   <url>
-    <loc>https://tianqb.top/tags/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2022-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tianqb.top/tags/Github/</loc>
-    <lastmod>2022-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://tianqb.top/tags/hexo/</loc>
     <lastmod>2022-04-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -296,14 +282,21 @@
   </url>
   
   <url>
-    <loc>https://tianqb.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://tianqb.top/tags/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2022-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://tianqb.top/tags/%E8%80%83%E7%A0%94/</loc>
+    <loc>https://tianqb.top/tags/Github/</loc>
+    <lastmod>2022-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tianqb.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2022-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -345,6 +338,13 @@
   </url>
   
   <url>
+    <loc>https://tianqb.top/tags/%E8%80%83%E7%A0%94/</loc>
+    <lastmod>2022-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://tianqb.top/tags/next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</loc>
     <lastmod>2022-04-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -368,13 +368,6 @@
   </url>
   
   <url>
-    <loc>https://tianqb.top/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</loc>
-    <lastmod>2022-04-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://tianqb.top/categories/hexo/</loc>
     <lastmod>2022-04-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -382,14 +375,14 @@
   </url>
   
   <url>
-    <loc>https://tianqb.top/categories/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/</loc>
+    <loc>https://tianqb.top/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</loc>
     <lastmod>2022-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://tianqb.top/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94/</loc>
+    <loc>https://tianqb.top/categories/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2022-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -404,6 +397,13 @@
   
   <url>
     <loc>https://tianqb.top/categories/ENVI/</loc>
+    <lastmod>2022-04-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tianqb.top/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94/</loc>
     <lastmod>2022-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
