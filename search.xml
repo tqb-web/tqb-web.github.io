@@ -77,62 +77,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo note提示块的使用</title>
-    <url>/p/78574fd6.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
-
-<p>在hexo中写博客的时候可以插入一些很酷的<code>提示块</code>，效果如下：</p>
-<div class="note default">
-            <p>default 提示块标签</p>
-          </div>
-
-<div class="note primary">
-            <p>primary 提示块标签</p>
-          </div>
-
-<div class="note success">
-            <p>success 提示块标签</p>
-          </div>
-
-<div class="note info">
-            <p>info 提示块标签</p>
-          </div>
-
-<div class="note warning">
-            <p>warning 提示块标签</p>
-          </div>
-
-<div class="note danger">
-            <p>danger 提示块标签</p>
-          </div>
-
-<p><code>使用方法</code>如下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary %&#125;</span><br><span class="line">primary 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在<code>主题配置文件</code>中可以修改风格</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Note tag (bs-callout)</span><br><span class="line">note:</span><br><span class="line">  # Note tag style values:</span><br><span class="line">  #  - simple    bs-callout old alert style. Default.</span><br><span class="line">  #  - modern    bs-callout new (v2-v3) alert style.</span><br><span class="line">  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span><br><span class="line">  #  - disabled  disable all CSS styles import of note tag.</span><br><span class="line">  style: flat</span><br><span class="line">  icons: false</span><br><span class="line">  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span><br><span class="line">  # Offset also applied to label tag variables. This option can work with disabled note tag.</span><br><span class="line">  light_bg_offset: -10</span><br></pre></td></tr></table></figure>
-
-<p>此外还可以实现<code>选项卡</code>功能</p>
-<div class="tabs" id="tab"><ul class="nav-tabs"><li class="tab active"><a href="#tab-1">A</a></li><li class="tab"><a href="#tab-2">tab 2</a></li><li class="tab"><a href="#tab-3">C</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-1"><p><strong>选项卡 1</strong></p></div><div class="tab-pane" id="tab-2"><p><strong>选项卡 2</strong></p></div><div class="tab-pane" id="tab-3"><p><strong>选项卡 3</strong> 名字为C</p></div></div></div>
-
-<p>使用方法</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs tab %&#125;</span><br><span class="line">&lt;!--tab A--&gt;</span><br><span class="line">**选项卡 1**</span><br><span class="line">&lt;!--endtab--&gt;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**选项卡 2**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab C --&gt;</span><br><span class="line">**选项卡 3** 名字为C</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>原文</p>
-<p><a href=https://jinnsjj.github.io/uncategorized/hexo-next-note/>在hexo-NexT中插入note提示块</a></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo Next主题添加Valine评论系统</title>
     <url>/p/2e257c1.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -212,6 +156,62 @@
       <tags>
         <tag>hexo</tag>
         <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo note提示块的使用</title>
+    <url>/p/78574fd6.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<span id="more"></span>
+
+<p>在hexo中写博客的时候可以插入一些很酷的<code>提示块</code>，效果如下：</p>
+<div class="note default">
+            <p>default 提示块标签</p>
+          </div>
+
+<div class="note primary">
+            <p>primary 提示块标签</p>
+          </div>
+
+<div class="note success">
+            <p>success 提示块标签</p>
+          </div>
+
+<div class="note info">
+            <p>info 提示块标签</p>
+          </div>
+
+<div class="note warning">
+            <p>warning 提示块标签</p>
+          </div>
+
+<div class="note danger">
+            <p>danger 提示块标签</p>
+          </div>
+
+<p><code>使用方法</code>如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary %&#125;</span><br><span class="line">primary 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在<code>主题配置文件</code>中可以修改风格</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Note tag (bs-callout)</span><br><span class="line">note:</span><br><span class="line">  # Note tag style values:</span><br><span class="line">  #  - simple    bs-callout old alert style. Default.</span><br><span class="line">  #  - modern    bs-callout new (v2-v3) alert style.</span><br><span class="line">  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span><br><span class="line">  #  - disabled  disable all CSS styles import of note tag.</span><br><span class="line">  style: flat</span><br><span class="line">  icons: false</span><br><span class="line">  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span><br><span class="line">  # Offset also applied to label tag variables. This option can work with disabled note tag.</span><br><span class="line">  light_bg_offset: -10</span><br></pre></td></tr></table></figure>
+
+<p>此外还可以实现<code>选项卡</code>功能</p>
+<div class="tabs" id="tab"><ul class="nav-tabs"><li class="tab active"><a href="#tab-1">A</a></li><li class="tab"><a href="#tab-2">tab 2</a></li><li class="tab"><a href="#tab-3">C</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-1"><p><strong>选项卡 1</strong></p></div><div class="tab-pane" id="tab-2"><p><strong>选项卡 2</strong></p></div><div class="tab-pane" id="tab-3"><p><strong>选项卡 3</strong> 名字为C</p></div></div></div>
+
+<p>使用方法</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs tab %&#125;</span><br><span class="line">&lt;!--tab A--&gt;</span><br><span class="line">**选项卡 1**</span><br><span class="line">&lt;!--endtab--&gt;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**选项卡 2**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab C --&gt;</span><br><span class="line">**选项卡 3** 名字为C</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>原文</p>
+<p><a href=https://jinnsjj.github.io/uncategorized/hexo-next-note/>在hexo-NexT中插入note提示块</a></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -390,6 +390,58 @@
       </tags>
   </entry>
   <entry>
+    <title>动态规划算法</title>
+    <url>/p/5dc644dc.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p>动态规划是算法中非常重要的一个算法，希望看了我的博客可以对你有所帮助。</p>
+<span id="more"></span>
+
+<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/DynamicPlan.jpg"></p>
+<h2 id="例题-最长公共子序列"><a href="#例题-最长公共子序列" class="headerlink" title="例题 最长公共子序列"></a>例题 最长公共子序列</h2><ol>
+<li><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3></li>
+</ol>
+<div class="note default">
+            <p>&ensp;&ensp;最长公共子序列问题，给定序列X=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>m</sub>)，Y=(y<sub>1</sub>,y<sub>2</sub>,…,y<sub>j</sub>)，求X和Y的最长公共子序列（设X和Z是两个序列，其中X=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>m</sub>)，Z=(z<sub>1</sub>,z<sub>2</sub>,…,z<sub>k</sub>)，如果存在X的元素构成的按下标严格排序递增序列(x<sub>i1</sub>,x<sub>i2</sub>,…,x<sub>ik</sub>)，使得x<sub>ij</sub>=z<sub>j</sub>，j=1,2,…,k，那么Z是X的子序列，Z含有的元素个数，称为子序列的长度）</p>
+          </div>
+
+
+<p><em>定义：设X和Y是两个序列，如果Z既是X的子序列，也是Y的子序列，则称Z是X和Y的公共子序列。</em></p>
+<ol start="2">
+<li><h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3></li>
+</ol>
+<div class="note default">
+            <p>设X<sub>i</sub>=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>i</sub>)<br>&ensp;Y<sub>j</sub>=(y<sub>1</sub>,y<sub>2</sub>,…,y<sub>j</sub>)<br>&ensp;Z<sub>k</sub>=(z<sub>1</sub>,z<sub>2</sub>,…,z<sub>k</sub>)<br>如果Z<sub>k</sub>是X<sub>i</sub>和Y<sub>j</sub>的最长公共子序列<br>那么如果x<sub>i</sub> = y<sub>j</sub>，那么z<sub>k</sub> = x<sub>i</sub> = y<sub>j</sub>，Z<sub>k-1</sub>是X<sub>i-1</sub>和Y<sub>j-1</sub>的最长公共子序列<br>如果x<sub>i</sub> ≠ y<sub>j</sub>，那么z<sub>k</sub> ≠ xi，Z<sub>k-1</sub>是X<sub>i-1</sub>和Y<sub>j</sub>的最长公共子序列<br>如果x<sub>i</sub> ≠ y<sub>j</sub>，那么z<sub>k</sub> ≠ y<sub>i</sub>，Z<sub>k-1</sub>是X<sub>i</sub>和Y<sub>j-1</sub>的最长公共子序列</p>
+          </div>
+
+
+<ol start="3">
+<li><h3 id="最优子结构和重叠子问题"><a href="#最优子结构和重叠子问题" class="headerlink" title="最优子结构和重叠子问题"></a>最优子结构和重叠子问题</h3></li>
+</ol>
+<h4 id="最优子结构"><a href="#最优子结构" class="headerlink" title="最优子结构"></a><u>最优子结构</u></h4><p>&emsp;<strong>X=(x1,x2,…xn) 和 Y={y1,y2,…ym} 是两个序列，将 X 和 Y 的最长公共子序列记为c(X,Y)，找出c(X,Y)就是一个最优化问题。因为，我们需要找到X 和 Y中最长的那个公共子序列。而要找X 和 Y的c，首先考虑X的最后一个元素和Y的最后一个元素。<br>&emsp;1）如果 xn=ym，即X的最后一个元素与Y的最后一个元素相同，这说明该元素一定位于公共子序列中。因此，现在只需要找：c(Xn-1，Ym-1)。c(Xn-1，Ym-1)就是原问题的一个子问题。为什么叫子问题？因为它的规模比原问题小。为什么是最优的子问题？因为我们要找的是Xn-1 和 Ym-1 的最长公共子序列。<br>&emsp;2）如果xn != ym，这下要麻烦一点，因为它产生了两个子问题：c(Xn-1，Ym) 和 c(Xn，Ym-1)，因为序列X 和 序列Y 的最后一个元素不相等嘛，那说明最后一个元素不可能是最长公共子序列中的元素嘛。c(Xn-1，Ym)表示：最长公共序列可以在(x1,x2,…x(n-1)) 和 (y1,y2,…ym)中找。而c(Xn，Ym-1)表示：最长公共序列可以在(x1,x2,…xn) 和 (y1,y2,…y(m-1))中找。<br>&emsp;求解上面两个子问题，得到的公共子序列谁最长，那谁就是 c（X,Y）。用数学表示就是：<br>c=max{c(Xn-1，Ym)，c(Xn，Ym-1)}<br>&emsp;由于条件 1) 和 2) 考虑到了所有可能的情况。因此，我们成功地把原问题转化 成了 三个规模更小的子问题。</strong></p>
+<h4 id="重叠子问题"><a href="#重叠子问题" class="headerlink" title="重叠子问题"></a><u>重叠子问题</u></h4><div class="note info">
+            <p>重叠子问题就是说原问题转化成子问题后，子问题中有相同的问题.</p>
+          </div>
+
+<p>&emsp;<strong>在此题中原问题是：c(X,Y)。子问题有 ❶c(Xn-1，Ym-1) ❷c(Xn-1，Ym) ❸c(Xn，Ym-1)。</strong></p>
+<p>&emsp;<strong>初一看，这三个子问题是不重叠的。可本质上它们是重叠的，因为它们只重叠了一大部分。举例：第二个子问题：c(Xn-1，Ym) 就包含了：问题❶c(Xn-1，Ym-1)。因为，当Xn-1 和 Ym 的最后一个元素不相同时，我们又需要将c(Xn-1，Ym)进行分解：分解成：c(Xn-1，Ym-1) 和 c(Xn-2，Ym)。 也就是说：在子问题的继续分解中，有些问题是重叠的。</strong></p>
+<ol start="4">
+<li><h3 id="状态转移方程"><a href="#状态转移方程" class="headerlink" title="状态转移方程"></a>状态转移方程</h3></li>
+</ol>
+<p> <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/ztzyfc.jpg"></p>
+<ol start="5">
+<li><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3></li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> c[<span class="number">100</span>][<span class="number">100</span>],s[<span class="number">100</span>][<span class="number">100</span>];</span><br><span class="line"><span class="type">void</span> <span class="title function_">game</span><span class="params">(<span class="type">char</span> *a,<span class="type">char</span> *b,<span class="type">int</span> m,<span class="type">int</span> n)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">lcs</span><span class="params">(<span class="type">char</span> *a,<span class="type">int</span> i,<span class="type">int</span> j)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	getchar();</span><br><span class="line">	<span class="keyword">while</span>(n--)&#123;</span><br><span class="line">		<span class="type">char</span> a[<span class="number">100</span>];</span><br><span class="line">		<span class="type">char</span> b[<span class="number">100</span>];</span><br><span class="line">				gets(a);</span><br><span class="line">                gets(b);</span><br><span class="line">					<span class="type">int</span> s1=<span class="built_in">strlen</span>(a);</span><br><span class="line">					<span class="type">int</span> s2=<span class="built_in">strlen</span>(b);</span><br><span class="line">		game(a,b,s1<span class="number">-1</span>,s2<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">game</span><span class="params">(<span class="type">char</span> *a,<span class="type">char</span> *b,<span class="type">int</span> m,<span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=m;i++)</span><br><span class="line">		c[i][<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=n;i++)</span><br><span class="line">		c[<span class="number">0</span>][i]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=m;i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;=n;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(a[i]==b[j])&#123;</span><br><span class="line">			c[i][j]=c[i<span class="number">-1</span>][j<span class="number">-1</span>]+<span class="number">1</span>;</span><br><span class="line">			s[i][j]=<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(c[i<span class="number">-1</span>][j]&gt;c[i][j<span class="number">-1</span>])&#123;</span><br><span class="line">				c[i][j]=c[i<span class="number">-1</span>][j];</span><br><span class="line">				s[i][j]=<span class="number">2</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">				c[i][j]=c[i][j<span class="number">-1</span>];</span><br><span class="line">				s[i][j]=<span class="number">3</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,c[m][n]);</span><br><span class="line">		lcs(a,m,n);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">lcs</span><span class="params">(<span class="type">char</span> *a,<span class="type">int</span> i,<span class="type">int</span> j)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(s[i][j]==<span class="number">1</span>)&#123;</span><br><span class="line">		lcs(a,i<span class="number">-1</span>,j<span class="number">-1</span>);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,a[i]);</span><br><span class="line"> 		&#125;</span><br><span class="line"> 		<span class="keyword">else</span> <span class="keyword">if</span>(s[i][j]==<span class="number">2</span>)</span><br><span class="line"> 			lcs(a,i<span class="number">-1</span>,j);</span><br><span class="line"> 		<span class="keyword">else</span> <span class="keyword">if</span>(s[i][j]==<span class="number">3</span>)</span><br><span class="line">			 lcs(a,i,j<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>算法设计</category>
+      </categories>
+      <tags>
+        <tag>计算机算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《HelloGithub》第02期</title>
     <url>/p/d30f3a58.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -447,241 +499,6 @@
       <tags>
         <tag>编程</tag>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《HelloGithub》第03期</title>
-    <url>/p/6bb35d3d.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p align="center">3️⃣🤨</p>
-
-<span id="more"></span>
-
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
-<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
-<p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
-<p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
-<div class="note default">
-            <p>兴趣是最好的老师，<strong>HelloGitHub</strong> 就是帮你找到兴趣！</p>
-          </div>
-
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg"></p>
-<p><code>Tips</code>：如果文中的图获取刷不出来，可以点击<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC92b2x1bWUvMDEv">这里<i class="fa fa-external-link-alt"></i></span>更好的阅读体验。</p>
-<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><div class="note default">
-            <p><strong>以下为本期内容</strong></p>
-          </div>
-
-<h3 id="1-CSS项目"><a href="#1-CSS项目" class="headerlink" title="1 CSS项目"></a>1 CSS项目</h3><h4 id="1-1-animate-css"><a href="#1-1-animate-css" class="headerlink" title="1.1 animate.css"></a>1.1 animate.css</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FuaW1hdGUtY3NzL2FuaW1hdGUuY3Nz">animate.css<i class="fa fa-external-link-alt"></i></span>：提供炫酷<code>动画</code>效果，同时方便、易用、跨浏览器的 CSS 库。<span class="exturl" data-url="aHR0cHM6Ly9kYW5lZGVuLmdpdGh1Yi5pby9hbmltYXRlLmNzcy8=">在线演示<i class="fa fa-external-link-alt"></i></span></p>
-<h4 id="1-2-mui"><a href="#1-2-mui" class="headerlink" title="1.2 mui"></a>1.2 mui</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2RjbG91ZGlvL211aQ==">mui<i class="fa fa-external-link-alt"></i></span>：最接近<code>原生 APP</code> 体验的高性能框架。性能和体验的差距，一直是 mobile App 开发者放弃 HTML5 的首要原因。mui 框架有效的解决了这些问题，这是一个可以方便开发出高性能 App 的框架，也是目前最接近原生 App 效果的框架。<span class="exturl" data-url="aHR0cDovL2Rldi5kY2xvdWQubmV0LmNuL211aS8=">mui 官网<i class="fa fa-external-link-alt"></i></span></p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/pullrefresh.gif" alt="mui运行图"></p>
-<h3 id="2-Go项目"><a href="#2-Go项目" class="headerlink" title="2 Go项目"></a>2 Go项目</h3><h4 id="2-1-pholcus"><a href="#2-1-pholcus" class="headerlink" title="2.1 pholcus"></a>2.1 pholcus</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2hlbnJ5bGVlMmNuL3Bob2xjdXM=">pholcus<i class="fa fa-external-link-alt"></i></span>：Pholcus 是纯 Go 语言编写的高并发、分布式、重量级<code>爬虫软件</code>，支持单机、服务端、客户端三种运行模式，拥有 Web、GUI、命令行三种操作界面，功能齐全、强大。<span class="exturl" data-url="aHR0cHM6Ly9waG9sY3VzLmdpdGJvb2tzLmlvL2RvY3MvY29udGVudC8=">使用手册<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github31.jpg" alt="pholcus爬虫软件"></p>
-<h3 id="3-Java项目"><a href="#3-Java项目" class="headerlink" title="3 Java项目"></a>3 Java项目</h3><h4 id="3-1-greys-anatomy"><a href="#3-1-greys-anatomy" class="headerlink" title="3.1 greys-anatomy"></a>3.1 greys-anatomy</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL29sZG1hbnB1c2hjYXJ0L2dyZXlzLWFuYXRvbXk=">greys-anatomy<i class="fa fa-external-link-alt"></i></span>：Greys 是 Java 在线问题诊断工具。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github32.png" alt="在线问诊工具"></p>
-<h3 id="4-JavaScript项目"><a href="#4-JavaScript项目" class="headerlink" title="4 JavaScript项目"></a>4 JavaScript项目</h3><h4 id="4-1-OS-js"><a href="#4-1-OS-js" class="headerlink" title="4.1 OS.js"></a>4.1 OS.js</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL29zLWpzL09TLmpz">OS.js<i class="fa fa-external-link-alt"></i></span>：JavaScript 写的基于浏览器上的桌面操作系统。<span class="exturl" data-url="aHR0cHM6Ly9kZW1vLm9zLWpzLm9yZy8=">在线演示<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github33.jpg" alt="基于浏览器的操作系统"></p>
-<h4 id="4-2-editor-md"><a href="#4-2-editor-md" class="headerlink" title="4.2 editor.md"></a>4.2 editor.md</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BhbmRhby9lZGl0b3IubWQ=">editor.md<i class="fa fa-external-link-alt"></i></span>：是一款开源的、可嵌入的 <code>Markdown 在线编辑器（组件）</code>，基于 CodeMirror、jQuery 和 Marked 构建。<span class="exturl" data-url="aHR0cDovL2xhYi5sZXB0dXJlLmNvbS9lZGl0b3Iv">在线尝试<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github34.jpg" alt="MD在线编辑器"></p>
-<h3 id="5-PHP项目"><a href="#5-PHP项目" class="headerlink" title="5 PHP项目"></a>5 PHP项目</h3><h4 id="5-1-walle-web"><a href="#5-1-walle-web" class="headerlink" title="5.1 walle-web"></a>5.1 walle-web</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL21lb2x1L3dhbGxlLXdlYg==">walle-web<i class="fa fa-external-link-alt"></i></span>：Walle（瓦力） 一个 <code>Web 部署系统工具</code>，可能也是个持续发布工具，配置简单、功能完善、界面流畅、开箱即用！支持 git、svn 版本管理，支持各种 Web 代码发布，静态的 HTML，动态 PHP，需要编译的 Java 等。<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21lb2x1L3dhbGxlLXdlYi9ibG9iL21hc3Rlci9kb2NzL1JFQURNRS16aC5tZA==">中文介绍<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
-<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/03/img/wali-show.gif" alt="Walle"></p>
-<h3 id="6-Python项目"><a href="#6-Python项目" class="headerlink" title="6 Python项目"></a>6 Python项目</h3><h4 id="6-1-KindleEar"><a href="#6-1-KindleEar" class="headerlink" title="6.1 KindleEar"></a>6.1 KindleEar</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2NkaGlnaC9LaW5kbGVFYXI=">KindleEar<i class="fa fa-external-link-alt"></i></span>：这是一个运行在 Google App Engine(GAE) 上的 Kindle 个人推送服务应用，生成排版精美的杂志模式 <code>mobi/epub</code> 格式自动每天推送至您的 Kindle 或其他邮箱。</p>
-<h3 id="7-其他"><a href="#7-其他" class="headerlink" title="7 其他"></a>7 其他</h3><h4 id="7-1-css-creating"><a href="#7-1-css-creating" class="headerlink" title="7.1 css-creating"></a>7.1 css-creating</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2Nzc2RyZWFtL2Nzcy1jcmVhdGluZw==">css-creating<i class="fa fa-external-link-alt"></i></span>：CSS 创作指南。</p>
-<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><div class="note info">
-            <p>如果你发现了好玩、有意义的开源项目 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vZ2l0aHViLmNvbS81MjF4dWV3ZWloYW4vSGVsbG9HaXRIdWIvaXNzdWVzL25ldw==">点击这里<i class="fa fa-external-link-alt"></i></span> 分享你觉得有意思的项目。</p>
-          </div>
-
-<p>❤❤❤</p>
-<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzAzL0hlbGxvR2l0SHViMDMubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
-]]></content>
-      <categories>
-        <category>编程实战</category>
-      </categories>
-      <tags>
-        <tag>编程</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动态规划算法</title>
-    <url>/p/5dc644dc.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p>动态规划是算法中非常重要的一个算法，希望看了我的博客可以对你有所帮助。</p>
-<span id="more"></span>
-
-<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/DynamicPlan.jpg"></p>
-<h2 id="例题-最长公共子序列"><a href="#例题-最长公共子序列" class="headerlink" title="例题 最长公共子序列"></a>例题 最长公共子序列</h2><ol>
-<li><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3></li>
-</ol>
-<div class="note default">
-            <p>&ensp;&ensp;最长公共子序列问题，给定序列X=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>m</sub>)，Y=(y<sub>1</sub>,y<sub>2</sub>,…,y<sub>j</sub>)，求X和Y的最长公共子序列（设X和Z是两个序列，其中X=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>m</sub>)，Z=(z<sub>1</sub>,z<sub>2</sub>,…,z<sub>k</sub>)，如果存在X的元素构成的按下标严格排序递增序列(x<sub>i1</sub>,x<sub>i2</sub>,…,x<sub>ik</sub>)，使得x<sub>ij</sub>=z<sub>j</sub>，j=1,2,…,k，那么Z是X的子序列，Z含有的元素个数，称为子序列的长度）</p>
-          </div>
-
-
-<p><em>定义：设X和Y是两个序列，如果Z既是X的子序列，也是Y的子序列，则称Z是X和Y的公共子序列。</em></p>
-<ol start="2">
-<li><h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3></li>
-</ol>
-<div class="note default">
-            <p>设X<sub>i</sub>=(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>i</sub>)<br>&ensp;Y<sub>j</sub>=(y<sub>1</sub>,y<sub>2</sub>,…,y<sub>j</sub>)<br>&ensp;Z<sub>k</sub>=(z<sub>1</sub>,z<sub>2</sub>,…,z<sub>k</sub>)<br>如果Z<sub>k</sub>是X<sub>i</sub>和Y<sub>j</sub>的最长公共子序列<br>那么如果x<sub>i</sub> = y<sub>j</sub>，那么z<sub>k</sub> = x<sub>i</sub> = y<sub>j</sub>，Z<sub>k-1</sub>是X<sub>i-1</sub>和Y<sub>j-1</sub>的最长公共子序列<br>如果x<sub>i</sub> ≠ y<sub>j</sub>，那么z<sub>k</sub> ≠ xi，Z<sub>k-1</sub>是X<sub>i-1</sub>和Y<sub>j</sub>的最长公共子序列<br>如果x<sub>i</sub> ≠ y<sub>j</sub>，那么z<sub>k</sub> ≠ y<sub>i</sub>，Z<sub>k-1</sub>是X<sub>i</sub>和Y<sub>j-1</sub>的最长公共子序列</p>
-          </div>
-
-
-<ol start="3">
-<li><h3 id="最优子结构和重叠子问题"><a href="#最优子结构和重叠子问题" class="headerlink" title="最优子结构和重叠子问题"></a>最优子结构和重叠子问题</h3></li>
-</ol>
-<h4 id="最优子结构"><a href="#最优子结构" class="headerlink" title="最优子结构"></a><u>最优子结构</u></h4><p>&emsp;<strong>X=(x1,x2,…xn) 和 Y={y1,y2,…ym} 是两个序列，将 X 和 Y 的最长公共子序列记为c(X,Y)，找出c(X,Y)就是一个最优化问题。因为，我们需要找到X 和 Y中最长的那个公共子序列。而要找X 和 Y的c，首先考虑X的最后一个元素和Y的最后一个元素。<br>&emsp;1）如果 xn=ym，即X的最后一个元素与Y的最后一个元素相同，这说明该元素一定位于公共子序列中。因此，现在只需要找：c(Xn-1，Ym-1)。c(Xn-1，Ym-1)就是原问题的一个子问题。为什么叫子问题？因为它的规模比原问题小。为什么是最优的子问题？因为我们要找的是Xn-1 和 Ym-1 的最长公共子序列。<br>&emsp;2）如果xn != ym，这下要麻烦一点，因为它产生了两个子问题：c(Xn-1，Ym) 和 c(Xn，Ym-1)，因为序列X 和 序列Y 的最后一个元素不相等嘛，那说明最后一个元素不可能是最长公共子序列中的元素嘛。c(Xn-1，Ym)表示：最长公共序列可以在(x1,x2,…x(n-1)) 和 (y1,y2,…ym)中找。而c(Xn，Ym-1)表示：最长公共序列可以在(x1,x2,…xn) 和 (y1,y2,…y(m-1))中找。<br>&emsp;求解上面两个子问题，得到的公共子序列谁最长，那谁就是 c（X,Y）。用数学表示就是：<br>c=max{c(Xn-1，Ym)，c(Xn，Ym-1)}<br>&emsp;由于条件 1) 和 2) 考虑到了所有可能的情况。因此，我们成功地把原问题转化 成了 三个规模更小的子问题。</strong></p>
-<h4 id="重叠子问题"><a href="#重叠子问题" class="headerlink" title="重叠子问题"></a><u>重叠子问题</u></h4><div class="note info">
-            <p>重叠子问题就是说原问题转化成子问题后，子问题中有相同的问题.</p>
-          </div>
-
-<p>&emsp;<strong>在此题中原问题是：c(X,Y)。子问题有 ❶c(Xn-1，Ym-1) ❷c(Xn-1，Ym) ❸c(Xn，Ym-1)。</strong></p>
-<p>&emsp;<strong>初一看，这三个子问题是不重叠的。可本质上它们是重叠的，因为它们只重叠了一大部分。举例：第二个子问题：c(Xn-1，Ym) 就包含了：问题❶c(Xn-1，Ym-1)。因为，当Xn-1 和 Ym 的最后一个元素不相同时，我们又需要将c(Xn-1，Ym)进行分解：分解成：c(Xn-1，Ym-1) 和 c(Xn-2，Ym)。 也就是说：在子问题的继续分解中，有些问题是重叠的。</strong></p>
-<ol start="4">
-<li><h3 id="状态转移方程"><a href="#状态转移方程" class="headerlink" title="状态转移方程"></a>状态转移方程</h3></li>
-</ol>
-<p> <img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/ztzyfc.jpg"></p>
-<ol start="5">
-<li><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3></li>
-</ol>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> c[<span class="number">100</span>][<span class="number">100</span>],s[<span class="number">100</span>][<span class="number">100</span>];</span><br><span class="line"><span class="type">void</span> <span class="title function_">game</span><span class="params">(<span class="type">char</span> *a,<span class="type">char</span> *b,<span class="type">int</span> m,<span class="type">int</span> n)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">lcs</span><span class="params">(<span class="type">char</span> *a,<span class="type">int</span> i,<span class="type">int</span> j)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">	getchar();</span><br><span class="line">	<span class="keyword">while</span>(n--)&#123;</span><br><span class="line">		<span class="type">char</span> a[<span class="number">100</span>];</span><br><span class="line">		<span class="type">char</span> b[<span class="number">100</span>];</span><br><span class="line">				gets(a);</span><br><span class="line">                gets(b);</span><br><span class="line">					<span class="type">int</span> s1=<span class="built_in">strlen</span>(a);</span><br><span class="line">					<span class="type">int</span> s2=<span class="built_in">strlen</span>(b);</span><br><span class="line">		game(a,b,s1<span class="number">-1</span>,s2<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">game</span><span class="params">(<span class="type">char</span> *a,<span class="type">char</span> *b,<span class="type">int</span> m,<span class="type">int</span> n)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=m;i++)</span><br><span class="line">		c[i][<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=n;i++)</span><br><span class="line">		c[<span class="number">0</span>][i]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;=m;i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;=n;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(a[i]==b[j])&#123;</span><br><span class="line">			c[i][j]=c[i<span class="number">-1</span>][j<span class="number">-1</span>]+<span class="number">1</span>;</span><br><span class="line">			s[i][j]=<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(c[i<span class="number">-1</span>][j]&gt;c[i][j<span class="number">-1</span>])&#123;</span><br><span class="line">				c[i][j]=c[i<span class="number">-1</span>][j];</span><br><span class="line">				s[i][j]=<span class="number">2</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">				c[i][j]=c[i][j<span class="number">-1</span>];</span><br><span class="line">				s[i][j]=<span class="number">3</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,c[m][n]);</span><br><span class="line">		lcs(a,m,n);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">lcs</span><span class="params">(<span class="type">char</span> *a,<span class="type">int</span> i,<span class="type">int</span> j)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(s[i][j]==<span class="number">1</span>)&#123;</span><br><span class="line">		lcs(a,i<span class="number">-1</span>,j<span class="number">-1</span>);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,a[i]);</span><br><span class="line"> 		&#125;</span><br><span class="line"> 		<span class="keyword">else</span> <span class="keyword">if</span>(s[i][j]==<span class="number">2</span>)</span><br><span class="line"> 			lcs(a,i<span class="number">-1</span>,j);</span><br><span class="line"> 		<span class="keyword">else</span> <span class="keyword">if</span>(s[i][j]==<span class="number">3</span>)</span><br><span class="line">			 lcs(a,i,j<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>算法设计</category>
-      </categories>
-      <tags>
-        <tag>计算机算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《HelloGithub》第04期</title>
-    <url>/p/f6646584.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p align="center">4️⃣😎</p>
-
-<span id="more"></span>
-
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
-<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
-<p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
-<p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
-<div class="note default">
-            <p>兴趣是最好的老师，<strong>HelloGitHub</strong> 就是帮你找到兴趣！</p>
-          </div>
-
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg" alt=" "></p>
-<p><code>Tips</code>：如果文中的图获取刷不出来，可以点击<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC92b2x1bWUvMDEv">这里<i class="fa fa-external-link-alt"></i></span>更好的阅读体验。</p>
-<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><div class="note default">
-            <p><strong>以下为本期内容</strong></p>
-          </div>
-
-<h3 id="1-Java项目"><a href="#1-Java项目" class="headerlink" title="1 Java项目"></a>1 Java项目</h3><h4 id="1-1-cachecloud"><a href="#1-1-cachecloud" class="headerlink" title="1.1 cachecloud"></a>1.1 cachecloud</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3NvaHV0di9jYWNoZWNsb3Vk">cachecloud<i class="fa fa-external-link-alt"></i></span>：搜狐视频开源的 CacheCloud 项目，提供了一个 Redis 云管理平台，功能强大，教程详细（有视频教程），文档齐全，<code>企业级开源项目</code>。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github41.jpg" alt="Redis云管理平台"></p>
-<h3 id="2-JavaScript项目"><a href="#2-JavaScript项目" class="headerlink" title="2 JavaScript项目"></a>2 JavaScript项目</h3><h4 id="2-1-zingtouch"><a href="#2-1-zingtouch" class="headerlink" title="2.1 zingtouch"></a>2.1 zingtouch</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3ppbmdjaGFydC96aW5ndG91Y2g=">zingtouch<i class="fa fa-external-link-alt"></i></span>：支持移动端各种触摸动作包含：转动、挥动、滑动等动作的库，<span class="exturl" data-url="aHR0cHM6Ly96aW5nY2hhcnQuZ2l0aHViLmlvL3ppbmd0b3VjaC8=">官方网站<i class="fa fa-external-link-alt"></i></span>，展示图如下：</p>
-<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/zingtouch-show.gif" alt="zingtouch"></p>
-<h4 id="2-2-zhihudaily-vue"><a href="#2-2-zhihudaily-vue" class="headerlink" title="2.2 zhihudaily-vue"></a>2.2 zhihudaily-vue</h4><p>&emsp;、<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3lhdGVzc3NzL3poaWh1ZGFpbHktdnVl">zhihudaily-vue<i class="fa fa-external-link-alt"></i></span>：用 Vue.js 写的<code>知乎日报手机 Web 版</code>，需打开 chrome 浏览器的手机模拟功能，来获得比较好的浏览效果。访问展示图如下：</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github42.jpg" alt="知乎日报web版"></p>
-<h3 id="3-Python项目"><a href="#3-Python项目" class="headerlink" title="3 Python项目"></a>3 Python项目</h3><h4 id="3-1-python-guide"><a href="#3-1-python-guide" class="headerlink" title="3.1 python-guide"></a>3.1 python-guide</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3JlYWxweXRob24vcHl0aG9uLWd1aWRl">python-guide<i class="fa fa-external-link-alt"></i></span>：Requests 库的作者——kennethreitz，写的 Python 入门教程。不单单是语法层面的，涵盖项目结构、代码风格，进阶、工具等方方面面。虽然是<code>英文版</code>(<span class="exturl" data-url="aHR0cDovL3B5dGhvbmd1aWRlY24ucmVhZHRoZWRvY3MuaW8vemgvbGF0ZXN0Lw==">中文翻译版<i class="fa fa-external-link-alt"></i></span>)，但我这个英语渣都能看懂，你肯定也可以，快去看看吧，开卷有益。<span class="exturl" data-url="aHR0cDovL2RvY3MucHl0aG9uLWd1aWRlLm9yZy9lbi9sYXRlc3Qv">在线阅读<i class="fa fa-external-link-alt"></i></span></p>
-<h4 id="3-2-flask-admin"><a href="#3-2-flask-admin" class="headerlink" title="3.2 flask-admin"></a>3.2 flask-admin</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2ZsYXNrLWFkbWluL2ZsYXNrLWFkbWlu">flask-admin<i class="fa fa-external-link-alt"></i></span>：我工作中需要写一个<code>微型的管理系统</code>，用的就是这个框架。简直快餐型，页面都写好了，只要设置好相关配置就可以跑起来了。唯一缺点就是文档中的例子少，开发一些特定的需求需要自己看源码，才能知道如何改。<span class="exturl" data-url="aHR0cHM6Ly9mbGFzay1hZG1pbi5yZWFkdGhlZG9jcy5pby9lbi9sYXRlc3Qv">文档<i class="fa fa-external-link-alt"></i></span>，下面是我跑起来之后的样子：</p>
-<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/flask-admin-show.gif" alt="flask框架"></p>
-<h4 id="3-3-python-sdk"><a href="#3-3-python-sdk" class="headerlink" title="3.3 python-sdk"></a>3.3 python-sdk</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3Fpbml1L3B5dGhvbi1zZGs=">python-sdk<i class="fa fa-external-link-alt"></i></span>：七牛云存储 SDK。我自己在用他家的服务，上手简单、有免费额度，可以用来做‘图床’，同时，有了这个 SDK 可以写一些好用的小工具。<strong>注意</strong>：图床不能随便用，我曾经就用超了，账户的钱能扣成<code>负数</code>！</p>
-<h3 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h3><ul>
-<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3RhaXppbG9uZ3h1L2ludGVydmlld19weXRob24=">interview_python<i class="fa fa-external-link-alt"></i></span>：关于 Python 的面试题</li>
-<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL01yS2l2ZW4vUHlaaA==">PyZh<i class="fa fa-external-link-alt"></i></span>：Python 经典的技术文章的翻译和收集，<span class="exturl" data-url="aHR0cDovL3B5emgucmVhZHRoZWRvY3MuaW8vZW4vbGF0ZXN0Lw==">在线阅读<i class="fa fa-external-link-alt"></i></span></li>
-<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL0hJVC1BbGliYWJhL2ludGVydmlldw==">interview<i class="fa fa-external-link-alt"></i></span>：笔试面试知识整理(涵盖：IOS、Android、计算机基础)，<span class="exturl" data-url="aHR0cHM6Ly9oaXQtYWxpYmFiYS5naXRodWIuaW8vaW50ZXJ2aWV3L2luZGV4Lmh0bWw=">在线阅读<i class="fa fa-external-link-alt"></i></span></li>
-<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BhZGRpbmdtZS9Gcm9udC1lbmQtV2ViLURldmVsb3BtZW50LUludGVydmlldy1RdWVzdGlvbg==">Front-end-Web-Development-Interview-Question<i class="fa fa-external-link-alt"></i></span>：前端开发面试题大收集</li>
-<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL0phY2t5QW5kcm9pZC9BbmRyb2lkSW50ZXJ2aWV3LVEtQQ==">AndroidInterview-Q-A<i class="fa fa-external-link-alt"></i></span>：这个项目主要是国内一线互联网公司的 Java 和 Android 方面的内部面试题。</li>
-<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FoYW5nY2hlbi9Ib3ctdG8tQmUtQS1Qcm9ncmFtbWVyLUNO">How-to-Be-A-Programmer-CN<i class="fa fa-external-link-alt"></i></span>：如何做好一枚程序员（中文翻译版）</li>
-<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL21uaWVsc2VuL25ldXJhbC1uZXR3b3Jrcy1hbmQtZGVlcC1sZWFybmluZw==">neural-networks-and-deep-learning<i class="fa fa-external-link-alt"></i></span>：《神经网络与深度学习》相关代码 Python 实现，<span class="exturl" data-url="aHR0cHM6Ly90aWdlcm5laWwuZ2l0Ym9va3MuaW8vbmV1cmFsLW5ldHdvcmtzLWFuZC1kZWVwLWxlYXJuaW5nLXpoL2NvbnRlbnQvY2hhcHRlcjEuaHRtbA==">神经网络与深度学习－中文在线阅读<i class="fa fa-external-link-alt"></i></span>，该书中的相关理论的 Python 代码实现</li>
-<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2pheXdjamxvdmUvYXdlc29tZS1tYWM=">awesome-mac<i class="fa fa-external-link-alt"></i></span>：排版相当好的一个 awesome 系列文章，文中介绍了很多 Mac 上好用的工具。</li>
-</ul>
-<div class="note info">
-            <p>如果你发现了好玩、有意义的开源项目 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vZ2l0aHViLmNvbS81MjF4dWV3ZWloYW4vSGVsbG9HaXRIdWIvaXNzdWVzL25ldw==">点击这里<i class="fa fa-external-link-alt"></i></span> 分享你觉得有意思的项目。</p>
-          </div>
-
-<p>❤❤❤</p>
-<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzA0L0hlbGxvR2l0SHViMDQubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
-]]></content>
-      <categories>
-        <category>编程实战</category>
-      </categories>
-      <tags>
-        <tag>编程</tag>
-        <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在Hexo博客中添加Github贡献日历</title>
-    <url>/p/214102e1.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
-
-<p>&emsp;之前看到过<span class="exturl" data-url="aHR0cHM6Ly96ZmUuc3BhY2Uv">小冰<i class="fa fa-external-link-alt"></i></span>的博客，被他主页的Github贡献日历吸引了。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg" alt="github贡献日历"></p>
-<p>&emsp;于是我按照他给的方法进行尝试，最后虽然成功了，但是也出现了一些问题，导致页面不是太美观。如下图，上面一行日期无法显示完整，这令我很头疼我试图上网查找解决方法，可惜没有找到，并且许多用户都反应遇到了同样的问题。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/mygithub.jpg" alt="我显示的githubcalendar"></p>
-<p>&emsp;既然解决不了，那咱就换一种方法。于是我又在Github上寻找新的方法，终于，我在一位老外大神那里找到了一种方法。</p>
-<div class="note info">
-            <p>Github 地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzIwMTZyc2hhaC9naXRodWJjaGFydC1hcGk=">https://github.com/2016rshah/githubchart-api<i class="fa fa-external-link-alt"></i></span></p>
-          </div>
-
-<p><strong>&emsp;我觉得这个方法非常的牛，他将你自己的贡献日历变成了图片，只需要使用一行 HTML 语句，就可以在任何地方使用贡献日历。但他也有自己的<code>缺点</code>，就是不能像小冰的插件那样可以<code>显示上传日期和提交次数</code>等。</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/2016rshah&quot; alt=&quot;2016rshah&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure>
-
-<p><code>现在开始介绍怎么用这种方法实现！</code></p>
-<h2 id="1-最简单的一种方法"><a href="#1-最简单的一种方法" class="headerlink" title="1 最简单的一种方法"></a>1 最简单的一种方法</h2><p>如果你想简单的使用Github贡献日历，那么你只需要在Markdown文本中，使用</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/你的Github用户名&quot; alt=&quot;???&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure>
-
-<p>比如说，你想在<code>关于</code>页面使用贡献日历，那么只需要在<code>blog\source\about</code>目录下，打开<code>index.md</code>文件，在需要的位置插入上面的语句即可。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github1.jpg" alt="插入代码"></p>
-<div class="note warning">
-            <p>注意一定要是自己的Github用户名！</p>
-          </div>
-
-<p>效果如下</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github2.jpg" alt="插入后的效果图"></p>
-<h2 id="2-自定义贡献日历的配色方案"><a href="#2-自定义贡献日历的配色方案" class="headerlink" title="2 自定义贡献日历的配色方案"></a>2 自定义贡献日历的配色方案</h2><p>&emsp;我们还可以<code>自定义</code>自己的贡献日历配色方案，原作者是不是很贴心！</p>
-<div class="note info">
-            <p>我们只需要将 <code>src</code> 属性改为 <code>https://ghchart.rshah.org/&lt;HEX-COLOR&gt;/你的Github用户名</code>，其中 <code>&lt;HEX_COLOR&gt;</code> 为任意的十六进制颜色代码。它将根据这个颜色，自动为日历修改配色。</p>
-          </div>
-
-<p>如下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/E623D1/tqb-web&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br></pre></td></tr></table></figure>
-
-<p>效果图</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github3.jpg" alt="改变颜色"></p>
-<h2 id="3-放进首页和归档页（Next主题）"><a href="#3-放进首页和归档页（Next主题）" class="headerlink" title="3 放进首页和归档页（Next主题）"></a>3 放进首页和归档页（Next主题）</h2><ol>
-<li>打开<code>Dblog\themes\next\layout</code>目录下的<code>_layout.swig</code>文件。</li>
-<li>找到<code>       &#123;% include '_partials/header/sub-menu.swig' %&#125;</code>，在下面添加如下代码</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;%- if page.type !== &#x27;categories&#x27; and page.type !== &#x27;tags&#x27; and page.type !== &#x27;schedule&#x27; and page.type !== &#x27;works&#x27; and page.type !== &#x27;about&#x27; and page.type !== &#x27;post&#x27;%&#125;</span><br><span class="line">	&lt;div class=&quot;post-block animated fadeIn&quot;&gt;</span><br><span class="line">		&lt;h5 class=&quot;post-title&quot; itemprop=&quot;name headline&quot;&gt;</span><br><span class="line">			&lt;a href=&quot;https://github.com/你的Github用户名&quot; class=&quot;post-title-link&quot; itemprop=&quot;url&quot;&gt;Github Contribution Calendar&lt;/a&gt;</span><br><span class="line">		&lt;/h5&gt;</span><br><span class="line">		&lt;div class=&quot;post-body animated fadeInDown&quot; itemprop=&quot;articleBody&quot;&gt;</span><br><span class="line">			&lt;img style=&quot;width: 100%; margin-top: 30px;&quot; src=&quot;https://ghchart.rshah.org/e77c8e/你的Github用户名&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>如下图(用的别人的)</code></p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github5.jpg"></p>
-<p>⚠<strong>注意</strong></p>
-<p>🍦<strong>首先，要把<code>黄色框框</code>里面的代码换成自己的信息！！！</strong></p>
-<p>🍦<strong>其次，<code>绿色框框</code>要根据你博客的情况写</strong></p>
-<div class="note info">
-            <p>其中，<code>page.type</code> 是在对应页面的 <code>index.md</code> 文件的首部设置的，语句为 <code>type: &quot;对应类型&quot;</code>。</p>
-          </div>
-
-<div class="note warning">
-            <p>需要注意的是，如果你不想在你的每篇文章顶部都显示贡献日历，那么你将不得不在每篇文章的 Markdown 文件首部都添加 <code>type: &quot;post&quot;</code>。</p>
-          </div>
-
-<p>我目前没有想到其他更好的方法，如果你们想到了，可以在下面留言告诉我。</p>
-<p>最后看一下效果</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg" alt="最终效果"></p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -782,6 +599,189 @@
       </tags>
   </entry>
   <entry>
+    <title>在Hexo博客中添加Github贡献日历</title>
+    <url>/p/214102e1.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<span id="more"></span>
+
+<p>&emsp;之前看到过<span class="exturl" data-url="aHR0cHM6Ly96ZmUuc3BhY2Uv">小冰<i class="fa fa-external-link-alt"></i></span>的博客，被他主页的Github贡献日历吸引了。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg" alt="github贡献日历"></p>
+<p>&emsp;于是我按照他给的方法进行尝试，最后虽然成功了，但是也出现了一些问题，导致页面不是太美观。如下图，上面一行日期无法显示完整，这令我很头疼我试图上网查找解决方法，可惜没有找到，并且许多用户都反应遇到了同样的问题。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/mygithub.jpg" alt="我显示的githubcalendar"></p>
+<p>&emsp;既然解决不了，那咱就换一种方法。于是我又在Github上寻找新的方法，终于，我在一位老外大神那里找到了一种方法。</p>
+<div class="note info">
+            <p>Github 地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzIwMTZyc2hhaC9naXRodWJjaGFydC1hcGk=">https://github.com/2016rshah/githubchart-api<i class="fa fa-external-link-alt"></i></span></p>
+          </div>
+
+<p><strong>&emsp;我觉得这个方法非常的牛，他将你自己的贡献日历变成了图片，只需要使用一行 HTML 语句，就可以在任何地方使用贡献日历。但他也有自己的<code>缺点</code>，就是不能像小冰的插件那样可以<code>显示上传日期和提交次数</code>等。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/2016rshah&quot; alt=&quot;2016rshah&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>现在开始介绍怎么用这种方法实现！</code></p>
+<h2 id="1-最简单的一种方法"><a href="#1-最简单的一种方法" class="headerlink" title="1 最简单的一种方法"></a>1 最简单的一种方法</h2><p>如果你想简单的使用Github贡献日历，那么你只需要在Markdown文本中，使用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/你的Github用户名&quot; alt=&quot;???&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>比如说，你想在<code>关于</code>页面使用贡献日历，那么只需要在<code>blog\source\about</code>目录下，打开<code>index.md</code>文件，在需要的位置插入上面的语句即可。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github1.jpg" alt="插入代码"></p>
+<div class="note warning">
+            <p>注意一定要是自己的Github用户名！</p>
+          </div>
+
+<p>效果如下</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github2.jpg" alt="插入后的效果图"></p>
+<h2 id="2-自定义贡献日历的配色方案"><a href="#2-自定义贡献日历的配色方案" class="headerlink" title="2 自定义贡献日历的配色方案"></a>2 自定义贡献日历的配色方案</h2><p>&emsp;我们还可以<code>自定义</code>自己的贡献日历配色方案，原作者是不是很贴心！</p>
+<div class="note info">
+            <p>我们只需要将 <code>src</code> 属性改为 <code>https://ghchart.rshah.org/&lt;HEX-COLOR&gt;/你的Github用户名</code>，其中 <code>&lt;HEX_COLOR&gt;</code> 为任意的十六进制颜色代码。它将根据这个颜色，自动为日历修改配色。</p>
+          </div>
+
+<p>如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/E623D1/tqb-web&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>效果图</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github3.jpg" alt="改变颜色"></p>
+<h2 id="3-放进首页和归档页（Next主题）"><a href="#3-放进首页和归档页（Next主题）" class="headerlink" title="3 放进首页和归档页（Next主题）"></a>3 放进首页和归档页（Next主题）</h2><ol>
+<li>打开<code>Dblog\themes\next\layout</code>目录下的<code>_layout.swig</code>文件。</li>
+<li>找到<code>       &#123;% include '_partials/header/sub-menu.swig' %&#125;</code>，在下面添加如下代码</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;%- if page.type !== &#x27;categories&#x27; and page.type !== &#x27;tags&#x27; and page.type !== &#x27;schedule&#x27; and page.type !== &#x27;works&#x27; and page.type !== &#x27;about&#x27; and page.type !== &#x27;post&#x27;%&#125;</span><br><span class="line">	&lt;div class=&quot;post-block animated fadeIn&quot;&gt;</span><br><span class="line">		&lt;h5 class=&quot;post-title&quot; itemprop=&quot;name headline&quot;&gt;</span><br><span class="line">			&lt;a href=&quot;https://github.com/你的Github用户名&quot; class=&quot;post-title-link&quot; itemprop=&quot;url&quot;&gt;Github Contribution Calendar&lt;/a&gt;</span><br><span class="line">		&lt;/h5&gt;</span><br><span class="line">		&lt;div class=&quot;post-body animated fadeInDown&quot; itemprop=&quot;articleBody&quot;&gt;</span><br><span class="line">			&lt;img style=&quot;width: 100%; margin-top: 30px;&quot; src=&quot;https://ghchart.rshah.org/e77c8e/你的Github用户名&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>如下图(用的别人的)</code></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github5.jpg"></p>
+<p>⚠<strong>注意</strong></p>
+<p>🍦<strong>首先，要把<code>黄色框框</code>里面的代码换成自己的信息！！！</strong></p>
+<p>🍦<strong>其次，<code>绿色框框</code>要根据你博客的情况写</strong></p>
+<div class="note info">
+            <p>其中，<code>page.type</code> 是在对应页面的 <code>index.md</code> 文件的首部设置的，语句为 <code>type: &quot;对应类型&quot;</code>。</p>
+          </div>
+
+<div class="note warning">
+            <p>需要注意的是，如果你不想在你的每篇文章顶部都显示贡献日历，那么你将不得不在每篇文章的 Markdown 文件首部都添加 <code>type: &quot;post&quot;</code>。</p>
+          </div>
+
+<p>我目前没有想到其他更好的方法，如果你们想到了，可以在下面留言告诉我。</p>
+<p>最后看一下效果</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg" alt="最终效果"></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《HelloGithub》第03期</title>
+    <url>/p/6bb35d3d.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p align="center">3️⃣🤨</p>
+
+<span id="more"></span>
+
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
+<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
+<p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
+<p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
+<div class="note default">
+            <p>兴趣是最好的老师，<strong>HelloGitHub</strong> 就是帮你找到兴趣！</p>
+          </div>
+
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg"></p>
+<p><code>Tips</code>：如果文中的图获取刷不出来，可以点击<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC92b2x1bWUvMDEv">这里<i class="fa fa-external-link-alt"></i></span>更好的阅读体验。</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><div class="note default">
+            <p><strong>以下为本期内容</strong></p>
+          </div>
+
+<h3 id="1-CSS项目"><a href="#1-CSS项目" class="headerlink" title="1 CSS项目"></a>1 CSS项目</h3><h4 id="1-1-animate-css"><a href="#1-1-animate-css" class="headerlink" title="1.1 animate.css"></a>1.1 animate.css</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FuaW1hdGUtY3NzL2FuaW1hdGUuY3Nz">animate.css<i class="fa fa-external-link-alt"></i></span>：提供炫酷<code>动画</code>效果，同时方便、易用、跨浏览器的 CSS 库。<span class="exturl" data-url="aHR0cHM6Ly9kYW5lZGVuLmdpdGh1Yi5pby9hbmltYXRlLmNzcy8=">在线演示<i class="fa fa-external-link-alt"></i></span></p>
+<h4 id="1-2-mui"><a href="#1-2-mui" class="headerlink" title="1.2 mui"></a>1.2 mui</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2RjbG91ZGlvL211aQ==">mui<i class="fa fa-external-link-alt"></i></span>：最接近<code>原生 APP</code> 体验的高性能框架。性能和体验的差距，一直是 mobile App 开发者放弃 HTML5 的首要原因。mui 框架有效的解决了这些问题，这是一个可以方便开发出高性能 App 的框架，也是目前最接近原生 App 效果的框架。<span class="exturl" data-url="aHR0cDovL2Rldi5kY2xvdWQubmV0LmNuL211aS8=">mui 官网<i class="fa fa-external-link-alt"></i></span></p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/pullrefresh.gif" alt="mui运行图"></p>
+<h3 id="2-Go项目"><a href="#2-Go项目" class="headerlink" title="2 Go项目"></a>2 Go项目</h3><h4 id="2-1-pholcus"><a href="#2-1-pholcus" class="headerlink" title="2.1 pholcus"></a>2.1 pholcus</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2hlbnJ5bGVlMmNuL3Bob2xjdXM=">pholcus<i class="fa fa-external-link-alt"></i></span>：Pholcus 是纯 Go 语言编写的高并发、分布式、重量级<code>爬虫软件</code>，支持单机、服务端、客户端三种运行模式，拥有 Web、GUI、命令行三种操作界面，功能齐全、强大。<span class="exturl" data-url="aHR0cHM6Ly9waG9sY3VzLmdpdGJvb2tzLmlvL2RvY3MvY29udGVudC8=">使用手册<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github31.jpg" alt="pholcus爬虫软件"></p>
+<h3 id="3-Java项目"><a href="#3-Java项目" class="headerlink" title="3 Java项目"></a>3 Java项目</h3><h4 id="3-1-greys-anatomy"><a href="#3-1-greys-anatomy" class="headerlink" title="3.1 greys-anatomy"></a>3.1 greys-anatomy</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL29sZG1hbnB1c2hjYXJ0L2dyZXlzLWFuYXRvbXk=">greys-anatomy<i class="fa fa-external-link-alt"></i></span>：Greys 是 Java 在线问题诊断工具。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github32.png" alt="在线问诊工具"></p>
+<h3 id="4-JavaScript项目"><a href="#4-JavaScript项目" class="headerlink" title="4 JavaScript项目"></a>4 JavaScript项目</h3><h4 id="4-1-OS-js"><a href="#4-1-OS-js" class="headerlink" title="4.1 OS.js"></a>4.1 OS.js</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL29zLWpzL09TLmpz">OS.js<i class="fa fa-external-link-alt"></i></span>：JavaScript 写的基于浏览器上的桌面操作系统。<span class="exturl" data-url="aHR0cHM6Ly9kZW1vLm9zLWpzLm9yZy8=">在线演示<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github33.jpg" alt="基于浏览器的操作系统"></p>
+<h4 id="4-2-editor-md"><a href="#4-2-editor-md" class="headerlink" title="4.2 editor.md"></a>4.2 editor.md</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BhbmRhby9lZGl0b3IubWQ=">editor.md<i class="fa fa-external-link-alt"></i></span>：是一款开源的、可嵌入的 <code>Markdown 在线编辑器（组件）</code>，基于 CodeMirror、jQuery 和 Marked 构建。<span class="exturl" data-url="aHR0cDovL2xhYi5sZXB0dXJlLmNvbS9lZGl0b3Iv">在线尝试<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github34.jpg" alt="MD在线编辑器"></p>
+<h3 id="5-PHP项目"><a href="#5-PHP项目" class="headerlink" title="5 PHP项目"></a>5 PHP项目</h3><h4 id="5-1-walle-web"><a href="#5-1-walle-web" class="headerlink" title="5.1 walle-web"></a>5.1 walle-web</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL21lb2x1L3dhbGxlLXdlYg==">walle-web<i class="fa fa-external-link-alt"></i></span>：Walle（瓦力） 一个 <code>Web 部署系统工具</code>，可能也是个持续发布工具，配置简单、功能完善、界面流畅、开箱即用！支持 git、svn 版本管理，支持各种 Web 代码发布，静态的 HTML，动态 PHP，需要编译的 Java 等。<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21lb2x1L3dhbGxlLXdlYi9ibG9iL21hc3Rlci9kb2NzL1JFQURNRS16aC5tZA==">中文介绍<i class="fa fa-external-link-alt"></i></span>，使用展示如图：</p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/03/img/wali-show.gif" alt="Walle"></p>
+<h3 id="6-Python项目"><a href="#6-Python项目" class="headerlink" title="6 Python项目"></a>6 Python项目</h3><h4 id="6-1-KindleEar"><a href="#6-1-KindleEar" class="headerlink" title="6.1 KindleEar"></a>6.1 KindleEar</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2NkaGlnaC9LaW5kbGVFYXI=">KindleEar<i class="fa fa-external-link-alt"></i></span>：这是一个运行在 Google App Engine(GAE) 上的 Kindle 个人推送服务应用，生成排版精美的杂志模式 <code>mobi/epub</code> 格式自动每天推送至您的 Kindle 或其他邮箱。</p>
+<h3 id="7-其他"><a href="#7-其他" class="headerlink" title="7 其他"></a>7 其他</h3><h4 id="7-1-css-creating"><a href="#7-1-css-creating" class="headerlink" title="7.1 css-creating"></a>7.1 css-creating</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2Nzc2RyZWFtL2Nzcy1jcmVhdGluZw==">css-creating<i class="fa fa-external-link-alt"></i></span>：CSS 创作指南。</p>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><div class="note info">
+            <p>如果你发现了好玩、有意义的开源项目 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vZ2l0aHViLmNvbS81MjF4dWV3ZWloYW4vSGVsbG9HaXRIdWIvaXNzdWVzL25ldw==">点击这里<i class="fa fa-external-link-alt"></i></span> 分享你觉得有意思的项目。</p>
+          </div>
+
+<p>❤❤❤</p>
+<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzAzL0hlbGxvR2l0SHViMDMubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
+]]></content>
+      <categories>
+        <category>编程实战</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《HelloGithub》第04期</title>
+    <url>/p/f6646584.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p align="center">4️⃣😎</p>
+
+<span id="more"></span>
+
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
+<p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
+<p>&emsp;在浏览、参与这些项目的过程中，你将学习到<strong>更多编程知识</strong>、<strong>提高编程技巧</strong>、<strong>找到编程的乐趣</strong>。</p>
+<p>&emsp;最后 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vaGVsbG9naXRodWIuY29tLw==">HelloGitHub<i class="fa fa-external-link-alt"></i></span> 这个项目就诞生了。</p>
+<div class="note default">
+            <p>兴趣是最好的老师，<strong>HelloGitHub</strong> 就是帮你找到兴趣！</p>
+          </div>
+
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github11.jpg" alt=" "></p>
+<p><code>Tips</code>：如果文中的图获取刷不出来，可以点击<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC92b2x1bWUvMDEv">这里<i class="fa fa-external-link-alt"></i></span>更好的阅读体验。</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><div class="note default">
+            <p><strong>以下为本期内容</strong></p>
+          </div>
+
+<h3 id="1-Java项目"><a href="#1-Java项目" class="headerlink" title="1 Java项目"></a>1 Java项目</h3><h4 id="1-1-cachecloud"><a href="#1-1-cachecloud" class="headerlink" title="1.1 cachecloud"></a>1.1 cachecloud</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3NvaHV0di9jYWNoZWNsb3Vk">cachecloud<i class="fa fa-external-link-alt"></i></span>：搜狐视频开源的 CacheCloud 项目，提供了一个 Redis 云管理平台，功能强大，教程详细（有视频教程），文档齐全，<code>企业级开源项目</code>。</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github41.jpg" alt="Redis云管理平台"></p>
+<h3 id="2-JavaScript项目"><a href="#2-JavaScript项目" class="headerlink" title="2 JavaScript项目"></a>2 JavaScript项目</h3><h4 id="2-1-zingtouch"><a href="#2-1-zingtouch" class="headerlink" title="2.1 zingtouch"></a>2.1 zingtouch</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3ppbmdjaGFydC96aW5ndG91Y2g=">zingtouch<i class="fa fa-external-link-alt"></i></span>：支持移动端各种触摸动作包含：转动、挥动、滑动等动作的库，<span class="exturl" data-url="aHR0cHM6Ly96aW5nY2hhcnQuZ2l0aHViLmlvL3ppbmd0b3VjaC8=">官方网站<i class="fa fa-external-link-alt"></i></span>，展示图如下：</p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/zingtouch-show.gif" alt="zingtouch"></p>
+<h4 id="2-2-zhihudaily-vue"><a href="#2-2-zhihudaily-vue" class="headerlink" title="2.2 zhihudaily-vue"></a>2.2 zhihudaily-vue</h4><p>&emsp;、<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3lhdGVzc3NzL3poaWh1ZGFpbHktdnVl">zhihudaily-vue<i class="fa fa-external-link-alt"></i></span>：用 Vue.js 写的<code>知乎日报手机 Web 版</code>，需打开 chrome 浏览器的手机模拟功能，来获得比较好的浏览效果。访问展示图如下：</p>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github42.jpg" alt="知乎日报web版"></p>
+<h3 id="3-Python项目"><a href="#3-Python项目" class="headerlink" title="3 Python项目"></a>3 Python项目</h3><h4 id="3-1-python-guide"><a href="#3-1-python-guide" class="headerlink" title="3.1 python-guide"></a>3.1 python-guide</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3JlYWxweXRob24vcHl0aG9uLWd1aWRl">python-guide<i class="fa fa-external-link-alt"></i></span>：Requests 库的作者——kennethreitz，写的 Python 入门教程。不单单是语法层面的，涵盖项目结构、代码风格，进阶、工具等方方面面。虽然是<code>英文版</code>(<span class="exturl" data-url="aHR0cDovL3B5dGhvbmd1aWRlY24ucmVhZHRoZWRvY3MuaW8vemgvbGF0ZXN0Lw==">中文翻译版<i class="fa fa-external-link-alt"></i></span>)，但我这个英语渣都能看懂，你肯定也可以，快去看看吧，开卷有益。<span class="exturl" data-url="aHR0cDovL2RvY3MucHl0aG9uLWd1aWRlLm9yZy9lbi9sYXRlc3Qv">在线阅读<i class="fa fa-external-link-alt"></i></span></p>
+<h4 id="3-2-flask-admin"><a href="#3-2-flask-admin" class="headerlink" title="3.2 flask-admin"></a>3.2 flask-admin</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2ZsYXNrLWFkbWluL2ZsYXNrLWFkbWlu">flask-admin<i class="fa fa-external-link-alt"></i></span>：我工作中需要写一个<code>微型的管理系统</code>，用的就是这个框架。简直快餐型，页面都写好了，只要设置好相关配置就可以跑起来了。唯一缺点就是文档中的例子少，开发一些特定的需求需要自己看源码，才能知道如何改。<span class="exturl" data-url="aHR0cHM6Ly9mbGFzay1hZG1pbi5yZWFkdGhlZG9jcy5pby9lbi9sYXRlc3Qv">文档<i class="fa fa-external-link-alt"></i></span>，下面是我跑起来之后的样子：</p>
+<p><img data-src="https://raw.githubusercontent.com/521xueweihan/img/master/hellogithub/04/img/flask-admin-show.gif" alt="flask框架"></p>
+<h4 id="3-3-python-sdk"><a href="#3-3-python-sdk" class="headerlink" title="3.3 python-sdk"></a>3.3 python-sdk</h4><p>&emsp;<span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3Fpbml1L3B5dGhvbi1zZGs=">python-sdk<i class="fa fa-external-link-alt"></i></span>：七牛云存储 SDK。我自己在用他家的服务，上手简单、有免费额度，可以用来做‘图床’，同时，有了这个 SDK 可以写一些好用的小工具。<strong>注意</strong>：图床不能随便用，我曾经就用超了，账户的钱能扣成<code>负数</code>！</p>
+<h3 id="4-其他"><a href="#4-其他" class="headerlink" title="4 其他"></a>4 其他</h3><ul>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3RhaXppbG9uZ3h1L2ludGVydmlld19weXRob24=">interview_python<i class="fa fa-external-link-alt"></i></span>：关于 Python 的面试题</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL01yS2l2ZW4vUHlaaA==">PyZh<i class="fa fa-external-link-alt"></i></span>：Python 经典的技术文章的翻译和收集，<span class="exturl" data-url="aHR0cDovL3B5emgucmVhZHRoZWRvY3MuaW8vZW4vbGF0ZXN0Lw==">在线阅读<i class="fa fa-external-link-alt"></i></span></li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL0hJVC1BbGliYWJhL2ludGVydmlldw==">interview<i class="fa fa-external-link-alt"></i></span>：笔试面试知识整理(涵盖：IOS、Android、计算机基础)，<span class="exturl" data-url="aHR0cHM6Ly9oaXQtYWxpYmFiYS5naXRodWIuaW8vaW50ZXJ2aWV3L2luZGV4Lmh0bWw=">在线阅读<i class="fa fa-external-link-alt"></i></span></li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL3BhZGRpbmdtZS9Gcm9udC1lbmQtV2ViLURldmVsb3BtZW50LUludGVydmlldy1RdWVzdGlvbg==">Front-end-Web-Development-Interview-Question<i class="fa fa-external-link-alt"></i></span>：前端开发面试题大收集</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL0phY2t5QW5kcm9pZC9BbmRyb2lkSW50ZXJ2aWV3LVEtQQ==">AndroidInterview-Q-A<i class="fa fa-external-link-alt"></i></span>：这个项目主要是国内一线互联网公司的 Java 和 Android 方面的内部面试题。</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2FoYW5nY2hlbi9Ib3ctdG8tQmUtQS1Qcm9ncmFtbWVyLUNO">How-to-Be-A-Programmer-CN<i class="fa fa-external-link-alt"></i></span>：如何做好一枚程序员（中文翻译版）</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL21uaWVsc2VuL25ldXJhbC1uZXR3b3Jrcy1hbmQtZGVlcC1sZWFybmluZw==">neural-networks-and-deep-learning<i class="fa fa-external-link-alt"></i></span>：《神经网络与深度学习》相关代码 Python 实现，<span class="exturl" data-url="aHR0cHM6Ly90aWdlcm5laWwuZ2l0Ym9va3MuaW8vbmV1cmFsLW5ldHdvcmtzLWFuZC1kZWVwLWxlYXJuaW5nLXpoL2NvbnRlbnQvY2hhcHRlcjEuaHRtbA==">神经网络与深度学习－中文在线阅读<i class="fa fa-external-link-alt"></i></span>，该书中的相关理论的 Python 代码实现</li>
+<li><input checked="" disabled="" type="checkbox"> <span class="exturl" data-url="aHR0cHM6Ly9oZWxsb2dpdGh1Yi5jb20vcGVyaW9kaWNhbC9zdGF0aXN0aWNzL2NsaWNrLz90YXJnZXQ9aHR0cHM6Ly9naXRodWIuY29tL2pheXdjamxvdmUvYXdlc29tZS1tYWM=">awesome-mac<i class="fa fa-external-link-alt"></i></span>：排版相当好的一个 awesome 系列文章，文中介绍了很多 Mac 上好用的工具。</li>
+</ul>
+<div class="note info">
+            <p>如果你发现了好玩、有意义的开源项目 <span class="exturl" data-url="aHR0cHM6Ly9saW5rLnpoaWh1LmNvbS8/dGFyZ2V0PWh0dHBzOi8vZ2l0aHViLmNvbS81MjF4dWV3ZWloYW4vSGVsbG9HaXRIdWIvaXNzdWVzL25ldw==">点击这里<i class="fa fa-external-link-alt"></i></span> 分享你觉得有意思的项目。</p>
+          </div>
+
+<p>❤❤❤</p>
+<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzA0L0hlbGxvR2l0SHViMDQubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
+]]></content>
+      <categories>
+        <category>编程实战</category>
+      </categories>
+      <tags>
+        <tag>编程</tag>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>摆脱讨厌的Bing重定向</title>
     <url>/p/91780f1f.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
@@ -804,6 +804,68 @@
         <tag>Bing重定向</tag>
         <tag>Bing</tag>
         <tag>Google</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机组成原理</title>
+    <url>/p/8d4b7ae1.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p>​    相信对于许多计算机专业的人来说，《计算机组成原理》这门课程是躲不过去的一道难关，既然躲不过去，那就勇敢的面对吧！！！本篇文章将系统的介绍计算机组成原理的相关知识，希望能够对你们有所帮助…</p>
+<span id="more"></span>
+
+<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h3 id="知识网图"><a href="#知识网图" class="headerlink" title="知识网图"></a>知识网图</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/1.1.png" alt="计组知识导图"></p>
+<h3 id="冯诺依曼机的特点"><a href="#冯诺依曼机的特点" class="headerlink" title="冯诺依曼机的特点"></a>冯诺依曼机的特点</h3><div class="note default">
+            <ol><li>计算机硬件系统由运算器、存储器、控制器、输入设备、输出设备5大部件组成。</li><li>指令和数据已同等地位存储在存储器中，并可按地址寻址。</li><li>指令和数据均用二进制代码表述。</li><li>指令有操作码和地址码组成。操作码用来表示操作的性质，地址码用来表示操作数在存储器中的位置。</li><li>指令在存储器中按顺序存放。通常，指令时顺序执行的，在特定的条件下根据运算结果或根据设定的条件改变执行顺序。</li><li>早期的冯诺依曼机以运算器为中心，输入/输出设备通过运算器和存储器传送数据。</li></ol>
+          </div>
+
+<h3 id="不同级别的语言"><a href="#不同级别的语言" class="headerlink" title="不同级别的语言"></a>不同级别的语言</h3><div class="note default">
+            <p>​    <strong>机器语言</strong>：(二进制语言)计算机能唯一直接识别和执行的语言。</p><p>​    <strong>汇编语言</strong>：用英文单词或其缩写代替二进制的指令代码，易于人记忆和理解。</p><p>​    <strong>高级语言</strong>：为方便程序设计人员写出解决问题的处理方案和解题过程的程序。</p>
+          </div>
+
+<h3 id="计算机工作过程"><a href="#计算机工作过程" class="headerlink" title="计算机工作过程"></a>计算机工作过程</h3><div class="note default">
+            <ol><li>把程序和数据装入主存储器。</li><li>将原程序转换为可执行文件。</li><li>从可执行文件的首地址开始逐条执行指令。</li></ol>
+          </div>
+
+<h3 id="计算机的性能指标"><a href="#计算机的性能指标" class="headerlink" title="计算机的性能指标"></a>计算机的性能指标</h3><div class="note default">
+            <ul><li><strong>机器字长</strong>：指计算机进行一次指数运算所处理的二进制数据的位数。（通常与CPU的寄存器、加法器有关）</li><li><strong>数据通路带宽</strong>：指数据总线一次所能并行传送信息的位数（指外部数据总线的宽度，与CPU内部的数据总线宽度可能不同）。</li><li><strong>主存容量</strong>：指主存储器所能存储信息的最大容量，通常以字节来衡量，也可用字数字长来表述存储容量。</li><li><strong>运算速度</strong></li></ul><ol><li><strong>吞吐量</strong>：指系统在单位时间内处理请求的数量。</li><li><strong>响应时间</strong>：指从用户向计算机发送一个请求到系统对该请求做出响应并获得所需结果的等待时间。通常包括CPU时间（运行一个程序所花费的时间）与等待时间（用于磁盘访问、存储器访问、I/O操作、操作系统开销等时间）</li></ol><ul><li><strong>主频和CPU时钟周期</strong></li></ul><ol><li><strong>CPU时钟周期</strong></li><li><strong>主频</strong></li></ol><p>&emsp;&emsp;&ensp;<strong>CPI</strong>：执行一条指令所用的时钟周期</p><p>&emsp;&emsp;&ensp;<strong>CPU执行时间</strong>：指运行一个程序花费的时间。</p><p>&emsp;&emsp;&ensp;<strong>CPU执行时间</strong> = CPU时钟周期数/主频=（指令条数*CPI)/主频</p><p>&emsp;&ensp;&emsp;<strong>MIPS、MFLOPS、GFLOPS、TFLOPS</strong></p>
+          </div>
+
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h3 id="知识网图-1"><a href="#知识网图-1" class="headerlink" title="知识网图"></a>知识网图</h3><h3 id="在计算机系统内部，所有信息都用二进制进行编码的原因有以下几点："><a href="#在计算机系统内部，所有信息都用二进制进行编码的原因有以下几点：" class="headerlink" title="在计算机系统内部，所有信息都用二进制进行编码的原因有以下几点："></a>在计算机系统内部，所有信息都用二进制进行编码的原因有以下几点：</h3><div class="note default">
+            <ol><li>二进制只有0和1两种状态，使用有两个稳定状态的物理器件就可以表示二进制的每一位。制造成本低。</li><li>二进制位1和0正好与逻辑值“真”和“假”对应，为计算机实现逻辑运算和程序中的逻辑判断提供了便利条件。</li><li>二进制的编码和运算规则简单，通过逻辑门电路便能方便实现算术运算。</li></ol>
+          </div>
+
+
+<h3 id="有符号的机器表示"><a href="#有符号的机器表示" class="headerlink" title="有符号的机器表示"></a>有符号的机器表示</h3><table>
+<thead>
+<tr>
+<th align="center">(n+1)位</th>
+<th align="left">整数表示范围</th>
+<th>小数表示范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">原码和反码</td>
+<td align="left">-(2<sup>n</sup>-1)≤x≤2<sup>n</sup>-1</td>
+<td>-(1-2<sup>-n</sup>)≤x≤1-2<sup>-n</sup></td>
+</tr>
+<tr>
+<td align="center">补码</td>
+<td align="left">-2<sup>n</sup>≤x≤2<sup>n</sup>-1</td>
+<td>-1≤x≤1-2<sup>n</sup></td>
+</tr>
+<tr>
+<td align="center">移码</td>
+<td align="left">-2<sup>n</sup>≤x≤2<sup>n</sup>-1</td>
+<td>移码全为0真值最小，移码全为1真值最大</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>计算机考研</category>
+      </categories>
+      <tags>
+        <tag>考研</tag>
       </tags>
   </entry>
   <entry>
@@ -879,6 +941,59 @@
       </categories>
       <tags>
         <tag>考研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>贪心算法</title>
+    <url>/p/a4ce31d2.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<p>五大常用算法——贪心算法详解以及经典例子</p>
+<span id="more"></span>
+
+<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg"></p>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><div class="note default">
+            <p>​    <strong>贪心算法</strong>（Greedy Alogorithm）又叫登山算法，它的根本思想是逐步到达山顶，即逐步获得最优解，是解决最优化问题时的一种简单但是适用范围有限的策略。<span style="color:black;background: yellow">贪心算法没有固定的框架</span>，算法设计的关键是贪婪策略的选择。贪心策略要无后向性，也就是说某状态以后的过程不会影响以前的状态，至于当前状态有关。<br>​    贪心算法是对某些求解最优解问题的最简单、最迅速的技术。某些问题的最优解可以通过一系列的最优的选择即贪心选择来达到。但局部最优并不总能获得整体最优解，但通常能获得近似最优解。<br>在每一部贪心选择中，只考虑当前对自己最有利的选择，而不去考虑在后面看来这种选择是否合理。</p>
+          </div>
+
+<h2 id="解题步骤"><a href="#解题步骤" class="headerlink" title="解题步骤"></a>解题步骤</h2><div class="note default">
+            <ol><li>从问题的某个初始解出发</li><li>采用循环语句，党可以向求解目标前进一步时，就根据局部最优策略，得到一个不分解，缩小问题的范围或规模。</li><li>将所有的部分解综合起来，得到问题的最终解。</li></ol>
+          </div>
+
+<h2 id="贪心策略的选择"><a href="#贪心策略的选择" class="headerlink" title="贪心策略的选择"></a>贪心策略的选择</h2><div class="note default">
+            <ul><li>贪心算法的原理是通过局部最优来达到全局最优，采用的是逐步构造最优解的方法。在每个阶段，都做出一个看上去最优的，决策一旦做出，就不再更改。</li><li>要选出最优解可不是一件容易的事，要证明局部最优为全局最优，要进行数学证明，否则就不能说明为全局最优。</li><li>很多问题表面上看来用贪心算法可以找到最优解，实际上却把最优解给漏掉了。这就像现实生活中的“贪小便宜吃大亏”。所以我们在解决问题的时候，一定要谨慎使用贪心算法，一定要注意这个问题适不适合采用贪心算法。</li></ul>
+          </div>
+
+<h2 id="贪心策略应考虑的问题"><a href="#贪心策略应考虑的问题" class="headerlink" title="贪心策略应考虑的问题"></a>贪心策略应考虑的问题</h2><div class="note default">
+            <ul><li><p><input checked="" disabled="" type="checkbox">  候选集合S</p><p>为了构造问题的解决方案，有一个候选集合C作为问题的可能解，问题的最终解均取自于候选集合C。</p></li><li><p><input checked="" disabled="" type="checkbox">  解集合S</p><p>随着贪心选择的进行，解集合不断扩展，直到构成一个满足问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  解决函数solution</p><p>检查解集合是否构成问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  选择函数select</p><p>即贪心策略，这是贪心算法的关键，它指出哪个候选对象有希望构成成问题的解。</p></li><li><p><input checked="" disabled="" type="checkbox">  可行函数feasible</p><p>检查解集合中加入一个候选对象是否可行，即解集合扩展后是否满足约束条件。</p></li></ul>
+          </div>
+
+<h2 id="例题-会场安排"><a href="#例题-会场安排" class="headerlink" title="例题 会场安排"></a>例题 会场安排</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><div class="note default">
+            <p>假设有一个会场，现要求此会场中安排尽可能多的活动，求会场中所能安排的活动的最多数，并给出安排方案。</p>
+          </div>
+
+
+<h3 id="输入要求"><a href="#输入要求" class="headerlink" title="输入要求"></a>输入要求</h3><div class="note default">
+            <p>第一行n为所有活动数，随后n行，每行两个数，分别为活动的开始和结束时间。</p>
+          </div>
+
+<h3 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">11</span><br><span class="line">1 4</span><br><span class="line">3 5</span><br><span class="line">0 6</span><br><span class="line">5 7</span><br><span class="line">3 8</span><br><span class="line">5 9</span><br><span class="line">6 10</span><br><span class="line">8 11</span><br><span class="line">8 12</span><br><span class="line">2 13</span><br><span class="line">12 14</span><br></pre></td></tr></table></figure>
+
+<h3 id="算法思想"><a href="#算法思想" class="headerlink" title="算法思想"></a>算法思想</h3><div class="note default">
+            <p>将活动的结束时间从小到大进行排序，先选择结束时间最早的活动，然后看下一个活动的开始时间是否晚于上一个被选中活动的结束时间，若是，则选中该活动；否则不选中。直到所有的活动都遍历了一遍。</p>
+          </div>
+
+
+<h3 id="贪心选择性的证明"><a href="#贪心选择性的证明" class="headerlink" title="贪心选择性的证明"></a>贪心选择性的证明</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyzm.jpg"></p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> n, *begin, *finsh;			<span class="comment">//分别记录开始时间 结束时间</span></span><br><span class="line">    <span class="type">int</span> *a;			<span class="comment">//记录是否被选中</span></span><br><span class="line">    	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    begin = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    finsh = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    a = (<span class="type">int</span>*) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span>) *n);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;begin[i], &amp;finsh[i]);</span><br><span class="line">    greedy(n, begin, finsh, a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span></span><br><span class="line">&#123;</span><br><span class="line">    finshpx(n, begin, finsh);			<span class="comment">//按结束时间进行排序</span></span><br><span class="line">    a[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> count = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> endtime = finsh[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(begin[i] &gt;= endtime) </span><br><span class="line">        &#123;</span><br><span class="line">            endtime = finsh[i];</span><br><span class="line">            count++;</span><br><span class="line">            a[i] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        a[i] = <span class="number">0</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;最多容纳个%d活动\n&quot;</span>, count);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;分别为：&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    	<span class="keyword">if</span>(a[i] == <span class="number">1</span>) </span><br><span class="line">    		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, i + <span class="number">1</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>			<span class="comment">//冒泡排序</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; n - i; j++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(finsh[j] &gt; finsh[j + <span class="number">1</span>]) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> t = finsh[j];</span><br><span class="line">            finsh[j] = finsh[j + <span class="number">1</span>];</span><br><span class="line">            finsh[j + <span class="number">1</span>] = t;</span><br><span class="line">            t = begin[j];</span><br><span class="line">            begin[j] = begin[j + <span class="number">1</span>];</span><br><span class="line">            begin[j + <span class="number">1</span>] = t;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyresult.jpg"></p>
+]]></content>
+      <categories>
+        <category>算法设计</category>
+      </categories>
+      <tags>
+        <tag>计算机算法</tag>
       </tags>
   </entry>
   <entry>
@@ -982,121 +1097,6 @@
         <tag>hexo</tag>
         <tag>next主题美化</tag>
         <tag>首页轮播图</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算机组成原理</title>
-    <url>/p/8d4b7ae1.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p>​    相信对于许多计算机专业的人来说，《计算机组成原理》这门课程是躲不过去的一道难关，既然躲不过去，那就勇敢的面对吧！！！本篇文章将系统的介绍计算机组成原理的相关知识，希望能够对你们有所帮助…</p>
-<span id="more"></span>
-
-<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h3 id="知识网图"><a href="#知识网图" class="headerlink" title="知识网图"></a>知识网图</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/1.1.png" alt="计组知识导图"></p>
-<h3 id="冯诺依曼机的特点"><a href="#冯诺依曼机的特点" class="headerlink" title="冯诺依曼机的特点"></a>冯诺依曼机的特点</h3><div class="note default">
-            <ol><li>计算机硬件系统由运算器、存储器、控制器、输入设备、输出设备5大部件组成。</li><li>指令和数据已同等地位存储在存储器中，并可按地址寻址。</li><li>指令和数据均用二进制代码表述。</li><li>指令有操作码和地址码组成。操作码用来表示操作的性质，地址码用来表示操作数在存储器中的位置。</li><li>指令在存储器中按顺序存放。通常，指令时顺序执行的，在特定的条件下根据运算结果或根据设定的条件改变执行顺序。</li><li>早期的冯诺依曼机以运算器为中心，输入/输出设备通过运算器和存储器传送数据。</li></ol>
-          </div>
-
-<h3 id="不同级别的语言"><a href="#不同级别的语言" class="headerlink" title="不同级别的语言"></a>不同级别的语言</h3><div class="note default">
-            <p>​    <strong>机器语言</strong>：(二进制语言)计算机能唯一直接识别和执行的语言。</p><p>​    <strong>汇编语言</strong>：用英文单词或其缩写代替二进制的指令代码，易于人记忆和理解。</p><p>​    <strong>高级语言</strong>：为方便程序设计人员写出解决问题的处理方案和解题过程的程序。</p>
-          </div>
-
-<h3 id="计算机工作过程"><a href="#计算机工作过程" class="headerlink" title="计算机工作过程"></a>计算机工作过程</h3><div class="note default">
-            <ol><li>把程序和数据装入主存储器。</li><li>将原程序转换为可执行文件。</li><li>从可执行文件的首地址开始逐条执行指令。</li></ol>
-          </div>
-
-<h3 id="计算机的性能指标"><a href="#计算机的性能指标" class="headerlink" title="计算机的性能指标"></a>计算机的性能指标</h3><div class="note default">
-            <ul><li><strong>机器字长</strong>：指计算机进行一次指数运算所处理的二进制数据的位数。（通常与CPU的寄存器、加法器有关）</li><li><strong>数据通路带宽</strong>：指数据总线一次所能并行传送信息的位数（指外部数据总线的宽度，与CPU内部的数据总线宽度可能不同）。</li><li><strong>主存容量</strong>：指主存储器所能存储信息的最大容量，通常以字节来衡量，也可用字数字长来表述存储容量。</li><li><strong>运算速度</strong></li></ul><ol><li><strong>吞吐量</strong>：指系统在单位时间内处理请求的数量。</li><li><strong>响应时间</strong>：指从用户向计算机发送一个请求到系统对该请求做出响应并获得所需结果的等待时间。通常包括CPU时间（运行一个程序所花费的时间）与等待时间（用于磁盘访问、存储器访问、I/O操作、操作系统开销等时间）</li></ol><ul><li><strong>主频和CPU时钟周期</strong></li></ul><ol><li><strong>CPU时钟周期</strong></li><li><strong>主频</strong></li></ol><p>&emsp;&emsp;&ensp;<strong>CPI</strong>：执行一条指令所用的时钟周期</p><p>&emsp;&emsp;&ensp;<strong>CPU执行时间</strong>：指运行一个程序花费的时间。</p><p>&emsp;&emsp;&ensp;<strong>CPU执行时间</strong> = CPU时钟周期数/主频=（指令条数*CPI)/主频</p><p>&emsp;&ensp;&emsp;<strong>MIPS、MFLOPS、GFLOPS、TFLOPS</strong></p>
-          </div>
-
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h3 id="知识网图-1"><a href="#知识网图-1" class="headerlink" title="知识网图"></a>知识网图</h3><h3 id="在计算机系统内部，所有信息都用二进制进行编码的原因有以下几点："><a href="#在计算机系统内部，所有信息都用二进制进行编码的原因有以下几点：" class="headerlink" title="在计算机系统内部，所有信息都用二进制进行编码的原因有以下几点："></a>在计算机系统内部，所有信息都用二进制进行编码的原因有以下几点：</h3><div class="note default">
-            <ol><li>二进制只有0和1两种状态，使用有两个稳定状态的物理器件就可以表示二进制的每一位。制造成本低。</li><li>二进制位1和0正好与逻辑值“真”和“假”对应，为计算机实现逻辑运算和程序中的逻辑判断提供了便利条件。</li><li>二进制的编码和运算规则简单，通过逻辑门电路便能方便实现算术运算。</li></ol>
-          </div>
-
-
-<h3 id="有符号的机器表示"><a href="#有符号的机器表示" class="headerlink" title="有符号的机器表示"></a>有符号的机器表示</h3><table>
-<thead>
-<tr>
-<th align="center">(n+1)位</th>
-<th align="left">整数表示范围</th>
-<th>小数表示范围</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">原码和反码</td>
-<td align="left">-(2<sup>n</sup>-1)≤x≤2<sup>n</sup>-1</td>
-<td>-(1-2<sup>-n</sup>)≤x≤1-2<sup>-n</sup></td>
-</tr>
-<tr>
-<td align="center">补码</td>
-<td align="left">-2<sup>n</sup>≤x≤2<sup>n</sup>-1</td>
-<td>-1≤x≤1-2<sup>n</sup></td>
-</tr>
-<tr>
-<td align="center">移码</td>
-<td align="left">-2<sup>n</sup>≤x≤2<sup>n</sup>-1</td>
-<td>移码全为0真值最小，移码全为1真值最大</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>计算机考研</category>
-      </categories>
-      <tags>
-        <tag>考研</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>贪心算法</title>
-    <url>/p/a4ce31d2.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p>五大常用算法——贪心算法详解以及经典例子</p>
-<span id="more"></span>
-
-<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg"></p>
-<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><div class="note default">
-            <p>​    <strong>贪心算法</strong>（Greedy Alogorithm）又叫登山算法，它的根本思想是逐步到达山顶，即逐步获得最优解，是解决最优化问题时的一种简单但是适用范围有限的策略。<span style="color:black;background: yellow">贪心算法没有固定的框架</span>，算法设计的关键是贪婪策略的选择。贪心策略要无后向性，也就是说某状态以后的过程不会影响以前的状态，至于当前状态有关。<br>​    贪心算法是对某些求解最优解问题的最简单、最迅速的技术。某些问题的最优解可以通过一系列的最优的选择即贪心选择来达到。但局部最优并不总能获得整体最优解，但通常能获得近似最优解。<br>在每一部贪心选择中，只考虑当前对自己最有利的选择，而不去考虑在后面看来这种选择是否合理。</p>
-          </div>
-
-<h2 id="解题步骤"><a href="#解题步骤" class="headerlink" title="解题步骤"></a>解题步骤</h2><div class="note default">
-            <ol><li>从问题的某个初始解出发</li><li>采用循环语句，党可以向求解目标前进一步时，就根据局部最优策略，得到一个不分解，缩小问题的范围或规模。</li><li>将所有的部分解综合起来，得到问题的最终解。</li></ol>
-          </div>
-
-<h2 id="贪心策略的选择"><a href="#贪心策略的选择" class="headerlink" title="贪心策略的选择"></a>贪心策略的选择</h2><div class="note default">
-            <ul><li>贪心算法的原理是通过局部最优来达到全局最优，采用的是逐步构造最优解的方法。在每个阶段，都做出一个看上去最优的，决策一旦做出，就不再更改。</li><li>要选出最优解可不是一件容易的事，要证明局部最优为全局最优，要进行数学证明，否则就不能说明为全局最优。</li><li>很多问题表面上看来用贪心算法可以找到最优解，实际上却把最优解给漏掉了。这就像现实生活中的“贪小便宜吃大亏”。所以我们在解决问题的时候，一定要谨慎使用贪心算法，一定要注意这个问题适不适合采用贪心算法。</li></ul>
-          </div>
-
-<h2 id="贪心策略应考虑的问题"><a href="#贪心策略应考虑的问题" class="headerlink" title="贪心策略应考虑的问题"></a>贪心策略应考虑的问题</h2><div class="note default">
-            <ul><li><p><input checked="" disabled="" type="checkbox">  候选集合S</p><p>为了构造问题的解决方案，有一个候选集合C作为问题的可能解，问题的最终解均取自于候选集合C。</p></li><li><p><input checked="" disabled="" type="checkbox">  解集合S</p><p>随着贪心选择的进行，解集合不断扩展，直到构成一个满足问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  解决函数solution</p><p>检查解集合是否构成问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  选择函数select</p><p>即贪心策略，这是贪心算法的关键，它指出哪个候选对象有希望构成成问题的解。</p></li><li><p><input checked="" disabled="" type="checkbox">  可行函数feasible</p><p>检查解集合中加入一个候选对象是否可行，即解集合扩展后是否满足约束条件。</p></li></ul>
-          </div>
-
-<h2 id="例题-会场安排"><a href="#例题-会场安排" class="headerlink" title="例题 会场安排"></a>例题 会场安排</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><div class="note default">
-            <p>假设有一个会场，现要求此会场中安排尽可能多的活动，求会场中所能安排的活动的最多数，并给出安排方案。</p>
-          </div>
-
-
-<h3 id="输入要求"><a href="#输入要求" class="headerlink" title="输入要求"></a>输入要求</h3><div class="note default">
-            <p>第一行n为所有活动数，随后n行，每行两个数，分别为活动的开始和结束时间。</p>
-          </div>
-
-<h3 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">11</span><br><span class="line">1 4</span><br><span class="line">3 5</span><br><span class="line">0 6</span><br><span class="line">5 7</span><br><span class="line">3 8</span><br><span class="line">5 9</span><br><span class="line">6 10</span><br><span class="line">8 11</span><br><span class="line">8 12</span><br><span class="line">2 13</span><br><span class="line">12 14</span><br></pre></td></tr></table></figure>
-
-<h3 id="算法思想"><a href="#算法思想" class="headerlink" title="算法思想"></a>算法思想</h3><div class="note default">
-            <p>将活动的结束时间从小到大进行排序，先选择结束时间最早的活动，然后看下一个活动的开始时间是否晚于上一个被选中活动的结束时间，若是，则选中该活动；否则不选中。直到所有的活动都遍历了一遍。</p>
-          </div>
-
-
-<h3 id="贪心选择性的证明"><a href="#贪心选择性的证明" class="headerlink" title="贪心选择性的证明"></a>贪心选择性的证明</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyzm.jpg"></p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> n, *begin, *finsh;			<span class="comment">//分别记录开始时间 结束时间</span></span><br><span class="line">    <span class="type">int</span> *a;			<span class="comment">//记录是否被选中</span></span><br><span class="line">    	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    begin = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    finsh = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    a = (<span class="type">int</span>*) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span>) *n);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;begin[i], &amp;finsh[i]);</span><br><span class="line">    greedy(n, begin, finsh, a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span></span><br><span class="line">&#123;</span><br><span class="line">    finshpx(n, begin, finsh);			<span class="comment">//按结束时间进行排序</span></span><br><span class="line">    a[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> count = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> endtime = finsh[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(begin[i] &gt;= endtime) </span><br><span class="line">        &#123;</span><br><span class="line">            endtime = finsh[i];</span><br><span class="line">            count++;</span><br><span class="line">            a[i] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        a[i] = <span class="number">0</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;最多容纳个%d活动\n&quot;</span>, count);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;分别为：&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    	<span class="keyword">if</span>(a[i] == <span class="number">1</span>) </span><br><span class="line">    		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, i + <span class="number">1</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>			<span class="comment">//冒泡排序</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; n - i; j++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(finsh[j] &gt; finsh[j + <span class="number">1</span>]) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> t = finsh[j];</span><br><span class="line">            finsh[j] = finsh[j + <span class="number">1</span>];</span><br><span class="line">            finsh[j + <span class="number">1</span>] = t;</span><br><span class="line">            t = begin[j];</span><br><span class="line">            begin[j] = begin[j + <span class="number">1</span>];</span><br><span class="line">            begin[j + <span class="number">1</span>] = t;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyresult.jpg"></p>
-]]></content>
-      <categories>
-        <category>算法设计</category>
-      </categories>
-      <tags>
-        <tag>计算机算法</tag>
       </tags>
   </entry>
 </search>
