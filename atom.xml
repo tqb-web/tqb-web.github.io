@@ -6,7 +6,7 @@
   <link href="https://tianqb.top/atom.xml" rel="self"/>
   
   <link href="https://tianqb.top/"/>
-  <updated>2022-04-18T02:26:03.076Z</updated>
+  <updated>2022-04-19T03:00:18.840Z</updated>
   <id>https://tianqb.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SEO必知的7大搜索引擎站长平台</title>
+    <link href="https://tianqb.top/p/3288d248.html"/>
+    <id>https://tianqb.top/p/3288d248.html</id>
+    <published>2022-04-19T02:53:51.000Z</published>
+    <updated>2022-04-19T03:00:18.840Z</updated>
+    
+    
+    <summary type="html">本文简单介绍了7大搜索引擎站长平台，给出了他们的地址，助力每个博客主，争取让更多的平台收录文章。</summary>
+    
+    
+    <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/seo.jpg" type="image"/>
+    
+    
+    <category term="SEO" scheme="https://tianqb.top/categories/SEO/"/>
+    
+    
+    <category term="SEO" scheme="https://tianqb.top/tags/SEO/"/>
+    
+    <category term="站长平台" scheme="https://tianqb.top/tags/%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0/"/>
+    
+    <category term="搜索引擎" scheme="https://tianqb.top/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"/>
+    
+  </entry>
   
   <entry>
     <title>摆脱讨厌的Bing重定向</title>
