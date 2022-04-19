@@ -38,7 +38,7 @@
 <p>查看版本</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 
-<p>创建一个项目<code>hexo-blog</code>并初始化(逐个执行)</p>
+<p>创建一个项目<code>hexo-blog</code>并初始化(逐行执行指令)</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init hexo-blog</span><br><span class="line">cd hexo-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
 <p>本地启动</p>
