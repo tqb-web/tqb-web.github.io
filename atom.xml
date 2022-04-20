@@ -6,7 +6,7 @@
   <link href="https://tianqb.top/atom.xml" rel="self"/>
   
   <link href="https://tianqb.top/"/>
-  <updated>2022-04-20T08:57:45.566Z</updated>
+  <updated>2022-04-20T13:12:41.449Z</updated>
   <id>https://tianqb.top/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo编写博客小技巧</title>
+    <link href="https://tianqb.top/p/d6324fcb.html"/>
+    <id>https://tianqb.top/p/d6324fcb.html</id>
+    <published>2022-04-20T11:29:03.000Z</published>
+    <updated>2022-04-20T13:12:41.449Z</updated>
+    
+    
+    <summary type="html">你用hexo写博客的时候，是不是每次new完一个post都要去文件夹里才能打开，本篇文章教你如何使其自动打开。</summary>
+    
+    
+    <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/xjqfm%20(2).jpg" type="image"/>
+    
+    
+    <category term="hexo" scheme="https://tianqb.top/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://tianqb.top/tags/hexo/"/>
+    
+    <category term="小技巧" scheme="https://tianqb.top/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《HelloGithub》第05期</title>
+    <link href="https://tianqb.top/p/4ed802e1.html"/>
+    <id>https://tianqb.top/p/4ed802e1.html</id>
+    <published>2022-04-20T09:11:40.000Z</published>
+    <updated>2022-04-20T09:46:33.417Z</updated>
+    
+    
+    <summary type="html">简单介绍《HelloGithub》第五期的项目，包括了C#、JavaScript、Python、PHP等项目，这些项目都十分的精彩，并且都非常实用，赶快一起来看看吧。</summary>
+    
+    
+    <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubfm5.jpg" type="image"/>
+    
+    
+    <category term="编程实战" scheme="https://tianqb.top/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/"/>
+    
+    
+    <category term="编程" scheme="https://tianqb.top/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Github" scheme="https://tianqb.top/tags/Github/"/>
+    
+  </entry>
   
   <entry>
     <title>SEO必知的7大搜索引擎站长平台</title>
@@ -140,7 +186,7 @@
     <link href="https://tianqb.top/p/f6646584.html"/>
     <id>https://tianqb.top/p/f6646584.html</id>
     <published>2022-04-14T07:56:04.000Z</published>
-    <updated>2022-04-16T11:58:57.304Z</updated>
+    <updated>2022-04-20T11:23:37.176Z</updated>
     
     
     <summary type="html">简单介绍《HelloGithub》第四期的项目，主要包含了Java、JavaScript|、Python项目，每个项目下面还有多个小项目，非常的有意思。</summary>
@@ -163,7 +209,7 @@
     <link href="https://tianqb.top/p/6bb35d3d.html"/>
     <id>https://tianqb.top/p/6bb35d3d.html</id>
     <published>2022-04-13T09:54:54.000Z</published>
-    <updated>2022-04-16T02:56:55.952Z</updated>
+    <updated>2022-04-20T09:40:22.728Z</updated>
     
     
     <summary type="html">简单介绍《HelloGithub》第三期的项目，包括了CSS、JavaScript、Go、Python、PHP、Java等项目，大家可以去github查看，赶快一起来看看吧。</summary>
@@ -186,7 +232,7 @@
     <link href="https://tianqb.top/p/d30f3a58.html"/>
     <id>https://tianqb.top/p/d30f3a58.html</id>
     <published>2022-04-12T11:18:40.000Z</published>
-    <updated>2022-04-16T02:49:51.195Z</updated>
+    <updated>2022-04-20T09:40:29.535Z</updated>
     
     
     <summary type="html">简单介绍《HelloGithub》第二期的项目，包括了CSS、JavaScript、Python等项目，都非常容易上手，赶快一起来看看吧。</summary>
@@ -209,7 +255,7 @@
     <link href="https://tianqb.top/p/c1ba95b6.html"/>
     <id>https://tianqb.top/p/c1ba95b6.html</id>
     <published>2022-04-08T11:02:15.000Z</published>
-    <updated>2022-04-16T02:47:31.821Z</updated>
+    <updated>2022-04-20T09:45:02.352Z</updated>
     
     
     <summary type="html">简单介绍《HelloGithub》第一期的项目，包括了CSS、JavaScript、Python等项目，这些项目都十分的精彩，赶快一起来看看吧。</summary>
@@ -415,29 +461,6 @@
     
     
     <category term="考研" scheme="https://tianqb.top/tags/%E8%80%83%E7%A0%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo+github搭建个人博客</title>
-    <link href="https://tianqb.top/p/68689ca1.html"/>
-    <id>https://tianqb.top/p/68689ca1.html</id>
-    <published>2022-03-26T08:43:31.000Z</published>
-    <updated>2022-04-20T08:49:32.904Z</updated>
-    
-    
-    <summary type="html">利用hexo+github搭建一个免费的个人博客，详细介绍了各个软件的安装步骤以及环境的配置，尽可能的做到简单明了。</summary>
-    
-    
-    <content src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/djbk1.jpg" type="image"/>
-    
-    
-    <category term="hexo" scheme="https://tianqb.top/categories/hexo/"/>
-    
-    
-    <category term="hexo" scheme="https://tianqb.top/tags/hexo/"/>
-    
-    <category term="技术" scheme="https://tianqb.top/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
