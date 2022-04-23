@@ -25,24 +25,24 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"tianqb.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
-  <meta name="description" content="五大常用算法——贪心算法详解以及经典例子，用最简单的例子来讲解贪心算法，还有贪心选择性的证明。">
+  <meta name="description" content="本篇文章将系统地介绍有关安卓的基础知识，包括布局、Activity生命周期、Activity缓存方法、Fragment的生命周期和activity的关系等。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="贪心算法">
-<meta property="og:url" content="https://tianqb.top/p/a4ce31d2.html">
+<meta property="og:title" content="Android基础知识">
+<meta property="og:url" content="https://tianqb.top/p/7e4211d.html">
 <meta property="og:site_name" content="北温带的猫">
-<meta property="og:description" content="五大常用算法——贪心算法详解以及经典例子，用最简单的例子来讲解贪心算法，还有贪心选择性的证明。">
+<meta property="og:description" content="本篇文章将系统地介绍有关安卓的基础知识，包括布局、Activity生命周期、Activity缓存方法、Fragment的生命周期和activity的关系等。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg">
-<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyzm.jpg">
-<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyresult.jpg">
-<meta property="article:published_time" content="2022-03-27T12:29:35.000Z">
-<meta property="article:modified_time" content="2022-04-20T08:55:30.249Z">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/androidbase1.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/androidbase2.jpg">
+<meta property="article:published_time" content="2022-04-23T06:18:47.000Z">
+<meta property="article:modified_time" content="2022-04-23T07:35:17.099Z">
 <meta property="article:author" content="T">
-<meta property="article:tag" content="计算机算法">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg">
+<meta name="twitter:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/androidbase1.jpg">
 
-<link rel="canonical" href="https://tianqb.top/p/a4ce31d2.html">
+<link rel="canonical" href="https://tianqb.top/p/7e4211d.html">
 
 
 <script id="page-configurations">
@@ -55,7 +55,7 @@
   };
 </script>
 
-  <title>贪心算法 | 北温带的猫</title>
+  <title>Android基础知识 | 北温带的猫</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGL3VM2MT3"></script>
     <script data-pjax>
@@ -248,7 +248,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tianqb.top/p/a4ce31d2.html">
+    <link itemprop="mainEntityOfPage" href="https://tianqb.top/p/7e4211d.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -261,7 +261,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          贪心算法
+          Android基础知识
         </h1>
 
         <div class="post-meta">
@@ -272,23 +272,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-03-27 20:29:35" itemprop="dateCreated datePublished" datetime="2022-03-27T20:29:35+08:00">2022-03-27</time>
+              <time title="创建时间：2022-04-23 14:18:47 / 修改时间：15:35:17" itemprop="dateCreated datePublished" datetime="2022-04-23T14:18:47+08:00">2022-04-23</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-20 16:55:30" itemprop="dateModified" datetime="2022-04-20T16:55:30+08:00">2022-04-20</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/" itemprop="url" rel="index"><span itemprop="name">算法设计</span></a>
+                  <a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a>
                 </span>
             </span>
 
@@ -308,8 +302,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/p/a4ce31d2.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/p/a4ce31d2.html" itemprop="commentCount"></span>
+    <a title="valine" href="/p/7e4211d.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/p/7e4211d.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -319,11 +313,11 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.2k</span>
+              <span>6.8k</span>
             </span>
 
         <!--
-            <div class="post-description">五大常用算法——贪心算法详解以及经典例子，用最简单的例子来讲解贪心算法，还有贪心选择性的证明。</div> -->
+            <div class="post-description">本篇文章将系统地介绍有关安卓的基础知识，包括布局、Activity生命周期、Activity缓存方法、Fragment的生命周期和activity的关系等。</div> -->
 
         </div>
       </header>
@@ -336,47 +330,107 @@
       
         <meta name="referrer" content="no-referrer" />
 
-<p>五大常用算法——贪心算法详解以及经典例子</p>
-<span id="more"></span>
+<h2 id="1-五种布局"><a href="#1-五种布局" class="headerlink" title="1 五种布局"></a>1 五种布局</h2><p>&emsp;Android有五种布局，分别为FrameLayout 、 LinearLayout 、 AbsoluteLayout 、 RelativeLayout 、 TableLayout，且它们全都继承自<code>ViewGroup</code>。</p>
+<ul>
+<li><p>FrameLayout(框架布局)</p>
+<p>&emsp;此布局是五种布局中最简单的布局，Android中并没有对child view的摆布进行控制，这个布局中所有的控件都会默认出现在视图的左上角，我们可以使用<code>android:layout_margin</code>，<code>android:layout_gravity</code>等属性去控制子控件相对布局的位置。</p>
+</li>
+<li><p>LinearLayout(线性布局)</p>
+<p>&emsp;一行（或一列）只控制一个控件的线性布局，所以当有很多控件需要在一个界面中列出时，可以用LinearLayout布局。 此布局有一个需要格外注意的属性:<code>android:orientation=&quot;horizontal|vertical&quot;</code>。</p>
+</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">当android:orientation=<span class="string">&quot;horizontal&quot;</span>时，说明你希望将水平方向的布局交给LinearLayout，其子元素的android:layout_gravity=<span class="string">&quot;right|left&quot;</span> 等控制水平方向的gravity值都是被忽略的，此时LinearLayout中的子元素都是默认的按照水平从左向右来排，我们可以用android:layout_gravity=<span class="string">&quot;top|bottom&quot;</span>等gravity值来控制垂直展示。</span><br><span class="line">反之，可以知道 当android:orientation=<span class="string">&quot;vertical&quot;</span>时，LinearLayout对其子元素展示上的的处理方式。</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>AbsoluteLayout(绝对布局)</p>
+<p>&emsp;可以放置多个控件，并且可以自己定义控件的x,y位置。</p>
+</li>
+<li><p>RelativeLayout(相对布局)</p>
+<p>&emsp;这个布局也是相对自由的布局，Android 对该布局的child view的水平layout和 垂直layout做了解析，由此我们可以FrameLayout的基础上使用标签或者Java代码对<code>垂直方向</code>以及<code>水平方向</code>布局中的views进行任意的控制。</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//相关属性</span><br><span class="line">android:layout_centerInParent=&quot;true|false&quot;</span><br><span class="line">android:layout_centerHorizontal=&quot;true|false&quot;</span><br><span class="line">android:layout_alignParentRight=&quot;true|false&quot;　　</span><br></pre></td></tr></table></figure>
 
-<h2 id="思维导图"><a href="#思维导图" class="headerlink" title="思维导图"></a>思维导图</h2><p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedy.jpg" alt="贪心算法思维导图"></p>
-<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><div class="note default">
-            <p>​    <strong>贪心算法</strong>（Greedy Alogorithm）又叫登山算法，它的根本思想是逐步到达山顶，即逐步获得最优解，是解决最优化问题时的一种简单但是适用范围有限的策略。<span style="color:black;background: yellow">贪心算法没有固定的框架</span>，算法设计的关键是贪婪策略的选择。贪心策略要无后向性，也就是说某状态以后的过程不会影响以前的状态，至于当前状态有关。<br>​    贪心算法是对某些求解最优解问题的最简单、最迅速的技术。某些问题的最优解可以通过一系列的最优的选择即贪心选择来达到。但局部最优并不总能获得整体最优解，但通常能获得近似最优解。<br>在每一部贪心选择中，只考虑当前对自己最有利的选择，而不去考虑在后面看来这种选择是否合理。</p>
+<ul>
+<li><p>TableLayout(表格布局)</p>
+<p>&emsp;将子元素的位置<code>分配到行或列</code>中，一个TableLayout由许多的TableRow组成。</p>
+</li>
+</ul>
+<h2 id="2-Activty生命周期"><a href="#2-Activty生命周期" class="headerlink" title="2 Activty生命周期"></a>2 Activty生命周期</h2><ul>
+<li>启动Activity: onCreate()—&gt;onStart()—&gt;onResume()，Activity进入运行状态。</li>
+<li>Activity退居后台: 当前Activity转到新的Activity界面或按Home键回到主屏： onPause()—&gt;onStop()，进入停滞状态。</li>
+<li>Activity返回前台: onRestart()—&gt;<code>onStart()</code>—&gt;onResume()，再次回到运行状态。</li>
+<li>Activity退居后台，且系统内存不足， 系统会杀死这个后台状态的Activity（此时这个Activity引用仍然处在任务栈中，只是这个时候引用指向的对象已经为null），若再次回到这个Activity,则会走onCreate()–&gt;onStart()—&gt;onResume()(将重新走一次Activity的初始化生命周期)</li>
+<li>锁屏：<code>onPause()-&gt;onStop()</code></li>
+<li>解锁：<code>onStart()-&gt;onResume()</code></li>
+<li>更多流程分支，请参照以下生命周期流程图</li>
+</ul>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/androidbase1.jpg" alt="Activty生命周期"></p>
+<h2 id="3-通过Acitivty的xml标签来改变任务栈的默认行为"><a href="#3-通过Acitivty的xml标签来改变任务栈的默认行为" class="headerlink" title="3 通过Acitivty的xml标签来改变任务栈的默认行为"></a>3 通过Acitivty的xml标签来改变任务栈的默认行为</h2><p>&emsp;<strong>使用<code>android:launchMode=&quot;standard|singleInstance|singleTask|singleTop&quot;</code>来控制Acivity任务栈。</strong></p>
+<div class="note info">
+            <p><strong>任务栈</strong>是一种后进先出的结构。位于栈顶的Activity处于焦点状态,当按下back按钮的时候,栈内的Activity会一个一个的出栈,并且调用其<code>onDestory()</code>方法。如果栈内没有Activity,那么系统就会回收这个栈,每个APP默认只有一个栈,以APP的包名来命名。</p>
           </div>
 
-<h2 id="解题步骤"><a href="#解题步骤" class="headerlink" title="解题步骤"></a>解题步骤</h2><div class="note default">
-            <ol><li>从问题的某个初始解出发</li><li>采用循环语句，党可以向求解目标前进一步时，就根据局部最优策略，得到一个不分解，缩小问题的范围或规模。</li><li>将所有的部分解综合起来，得到问题的最终解。</li></ol>
+<ul>
+<li><p>standard </p>
+<p>&emsp;标准模式,每次启动Activity都会创建一个新的Activity实例,并且将其压入任务栈栈顶,而不管这个Activity是否已经存在。Activity的启动三回调(<strong>onCreate()-&gt;onStart()-&gt;onResume()</strong>)都会执行。</p>
+</li>
+<li><p>singleTop</p>
+<p>&emsp;栈顶复用模式.这种模式下,如果新Activity已经位于任务栈的栈顶,那么此Activity不会被重新创建,所以它的启动三回调就不会执行,同时Activity的<code>onNewIntent()</code>方法会被回调.如果Activity已经存在但是不在栈顶,那么作用与<strong>standard模式</strong>一样。</p>
+</li>
+<li><p>singleTask</p>
+<p>&emsp;栈内复用模式.创建这样的Activity的时候,系统会先确认它所需任务栈已经创建,否则先创建任务栈.然后放入Activity,如果栈中已经有一个Activity实例,那么这个Activity就会被调到栈顶,<code>onNewIntent()</code>,并且singleTask会清理在当前Activity上面的所有Activity.(clear top)。</p>
+</li>
+<li><p>singleInstance</p>
+<p>&emsp;加强版的singleTask模式,这种模式的Activity只能<code>单独</code>位于一个任务栈内,由于栈内复用的特性,后续请求均不会创建新的Activity,除非这个独特的任务栈被系统销毁了。</p>
+</li>
+</ul>
+<div class="note info">
+            <p>Activity的堆栈管理以<code>ActivityRecord</code>为单位,所有的ActivityRecord都放在一个List里面.可以认为一个ActivityRecord就是一个Activity栈。</p>
           </div>
 
-<h2 id="贪心策略的选择"><a href="#贪心策略的选择" class="headerlink" title="贪心策略的选择"></a>贪心策略的选择</h2><div class="note default">
-            <ul><li>贪心算法的原理是通过局部最优来达到全局最优，采用的是逐步构造最优解的方法。在每个阶段，都做出一个看上去最优的，决策一旦做出，就不再更改。</li><li>要选出最优解可不是一件容易的事，要证明局部最优为全局最优，要进行数学证明，否则就不能说明为全局最优。</li><li>很多问题表面上看来用贪心算法可以找到最优解，实际上却把最优解给漏掉了。这就像现实生活中的“贪小便宜吃大亏”。所以我们在解决问题的时候，一定要谨慎使用贪心算法，一定要注意这个问题适不适合采用贪心算法。</li></ul>
-          </div>
+<h2 id="3-Activity缓存方法"><a href="#3-Activity缓存方法" class="headerlink" title="3 Activity缓存方法"></a>3 Activity缓存方法</h2><p>&emsp;有a、b两个Activity，当从a进入b之后一段时间，可能系统会把a回收，这时候按back，执行的<code>不是a的onRestart</code>而是onCreate方法，a被重新创建一次，这时a中的临时数据和状态可能就丢失了。</p>
+<p>&emsp;可以用Activity中的<code>onSaveInstanceState()</code>回调方法保存临时数据和状态，这个方法一定会在活动被回收之前调用。方法中有一个Bundle参数，putString()、putInt()等方法需要传入两个参数，一个键一个值。数据保存之后会在onCreate中恢复，onCreate也有一个Bundle类型的参数。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//示例代码</span></span><br><span class="line">@Override</span><br><span class="line">protected <span class="type">void</span> <span class="title function_">onCreate</span><span class="params">(Bundle savedInstanceState)</span> &#123;</span><br><span class="line">   super.onCreate(savedInstanceState);</span><br><span class="line">   setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line"><span class="comment">//这里，当Acivity第一次被创建的时候为空</span></span><br><span class="line">    <span class="comment">//所以我们需要判断一下</span></span><br><span class="line">    <span class="keyword">if</span>( savedInstanceState != null )&#123;</span><br><span class="line">       savedInstanceState.getString(<span class="string">&quot;anAnt&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Override</span><br><span class="line">protected <span class="type">void</span> <span class="title function_">onSaveInstanceState</span><span class="params">(Bundle outState)</span> &#123;</span><br><span class="line">     super.onSaveInstanceState(outState);        </span><br><span class="line">     outState.putString(<span class="string">&quot;anAnt&quot;</span>,<span class="string">&quot;Android&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="贪心策略应考虑的问题"><a href="#贪心策略应考虑的问题" class="headerlink" title="贪心策略应考虑的问题"></a>贪心策略应考虑的问题</h2><div class="note default">
-            <ul><li><p><input checked="" disabled="" type="checkbox">  候选集合S</p><p>为了构造问题的解决方案，有一个候选集合C作为问题的可能解，问题的最终解均取自于候选集合C。</p></li><li><p><input checked="" disabled="" type="checkbox">  解集合S</p><p>随着贪心选择的进行，解集合不断扩展，直到构成一个满足问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  解决函数solution</p><p>检查解集合是否构成问题的完整解。</p></li><li><p><input checked="" disabled="" type="checkbox">  选择函数select</p><p>即贪心策略，这是贪心算法的关键，它指出哪个候选对象有希望构成成问题的解。</p></li><li><p><input checked="" disabled="" type="checkbox">  可行函数feasible</p><p>检查解集合中加入一个候选对象是否可行，即解集合扩展后是否满足约束条件。</p></li></ul>
-          </div>
+<h3 id="3-1-onSaveInstanceState-Bundle-outState"><a href="#3-1-onSaveInstanceState-Bundle-outState" class="headerlink" title="3.1 onSaveInstanceState (Bundle outState)"></a>3.1 onSaveInstanceState (Bundle outState)</h3><p>&emsp;当某个activity变得“容易”被系统销毁时，该activity的onSaveInstanceState就会被执行，除非该activity是被用户主动销毁的，例如当用户按BACK键的时候。</p>
+<p>&emsp;注意上面的双引号，何为“容易”？言下之意就是该activity还没有被销毁，而仅仅是一种可能性。这种可能性有哪些？通过重写一个activity的所有生命周期的onXXX方法，包括onSaveInstanceState和onRestoreInstanceState方法，我们可以清楚地知道当某个activity（假定为activity A）显示在当前task的最上层时，其onSaveInstanceState方法会在什么时候被执行，<strong>有这么几种情况：</strong></p>
+<ol>
+<li><p>当用户按下HOME键时</p>
+<p>&emsp;这是显而易见的，系统不知道你按下HOME后要运行多少其他的程序，自然也不知道activity A是否会被销毁，故系统会调用onSaveInstanceState，让用户有机会保存某些非永久性的数据。以下几种情况的分析都遵循该原则</p>
+</li>
+<li><p>长按HOME键，选择运行其他的程序时</p>
+</li>
+<li><p>按下电源按键（关闭屏幕显示）时</p>
+</li>
+<li><p>从activity A中启动一个新的activity时</p>
+</li>
+<li><p>屏幕方向切换时，例如从竖屏切换到横屏时</p>
+<p>&emsp;（如果不指定configchange属性） 在屏幕切换之前，系统会销毁activity A，在屏幕切换之后系统又会自动地创建activity A，所以onSaveInstanceState一定会被执行。</p>
+</li>
+</ol>
+<p>&emsp;<code>总而言之</code>，onSaveInstanceState的调用遵循一个重要原则，即当系统“未经你许可”时销毁了你的activity，则onSaveInstanceState会被系统调用，这是系统的责任，因为它必须要提供一个机会让你保存你的数据（当然你不保存那就随便你了）。另外，<code>需要注意的几点</code>：</p>
+<ol>
+<li><p>布局中的每一个View<code>默认</code>实现了onSaveInstanceState()方法，这样的话，这个UI的任何改变都会自动地存储和在activity重新创建的时候自动地恢复。但是这种情况只有在你为这个UI提供了唯一的ID之后才起作用，如果没有提供ID，app将不会存储它的状态。</p>
+</li>
+<li><p>由于默认的onSaveInstanceState()方法的实现帮助UI存储它的状态，所以如果你需要覆盖这个方法去存储额外的状态信息，你应该在执行任何代码之前都<code>调用父类的onSaveInstanceState()方法（super.onSaveInstanceState()）</code>。 既然有现成的可用，那么我们到底还要不要自己实现onSaveInstanceState()?这得看情况了，如果你自己的派生类中有变量影响到UI，或你程序的行为，当然就要把这个变量也保存了，那么就需要自己实现，否则就不需要。</p>
+</li>
+<li><p>由于onSaveInstanceState()方法调用的不确定性，你应该只使用这个方法去记录activity的瞬间状态（UI的状态）。不应该用这个方法去存储持久化数据。当用户离开这个activity的时候应该在<code>onPause()方法</code>中存储持久化数据（例如应该被存储到数据库中的数据）。</p>
+</li>
+<li><p>onSaveInstanceState()如果被调用，这个方法会<code>在onStop()前被触发</code>，但系统并不保证是否在onPause()之前或者之后触发。</p>
+</li>
+</ol>
+<h3 id="3-2-onRestoreInstanceState-Bundle-outState"><a href="#3-2-onRestoreInstanceState-Bundle-outState" class="headerlink" title="3.2 onRestoreInstanceState (Bundle outState)"></a>3.2 onRestoreInstanceState (Bundle outState)</h3><p>&emsp;至于onRestoreInstanceState方法，需要注意的是，onSaveInstanceState方法和onRestoreInstanceState方法“不一定”是成对的被调用的，（本人注：我昨晚调试时就发现原来不一定成对被调用的！）</p>
+<p>&emsp;onRestoreInstanceState被调用的前提是，activity A“确实”被系统销毁了，而如果仅仅是停留在有这种可能性的情况下，则该方法不会被调用，例如，当正在显示activity A的时候，用户按下HOME键回到主界面，然后用户紧接着又返回到activity A，这种情况下activity A一般不会因为内存的原因被系统销毁，故activity A的onRestoreInstanceState方法不会被执行</p>
+<p>&emsp;另外，onRestoreInstanceState的bundle参数也会传递到onCreate方法中，你也可以选择在onCreate方法中做数据还原。 还有onRestoreInstanceState在onstart之后执行。 至于这两个函数的使用，给出示范代码（留意自定义代码在调用super的前或后）：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">public <span class="type">void</span> <span class="title function_">onSaveInstanceState</span><span class="params">(Bundle savedInstanceState)</span> &#123;</span><br><span class="line">        savedInstanceState.putBoolean(<span class="string">&quot;MyBoolean&quot;</span>, <span class="literal">true</span>);</span><br><span class="line">        savedInstanceState.putDouble(<span class="string">&quot;myDouble&quot;</span>, <span class="number">1.9</span>);</span><br><span class="line">        savedInstanceState.putInt(<span class="string">&quot;MyInt&quot;</span>, <span class="number">1</span>);</span><br><span class="line">        savedInstanceState.putString(<span class="string">&quot;MyString&quot;</span>, <span class="string">&quot;Welcome back to Android&quot;</span>);</span><br><span class="line">        <span class="comment">// etc.</span></span><br><span class="line">        super.onSaveInstanceState(savedInstanceState);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Override</span><br><span class="line">public <span class="type">void</span> <span class="title function_">onRestoreInstanceState</span><span class="params">(Bundle savedInstanceState)</span> &#123;</span><br><span class="line">        super.onRestoreInstanceState(savedInstanceState);</span><br><span class="line"></span><br><span class="line">        boolean myBoolean = savedInstanceState.getBoolean(<span class="string">&quot;MyBoolean&quot;</span>);</span><br><span class="line">        <span class="type">double</span> myDouble = savedInstanceState.getDouble(<span class="string">&quot;myDouble&quot;</span>);</span><br><span class="line">        <span class="type">int</span> myInt = savedInstanceState.getInt(<span class="string">&quot;MyInt&quot;</span>);</span><br><span class="line">        String myString = savedInstanceState.getString(<span class="string">&quot;MyString&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="例题-会场安排"><a href="#例题-会场安排" class="headerlink" title="例题 会场安排"></a>例题 会场安排</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><div class="note default">
-            <p>假设有一个会场，现要求此会场中安排尽可能多的活动，求会场中所能安排的活动的最多数，并给出安排方案。</p>
-          </div>
-
-
-<h3 id="输入要求"><a href="#输入要求" class="headerlink" title="输入要求"></a>输入要求</h3><div class="note default">
-            <p>第一行n为所有活动数，随后n行，每行两个数，分别为活动的开始和结束时间。</p>
-          </div>
-
-<h3 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">11</span><br><span class="line">1 4</span><br><span class="line">3 5</span><br><span class="line">0 6</span><br><span class="line">5 7</span><br><span class="line">3 8</span><br><span class="line">5 9</span><br><span class="line">6 10</span><br><span class="line">8 11</span><br><span class="line">8 12</span><br><span class="line">2 13</span><br><span class="line">12 14</span><br></pre></td></tr></table></figure>
-
-<h3 id="算法思想"><a href="#算法思想" class="headerlink" title="算法思想"></a>算法思想</h3><div class="note default">
-            <p>将活动的结束时间从小到大进行排序，先选择结束时间最早的活动，然后看下一个活动的开始时间是否晚于上一个被选中活动的结束时间，若是，则选中该活动；否则不选中。直到所有的活动都遍历了一遍。</p>
-          </div>
-
-
-<h3 id="贪心选择性的证明"><a href="#贪心选择性的证明" class="headerlink" title="贪心选择性的证明"></a>贪心选择性的证明</h3><p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyzm.jpg"></p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> n, *begin, *finsh;			<span class="comment">//分别记录开始时间 结束时间</span></span><br><span class="line">    <span class="type">int</span> *a;			<span class="comment">//记录是否被选中</span></span><br><span class="line">    	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    begin = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    finsh = (<span class="type">int</span> *) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span> ) *n);</span><br><span class="line">    a = (<span class="type">int</span>*) <span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="type">int</span>) *n);</span><br><span class="line">    	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;begin[i], &amp;finsh[i]);</span><br><span class="line">    greedy(n, begin, finsh, a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">greedy</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh,<span class="type">int</span> *a)</span></span><br><span class="line">&#123;</span><br><span class="line">    finshpx(n, begin, finsh);			<span class="comment">//按结束时间进行排序</span></span><br><span class="line">    a[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> count = <span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> endtime = finsh[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(begin[i] &gt;= endtime) </span><br><span class="line">        &#123;</span><br><span class="line">            endtime = finsh[i];</span><br><span class="line">            count++;</span><br><span class="line">            a[i] = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> </span><br><span class="line">        a[i] = <span class="number">0</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;最多容纳个%d活动\n&quot;</span>, count);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;分别为：&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    	<span class="keyword">if</span>(a[i] == <span class="number">1</span>) </span><br><span class="line">    		<span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, i + <span class="number">1</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">finshpx</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> *begin,<span class="type">int</span> *finsh)</span>			<span class="comment">//冒泡排序</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) </span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">0</span>; j &lt; n - i; j++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(finsh[j] &gt; finsh[j + <span class="number">1</span>]) </span><br><span class="line">        &#123;</span><br><span class="line">            <span class="type">int</span> t = finsh[j];</span><br><span class="line">            finsh[j] = finsh[j + <span class="number">1</span>];</span><br><span class="line">            finsh[j + <span class="number">1</span>] = t;</span><br><span class="line">            t = begin[j];</span><br><span class="line">            begin[j] = begin[j + <span class="number">1</span>];</span><br><span class="line">            begin[j + <span class="number">1</span>] = t;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h3><p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/greedyresult.jpg"></p>
-
+<h2 id="4-Fragment的生命周期和activity的关系"><a href="#4-Fragment的生命周期和activity的关系" class="headerlink" title="4 Fragment的生命周期和activity的关系"></a>4 Fragment的生命周期和activity的关系</h2><p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/androidbase2.jpg" alt="Fragment的生命周期和activity关系"></p>
+<p><strong>为什么在Service中创建子线程而不是Activity中❓</strong></p>
+<p>&emsp;这是因为Activity很难对Thread进行控制，当Activity被销毁之后，就没有任何其它的办法可以再重新获取到之前创建的子线程的实例。而且在一个Activity中创建的子线程，另一个Activity无法对其进行操作。但是Service就不同了，所有的Activity都可以与Service进行关联，然后可以很方便地操作其中的方法，即使Activity被销毁了，之后只要重新与Service建立关联，就又能够获取到原有的Service中Binder的实例。因此，使用Service来处理后台任务，Activity就可以放心地finish，完全不需要担心无法对后台任务进行控制的情况。</p>
+<p><strong>Intent的使用方法，可以传递哪些数据类型❓</strong></p>
+<p>&emsp;通过查询Intent/Bundle的API文档，我们可以获知，Intent/Bundle支持传递基本类型的数据和基本类型的数组数据，以及String/CharSequence类型的数据和String/CharSequence类型的数组数据。而对于其它类型的数据貌似无能为力，其实不然，我们可以在Intent/Bundle的API中看到Intent/Bundle还可以传递Parcelable（包裹化，邮包）和Serializable（序列化）类型的数据，以及它们的数组/列表数据。</p>
+<p>&emsp;所以要让非基本类型和非String/CharSequence类型的数据通过Intent/Bundle来进行传输，我们就需要在数据类型中实现Parcelable接口或是Serializable接口。</p>
+<p><span class="exturl" data-url="aHR0cDovL2Jsb2cuY3Nkbi5uZXQva2trMDUyNi9hcnRpY2xlL2RldGFpbHMvNzIxNDI0Nw==">点击查看<i class="fa fa-external-link-alt"></i></span></p>
     </div>
 
 <div>
@@ -440,7 +494,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%97%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 计算机算法</a>
+              <a href="/tags/Android/" rel="tag"><i class="fa fa-tag"></i> Android</a>
+              <a href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag"><i class="fa fa-tag"></i> 技术</a>
           </div>
 
         
@@ -454,13 +509,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/p/8d4b7ae1.html" rel="prev" title="计算机组成原理">
-      <i class="fa fa-chevron-left"></i> 计算机组成原理
+    <a href="/p/5c6dad0f.html" rel="prev" title="《HelloGithub》第06期">
+      <i class="fa fa-chevron-left"></i> 《HelloGithub》第06期
     </a></div>
-      <div class="post-nav-item">
-    <a href="/p/d04bd5bc.html" rel="next" title="操作系统">
-      操作系统 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -520,7 +572,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE"><span class="nav-text">思维导图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%AD%A5%E9%AA%A4"><span class="nav-text">解题步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83%E7%AD%96%E7%95%A5%E7%9A%84%E9%80%89%E6%8B%A9"><span class="nav-text">贪心策略的选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83%E7%AD%96%E7%95%A5%E5%BA%94%E8%80%83%E8%99%91%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-text">贪心策略应考虑的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98-%E4%BC%9A%E5%9C%BA%E5%AE%89%E6%8E%92"><span class="nav-text">例题 会场安排</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E8%A6%81%E6%B1%82"><span class="nav-text">输入要求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="nav-text">测试用例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3"><span class="nav-text">算法思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B4%AA%E5%BF%83%E9%80%89%E6%8B%A9%E6%80%A7%E7%9A%84%E8%AF%81%E6%98%8E"><span class="nav-text">贪心选择性的证明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81"><span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="nav-text">实验结果</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BA%94%E7%A7%8D%E5%B8%83%E5%B1%80"><span class="nav-text">1 五种布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Activty%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-text">2 Activty生命周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%80%9A%E8%BF%87Acitivty%E7%9A%84xml%E6%A0%87%E7%AD%BE%E6%9D%A5%E6%94%B9%E5%8F%98%E4%BB%BB%E5%8A%A1%E6%A0%88%E7%9A%84%E9%BB%98%E8%AE%A4%E8%A1%8C%E4%B8%BA"><span class="nav-text">3 通过Acitivty的xml标签来改变任务栈的默认行为</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Activity%E7%BC%93%E5%AD%98%E6%96%B9%E6%B3%95"><span class="nav-text">3 Activity缓存方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-onSaveInstanceState-Bundle-outState"><span class="nav-text">3.1 onSaveInstanceState (Bundle outState)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-onRestoreInstanceState-Bundle-outState"><span class="nav-text">3.2 onRestoreInstanceState (Bundle outState)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Fragment%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%92%8Cactivity%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-text">4 Fragment的生命周期和activity的关系</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

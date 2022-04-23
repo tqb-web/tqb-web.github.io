@@ -6,7 +6,7 @@
   <link href="https://tianqb.top/atom.xml" rel="self"/>
   
   <link href="https://tianqb.top/"/>
-  <updated>2022-04-23T03:05:25.183Z</updated>
+  <updated>2022-04-23T07:35:17.099Z</updated>
   <id>https://tianqb.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android基础知识</title>
+    <link href="https://tianqb.top/p/7e4211d.html"/>
+    <id>https://tianqb.top/p/7e4211d.html</id>
+    <published>2022-04-23T06:18:47.000Z</published>
+    <updated>2022-04-23T07:35:17.099Z</updated>
+    
+    
+    <summary type="html">本篇文章将系统地介绍有关安卓的基础知识，包括布局、Activity生命周期、Activity缓存方法、Fragment的生命周期和activity的关系等。</summary>
+    
+    
+    
+    <category term="Android" scheme="https://tianqb.top/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://tianqb.top/tags/Android/"/>
+    
+    <category term="技术" scheme="https://tianqb.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>《HelloGithub》第06期</title>
@@ -310,9 +331,9 @@
     <category term="hexo" scheme="https://tianqb.top/categories/hexo/"/>
     
     
-    <category term="hexo" scheme="https://tianqb.top/tags/hexo/"/>
-    
     <category term="技术" scheme="https://tianqb.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="hexo" scheme="https://tianqb.top/tags/hexo/"/>
     
   </entry>
   
@@ -350,9 +371,9 @@
     <category term="hexo" scheme="https://tianqb.top/categories/hexo/"/>
     
     
-    <category term="hexo" scheme="https://tianqb.top/tags/hexo/"/>
-    
     <category term="技术" scheme="https://tianqb.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="hexo" scheme="https://tianqb.top/tags/hexo/"/>
     
   </entry>
   
@@ -371,9 +392,9 @@
     <category term="hexo" scheme="https://tianqb.top/categories/hexo/"/>
     
     
-    <category term="hexo" scheme="https://tianqb.top/tags/hexo/"/>
-    
     <category term="技术" scheme="https://tianqb.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="hexo" scheme="https://tianqb.top/tags/hexo/"/>
     
   </entry>
   
@@ -412,25 +433,6 @@
     
     
     <category term="考研" scheme="https://tianqb.top/tags/%E8%80%83%E7%A0%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>贪心算法</title>
-    <link href="https://tianqb.top/p/a4ce31d2.html"/>
-    <id>https://tianqb.top/p/a4ce31d2.html</id>
-    <published>2022-03-27T12:29:35.000Z</published>
-    <updated>2022-04-20T08:55:30.249Z</updated>
-    
-    
-    <summary type="html">五大常用算法——贪心算法详解以及经典例子，用最简单的例子来讲解贪心算法，还有贪心选择性的证明。</summary>
-    
-    
-    
-    <category term="算法设计" scheme="https://tianqb.top/categories/%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-    <category term="计算机算法" scheme="https://tianqb.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
