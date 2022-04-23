@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tianqb.top/bb/index.html</loc>
+    
+    <lastmod>2022-04-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://tianqb.top/p/3288d248.html</loc>
     
     <lastmod>2022-04-23</lastmod>
@@ -320,20 +329,6 @@
   </url>
   
   <url>
-    <loc>https://tianqb.top/tags/Git/</loc>
-    <lastmod>2022-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tianqb.top/tags/%E4%BB%A3%E7%A0%81%E5%8D%8F%E5%90%8C/</loc>
-    <lastmod>2022-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://tianqb.top/tags/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -342,6 +337,20 @@
   
   <url>
     <loc>https://tianqb.top/tags/Github/</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tianqb.top/tags/Git/</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tianqb.top/tags/%E4%BB%A3%E7%A0%81%E5%8D%8F%E5%90%8C/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -376,6 +385,13 @@
   </url>
   
   <url>
+    <loc>https://tianqb.top/tags/%E8%80%83%E7%A0%94/</loc>
+    <lastmod>2022-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://tianqb.top/tags/Bing%E9%87%8D%E5%AE%9A%E5%90%91/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -391,13 +407,6 @@
   
   <url>
     <loc>https://tianqb.top/tags/Google/</loc>
-    <lastmod>2022-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tianqb.top/tags/%E8%80%83%E7%A0%94/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -434,14 +443,14 @@
 
   
   <url>
-    <loc>https://tianqb.top/categories/Git/</loc>
+    <loc>https://tianqb.top/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://tianqb.top/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</loc>
+    <loc>https://tianqb.top/categories/Git/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -469,14 +478,14 @@
   </url>
   
   <url>
-    <loc>https://tianqb.top/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/</loc>
+    <loc>https://tianqb.top/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://tianqb.top/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94/</loc>
+    <loc>https://tianqb.top/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/</loc>
     <lastmod>2022-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
