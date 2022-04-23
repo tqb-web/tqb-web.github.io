@@ -23,7 +23,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tianqb.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"tianqb.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
   <meta name="description" content="在Hexo博客中添加Github贡献日历的一种简单方法，简单易懂，容易上手，实现在任意页面显示githubcalendar。">
 <meta property="og:type" content="article">
@@ -337,9 +337,9 @@
         <meta name="referrer" content="no-referrer" />
 
 <p>&emsp;之前看到过<span class="exturl" data-url="aHR0cHM6Ly96ZmUuc3BhY2Uv">小冰<i class="fa fa-external-link-alt"></i></span>的博客，被他主页的Github贡献日历吸引了。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg" alt="github贡献日历"></p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg" alt="github贡献日历"></p>
 <p>&emsp;于是我按照他给的方法进行尝试，最后虽然成功了，但是也出现了一些问题，导致页面不是太美观。如下图，上面一行日期无法显示完整，这令我很头疼我试图上网查找解决方法，可惜没有找到，并且许多用户都反应遇到了同样的问题。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/mygithub.jpg" alt="我显示的githubcalendar"></p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/mygithub.jpg" alt="我显示的githubcalendar"></p>
 <p>&emsp;既然解决不了，那咱就换一种方法。于是我又在Github上寻找新的方法，终于，我在一位老外大神那里找到了一种方法。</p>
 <div class="note info">
             <p>Github 地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzIwMTZyc2hhaC9naXRodWJjaGFydC1hcGk=">https://github.com/2016rshah/githubchart-api<i class="fa fa-external-link-alt"></i></span></p>
@@ -353,13 +353,13 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/你的Github用户名&quot; alt=&quot;???&#x27;s Github chart&quot; /&gt;</span><br></pre></td></tr></table></figure>
 
 <p>比如说，你想在<code>关于</code>页面使用贡献日历，那么只需要在<code>blog\source\about</code>目录下，打开<code>index.md</code>文件，在需要的位置插入上面的语句即可。</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github1.jpg" alt="插入代码"></p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github1.jpg" alt="插入代码"></p>
 <div class="note warning">
             <p>注意一定要是自己的Github用户名！</p>
           </div>
 
 <p>效果如下</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github2.jpg" alt="插入后的效果图"></p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github2.jpg" alt="插入后的效果图"></p>
 <h2 id="2-自定义贡献日历的配色方案"><a href="#2-自定义贡献日历的配色方案" class="headerlink" title="2 自定义贡献日历的配色方案"></a>2 自定义贡献日历的配色方案</h2><p>&emsp;我们还可以<code>自定义</code>自己的贡献日历配色方案，原作者是不是很贴心！</p>
 <div class="note info">
             <p>我们只需要将 <code>src</code> 属性改为 <code>https://ghchart.rshah.org/&lt;HEX-COLOR&gt;/你的Github用户名</code>，其中 <code>&lt;HEX_COLOR&gt;</code> 为任意的十六进制颜色代码。它将根据这个颜色，自动为日历修改配色。</p>
@@ -369,7 +369,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;https://ghchart.rshah.org/E623D1/tqb-web&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br></pre></td></tr></table></figure>
 
 <p>效果图</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github3.jpg" alt="改变颜色"></p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github3.jpg" alt="改变颜色"></p>
 <h2 id="3-放进首页和归档页（Next主题）"><a href="#3-放进首页和归档页（Next主题）" class="headerlink" title="3 放进首页和归档页（Next主题）"></a>3 放进首页和归档页（Next主题）</h2><ol>
 <li>打开<code>blog\themes\next\layout</code>目录下的<code>_layout.swig</code>文件。</li>
 <li>找到<code>       &#123;% include '_partials/header/sub-menu.swig' %&#125;</code>，在下面添加如下代码</li>
@@ -377,7 +377,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;%- if page.type !== &#x27;categories&#x27; and page.type !== &#x27;tags&#x27; and page.type !== &#x27;schedule&#x27; and page.type !== &#x27;works&#x27; and page.type !== &#x27;about&#x27; and page.type !== &#x27;post&#x27;%&#125;</span><br><span class="line">	&lt;div class=&quot;post-block animated fadeIn&quot;&gt;</span><br><span class="line">		&lt;h5 class=&quot;post-title&quot; itemprop=&quot;name headline&quot;&gt;</span><br><span class="line">			&lt;a href=&quot;https://github.com/你的Github用户名&quot; class=&quot;post-title-link&quot; itemprop=&quot;url&quot;&gt;Github Contribution Calendar&lt;/a&gt;</span><br><span class="line">		&lt;/h5&gt;</span><br><span class="line">		&lt;div class=&quot;post-body animated fadeInDown&quot; itemprop=&quot;articleBody&quot;&gt;</span><br><span class="line">			&lt;img style=&quot;width: 100%; margin-top: 30px;&quot; src=&quot;https://ghchart.rshah.org/e77c8e/你的Github用户名&quot; alt=&quot;???&#x27;s Blue Github Chart&quot; /&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure>
 
 <p><code>如下图(用的别人的)</code></p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github5.jpg"></p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github5.jpg"></p>
 <p>⚠<strong>注意</strong></p>
 <p>🍦<strong>首先，要把<code>黄色框框</code>里面的代码换成自己的信息！！！</strong></p>
 <p>🍦<strong>其次，<code>绿色框框</code>要根据你博客的情况写</strong></p>
@@ -391,7 +391,7 @@
 
 <p>我目前没有想到其他更好的方法，如果你们想到了，可以在下面留言告诉我。</p>
 <p>最后看一下效果</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg" alt="最终效果"></p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg" alt="最终效果"></p>
     </div>
 
 <div>
@@ -672,7 +672,6 @@
   <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
