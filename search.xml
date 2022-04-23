@@ -5,8 +5,6 @@
     <url>/p/68689ca1.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 
-<span id="more"></span>
-
 <h2 id="使用hexo-github的优点"><a href="#使用hexo-github的优点" class="headerlink" title="使用hexo+github的优点"></a>使用hexo+github的优点</h2><ol>
 <li><p>不需要服务器，github提供免费的托管服务。</p>
 </li>
@@ -87,8 +85,7 @@
 
 <p>如果看到下图显示的东西，就说明成功啦！</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/deploy.jpg"></p>
-<p>然后我们就可以用之前提到的地址来访问我们的博客啦！！！</p>
-]]></content>
+<p>然后我们就可以用之前提到的地址来访问我们的博客啦！！！</p>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -101,10 +98,6 @@
     <title>《HelloGithub》第06期</title>
     <url>/p/5c6dad0f.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p align="center">6️⃣😮</p>
-
-<span id="more"></span>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
 <p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
@@ -150,8 +143,7 @@
           </div>
 
 <p>❤️❤️❤️</p>
-<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzA2L0hlbGxvR2l0SHViMDYubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
-]]></content>
+<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzA2L0hlbGxvR2l0SHViMDYubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>]]></content>
       <categories>
         <category>编程实战</category>
       </categories>
@@ -165,15 +157,12 @@
     <url>/p/d6324fcb.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 
-<span id="more"></span>
-
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;我们在用hexo编写博客的时候，通常是用<code>hexo new post</code>来新建一篇文章，但是，当我们的文章比较多时，我们就很难在一堆文章里找到自己新建的那篇文章。那么怎么才能够轻松地打开新建的文章呢？</p>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>&emsp;首先，在Hexo<code>根目录</code>的<code>scripts</code>文件夹(没有就自己新建一个)下新建一个<code>js</code>文件，文件名任意(例如：auto.js)，然后在js文件里面加入以下代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var spawn = require(&#x27;child_process&#x27;).exec;</span><br><span class="line"></span><br><span class="line">// Hexo 2.x 用户复制这段</span><br><span class="line">hexo.on(&#x27;new&#x27;, function(path)&#123;</span><br><span class="line">  spawn(&#x27;start  &quot;markdown编辑器绝对路径.exe&quot; &#x27; + path);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// Hexo 3.x及更新版本的用户复制这段</span><br><span class="line">hexo.on(&#x27;new&#x27;, function(data)&#123;</span><br><span class="line">  spawn(&#x27;start  &quot;markdown编辑器绝对路径.exe&quot; &#x27; + data.path);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <p>&emsp;保存并退出后执行以下新建文章指令就可以啦：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new post &quot;&quot;</span><br></pre></td></tr></table></figure>
-]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new post &quot;&quot;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -186,10 +175,6 @@
     <title>《HelloGithub》第05期</title>
     <url>/p/4ed802e1.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p align="center">5️⃣😎</p>
-
-<span id="more"></span>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
 <p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
@@ -231,8 +216,7 @@
           </div>
 
 <p>❤️❤️❤️</p>
-<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzA1L0hlbGxvR2l0SHViMDUubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
-]]></content>
+<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzA1L0hlbGxvR2l0SHViMDUubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>]]></content>
       <categories>
         <category>编程实战</category>
       </categories>
@@ -245,8 +229,6 @@
     <title>SEO必知的7大搜索引擎站长平台</title>
     <url>/p/3288d248.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
 
 <p>&emsp;我相信大多数人写博客，都是为了能够让更多的人能够看到自己的文章，向大家分享一些技术或者解决某种问题的方法。但是怎么才能让更多的人看到自己的文章呢？这就需要各大搜索引擎来帮忙了，我们将自己的<code>文章URL提交到搜索引擎</code>上去，然后大家就可以通过搜索关键词来找到你的文章了。当然，如果你不主动提交自己的网站地址也是可以的，各大搜索引擎的<code>爬虫</code>也会主动来爬取的，只不过被发现的时间就得到猴年马月了。</p>
 <p>&emsp;那么我们该如何将自己文章的URL提交到搜索引擎上去呢？这时就要借助一个中间平台——<code>站长</code>。</p>
@@ -269,8 +251,7 @@
 <p>&emsp;谷歌站长平台入口：<span class="exturl" data-url="aHR0cHM6Ly9zZWFyY2guZ29vZ2xlLmNvbS8=">https://search.google.com<i class="fa fa-external-link-alt"></i></span></p>
 <h3 id="7-Bing站长平台"><a href="#7-Bing站长平台" class="headerlink" title="7. Bing站长平台"></a>7. Bing站长平台</h3><p>&emsp;必应站长平台是微软搜索旗下必应搜索推出的站长平台，但别小看Bing，他对网站带来的流量远比360大，而且就算你不提交也有大量的收录,同时他还支持一键导入谷歌站长平台的网站，十分的方便。</p>
 <p>&emsp;必应站长平台入口：<span class="exturl" data-url="aHR0cDovL3dlYm1hc3Rlci5iaW5nLmNvbS8=">http://webmaster.bing.com<i class="fa fa-external-link-alt"></i></span></p>
-<p>&emsp;以上就是对七大站长平台的基本介绍，欢迎大家留言讨论😊</p>
-]]></content>
+<p>&emsp;以上就是对七大站长平台的基本介绍，欢迎大家留言讨论😊</p>]]></content>
       <categories>
         <category>SEO</category>
       </categories>
@@ -285,8 +266,6 @@
     <url>/p/91780f1f.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 
-<span id="more"></span>
-
 <p>&emsp;今天使用谷歌搜东西的时候，突然发现google搜索引擎会自动跳转为bing搜索引擎，很奇怪，于是我上网查了一下，得知这可能是<code>Bing重定向病毒</code>搞的鬼，心里顿时一惊。</p>
 <p>&emsp;那么什么是Bing重定向病毒呢？他又有什么用呢？我在网上搜索了一下，得到以下解释：</p>
 <div class="note info">
@@ -294,8 +273,7 @@
           </div>
 
 <p>&emsp;真不是东西啊，还能这么玩。了解了原因之后，我赶紧在网上找解决方法，很多人反应时浏览器的<code>拓展程序</code>搞的鬼，然后我就把chrome的拓展程序全部关闭，然后启用搜索功能，果然，这次的搜索结果是正确的，google并没有重定向到bing。于是我就挨个打开chrome的拓展程序，然后再启用搜索功能，终于在我打开一个<code>实现视频倍速</code>（具体名字我也忘了）的扩展程序后，重定向的问题又出现了！就是它了！！！我三下五除二就把它从电脑里删除了，我又可以愉快的使用google搜索啦！为了防止相似的事情再发生，我给我的宝贝电脑做了一次全面的扫毒，不给病毒可乘之机。</p>
-<p>&emsp;这次事情后警告我：千万不能乱下东西，否则真的很容易中病毒的😁</p>
-]]></content>
+<p>&emsp;这次事情后警告我：千万不能乱下东西，否则真的很容易中病毒的😁</p>]]></content>
       <categories>
         <category>浏览器</category>
       </categories>
@@ -309,8 +287,6 @@
     <title>Git常用命令总结</title>
     <url>/p/3b0bf668.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
 
 <h2 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h2><p>&emsp;<code>Git</code>是一款<code>免费开源的版本管理工具</code>，很多开源软件、企业的项目开发都使用Git进行版本管理。项目中引入版本管理系统，可以大大简化项目的开发流程，更方便后续的管理和维护。</p>
 <h2 id="Git的优势"><a href="#Git的优势" class="headerlink" title="Git的优势"></a>Git的优势</h2><ol>
@@ -338,9 +314,7 @@
           </div>
 
 <h3 id="强制更新"><a href="#强制更新" class="headerlink" title="强制更新"></a>强制更新</h3><p>&emsp;强制更新就是<code>放弃</code>本地修改，强制更新远端代码。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git fetch --all	//下载远程仓库最新内容，不做合并</span><br><span class="line">git reset --hard origin/master	//把HEAD指向master最新版本</span><br><span class="line">git pull	//重新拉取更新</span><br></pre></td></tr></table></figure>
-
-]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git fetch --all	//下载远程仓库最新内容，不做合并</span><br><span class="line">git reset --hard origin/master	//把HEAD指向master最新版本</span><br><span class="line">git pull	//重新拉取更新</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>Git</category>
       </categories>
@@ -353,8 +327,6 @@
     <title>给Hexo Next主题添加首页轮播图</title>
     <url>/p/9081e2d8.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
 
 <div class="note info">
             <p>本博客首页设置了轮播图，大家可以去看一下效果。</p>
@@ -384,8 +356,7 @@
 
 <p>&emsp;其实<code>@media all and (max-width: 768px)&#123;&#125;</code>的意思就是当屏幕（也许是打字机或盲人阅读器）尺寸<code>小于768px</code>时，应用下面的css样式。也可以这样写<code>@media screen and (min-width:768px) and (max-width:900px) &#123;&#125;</code>，意思就是屏幕大于768px，小于900px的设备。大家可自行查阅有关<code>media</code>的内容，这里就不多赘述了😁</p>
 <p>&emsp;有什么不懂的可以留言或者给我发邮件，我会尽可能地帮助大家解决问题的❤</p>
-<p>&emsp;<a href="https://tianqb.top/about/">点击此处查看我的联系方式</a></p>
-]]></content>
+<p>&emsp;<a href="https://tianqb.top/about/">点击此处查看我的联系方式</a></p>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -400,7 +371,7 @@
     <url>/p/32d001ab.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="ENVI简介"><a href="#ENVI简介" class="headerlink" title="ENVI简介"></a>ENVI简介</h3><p>&emsp;<strong>ENVI</strong>——完整的<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTklODElQTUlRTYlODQlOUYlRTUlOUIlQkUlRTUlODMlOEYlRTUlQTQlODQlRTclOTAlODY=">遥感图像处理<i class="fa fa-external-link-alt"></i></span>平台<strong>ENVI</strong>(The Environment for Visualizing Images)是美国<span id="more"></span>Exelis Visual Information Solutions公司的旗舰产品。它是由遥感领域的科学家采用<code>交互式数据语言IDL(Interactive Data Language)</code>开发的一套功能强大的遥感<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOUIlQkUlRTUlODMlOEYlRTUlQTQlODQlRTclOTAlODYlRTglQkQlQUYlRTQlQkIlQjY=">图像处理软件<i class="fa fa-external-link-alt"></i></span>。它是快速、便捷、准确地从影像中提取信息的首屈一指的软件解决方案。今天，众多的影像分析师和科学家选择ENVI来从遥感影像中提取信息。ENVI已经广泛应用于科研、环境保护、气象、石油矿产勘探、农业、林业、医学、国防&amp;安全、地球科学、公用设施管理、遥感工程、水利、海洋、测绘勘察和城市与区域规划等领域。</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="ENVI简介"><a href="#ENVI简介" class="headerlink" title="ENVI简介"></a>ENVI简介</h3><p>&emsp;<strong>ENVI</strong>——完整的<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTklODElQTUlRTYlODQlOUYlRTUlOUIlQkUlRTUlODMlOEYlRTUlQTQlODQlRTclOTAlODY=">遥感图像处理<i class="fa fa-external-link-alt"></i></span>平台<strong>ENVI</strong>(The Environment for Visualizing Images)是美国Exelis Visual Information Solutions公司的旗舰产品。它是由遥感领域的科学家采用<code>交互式数据语言IDL(Interactive Data Language)</code>开发的一套功能强大的遥感<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTUlOUIlQkUlRTUlODMlOEYlRTUlQTQlODQlRTclOTAlODYlRTglQkQlQUYlRTQlQkIlQjY=">图像处理软件<i class="fa fa-external-link-alt"></i></span>。它是快速、便捷、准确地从影像中提取信息的首屈一指的软件解决方案。今天，众多的影像分析师和科学家选择ENVI来从遥感影像中提取信息。ENVI已经广泛应用于科研、环境保护、气象、石油矿产勘探、农业、林业、医学、国防&amp;安全、地球科学、公用设施管理、遥感工程、水利、海洋、测绘勘察和城市与区域规划等领域。</p>
 <h3 id="ENVI优势"><a href="#ENVI优势" class="headerlink" title="ENVI优势"></a>ENVI优势</h3><ol>
 <li>先进、可靠的影像分析工具——<code>全套影像信息智能化提取工具</code>,全面提升影像的价值。</li>
 <li>专业的光谱分析——<code>高光谱分析</code>一直处于世界领先地位。</li>
@@ -442,8 +413,7 @@
 <h3 id="文件替换"><a href="#文件替换" class="headerlink" title="文件替换"></a>文件替换</h3><p>&emsp;找到安装包中<code>IDL85</code>文件夹下的两个<code>dll文件</code>，对应的<code>替换</code>到ENVI<code>安装目录</code>下的<code>对应文件</code>，比如这里IDL85/bin/bin.x86_64的idl.dll替换C:\Program Files\Exelis\IDL85\bin\bin.x86_64下的idl.dll，这里是针对64位的，32位的dll就是对应的bin.x86底下dll。</p>
 <h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>&emsp;查看开始页面是否有图示文件，并且是否能正常打开。(点击<code>ENVI 5.3(64-bit)</code>或者<code>ENVI Classic 5.3(64-bit)</code>)</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/envi17.jpg"></p>
-<p>&emsp;至此ENVI就算是安装完成了，接下来就少好好学习如何使用它了。</p>
-]]></content>
+<p>&emsp;至此ENVI就算是安装完成了，接下来就少好好学习如何使用它了。</p>]]></content>
       <categories>
         <category>ENVI</category>
       </categories>
@@ -456,10 +426,6 @@
     <title>《HelloGithub》第04期</title>
     <url>/p/f6646584.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p align="center">4️⃣😎</p>
-
-<span id="more"></span>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
 <p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
@@ -500,8 +466,7 @@
           </div>
 
 <p>❤️❤️❤️</p>
-<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzA0L0hlbGxvR2l0SHViMDQubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
-]]></content>
+<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzA0L0hlbGxvR2l0SHViMDQubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>]]></content>
       <categories>
         <category>编程实战</category>
       </categories>
@@ -514,10 +479,6 @@
     <title>《HelloGithub》第03期</title>
     <url>/p/6bb35d3d.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p align="center">3️⃣🤨</p>
-
-<span id="more"></span>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
 <p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
@@ -553,8 +514,7 @@
           </div>
 
 <p>❤️❤️❤️</p>
-<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzAzL0hlbGxvR2l0SHViMDMubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
-]]></content>
+<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzAzL0hlbGxvR2l0SHViMDMubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>]]></content>
       <categories>
         <category>编程实战</category>
       </categories>
@@ -567,10 +527,6 @@
     <title>《HelloGithub》第02期</title>
     <url>/p/d30f3a58.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p align="center">2️⃣😁</p>
-
-<span id="more"></span>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
 <p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
@@ -613,8 +569,7 @@
           </div>
 
 <p>❤️❤️❤️</p>
-<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzAyL0hlbGxvR2l0SHViMDIubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
-]]></content>
+<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzAyL0hlbGxvR2l0SHViMDIubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>]]></content>
       <categories>
         <category>编程实战</category>
       </categories>
@@ -627,10 +582,6 @@
     <title>《HelloGithub》第01期</title>
     <url>/p/c1ba95b6.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<p align="center">1️⃣😀</p>
-
-<span id="more"></span>
 
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>&emsp;分享 GitHub 上有趣、入门级的<code>开源</code>项目。</p>
 <p>&emsp;这是一个面向<strong>编程新手</strong>、<strong>热爱编程</strong>、<strong>对开源社区感兴趣</strong> 人群的月刊，月刊的内容包括：<strong>各种编程语言的项目</strong>、<strong>让生活变得更美好的工具</strong>、<strong>书籍、学习笔记、教程等</strong>，这些开源项目大多都是非常容易上手，而且非常 Cool。主要是希望大家能动手用起来，加入到<strong>开源社区</strong>中。会编程的可以<code>贡献代码</code>，不会编程的可以反馈使用这些工具中的 <code>Bug</code>，帮着宣传你觉得优秀的项目<code>Star 项目</code>⭐️</p>
@@ -669,8 +620,7 @@
           </div>
 
 <p>❤️❤️❤️</p>
-<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzAxL0hlbGxvR2l0SHViMDEubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>
-]]></content>
+<p>本文转自Github，点击<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLzUyMXh1ZXdlaWhhbi9IZWxsb0dpdEh1Yi9ibG9iL21hc3Rlci9jb250ZW50LzAxL0hlbGxvR2l0SHViMDEubWQ=">《HelloGithub》<i class="fa fa-external-link-alt"></i></span>查看原文。</p>]]></content>
       <categories>
         <category>编程实战</category>
       </categories>
@@ -683,8 +633,6 @@
     <title>HelloGithub</title>
     <url>/p/a53d7246.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
 
 <p>&emsp;相信许多学编程的小伙伴对自己的实战能力不是很满意，但又不知道怎么去提升自己的编程能力，接下来我给大家分享一个优秀的开源月刊<a href="https://github.com/521xueweihan/HelloGitHub"><strong>HelloGithub</strong></a>。</p>
 <p>&emsp;HelloGitHub 分享 GitHub 上有趣、入门级的开源项目。<code>每月 28 号</code>以月刊的形式更新发布，内容包括：<code>有趣、入门级的开源项目、开源书籍、实战项目、企业级项目</code>等，让你用很短时间感受到开源的魅力，爱上开源！</p>
@@ -700,9 +648,7 @@
 <h3 id="PluginCore项目"><a href="#PluginCore项目" class="headerlink" title="PluginCore项目"></a><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lpeXVuZ2VudC9QbHVnaW5Db3Jl">PluginCore项目<i class="fa fa-external-link-alt"></i></span></h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/xm5.jpg"></p>
 <div class="note info">
             <p>还有很多很多有趣的项目，大家可以自己去探索。</p>
-          </div>
-
-]]></content>
+          </div>]]></content>
       <categories>
         <category>编程实战</category>
       </categories>
@@ -715,8 +661,6 @@
     <title>在Hexo博客中添加Github贡献日历</title>
     <url>/p/214102e1.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
 
 <p>&emsp;之前看到过<span class="exturl" data-url="aHR0cHM6Ly96ZmUuc3BhY2Uv">小冰<i class="fa fa-external-link-alt"></i></span>的博客，被他主页的Github贡献日历吸引了。</p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/githubcd.jpg" alt="github贡献日历"></p>
@@ -773,8 +717,7 @@
 
 <p>我目前没有想到其他更好的方法，如果你们想到了，可以在下面留言告诉我。</p>
 <p>最后看一下效果</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg" alt="最终效果"></p>
-]]></content>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/github4.jpg" alt="最终效果"></p>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -787,8 +730,6 @@
     <title>Hexo note提示块的使用</title>
     <url>/p/78574fd6.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
 
 <p>在hexo中写博客的时候可以插入一些很酷的<code>提示块</code>，效果如下：</p>
 <div class="note default">
@@ -830,8 +771,7 @@
 
 
 <p>原文</p>
-<p><a href=https://jinnsjj.github.io/uncategorized/hexo-next-note/>在hexo-NexT中插入note提示块</a></p>
-]]></content>
+<p><a href=https://jinnsjj.github.io/uncategorized/hexo-next-note/>在hexo-NexT中插入note提示块</a></p>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -843,8 +783,6 @@
     <title>Hexo Next主题添加Valine评论系统</title>
     <url>/p/2e257c1.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
 
 <h2 id="1-注册LeanCloud"><a href="#1-注册LeanCloud" class="headerlink" title="1 注册LeanCloud"></a>1 注册LeanCloud</h2><p>LeanCloud 分为<code>国内</code>和<code>国际版</code>的。<br>国内的在 2019-10-1 之后需要自定义已备案域名才能使用，所以我这里使用国际版，先到<a href=https://leancloud.app/>LeanCloud国际版</a>注册一个账号。</p>
 <h2 id="2-验证邮箱-验证手机号"><a href="#2-验证邮箱-验证手机号" class="headerlink" title="2 验证邮箱 验证手机号"></a>2 验证邮箱 验证手机号</h2><p>注册好之后，点击头像，选择账号设置：</p>
@@ -911,8 +849,7 @@
 <p>只需要填写 <code>password</code> 和 <code>username</code>。其中 <code>username</code> 必须设置为你的上面环境变量 <code>SMTP_USER</code> 的邮箱相同。不然无法登录！</p>
 <h4 id="7-2-2-登录评论系统"><a href="#7-2-2-登录评论系统" class="headerlink" title="7.2.2 登录评论系统"></a>7.2.2 登录评论系统</h4><p>地址就是上面设置的 web 主机名:<code>https:// 你刚才设置的域名.avosapps.us/</code></p>
 <p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn20.jpg" alt="登陆界面"></p>
-<p>填上刚才设置的账号密码即可登录。</p>
-]]></content>
+<p>填上刚才设置的账号密码即可登录。</p>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -925,8 +862,6 @@
     <title>hexo next主题</title>
     <url>/p/7338cb5d.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
-
-<span id="more"></span>
 
 <p>​    搭建好自己的博客之后，接下来就可以对自己的博客进行装饰了(没有搭建博客的可以去<a href=https://tqb-web-github-io.vercel.app/p/68689ca1.html>搭建个人博客</a>去学习如何搭建)，下面的文章就教大家如何美化自己的博客。</p>
 <h2 id="1-安装Next主题"><a href="#1-安装Next主题" class="headerlink" title="1 安装Next主题"></a>1 安装Next主题</h2><p>克隆整个Next仓库(在Git Bash输入以下代码 <code>二选一即可</code>)</p>
@@ -991,8 +926,7 @@
 
 <p>如上表示给这篇文章添加<code>categories:  - web</code> 这个分类。然后我们就可以在博客到分类里看到该分类了。</p>
 <p>如下图所示</p>
-<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/myfl.jpg" alt="效果图"></p>
-]]></content>
+<p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/myfl.jpg" alt="效果图"></p>]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -1058,8 +992,6 @@
     <url>/p/d04bd5bc.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 
-<span id="more"></span>
-
 <h2 id="第一章：概述"><a href="#第一章：概述" class="headerlink" title="第一章：概述"></a>第一章：概述</h2><h3 id="第一章命题重点"><a href="#第一章命题重点" class="headerlink" title="第一章命题重点"></a>第一章命题重点</h3><div class="note default">
             <ol><li>操作系统的概念、基本特征和功能，<strong>并行性与并发性</strong>。</li><li><strong>操作系统提供的接口</strong>，命令接口和程序接口。</li><li>用户态与核心态，<strong>中断和异常</strong>，系统调用。</li></ol>
           </div>
@@ -1119,8 +1051,7 @@
             <p>理解：可能会影响到其他进程的操作,必然需要通过系统调用请求操作系统代为完成.</p>
           </div>
 
-<h5 id="系统调用的过程"><a href="#系统调用的过程" class="headerlink" title="系统调用的过程"></a>系统调用的过程</h5><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtxtdy.jpg"></p>
-]]></content>
+<h5 id="系统调用的过程"><a href="#系统调用的过程" class="headerlink" title="系统调用的过程"></a>系统调用的过程</h5><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/czxtxtdy.jpg"></p>]]></content>
       <categories>
         <category>计算机考研</category>
       </categories>
@@ -1186,7 +1117,7 @@
     <url>/p/8d4b7ae1.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />
 
-<p>​    相信对于许多计算机专业的人来说，《计算机组成原理》这门课程是躲不过去的一道难关，既然躲不过去，那就勇敢的面对吧！！！本篇文章将系统的介绍计算机组成原理的相关知识，希望能够对你们有所帮助…</p>
+<p>&emsp;相信对于许多计算机专业的人来说，《计算机组成原理》这门课程是躲不过去的一道难关，既然躲不过去，那就勇敢的面对吧！！！本篇文章将系统的介绍计算机组成原理的相关知识，希望能够对你们有所帮助…</p>
 <span id="more"></span>
 
 <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h3 id="知识网图"><a href="#知识网图" class="headerlink" title="知识网图"></a>知识网图</h3><p><img data-src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/1.1.png" alt="计组知识导图"></p>
