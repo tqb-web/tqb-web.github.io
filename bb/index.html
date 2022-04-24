@@ -27,7 +27,7 @@
 
     <meta name="description" content="&#x2F;* bb样式 *&#x2F;   div.timenode {     position: relative;   }    div.timenode:before,   div.timenode:after {     content: &#39;&#39;;     z-index: 1;     position: absolute;     background: #bbb;">
 <meta property="og:type" content="website">
-<meta property="og:title" content="哔哔">
+<meta property="og:title" content="哔哔哔哔哔">
 <meta property="og:url" content="https://tianqb.top/bb/index.html">
 <meta property="og:site_name" content="北温带的猫">
 <meta property="og:description" content="&#x2F;* bb样式 *&#x2F;   div.timenode {     position: relative;   }    div.timenode:before,   div.timenode:after {     content: &#39;&#39;;     z-index: 1;     position: absolute;     background: #bbb;">
@@ -41,10 +41,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"bb/index.html","title":"哔哔"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"bb/index.html","title":"哔哔哔哔哔"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>哔哔 | 北温带的猫
+<title>哔哔哔哔哔 | 北温带的猫
 </title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGL3VM2MT3"></script>
@@ -56,7 +56,7 @@
 
 
 
-
+<link rel="dns-prefetch" href="waline-server-blue.vercel.app">
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -232,7 +232,7 @@
     
     <div class="post-block" lang="zh-CN"><header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">哔哔
+<h1 class="post-title" itemprop="name headline">哔哔哔哔哔
 </h1>
 
 <div class="post-meta-container">
@@ -653,7 +653,16 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline-server-blue.vercel.app","placeholder":"请文明评论呀","avatar":"mm","pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"meta":["nick","mail","link"],"libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","el":"#waline-comments","path":"/bb/"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() => 
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => {
+    new Waline(CONFIG.waline);
+  });
+});
+</script><script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
 <script>
 var options = {
