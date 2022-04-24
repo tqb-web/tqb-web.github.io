@@ -93,6 +93,83 @@
       </tags>
   </entry>
   <entry>
+    <title>为hexo博客更换Waline评论系统</title>
+    <url>/p/c3387dcd.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer" />
+
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;由于之前的Next版本太低了，想更新到最新版，于是今天花了半天的功夫来弄它，最后基本还原了之前博客的所有功能，但是我发现主题配置文件里没有Valine的相关配置了。于是我上网查了一下，发现Next v8.1.0版本就已经移除了Valine，具体原因如下：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange1.jpg" alt="next移除Valine"></p>
+<p>&emsp;于是我按照他给的方法，自己安装了<code>hexo-next-valine</code>插件，进行了一系列的配置，最后发现不行，Valine页面加载不出来。于是我又继续网上寻找帮助，直到我看见了下面这段公告：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange2.jpg" alt="Valine回应next"></p>
+<p>&emsp;看来Valine是没法用了，于是我又尝试了Next提供的其他的评论系统，结果都不太尽如人意。最后迫不得已取询问群里的大佬，大佬给我说可以用<code>Waline</code>，这是在Valine基础上开发的，与Valine的功能基本相同，但是更加的安全。</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange3.jpg" alt="Waline"></p>
+<p>&emsp;说干就干，由于有了配置Valine的基础，Waline配置起来十分的顺利，很快就完成了，效果如如下：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange4.jpg" alt="waline评论"></p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>&emsp;上面废话了这么多，接下来开始进入正题，大家可以点击<a href="https://blog.csdn.net/jiunian_2761/article/details/122621667">Waline配置</a>查看原文，也可以继续看我的文章😎</p>
+<h2 id="1-配置评论数据库"><a href="#1-配置评论数据库" class="headerlink" title="1 配置评论数据库"></a>1 配置评论数据库</h2><p>&emsp;<code>Waline</code> 和 Valine 一样，也是支持基于 <a href="https://leancloud.app/">LeanCloud</a> 作为数据存储的，但是 <code>Waline</code> 支持的部署方式更多。Waline配置数据库的方法和Valine的配置方法一样，有基础的兄弟可以自行去配置了，第一次使用的按照我的步骤一步一步来。</p>
+<h3 id="1-1-注册Lean-Cloud"><a href="#1-1-注册Lean-Cloud" class="headerlink" title="1.1 注册Lean Cloud"></a>1.1 注册Lean Cloud</h3><p>&emsp;LeanCloud 分为<code>国内</code>和<code>国际版</code>的。国内的在 2019-10-1 之后需要自定义已备案域名才能使用，所以我这里使用国际版，先到 <a href="https://leancloud.app/">LeanCloud 国际版</a>注册一个账号，注意还需要验证邮箱和手机号。</p>
+<h3 id="1-2-创建应用"><a href="#1-2-创建应用" class="headerlink" title="1.2 创建应用"></a>1.2 创建应用</h3><p>&emsp;点击创建应用按钮：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn3.jpg" alt="创建应用"></p>
+<p>&emsp;注意选择<code>开发版</code>：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn4.jpg" alt="选择开发版"></p>
+<p>&emsp;创建好之后进入设置，查看应用Keys：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn5.jpg" alt="leanclouds设置"><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn7.jpg" alt="APPID APPKey"></p>
+<h2 id="2-配置服务端"><a href="#2-配置服务端" class="headerlink" title="2 配置服务端"></a>2 配置服务端</h2><p>&emsp;先点击<a href="https://vercel.com">vercel</a>注册一个账号(<code>支持Github账号直接登录</code>)，然后点击<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwalinejs%2Fwaline%2Ftree%2Fmain%2Fexample">Deploy</a>出现以下画面，然后输入项目的名称点击<code>Create</code>。</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange5.jpg" alt="vercel"></p>
+<p>&emsp;然后等待下面 <code>Deploy</code> 构建完成，点击 <code>Go to Dashboard</code>。</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange6.jpg" alt="vercelCongratulations"></p>
+<p>&emsp;<code>找到 Settings——&gt;Environment Variables</code>，配置环境变量：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange7.jpg" alt="project Settings"></p>
+<p>&emsp;我们需要配置三个环境变量，对应如下表：</p>
+<table>
+<thead>
+<tr>
+<th>Vercel Environment(填入到NAME框下)</th>
+<th>Lean Cloud(各项对应的值填入到VALUE框下)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LEAN_ID</td>
+<td>AppID</td>
+</tr>
+<tr>
+<td>LEAN_KEY</td>
+<td>AppKey</td>
+</tr>
+<tr>
+<td>LEAN_MASTER_KEY</td>
+<td>MasterKey</td>
+</tr>
+</tbody></table>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange8.jpg" alt="环境变量"></p>
+<div class="note warning"><p>如果你使用 LeanCloud 国内版，请额外配置 <code>LEAN_SERVER</code> 环境变量，值为你绑定好的域名。</p>
+</div>
+
+<p>&emsp;为了使环境变量生效，我们需要<code>重新构建</code>一次。在上方找到 Deployments ，选择第一个右边的三个点，点击 Redeploy 。</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange9.jpg" alt="重新构建"></p>
+<p>&emsp;等待其构建结束，然后记住 <code>DOMAINS</code> 中的域名地址，至此服务端的部署就结束了，接下来就是在<code>Hexo Next</code>主题下的配置了：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange10.jpg" alt="Domain"></p>
+<h2 id="3-在Hexo-Next主题中配置"><a href="#3-在Hexo-Next主题中配置" class="headerlink" title="3 在Hexo Next主题中配置"></a>3 在Hexo Next主题中配置</h2><p>&emsp;由于 Next 主题中并不自带 <code>Waline</code> 的评论配置，我们需要安装官方提供的插件。在 <code>Hexo</code> 根目录执行：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">npm install @waline/hexo-next</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;下载完成后，找到 Next 的主题配置文件，在最后加上以下代码：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"># Waline</span><br><span class="line"># For more information: https://waline.js.org, https://github.com/walinejs/waline</span><br><span class="line">waline:</span><br><span class="line">  enable: true #是否开启</span><br><span class="line">  serverURL: waline-server-pearl.vercel.app # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址</span><br><span class="line">  placeholder: 请文明评论呀 # #评论框的默认文字</span><br><span class="line">  avatar: mm # 头像风格</span><br><span class="line">  meta: [nick, mail, link] # 自定义评论框上面的三个输入框的内容</span><br><span class="line">  pageSize: <span class="number">10</span> # 评论数量多少时显示分页</span><br><span class="line">  lang: zh-cn # 语言, 可选值: en, zh-cn</span><br><span class="line">  # Warning: 不要同时启用 `waline.visitor` 以及 `leancloud_visitors`.</span><br><span class="line">  visitor: false # 文章阅读统计</span><br><span class="line">  comment_count: true # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示</span><br><span class="line">  requiredFields: [] # 设置用户评论时必填的信息，[nick,mail]: [nick] | [nick, mail]</span><br><span class="line">  libUrl: # Set custom library cdn url</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;重新部署<code>Hexo</code>，就可以看到结果啦。</p>
+<h2 id="4-登录服务端"><a href="#4-登录服务端" class="headerlink" title="4 登录服务端"></a>4 登录服务端</h2><p>&emsp;由于 <code>Waline</code> 有服务端，支持评论管理，我们需要注册一个账号作为管理员。找到评论框，点击 <code>登录</code> 按钮，会弹出一个窗口，找到用户注册，<code>默认第一个注册的用户为管理员</code>，所以部署好一定要记得及时注册，注册好，登录之后即可进入评论管理的后台，可以对评论进行管理。</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange11.jpg" alt="登录界面"></p>
+<h2 id="5-邮件实时提醒"><a href="#5-邮件实时提醒" class="headerlink" title="5 邮件实时提醒"></a>5 邮件实时提醒</h2><p>&emsp;这一部分的设置方法和Valine的完全相同，大家可以点击<a href="https://tianqb.top/p/2e257c1.html">设置Valine评论</a>，然后找到<code>第五部分</code>查看如何设置，这里我就不多说了。</p>
+<p>&emsp;到此，整个Waline评论系统设置完成了。大家有什么不明白的可以在下面留言，我会及时回复的！</p>]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>Waline</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Android基础知识</title>
     <url>/p/7e4211d.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer" />

@@ -6,7 +6,7 @@
   <link href="https://tianqb.top/atom.xml" rel="self"/>
   
   <link href="https://tianqb.top/"/>
-  <updated>2022-04-23T07:35:17.099Z</updated>
+  <updated>2022-04-24T13:48:24.988Z</updated>
   <id>https://tianqb.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>为hexo博客更换Waline评论系统</title>
+    <link href="https://tianqb.top/p/c3387dcd.html"/>
+    <id>https://tianqb.top/p/c3387dcd.html</id>
+    <published>2022-04-24T10:08:35.000Z</published>
+    <updated>2022-04-24T13:48:24.988Z</updated>
+    
+    
+    <summary type="html">本篇文章讲述了如何为自己的博客加上Waline评论，并实现后端管理和邮件提醒的功能。</summary>
+    
+    
+    
+    <category term="hexo" scheme="https://tianqb.top/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://tianqb.top/tags/hexo/"/>
+    
+    <category term="Waline" scheme="https://tianqb.top/tags/Waline/"/>
+    
+    <category term="next" scheme="https://tianqb.top/tags/next/"/>
+    
+  </entry>
   
   <entry>
     <title>Android基础知识</title>
@@ -361,7 +384,7 @@
     <link href="https://tianqb.top/p/2e257c1.html"/>
     <id>https://tianqb.top/p/2e257c1.html</id>
     <published>2022-04-04T04:47:53.000Z</published>
-    <updated>2022-04-23T02:20:30.201Z</updated>
+    <updated>2022-04-24T13:36:04.484Z</updated>
     
     
     <summary type="html">给自己的hexo博客加上评论功能，这样别人就可以评论你的博客了，并且还可以实时接收评论通知。</summary>
@@ -414,25 +437,6 @@
     
     
     <category term="计算机算法" scheme="https://tianqb.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>操作系统</title>
-    <link href="https://tianqb.top/p/d04bd5bc.html"/>
-    <id>https://tianqb.top/p/d04bd5bc.html</id>
-    <published>2022-03-28T07:36:22.000Z</published>
-    <updated>2022-04-23T02:08:05.127Z</updated>
-    
-    
-    <summary type="html">操作系统的知识总结，简单概括了操作系统的相关知识，适用于考研以及期末考试的学生。</summary>
-    
-    
-    
-    <category term="计算机考研" scheme="https://tianqb.top/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%80%83%E7%A0%94/"/>
-    
-    
-    <category term="考研" scheme="https://tianqb.top/tags/%E8%80%83%E7%A0%94/"/>
     
   </entry>
   

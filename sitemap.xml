@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tianqb.top/p/c3387dcd.html</loc>
+    
+    <lastmod>2022-04-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://tianqb.top/p/2e257c1.html</loc>
+    
+    <lastmod>2022-04-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://tianqb.top/p/68689ca1.html</loc>
     
     <lastmod>2022-04-23</lastmod>
@@ -111,15 +129,6 @@
   
   <url>
     <loc>https://tianqb.top/p/78574fd6.html</loc>
-    
-    <lastmod>2022-04-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://tianqb.top/p/2e257c1.html</loc>
     
     <lastmod>2022-04-23</lastmod>
     
@@ -379,6 +388,20 @@
   
   <url>
     <loc>https://tianqb.top/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tianqb.top/tags/Waline/</loc>
+    <lastmod>2022-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tianqb.top/tags/next/</loc>
     <lastmod>2022-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

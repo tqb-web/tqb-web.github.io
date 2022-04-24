@@ -25,28 +25,46 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"tianqb.top","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="在编写自己的博客的时候，可以使用note提示块，不仅简单而且还可以使博客更加的美观。">
+    <meta name="description" content="本篇文章讲述了如何为自己的博客加上Waline评论，并实现后端管理和邮件提醒的功能。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo note提示块的使用">
-<meta property="og:url" content="https://tianqb.top/p/78574fd6.html">
+<meta property="og:title" content="为hexo博客更换Waline评论系统">
+<meta property="og:url" content="https://tianqb.top/p/c3387dcd.html">
 <meta property="og:site_name" content="北温带的猫">
-<meta property="og:description" content="在编写自己的博客的时候，可以使用note提示块，不仅简单而且还可以使博客更加的美观。">
+<meta property="og:description" content="本篇文章讲述了如何为自己的博客加上Waline评论，并实现后端管理和邮件提醒的功能。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-05T03:32:34.000Z">
-<meta property="article:modified_time" content="2022-04-23T02:21:24.985Z">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange1.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange2.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange3.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange4.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn3.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn4.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn5.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn7.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange5.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange6.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange7.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange8.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange9.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange10.jpg">
+<meta property="og:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange11.jpg">
+<meta property="article:published_time" content="2022-04-24T10:08:35.000Z">
+<meta property="article:modified_time" content="2022-04-24T13:48:24.988Z">
 <meta property="article:author" content="T">
 <meta property="article:tag" content="hexo">
+<meta property="article:tag" content="Waline">
+<meta property="article:tag" content="next">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange1.jpg">
 
 
-<link rel="canonical" href="https://tianqb.top/p/78574fd6.html">
+<link rel="canonical" href="https://tianqb.top/p/c3387dcd.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://tianqb.top/p/78574fd6.html","path":"p/78574fd6.html","title":"Hexo note提示块的使用"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://tianqb.top/p/c3387dcd.html","path":"p/c3387dcd.html","title":"为hexo博客更换Waline评论系统"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hexo note提示块的使用 | 北温带的猫</title>
+<title>为hexo博客更换Waline评论系统 | 北温带的猫</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGL3VM2MT3"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-MGL3VM2MT3","only_pageview":false}</script>
@@ -141,7 +159,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -154,6 +172,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E6%96%87"><span class="nav-text">正文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E9%85%8D%E7%BD%AE%E8%AF%84%E8%AE%BA%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-text">1 配置评论数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E6%B3%A8%E5%86%8CLean-Cloud"><span class="nav-text">1.1 注册Lean Cloud</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8"><span class="nav-text">1.2 创建应用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%85%8D%E7%BD%AE%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="nav-text">2 配置服务端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%9C%A8Hexo-Next%E4%B8%BB%E9%A2%98%E4%B8%AD%E9%85%8D%E7%BD%AE"><span class="nav-text">3 在Hexo Next主题中配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E7%99%BB%E5%BD%95%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="nav-text">4 登录服务端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E9%82%AE%E4%BB%B6%E5%AE%9E%E6%97%B6%E6%8F%90%E9%86%92"><span class="nav-text">5 邮件实时提醒</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -228,7 +247,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tianqb.top/p/78574fd6.html">
+    <link itemprop="mainEntityOfPage" href="https://tianqb.top/p/c3387dcd.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -241,12 +260,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hexo note提示块的使用 | 北温带的猫">
-      <meta itemprop="description" content="在编写自己的博客的时候，可以使用note提示块，不仅简单而且还可以使博客更加的美观。">
+      <meta itemprop="name" content="为hexo博客更换Waline评论系统 | 北温带的猫">
+      <meta itemprop="description" content="本篇文章讲述了如何为自己的博客加上Waline评论，并实现后端管理和邮件提醒的功能。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo note提示块的使用
+          为hexo博客更换Waline评论系统
         </h1>
 
         <div class="post-meta-container">
@@ -258,15 +277,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2022-04-05 11:32:34" itemprop="dateCreated datePublished" datetime="2022-04-05T11:32:34+08:00">2022-04-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-04-23 10:21:24" itemprop="dateModified" datetime="2022-04-23T10:21:24+08:00">2022-04-23</time>
+      <time title="创建时间：2022-04-24 18:08:35 / 修改时间：21:48:24" itemprop="dateCreated datePublished" datetime="2022-04-24T18:08:35+08:00">2022-04-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -294,8 +307,8 @@
     </span>
     <span class="post-meta-item-text">Waline：</span>
   
-    <a title="waline" href="/p/78574fd6.html#waline-comments" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" id="/p/78574fd6.html" data-xid="/p/78574fd6.html" itemprop="commentCount"></span>
+    <a title="waline" href="/p/c3387dcd.html#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/p/c3387dcd.html" data-xid="/p/c3387dcd.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -305,13 +318,13 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>1.2k</span>
+      <span>2.2k</span>
     </span>
 </div>
 
 
          <!--
-            <div class="post-description">在编写自己的博客的时候，可以使用note提示块，不仅简单而且还可以使博客更加的美观。</div>-->
+            <div class="post-description">本篇文章讲述了如何为自己的博客加上Waline评论，并实现后端管理和邮件提醒的功能。</div>-->
 
         </div>
       </header>
@@ -322,41 +335,69 @@
     <div class="post-body" itemprop="articleBody">
         <meta name="referrer" content="no-referrer" />
 
-<p>在hexo中写博客的时候可以插入一些很酷的<code>提示块</code>，效果如下：</p>
-<div class="note default"><p>default 提示块标签</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;由于之前的Next版本太低了，想更新到最新版，于是今天花了半天的功夫来弄它，最后基本还原了之前博客的所有功能，但是我发现主题配置文件里没有Valine的相关配置了。于是我上网查了一下，发现Next v8.1.0版本就已经移除了Valine，具体原因如下：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange1.jpg" alt="next移除Valine"></p>
+<p>&emsp;于是我按照他给的方法，自己安装了<code>hexo-next-valine</code>插件，进行了一系列的配置，最后发现不行，Valine页面加载不出来。于是我又继续网上寻找帮助，直到我看见了下面这段公告：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange2.jpg" alt="Valine回应next"></p>
+<p>&emsp;看来Valine是没法用了，于是我又尝试了Next提供的其他的评论系统，结果都不太尽如人意。最后迫不得已取询问群里的大佬，大佬给我说可以用<code>Waline</code>，这是在Valine基础上开发的，与Valine的功能基本相同，但是更加的安全。</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange3.jpg" alt="Waline"></p>
+<p>&emsp;说干就干，由于有了配置Valine的基础，Waline配置起来十分的顺利，很快就完成了，效果如如下：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange4.jpg" alt="waline评论"></p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>&emsp;上面废话了这么多，接下来开始进入正题，大家可以点击<a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/jiunian_2761/article/details/122621667">Waline配置</a>查看原文，也可以继续看我的文章😎</p>
+<h2 id="1-配置评论数据库"><a href="#1-配置评论数据库" class="headerlink" title="1 配置评论数据库"></a>1 配置评论数据库</h2><p>&emsp;<code>Waline</code> 和 Valine 一样，也是支持基于 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://leancloud.app/">LeanCloud</a> 作为数据存储的，但是 <code>Waline</code> 支持的部署方式更多。Waline配置数据库的方法和Valine的配置方法一样，有基础的兄弟可以自行去配置了，第一次使用的按照我的步骤一步一步来。</p>
+<h3 id="1-1-注册Lean-Cloud"><a href="#1-1-注册Lean-Cloud" class="headerlink" title="1.1 注册Lean Cloud"></a>1.1 注册Lean Cloud</h3><p>&emsp;LeanCloud 分为<code>国内</code>和<code>国际版</code>的。国内的在 2019-10-1 之后需要自定义已备案域名才能使用，所以我这里使用国际版，先到 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://leancloud.app/">LeanCloud 国际版</a>注册一个账号，注意还需要验证邮箱和手机号。</p>
+<h3 id="1-2-创建应用"><a href="#1-2-创建应用" class="headerlink" title="1.2 创建应用"></a>1.2 创建应用</h3><p>&emsp;点击创建应用按钮：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn3.jpg" alt="创建应用"></p>
+<p>&emsp;注意选择<code>开发版</code>：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn4.jpg" alt="选择开发版"></p>
+<p>&emsp;创建好之后进入设置，查看应用Keys：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn5.jpg" alt="leanclouds设置"><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn7.jpg" alt="APPID APPKey"></p>
+<h2 id="2-配置服务端"><a href="#2-配置服务端" class="headerlink" title="2 配置服务端"></a>2 配置服务端</h2><p>&emsp;先点击<a target="_blank" rel="noopener external nofollow noreferrer" href="https://vercel.com">vercel</a>注册一个账号(<code>支持Github账号直接登录</code>)，然后点击<a target="_blank" rel="noopener external nofollow noreferrer" href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwalinejs%2Fwaline%2Ftree%2Fmain%2Fexample">Deploy</a>出现以下画面，然后输入项目的名称点击<code>Create</code>。</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange5.jpg" alt="vercel"></p>
+<p>&emsp;然后等待下面 <code>Deploy</code> 构建完成，点击 <code>Go to Dashboard</code>。</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange6.jpg" alt="vercelCongratulations"></p>
+<p>&emsp;<code>找到 Settings——&gt;Environment Variables</code>，配置环境变量：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange7.jpg" alt="project Settings"></p>
+<p>&emsp;我们需要配置三个环境变量，对应如下表：</p>
+<table>
+<thead>
+<tr>
+<th>Vercel Environment(填入到NAME框下)</th>
+<th>Lean Cloud(各项对应的值填入到VALUE框下)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LEAN_ID</td>
+<td>AppID</td>
+</tr>
+<tr>
+<td>LEAN_KEY</td>
+<td>AppKey</td>
+</tr>
+<tr>
+<td>LEAN_MASTER_KEY</td>
+<td>MasterKey</td>
+</tr>
+</tbody></table>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange8.jpg" alt="环境变量"></p>
+<div class="note warning"><p>如果你使用 LeanCloud 国内版，请额外配置 <code>LEAN_SERVER</code> 环境变量，值为你绑定好的域名。</p>
 </div>
 
-<div class="note primary"><p>primary 提示块标签</p>
-</div>
+<p>&emsp;为了使环境变量生效，我们需要<code>重新构建</code>一次。在上方找到 Deployments ，选择第一个右边的三个点，点击 Redeploy 。</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange9.jpg" alt="重新构建"></p>
+<p>&emsp;等待其构建结束，然后记住 <code>DOMAINS</code> 中的域名地址，至此服务端的部署就结束了，接下来就是在<code>Hexo Next</code>主题下的配置了：</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange10.jpg" alt="Domain"></p>
+<h2 id="3-在Hexo-Next主题中配置"><a href="#3-在Hexo-Next主题中配置" class="headerlink" title="3 在Hexo Next主题中配置"></a>3 在Hexo Next主题中配置</h2><p>&emsp;由于 Next 主题中并不自带 <code>Waline</code> 的评论配置，我们需要安装官方提供的插件。在 <code>Hexo</code> 根目录执行：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install @waline/hexo-next</span><br></pre></td></tr></table></figure>
 
-<div class="note success"><p>success 提示块标签</p>
-</div>
+<p>&emsp;下载完成后，找到 Next 的主题配置文件，在最后加上以下代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># Waline</span><br><span class="line"># For more information: https://waline.js.org, https://github.com/walinejs/waline</span><br><span class="line">waline:</span><br><span class="line">  enable: true #是否开启</span><br><span class="line">  serverURL: waline-server-pearl.vercel.app # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址</span><br><span class="line">  placeholder: 请文明评论呀 # #评论框的默认文字</span><br><span class="line">  avatar: mm # 头像风格</span><br><span class="line">  meta: [nick, mail, link] # 自定义评论框上面的三个输入框的内容</span><br><span class="line">  pageSize: <span class="number">10</span> # 评论数量多少时显示分页</span><br><span class="line">  lang: zh-cn # 语言, 可选值: en, zh-cn</span><br><span class="line">  # Warning: 不要同时启用 `waline.visitor` 以及 `leancloud_visitors`.</span><br><span class="line">  visitor: false # 文章阅读统计</span><br><span class="line">  comment_count: true # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示</span><br><span class="line">  requiredFields: [] # 设置用户评论时必填的信息，[nick,mail]: [nick] | [nick, mail]</span><br><span class="line">  libUrl: # Set custom library cdn url</span><br></pre></td></tr></table></figure>
 
-<div class="note info"><p>info 提示块标签</p>
-</div>
-
-<div class="note warning"><p>warning 提示块标签</p>
-</div>
-
-<div class="note danger"><p>danger 提示块标签</p>
-</div>
-
-<p><code>使用方法</code>如下</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary %&#125;</span><br><span class="line">primary 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在<code>主题配置文件</code>中可以修改风格</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># Note tag (bs-callout)</span><br><span class="line">note:</span><br><span class="line">  # Note tag style values:</span><br><span class="line">  #  - simple    bs-callout old alert style. Default.</span><br><span class="line">  #  - modern    bs-callout new (v2-v3) alert style.</span><br><span class="line">  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span><br><span class="line">  #  - disabled  disable all CSS styles import of note tag.</span><br><span class="line">  style: flat</span><br><span class="line">  icons: false</span><br><span class="line">  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span><br><span class="line">  # Offset also applied to label tag variables. This option can work with disabled note tag.</span><br><span class="line">  light_bg_offset: -10</span><br></pre></td></tr></table></figure>
-
-<p>此外还可以实现<code>选项卡</code>功能</p>
-<div class="tabs" id="tab"><ul class="nav-tabs"><li class="tab active"><a href="#tab-1">A</a></li><li class="tab"><a href="#tab-2">tab 2</a></li><li class="tab"><a href="#tab-3">C</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-1"><p><strong>选项卡 1</strong></p></div><div class="tab-pane" id="tab-2"><p><strong>选项卡 2</strong></p></div><div class="tab-pane" id="tab-3"><p><strong>选项卡 3</strong> 名字为C</p></div></div></div>
-
-<p>使用方法</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs tab %&#125;</span><br><span class="line">&lt;!--tab A--&gt;</span><br><span class="line">**选项卡 1**</span><br><span class="line">&lt;!--endtab--&gt;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line">**选项卡 2**</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab C --&gt;</span><br><span class="line">**选项卡 3** 名字为C</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>原文</p>
-<p><a href=https://jinnsjj.github.io/uncategorized/hexo-next-note/>在hexo-NexT中插入note提示块</a></p>
+<p>&emsp;重新部署<code>Hexo</code>，就可以看到结果啦。</p>
+<h2 id="4-登录服务端"><a href="#4-登录服务端" class="headerlink" title="4 登录服务端"></a>4 登录服务端</h2><p>&emsp;由于 <code>Waline</code> 有服务端，支持评论管理，我们需要注册一个账号作为管理员。找到评论框，点击 <code>登录</code> 按钮，会弹出一个窗口，找到用户注册，<code>默认第一个注册的用户为管理员</code>，所以部署好一定要记得及时注册，注册好，登录之后即可进入评论管理的后台，可以对评论进行管理。</p>
+<p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/walinechange11.jpg" alt="登录界面"></p>
+<h2 id="5-邮件实时提醒"><a href="#5-邮件实时提醒" class="headerlink" title="5 邮件实时提醒"></a>5 邮件实时提醒</h2><p>&emsp;这一部分的设置方法和Valine的完全相同，大家可以点击<a href="https://tianqb.top/p/2e257c1.html">设置Valine评论</a>，然后找到<code>第五部分</code>查看如何设置，这里我就不多说了。</p>
+<p>&emsp;到此，整个Waline评论系统设置完成了。大家有什么不明白的可以在下面留言，我会及时回复的！</p>
 <div>
     
     <div>
@@ -417,20 +458,19 @@
 
           <div class="post-tags">
               <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+              <a href="/tags/Waline/" rel="tag"><i class="fa fa-tag"></i> Waline</a>
+              <a href="/tags/next/" rel="tag"><i class="fa fa-tag"></i> next</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/p/2e257c1.html" rel="prev" title="Hexo Next主题添加Valine评论系统">
-                  <i class="fa fa-chevron-left"></i> Hexo Next主题添加Valine评论系统
+                <a href="/p/7e4211d.html" rel="prev" title="Android基础知识">
+                  <i class="fa fa-chevron-left"></i> Android基础知识
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/p/214102e1.html" rel="next" title="在Hexo博客中添加Github贡献日历">
-                  在Hexo博客中添加Github贡献日历 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -525,7 +565,7 @@
 
 
 
-<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline-server-blue.vercel.app","placeholder":"请文明评论呀","avatar":"mm","pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"meta":["nick","mail","link"],"libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","el":"#waline-comments","path":"/p/78574fd6.html"}</script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline-server-blue.vercel.app","placeholder":"请文明评论呀","avatar":"mm","pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"meta":["nick","mail","link"],"libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","el":"#waline-comments","path":"/p/c3387dcd.html"}</script>
 <script>
 document.addEventListener('page:loaded', () => {
   NexT.utils.loadComments(CONFIG.waline.el).then(() => 
