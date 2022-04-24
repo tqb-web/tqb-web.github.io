@@ -2,10 +2,10 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.1">
-<meta name="keywords" content="Hexo,hexo,Next,next,Github,github,考研,编程,计算机,计算机组成原理,操作系统" />
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.1">
+
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon2.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon1.ico">
@@ -17,15 +17,15 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|EB Garamond:300,300italic,400,400italic,700,700italic|Source Code Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto+Serif+SC:300,300italic,400,400italic,700,700italic%7CLobster+Two:300,300italic,400,400italic,700,700italic%7CEB+Garamond:300,300italic,400,400italic,700,700italic%7CSource+Code+Pro:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tianqb.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
-  <meta name="description" content="给自己的hexo博客加上评论功能，这样别人就可以评论你的博客了，并且还可以实时接收评论通知。">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"tianqb.top","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="给自己的hexo博客加上评论功能，这样别人就可以评论你的博客了，并且还可以实时接收评论通知。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Next主题添加Valine评论系统">
 <meta property="og:url" content="https://tianqb.top/p/2e257c1.html">
@@ -60,91 +60,52 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn1.jpg">
 
+
 <link rel="canonical" href="https://tianqb.top/p/2e257c1.html">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
 
-  <title>Hexo Next主题添加Valine评论系统 | 北温带的猫</title>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://tianqb.top/p/2e257c1.html","path":"p/2e257c1.html","title":"Hexo Next主题添加Valine评论系统"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Hexo Next主题添加Valine评论系统 | 北温带的猫</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGL3VM2MT3"></script>
-    <script data-pjax>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-MGL3VM2MT3');
-      }
-    </script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-MGL3VM2MT3","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
 
-
-  <script data-pjax>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?4f39d4726c3a7316cce00d051aed2079";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?4f39d4726c3a7316cce00d051aed2079"></script>
 
 
 
 
   <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 <link rel="alternate" href="/atom.xml" title="北温带的猫" type="application/atom+xml">
 <style>.darkmode--activated{--body-bg-color:#f5f5f500;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}</style></head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
+  <main class="main">
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">北温带的猫</h1>
-      <span class="logo-line-after"><i></i></span>
+      <i class="logo-line"></i>
+      <p class="site-title">北温带的猫</p>
+      <i class="logo-line"></i>
     </a>
   </div>
 
@@ -157,59 +118,8 @@
 
 
 
-
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">20</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">9</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a>
-
-  </li>
-        <li class="menu-item menu-item-guestbook">
-
-    <a href="/guestbook/" rel="section"><i class="fa fa-keyboard fa-fw"></i>留言</a>
-
-  </li>
-        <li class="menu-item menu-item-schedule">
-
-    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
-
-  </li>
-        <li class="menu-item menu-item-reward">
-
-    <a href="/reward/" rel="section"><i class="fa fa-credit-card fa-fw"></i>赞赏</a>
-
-  </li>
-        <li class="menu-item menu-item-links">
-
-    <a href="/links/" rel="section"><i class="fa fa-id-card fa-fw"></i>友链</a>
-
-  </li>
-        <li class="menu-item menu-item-bb">
-
-    <a href="/bb/" rel="section"><i class="fa fa-comment fa-fw"></i>哔哔</a>
-
-  </li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-guestbook"><a href="/guestbook/" rel="section"><i class="fa fa-keyboard fa-fw"></i>留言</a></li><li class="menu-item menu-item-schedule"><a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a></li><li class="menu-item menu-item-reward"><a href="/reward/" rel="section"><i class="fa fa-credit-card fa-fw"></i>赞赏</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-id-card fa-fw"></i>友链</a></li><li class="menu-item menu-item-bb"><a href="https://tianqb.top/bb" rel="section"><i class="fa fa-comment fa-fw"></i>哔哔</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -220,23 +130,22 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
            placeholder="搜索..." spellcheck="false"
            type="search" class="search-input">
   </div>
-  <span class="popup-btn-close">
+  <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
   </div>
 </div>
 
@@ -244,104 +153,188 @@
   </div>
 
 </div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B3%A8%E5%86%8CLeanCloud"><span class="nav-number">1.</span> <span class="nav-text">1 注册LeanCloud</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%AA%8C%E8%AF%81%E9%82%AE%E7%AE%B1-%E9%AA%8C%E8%AF%81%E6%89%8B%E6%9C%BA%E5%8F%B7"><span class="nav-number">2.</span> <span class="nav-text">2 验证邮箱 验证手机号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8"><span class="nav-number">3.</span> <span class="nav-text">3 创建应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E9%80%89%E6%8B%A9%E5%BC%80%E5%8F%91%E7%89%88"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 选择开发版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 进入设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-1-%E8%AE%BE%E7%BD%AEWeb%E5%AE%89%E5%85%A8%E5%9F%9F%E5%90%8D-%E4%B9%9F%E5%8F%AF%E4%B8%8D%E5%A1%AB"><span class="nav-number">3.2.1.</span> <span class="nav-text">3.2.1 设置Web安全域名(也可不填)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-2-%E8%8E%B7%E5%8F%96-APP-ID-%E5%92%8C-APP-Key"><span class="nav-number">3.2.2.</span> <span class="nav-text">3.2.2 获取 APP ID 和 APP Key</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%89%93%E5%BC%80-Next-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-%E5%90%AF%E7%94%A8-Valine-%E5%A1%AB%E5%86%99-appid-%E5%92%8C-appkey"><span class="nav-number">4.</span> <span class="nav-text">4 打开 Next 主题配置文件 启用 Valine 填写 appid 和 appkey</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%AE%BE%E7%BD%AE%E9%82%AE%E7%AE%B1%E6%8F%90%E9%86%92"><span class="nav-number">5.</span> <span class="nav-text">5 设置邮箱提醒</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-%E9%83%A8%E7%BD%B2%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E9%A1%B9%E7%9B%AE-Valine-Admin"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 部署邮件提醒项目 Valine-Admin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 配置环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-%E4%BF%9D%E8%AF%81%E7%BB%9D%E5%A4%A7%E5%A4%9A%E6%95%B0%E6%97%B6%E9%97%B4%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E6%AD%A3%E5%B8%B8"><span class="nav-number">5.3.</span> <span class="nav-text">5.3 保证绝大多数时间邮件服务正常</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-%E9%85%8D%E7%BD%AE-Web-%E4%B8%BB%E6%9C%BA%E5%9F%9F%E5%90%8D"><span class="nav-number">5.4.</span> <span class="nav-text">5.4 配置 Web 主机域名</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-4-1-%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">5.4.1.</span> <span class="nav-text">5.4.1 添加新的环境变量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5-%E6%B7%BB%E5%8A%A0%E5%AE%9A%E6%97%B6%E5%99%A8"><span class="nav-number">5.5.</span> <span class="nav-text">5.5 添加定时器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-6-%E9%87%8D%E5%90%AF-Valine-Admin-%E9%A1%B9%E7%9B%AE"><span class="nav-number">5.6.</span> <span class="nav-text">5.6 重启 Valine-Admin 项目</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E6%B5%8B%E8%AF%95%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E6%95%88%E6%9E%9C"><span class="nav-number">6.</span> <span class="nav-text">6 测试邮件提醒效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-%E5%A1%AB%E5%86%99%E8%AF%84%E8%AE%BA"><span class="nav-number">6.1.</span> <span class="nav-text">6.1 填写评论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-%E6%9F%A5%E7%9C%8B%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92"><span class="nav-number">6.2.</span> <span class="nav-text">6.2 查看邮件提醒</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E5%88%A0%E9%99%A4%E8%AF%84%E8%AE%BA"><span class="nav-number">7.</span> <span class="nav-text">7 删除评论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-%E9%80%9A%E8%BF%87%E7%9B%B4%E6%8E%A5%E5%9C%A8%E8%A1%A8%E4%B8%AD%E7%9A%84%E5%88%A0%E9%99%A4"><span class="nav-number">7.1.</span> <span class="nav-text">7.1 通过直接在表中的删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2-%E4%BD%BF%E7%94%A8%E8%AF%84%E8%AE%BA%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%88%A0%E9%99%A4"><span class="nav-number">7.2.</span> <span class="nav-text">7.2 使用评论管理系统删除</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-2-1-%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7"><span class="nav-number">7.2.1.</span> <span class="nav-text">7.2.1 添加用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-2-2-%E7%99%BB%E5%BD%95%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="nav-number">7.2.2.</span> <span class="nav-text">7.2.2 登录评论系统</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="T"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">T</p>
+  <div class="site-description" itemprop="description">分享考研、编程、hexo、GitHub相关知识.</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tqb-web" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tqb-web" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://gitee.com/tian-qingbin" title="gitee → https:&#x2F;&#x2F;gitee.com&#x2F;tian-qingbin" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-git-square fa-fw"></i>gitee</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
     
-  <div class="back-to-top">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
   <div class="reading-progress-bar"></div>
 
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
 
-          <div class="content post posts-expand">
-            
+    <div class="main-inner post posts-expand">
 
-    
+      
+
+  
+
+
+<div class="post-block">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://tianqb.top/p/2e257c1.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="T">
-      <meta itemprop="description" content="分享考研、编程、hexo、GitHub相关知识.">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="北温带的猫">
+      <meta itemprop="description" content="分享考研、编程、hexo、GitHub相关知识.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Hexo Next主题添加Valine评论系统 | 北温带的猫">
+      <meta itemprop="description" content="给自己的hexo博客加上评论功能，这样别人就可以评论你的博客了，并且还可以实时接收评论通知。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           Hexo Next主题添加Valine评论系统
         </h1>
 
-        <div class="post-meta">
+        <div class="post-meta-container">
 
+          <div class="post-meta">
+    <span class="post-meta-item">
  
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-04-04 12:47:53" itemprop="dateCreated datePublished" datetime="2022-04-04T12:47:53+08:00">2022-04-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-23 10:20:30" itemprop="dateModified" datetime="2022-04-23T10:20:30+08:00">2022-04-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
-                </span>
-            </span>
+      <time title="创建时间：2022-04-04 12:47:53" itemprop="dateCreated datePublished" datetime="2022-04-04T12:47:53+08:00">2022-04-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-04-23 10:20:30" itemprop="dateModified" datetime="2022-04-23T10:20:30+08:00">2022-04-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+        </span>
+    </span>
 
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span>
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
   
   <span class="post-meta-item">
     
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Valine：</span>
+  
     <a title="valine" href="/p/2e257c1.html#valine-comments" itemprop="discussionUrl">
       <span class="post-comments-count valine-comment-count" data-xid="/p/2e257c1.html" itemprop="commentCount"></span>
     </a>
   </span>
   
   
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.5k</span>
-            </span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.5k</span>
+    </span>
+</div>
 
-        <!--
-            <div class="post-description">给自己的hexo博客加上评论功能，这样别人就可以评论你的博客了，并且还可以实时接收评论通知。</div> -->
+
+         <!--
+            <div class="post-description">给自己的hexo博客加上评论功能，这样别人就可以评论你的博客了，并且还可以实时接收评论通知。</div>-->
 
         </div>
       </header>
@@ -350,8 +343,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
         <meta name="referrer" content="no-referrer" />
 
 <h2 id="1-注册LeanCloud"><a href="#1-注册LeanCloud" class="headerlink" title="1 注册LeanCloud"></a>1 注册LeanCloud</h2><p>LeanCloud 分为<code>国内</code>和<code>国际版</code>的。<br>国内的在 2019-10-1 之后需要自定义已备案域名才能使用，所以我这里使用国际版，先到<a href=https://leancloud.app/>LeanCloud国际版</a>注册一个账号。</p>
@@ -369,13 +360,11 @@
 <p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn6.jpg"></p>
 <h4 id="3-2-2-获取-APP-ID-和-APP-Key"><a href="#3-2-2-获取-APP-ID-和-APP-Key" class="headerlink" title="3.2.2 获取 APP ID 和 APP Key"></a>3.2.2 获取 APP ID 和 APP Key</h4><p>依次点击左侧边栏上的<code>设置</code> , <code>应用 Keys</code>, 然后复制下<code>AppID</code>和<code>AppKey</code>:</p>
 <p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn7.jpg" alt="APPID APPKey"></p>
-<h2 id="4-打开-Next-主题配置文件-启用-Valine-填写-appid-和-appkey"><a href="#4-打开-Next-主题配置文件-启用-Valine-填写-appid-和-appkey" class="headerlink" title="4 打开 Next 主题配置文件 启用 Valine 填写 appid 和 appkey"></a>4 打开 Next 主题配置文件 启用 Valine 填写 appid 和 appkey</h2><div class="note info">
-            <p>打开博客目录的 <code>next</code> 主题配置文件<code>_config.yml</code> ，找到 <code>Valine</code>，将上图的 <code>APP ID</code> 和 <code>APP Key</code> 复制到对应位置。</p>
-          </div>
+<h2 id="4-打开-Next-主题配置文件-启用-Valine-填写-appid-和-appkey"><a href="#4-打开-Next-主题配置文件-启用-Valine-填写-appid-和-appkey" class="headerlink" title="4 打开 Next 主题配置文件 启用 Valine 填写 appid 和 appkey"></a>4 打开 Next 主题配置文件 启用 Valine 填写 appid 和 appkey</h2><div class="note info"><p>打开博客目录的 <code>next</code> 主题配置文件<code>_config.yml</code> ，找到 <code>Valine</code>，将上图的 <code>APP ID</code> 和 <code>APP Key</code> 复制到对应位置。</p>
+</div>
 
-<div class="note success">
-            <p>到这里其实就可以使用 Valine 这个评论系统了，下面来设置邮件提醒。</p>
-          </div>
+<div class="note success"><p>到这里其实就可以使用 Valine 这个评论系统了，下面来设置邮件提醒。</p>
+</div>
 
 <h2 id="5-设置邮箱提醒"><a href="#5-设置邮箱提醒" class="headerlink" title="5 设置邮箱提醒"></a>5 设置邮箱提醒</h2><h3 id="5-1-部署邮件提醒项目-Valine-Admin"><a href="#5-1-部署邮件提醒项目-Valine-Admin" class="headerlink" title="5.1 部署邮件提醒项目 Valine-Admin"></a>5.1 部署邮件提醒项目 Valine-Admin</h3><p>依次点击左侧边栏上的<code>云引擎</code> ,<code>部署</code>, 然后下拉页面，点击<code>部署项目</code>:</p>
 <p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn8.jpg"></p>
@@ -389,13 +378,15 @@
 <p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn11.jpg" alt="环境变量"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">SITE_NAME:网站名称。</span><br><span class="line">SITE_URL:网站地址，最后不要加/ 。</span><br><span class="line">SMTP_USER:SMTP服务用户名，一般为邮箱地址。</span><br><span class="line">SMTP_PASS:SMTP密码，一般为授权码，而不是邮箱的登陆密码，请自行查询对应邮件服务商的获取方式。。</span><br><span class="line">SMTP_SERVICE:邮件服务提供商，支持 QQ、163、126、Gmail、”Yahoo”、…… ，全部支持请参考:Nodemailer Supported services。— 如这里没有你使用的邮件提供商，请查看自定义邮件服务器。</span><br><span class="line">SENDER_NAME:寄件人名称。</span><br></pre></td></tr></table></figure>
 
-<h3 id="5-3-保证绝大多数时间邮件服务正常"><a href="#5-3-保证绝大多数时间邮件服务正常" class="headerlink" title="5.3 保证绝大多数时间邮件服务正常"></a>5.3 保证绝大多数时间邮件服务正常</h3><div class="note warning">
-            <p>免费版的 <code>LeanCloud</code> 容器，是有强制性休眠策略的，不能 24 小时运行：</p>
-          </div>
+<h3 id="5-3-保证绝大多数时间邮件服务正常"><a href="#5-3-保证绝大多数时间邮件服务正常" class="headerlink" title="5.3 保证绝大多数时间邮件服务正常"></a>5.3 保证绝大多数时间邮件服务正常</h3><div class="note warning"><p>免费版的 <code>LeanCloud</code> 容器，是有强制性休眠策略的，不能 24 小时运行：</p>
+</div>
 
-<div class="note info">
-            <ul><li>每天必须休眠 6 个小时</li><li>30 分钟内没有外部请求，则休眠。</li><li>休眠后如果有新的外部请求实例则马上启动（但激活时此次发送邮件会失败）</li></ul>
-          </div>
+<div class="note info"><ul>
+<li>每天必须休眠 6 个小时</li>
+<li>30 分钟内没有外部请求，则休眠。</li>
+<li>休眠后如果有新的外部请求实例则马上启动（但激活时此次发送邮件会失败）</li>
+</ul>
+</div>
 
 <p>分析了一下上方的策略，如果不想付费的话，最佳使用方案就设置定时器，每天 7 - 23 点每 <code>20 分钟</code>访问一次，这样可以保持每天的绝大多数时间邮件服务是正常的。</p>
 <h3 id="5-4-配置-Web-主机域名"><a href="#5-4-配置-Web-主机域名" class="headerlink" title="5.4 配置 Web 主机域名"></a>5.4 配置 Web 主机域名</h3><p>首先需要先配置下 Web 主机的域名，使用定时器时要用到。</p>
@@ -420,8 +411,6 @@
 <h4 id="7-2-2-登录评论系统"><a href="#7-2-2-登录评论系统" class="headerlink" title="7.2.2 登录评论系统"></a>7.2.2 登录评论系统</h4><p>地址就是上面设置的 web 主机名:<code>https:// 你刚才设置的域名.avosapps.us/</code></p>
 <p><img src="https://gitee.com/tian-qingbin/blog-pictrue/raw/master/img/hn20.jpg" alt="登陆界面"></p>
 <p>填上刚才设置的账号密码即可登录。</p>
-    </div>
-
 <div>
     
     <div>
@@ -432,220 +421,107 @@
 
     
  </div>
+    </div>
 
     
     
     
-        <div class="reward-container">
+
+    <footer class="post-footer">
+          <div class="reward-container">
   <div></div>
-  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
+  <button>
+    赞赏
   </button>
-  <div id="qr" style="display: none;">
-      
-      <div style="display: inline-block;">
+  <div class="post-reward">
+      <div>
         <img src="/images/ermaheyi.png" alt="T 感谢支持！">
-        <p>感谢支持！</p>
+        <span>感谢支持！</span>
       </div>
 
   </div>
 </div>
 
-        
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
 
-  <div class="followme">
-    <p>欢迎关注我的其它发布渠道</p>
+  <div class="social-list">
 
-    <div class="social-list">
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
+          <span class="label">RSS</span>
+        </a>
+      </div>
 
-            <span class="label">RSS</span>
-          </a>
-        </div>
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://blog.csdn.net/qq_50266498?spm=1000.2115.3001.5343" rel="external nofollow noreferrer">
+          <span class="icon">
+            <i class="fa fa-graduation-cap"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="https://blog.csdn.net/qq_50266498?spm=1000.2115.3001.5343" rel="external nofollow noreferrer">
-            <span class="icon">
-              <i class="fa fa-graduation-cap"></i>
-            </span>
-
-            <span class="label">CSDN</span>
-          </a>
-        </div>
-    </div>
+          <span class="label">CSDN</span>
+        </a>
+      </div>
   </div>
+</div>
 
-
-      <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag"><i class="fa fa-tag"></i> 技术</a>
               <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           </div>
 
         
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
-  </div>
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/p/7338cb5d.html" rel="prev" title="hexo next主题">
-      <i class="fa fa-chevron-left"></i> hexo next主题
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/p/78574fd6.html" rel="next" title="Hexo note提示块的使用">
-      Hexo note提示块的使用 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/p/7338cb5d.html" rel="prev" title="hexo next主题">
+                  <i class="fa fa-chevron-left"></i> hexo next主题
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/p/78574fd6.html" rel="next" title="Hexo note提示块的使用">
+                  Hexo note提示块的使用 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
           </div>
-          
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
     <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B3%A8%E5%86%8CLeanCloud"><span class="nav-text">1 注册LeanCloud</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%AA%8C%E8%AF%81%E9%82%AE%E7%AE%B1-%E9%AA%8C%E8%AF%81%E6%89%8B%E6%9C%BA%E5%8F%B7"><span class="nav-text">2 验证邮箱 验证手机号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8"><span class="nav-text">3 创建应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E9%80%89%E6%8B%A9%E5%BC%80%E5%8F%91%E7%89%88"><span class="nav-text">3.1 选择开发版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE"><span class="nav-text">3.2 进入设置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-1-%E8%AE%BE%E7%BD%AEWeb%E5%AE%89%E5%85%A8%E5%9F%9F%E5%90%8D-%E4%B9%9F%E5%8F%AF%E4%B8%8D%E5%A1%AB"><span class="nav-text">3.2.1 设置Web安全域名(也可不填)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-2-%E8%8E%B7%E5%8F%96-APP-ID-%E5%92%8C-APP-Key"><span class="nav-text">3.2.2 获取 APP ID 和 APP Key</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%89%93%E5%BC%80-Next-%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-%E5%90%AF%E7%94%A8-Valine-%E5%A1%AB%E5%86%99-appid-%E5%92%8C-appkey"><span class="nav-text">4 打开 Next 主题配置文件 启用 Valine 填写 appid 和 appkey</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%AE%BE%E7%BD%AE%E9%82%AE%E7%AE%B1%E6%8F%90%E9%86%92"><span class="nav-text">5 设置邮箱提醒</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-%E9%83%A8%E7%BD%B2%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E9%A1%B9%E7%9B%AE-Valine-Admin"><span class="nav-text">5.1 部署邮件提醒项目 Valine-Admin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-text">5.2 配置环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-%E4%BF%9D%E8%AF%81%E7%BB%9D%E5%A4%A7%E5%A4%9A%E6%95%B0%E6%97%B6%E9%97%B4%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E6%AD%A3%E5%B8%B8"><span class="nav-text">5.3 保证绝大多数时间邮件服务正常</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-%E9%85%8D%E7%BD%AE-Web-%E4%B8%BB%E6%9C%BA%E5%9F%9F%E5%90%8D"><span class="nav-text">5.4 配置 Web 主机域名</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-4-1-%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-text">5.4.1 添加新的环境变量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5-%E6%B7%BB%E5%8A%A0%E5%AE%9A%E6%97%B6%E5%99%A8"><span class="nav-text">5.5 添加定时器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-6-%E9%87%8D%E5%90%AF-Valine-Admin-%E9%A1%B9%E7%9B%AE"><span class="nav-text">5.6 重启 Valine-Admin 项目</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E6%B5%8B%E8%AF%95%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E6%95%88%E6%9E%9C"><span class="nav-text">6 测试邮件提醒效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-%E5%A1%AB%E5%86%99%E8%AF%84%E8%AE%BA"><span class="nav-text">6.1 填写评论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-%E6%9F%A5%E7%9C%8B%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92"><span class="nav-text">6.2 查看邮件提醒</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E5%88%A0%E9%99%A4%E8%AF%84%E8%AE%BA"><span class="nav-text">7 删除评论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-%E9%80%9A%E8%BF%87%E7%9B%B4%E6%8E%A5%E5%9C%A8%E8%A1%A8%E4%B8%AD%E7%9A%84%E5%88%A0%E9%99%A4"><span class="nav-text">7.1 通过直接在表中的删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2-%E4%BD%BF%E7%94%A8%E8%AF%84%E8%AE%BA%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E5%88%A0%E9%99%A4"><span class="nav-text">7.2 使用评论管理系统删除</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-2-1-%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7"><span class="nav-text">7.2.1 添加用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-2-2-%E7%99%BB%E5%BD%95%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="nav-text">7.2.2 登录评论系统</span></a></li></ol></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="T"
-      src="/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">T</p>
-  <div class="site-description" itemprop="description">分享考研、编程、hexo、GitHub相关知识.</div>
 </div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">23</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">9</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">20</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RxYi13ZWI=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tqb-web"><i class="fab fa-github fa-fw"></i>GitHub</span>
-      </span>
-      <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cHM6Ly9naXRlZS5jb20vdGlhbi1xaW5nYmlu" title="gitee → https:&#x2F;&#x2F;gitee.com&#x2F;tian-qingbin"><i class="fab fa-git-square fa-fw"></i>gitee</span>
-      </span>
-  </div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
 
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
 
 <div class="copyright">
-  
   &copy; 2021 – 
   <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">T</span>
-    <span class="post-meta-divider">|</span>
+<!--<div class="wordcount">-->
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
+      <i class="fa fa-chart-line"></i>
     </span>
-      <span class="post-meta-item-text">站点总字数：</span>
     <span title="站点总字数">54k</span>
+  </span>
+<!--div>-->
 </div>
-
-<!--
--->
-  <div class="addthis_inline_share_toolbox">
-    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-624fc34c708a8566" async="async"></script>
-  </div>
 
 <div class="copyright" style="display: flex;justify-content: center;">
   <span>本网站由 </span>
@@ -655,17 +531,13 @@
   <span> 提供 CDN 加速</span>
 </div>
 
-<div class="copyright" style="display: flex;justify-content: center;">
-<span style="color:#ddd">ICP证：</span>
+<div class="copyright" style="display: flex;justify-content: center;"
 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn/">
-<span style="color:#ddd">鲁ICP备2022013010号</span>
+<span style="color:#f3f3f3">鲁ICP备2022013010号</span>
 </a>
 </div>
-
-        
 <div class="busuanzi-count">
-  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
       </span>
@@ -673,8 +545,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
       </span>
@@ -684,168 +555,31 @@
     </span>
 </div>
 
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/pjax/pjax.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
-<script src="/js/schemes/pisces.js"></script>
 
-
-<script src="/js/next-boot.js"></script>
-
-  <script>
-var pjax = new Pjax({
-  selectors: [
-    'head title',
-    '#page-configurations',
-    '.content-wrap',
-    '.post-toc-wrap',
-    '.languages',
-    '#pjax'
-  ],
-  switches: {
-    '.post-toc-wrap': Pjax.switches.innerHTML
-  },
-  analytics: false,
-  cacheBust: false,
-  scrollTo : !CONFIG.bookmark.enable
-});
-
-window.addEventListener('pjax:success', () => {
-  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
-    var code = element.text || element.textContent || element.innerHTML || '';
-    var parent = element.parentNode;
-    parent.removeChild(element);
-    var script = document.createElement('script');
-    if (element.id) {
-      script.id = element.id;
-    }
-    if (element.className) {
-      script.className = element.className;
-    }
-    if (element.type) {
-      script.type = element.type;
-    }
-    if (element.src) {
-      script.src = element.src;
-      // Force synchronous loading of peripheral JS.
-      script.async = false;
-    }
-    if (element.dataset.pjax !== undefined) {
-      script.dataset.pjax = '';
-    }
-    if (code !== '') {
-      script.appendChild(document.createTextNode(code));
-    }
-    parent.appendChild(script);
-  });
-  NexT.boot.refresh();
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .init()
-      .add(NexT.motion.middleWares.subMenu)
-      .add(NexT.motion.middleWares.postList)
-      .bootstrap();
-  }
-  NexT.utils.updateSidebarPosition();
-});
-
-</script>
-
-
+  <script src="/js/third-party/fancybox.js"></script>
 
 
   
-  <script data-pjax>
-    (function(){
-      var canonicalURL, curProtocol;
-      //Get the <link> tag
-      var x=document.getElementsByTagName("link");
-		//Find the last canonical URL
-		if(x.length > 0){
-			for (i=0;i<x.length;i++){
-				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
-					canonicalURL=x[i].href;
-				}
-			}
-		}
-    //Get protocol
-	    if (!canonicalURL){
-	    	curProtocol = window.location.protocol.split(':')[0];
-	    }
-	    else{
-	    	curProtocol = canonicalURL.split(':')[0];
-	    }
-      //Get current URL if the canonical URL does not exist
-	    if (!canonicalURL) canonicalURL = window.location.href;
-	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
-  </script>
-
-
-
-  <script data-pjax>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : 34479,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
-
-  
-<script src="/js/local-search.js"></script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
 
-
-
-
-
-
-
-
-
-
-    <div id="pjax">
-  
-
-  
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
 <script>
@@ -868,34 +602,19 @@ darkmode.showWidget();
 </script>
 
 
+<script class="next-config" data-name="valine" type="application/json">{"enable":true,"appId":"tjKmivCfsIFY9Q9jO9IITxdE-MdYXbMMI","appKey":"IpR2pTGgCn3Ph9bImXdxBhqm","serverURLs":"https://tjKmivCf.api.lncldglobal.com","placeholder":"欢迎大家留言...","avatar":"monsterid","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":[],"notify":true,"verify":false,"guest_info":"nick,mail,link","language":null,"el":"#valine-comments","path":"/p/2e257c1.html"}</script>
 <script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.valine.el)
+    .then(() => NexT.utils.getScript(
+      'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+      { condition: window.Valine }
+    ))
+    .then(() => {
+      new Valine(CONFIG.valine);
     });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : false,
-      notify     : true,
-      appId      : 'tjKmivCfsIFY9Q9jO9IITxdE-MdYXbMMI',
-      appKey     : 'IpR2pTGgCn3Ph9bImXdxBhqm',
-      placeholder: "欢迎大家留言...",
-      avatar     : 'monsterid',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : '' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : 'https://tjKmivCf.api.lncldglobal.com'
-    });
-  }, window.Valine);
 });
 </script>
 
-    </div>
 </body>
 </html>
