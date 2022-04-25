@@ -30,8 +30,5 @@ document.addEventListener('pjax:success', () => {
     document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
     NexT.utils.activateSidebarPanel(hasTOC ? 0 : 1);
     NexT.utils.updateSidebarPosition();
-     loadMore: function (event) {
-        getData(++this.page);
-      }
   }
 });
