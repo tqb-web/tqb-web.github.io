@@ -268,20 +268,6 @@
   </url>
   
   <url>
-    <loc>https://tqb-web.github.io/tags/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2024-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tqb-web.github.io/tags/Github/</loc>
-    <lastmod>2024-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://tqb-web.github.io/tags/hexo/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -290,6 +276,20 @@
   
   <url>
     <loc>https://tqb-web.github.io/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tqb-web.github.io/tags/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://tqb-web.github.io/tags/Github/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -347,14 +347,14 @@
   </url>
   
   <url>
-    <loc>https://tqb-web.github.io/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</loc>
+    <loc>https://tqb-web.github.io/categories/hexo/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://tqb-web.github.io/categories/hexo/</loc>
+    <loc>https://tqb-web.github.io/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98/</loc>
     <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
